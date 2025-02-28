@@ -1,0 +1,39 @@
+from flask import Flask, request, jsonify
+import openai
+
+app = Flask(__name__)
+
+# OpenAI API Key
+OPENAI_API_KEY = "your-openai-api-key"
+openai.api_key = OPENAI_API_KEY
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    try:
+        req_data = request.get_json()
+        
+        # Extract user query from Dialogflow CX request
+        query_text = req_data.get("fulfillmentInfo", {}).get("tag", "Hello")
+
+        # Call OpenAI's ChatGPT API
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[{"role": "user", "content": query_text}]
+        )
+
+        # Extract AI response
+        ai_response = response["choices"][0]["message"]["content"]
+
+        # Send response back to Dialogflow CX
+        return jsonify({
+            "fulfillment_response": {
+                "messages": [{"text": {"text": [ai_response]}}]
+            }
+        })
+
+    except Exception as e:
+        print("Error:", e)
+        return jsonify({"fulfillment_response": {"messages": [{"text": {"text": ["Error processing request."]}}]}})
+
+if __name__ == '__main__':
+    app.run(port=3000)
