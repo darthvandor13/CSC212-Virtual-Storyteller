@@ -11,14 +11,21 @@ openai.api_key = OPENAI_API_KEY
 def webhook():
     try:
         req_data = request.get_json()
-        
-        # Extract user query from Dialogflow CX request
-        query_text = req_data.get("fulfillmentInfo", {}).get("tag", "Hello")
+
+        # Extract parameters from Dialogflow CX
+        session_params = req_data.get("sessionInfo", {}).get("parameters", {})
+        username = session_params.get("username", "Adventurer")
+        theme = session_params.get("theme", "fantasy")
+        moral = session_params.get("moral", "courage")
+
+        # Construct a storytelling prompt
+        prompt = (f"Create a short interactive story for {username} in a {theme} setting, "
+                  f"where the story teaches a lesson about {moral}. Make it engaging and immersive.")
 
         # Call OpenAI's ChatGPT API
         response = openai.ChatCompletion.create(
             model="gpt-4",
-            messages=[{"role": "user", "content": query_text}]
+            messages=[{"role": "user", "content": prompt}]
         )
 
         # Extract AI response
@@ -33,7 +40,11 @@ def webhook():
 
     except Exception as e:
         print("Error:", e)
-        return jsonify({"fulfillment_response": {"messages": [{"text": {"text": ["Error processing request."]}}]}})
+        return jsonify({
+            "fulfillment_response": {
+                "messages": [{"text": {"text": ["Error processing request."]}}]
+            }
+        })
 
 if __name__ == '__main__':
     app.run(port=3000)
