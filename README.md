@@ -1,4 +1,4 @@
-# **How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone)**
+# **How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :) **
 
 Imagine a robot storyteller that listens to you, understands what kind of story you want, and then tells you an engaging, AI-generated tale—all in real-time. Our project is about making that happen using a humanoid robot (NAO), AI storytelling technology (ChatGPT), and a system that connects them.
 
