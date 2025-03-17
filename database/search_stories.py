@@ -1,8 +1,8 @@
 import os
 import json
 import openai
+import chromadb
 from langchain_openai import OpenAIEmbeddings
-from langchain_chroma import Chroma
 
 # Load API Keys
 openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -11,12 +11,12 @@ if not openai_api_key:
 
 openai.api_key = openai_api_key
 
-# Initialize ChromaDB client
-vector_store = Chroma(
-    collection_name="stories",
-    embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key),
-    persist_directory="./chroma_db"
-)
+# Define the remote ChromaDB server URL
+CHROMA_HOST = "34.118.162.201"  # Replace with your actual external VM IP
+
+# Initialize the ChromaDB client with remote server settings
+chroma_client = chromadb.HttpClient(host=CHROMA_HOST, port=8000)
+vector_store = chroma_client.get_or_create_collection("stories")
 
 MEMORY_FILE = "user_memory.json"
 
@@ -62,23 +62,21 @@ def ask_chatgpt(prompt, user_memory):
     return response.choices[0].message.content
 
 def search_stories(query):
-    """Search for stories similar to the user's request."""
-    results = vector_store.similarity_search(query, k=3)
+    """Search for stories using ChromaDB's REST API."""
+    results = vector_store.query(
+        query_texts=[query],  # ChromaDB expects a list of queries
+        n_results=3  # Number of results to return
+    )
 
-    unique_results = {}
-    for result in results:
-        title = result.metadata.get("title", "Unknown Title")
-        snippet = result.page_content[:200]
-        key = (title, snippet)
+    # Ensure results are properly formatted
+    unique_results = []
+    if results["documents"]:  # Ensure there are results before accessing
+        for i in range(len(results["documents"][0])):
+            title = results["metadatas"][0][i].get("title", "Unknown Title")
+            snippet = results["documents"][0][i][:200]  # Get the first 200 characters
+            unique_results.append({"title": title, "snippet": snippet, "full_text": results["documents"][0][i]})
 
-        if key not in unique_results:
-            unique_results[key] = result
-
-    return list(unique_results.values())
-
-def summarize_story(story_content):
-    """Generate a 1-2 sentence summary of a story."""
-    return ask_chatgpt(f"Summarize this story in 1-2 sentences: {story_content[:500]}", [])
+    return unique_results
 
 def refine_story_request(existing_query):
     """Allow users to refine their request if they want a different kind of story."""
@@ -113,16 +111,17 @@ if matching_stories:
     user_choice = input("Would you like to hear an existing story, or should I make up a new one? (existing/new): ").strip().lower()
 
     if user_choice == "existing":
-        selected_story = matching_stories[0]
-        title = selected_story.metadata.get("title", "Unknown Title")
-        summary = summarize_story(selected_story.page_content)
+        selected_story = matching_stories[0]  # ChromaDB returns a dictionary, not an object
 
-        print(f"\n🎭 I have a story called '{title}'. Here’s a brief summary:\n📜 {summary}")
+        title = selected_story["title"]
+        snippet = selected_story["snippet"]
+
+        print(f"\n🎭 I have a story called '{title}'. Here’s a brief summary:\n📜 {snippet}")
         confirmation = input("Would you like me to tell this story? (yes/no): ").strip().lower()
 
         if confirmation == "yes":
             print(f"\n📖 Here is '{title}':\n")
-            print(selected_story.page_content)
+            print(selected_story["full_text"])
         else:
             story_request = refine_story_request(story_request)
             ai_story = ask_chatgpt(f"Tell me a story about {story_request}", user_memory)

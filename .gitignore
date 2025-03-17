@@ -1,0 +1,6 @@
+# Ignore ChromaDB local database
+chroma_db/
+database/chroma_db/
+*.sqlite3
+naoqi_env/
+database/stories/
