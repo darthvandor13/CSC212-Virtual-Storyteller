@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import chromadb
 
@@ -13,35 +14,47 @@ class QueryRequest(BaseModel):
     query: str
 
 @app.post("/query")
-async def query_chromadb(request: QueryRequest):
-    try:
-        print(f"📥 Received query: {request.query}")
-        results = collection.query(query_texts=[request.query], n_results=3)
-        docs = results.get("documents", [[]])[0]
+async def query_endpoint(request: Request):
+    payload = await request.json()
 
-        # Format the message to send back to the Conversational Agent
-        response_text = "\n\n".join(docs)
+    # Extract parameters from the webhook request
+    try:
+        protagonist = payload["sessionInfo"]["parameters"].get("protagonist", "")
+        theme = payload["sessionInfo"]["parameters"].get("theme", "")
+        moral = payload["sessionInfo"]["parameters"].get("moral", "")
+    except Exception as e:
+        return JSONResponse(
+            content={"fulfillment_response": {"messages": [{"text": {"text": [f"Error parsing input: {str(e)}"]}}]}},
+            status_code=400
+        )
+
+    query_string = f"{protagonist} {theme} {moral}"
+    print(f"📥 Received query: {query_string}")
+
+    try:
+        results = collection.query(query_texts=[query_string], n_results=3)
+        documents = results.get("documents", [[""]])[0]
+        merged_text = "\n\n".join(documents)
 
         return {
             "fulfillment_response": {
                 "messages": [
                     {
                         "text": {
-                            "text": [response_text]
+                            "text": [merged_text]
                         }
                     }
                 ]
             }
         }
-
     except Exception as e:
-        print(f"❌ Error during query: {e}")
+        print(f"❌ Error querying ChromaDB: {e}")
         return {
             "fulfillment_response": {
                 "messages": [
                     {
                         "text": {
-                            "text": ["Sorry, something went wrong with the story search."]
+                            "text": [f"Sorry, something went wrong with the story search. ({str(e)})"]
                         }
                     }
                 ]
