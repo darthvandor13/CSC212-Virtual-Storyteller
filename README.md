@@ -1,14 +1,87 @@
-## Abstract
+# Abstract
 This research project explores the feasibility of integrating generative AI with the NAO humanoid robot to create a virtual storyteller designed for caregivers, educators, and professionals in assistive and therapeutic fields. Studies indicate that individuals with Autism Spectrum Disorder (ASD) often find robots more approachable and predictable than human partners, making robotic interaction a valuable tool for fostering communication and social skills. By leveraging the NAO robot’s built-in audio functionality as the primary mode of interaction, this project examines how robotics and generative AI can enhance interactive storytelling.
 
 The system implementation will utilize Google Dialogflow CX to manage conversational flow and process user input, working in conjunction with a Conversational Retrieval-Augmented Generation (CoRAG) model. CoRAG enhances storytelling continuity by adapting to user choices and thematic preferences over multiple interactions. Instead of generating isolated responses, CoRAG enables the storyteller to retain user preferences and past interactions, ensuring context-aware, progressively enriching narratives. The storyteller will process verbal input—such as user choices, questions, and themes—to generate personalized stories set in engaging fictional worlds, including space adventures and fantasy realms.
 
 Caregivers, educators, and professionals working with ASD may benefit from NAO-integrated storytelling as a tool for engagement and guided learning. By leveraging CoRAG, we aim to develop an accessible and contextually adaptive storytelling platform that fosters meaningful interaction within caregiver-supported environments. Looking ahead, we envision a future where the NAO robot’s mechanical expressiveness further enhances the storytelling experience through emotionally expressive movements, deepening engagement and immersion.
 
-## Research
->>Research goes here<<
+# Research
 
-# **How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :) **
+
+
+## Core Research
+
+### [A Systematic Review of Artificial Intelligence Technologies Used for Story Writing](https://www.researchgate.net/publication/369799144_A_systematic_review_of_artificial_intelligence_technologies_used_for_story_writing)
+**Fang, Xiaoxuan; Ng, Davy Tsz Kit; Leung, Jac; Chu, Samuel. (2023).**  
+*Education and Information Technologies*. https://doi.org/10.1007/s10639-023-11741-5
+
+- Validates AI-driven storytelling for engagement and creativity.
+- Supports the CoRAG (Conversational Retrieval-Augmented Generation) approach.
+- Highlights challenges in coherence, emotion, and user engagement.
+- Encourages human-AI collaboration — AI assists rather than replaces.
+
+
+
+### [Integrating GPT-Based AI into Virtual Patients](https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/)
+**Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).**  
+*JMIR Form Res.* https://doi.org/10.2196/58623
+
+- Demonstrates GPT in real-time verbal interactions.
+- Emphasizes reducing AI response latency for better usability.
+- Aligns with CoRAG and prompt engineering techniques.
+- Notes the role of expressive speech and gestures.
+
+
+
+### [Designing AI-Enabled Games for Children with Autism](https://arxiv.org/abs/2404.15576)
+**Lyu, Y.; An, P.; Zhang, H.; Katsuragawa, K.; Zhao, J. (2024).**  
+*CHI 2024 Workshop*. arXiv:2404.15576
+
+- Applies adaptive storytelling for emotional development.
+- Suggests multimodal feedback via NAO’s movements.
+- Highlights robotic integration potential.
+
+
+
+### [Human-Mediated LLMs for Robotic Intervention](https://arxiv.org/abs/2402.00260)
+**Mishra, R.; Welch, K. C.; Popa, D. O. (2024).**  
+arXiv:2402.00260
+
+- LLMs generate meaningful real-time dialogue.
+- Human-mediated AI ensures appropriateness.
+- Discusses NAO’s speech recognition limitations and therapy potential.
+
+
+
+### [Robots vs Humans: Social Interaction with ASD](https://www.mdpi.com/2076-328X/14/2/131)
+**Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).**  
+*Behavioral Sciences*, 14(2), 131. https://doi.org/10.3390/bs14020131
+
+- Validates robotic storytelling for ASD engagement.
+- Suggests CoRAG enhances structured interaction.
+- Notes ethical concerns like dependency.
+
+
+
+## Supplemental Research
+
+- **[Narrative Ability in Autism](https://doi.org/10.1016/j.rasd.2022.102092)** – Greco et al. (2022)
+- **[Can AI Tell Good Stories?](https://doi.org/10.1093/joc/jqae029)** – Chu & Liu (2024)
+- **[LLMs & NAO for Education](https://doi.org/10.20944/preprints202501.2278.v1)** – Fragakis et al. (2025)
+- **[AI in Creative Writing](https://doi.org/10.5772/intechopen.1008429)** – Suchy (2024)
+- **[A Story of Robots and Autism (YouTube)](https://www.youtube.com/watch?v=nwJsxLOilcc)** – 2024
+- **[Robots Teach Communication (YouTube)](https://www.youtube.com/watch?v=lm3vE7YFsGM)** – 2024
+
+
+
+## Other Resources
+
+- **[gptars YouTube Channel](https://www.youtube.com/@gptars)**
+- **[Dialogflow CX Documentation](https://cloud.google.com/dialogflow/cx/docs)** – Google Cloud
+
+---
+
+# **How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :)**
 
 Imagine a robot storyteller that listens to you, understands what kind of story you want, and then tells you an engaging, AI-generated tale—all in real-time. Our project is about making that happen using a humanoid robot (NAO), AI storytelling technology (ChatGPT), and a system that connects them.
 
