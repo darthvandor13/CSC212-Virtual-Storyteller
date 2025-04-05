@@ -40,3 +40,4 @@ venv/
 naoqi-sdk/
 py3_env/
 
+.env
