@@ -3,11 +3,22 @@ import json
 import openai
 import chromadb
 from langchain_openai import OpenAIEmbeddings
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve OpenAI API key
+api_key = os.getenv("OPENAI_API_KEY")
+
+if not api_key:
+    raise ValueError("❌ OpenAI API key is missing. Set it in a .env file.")
+
+## Commented out older API retrieval
 # Load API Keys
-openai_api_key = os.getenv("OPENAI_API_KEY")
-if not openai_api_key:
-    raise ValueError("❌ OpenAI API key is missing. Set it as an environment variable.")
+#openai_api_key = os.getenv("OPENAI_API_KEY")
+#if not openai_api_key:
+#    raise ValueError("❌ OpenAI API key is missing. Set it as an environment variable.")
 
 openai.api_key = openai_api_key
 
