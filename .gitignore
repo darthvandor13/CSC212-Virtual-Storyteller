@@ -4,3 +4,35 @@ database/chroma_db/
 *.sqlite3
 naoqi_env/
 database/stories/
+.env
+
+# === Python cache ===
+__pycache__/
+*.py[cod]
+
+# === Build/output artifacts ===
+build/
+dist/
+*.egg-info/
+
+# === Jupyter notebooks (optional, if you use them) ===
+.ipynb_checkpoints/
+
+# === Editor/IDE config ===
+.vscode/
+.idea/
+
+# === Logs and temporary files ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === OS junk files ===
+.DS_Store
+Thumbs.db
+
+# Ignore all virtual environments
+venv/
+*/venv/
+

@@ -1,0 +1,24 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
+import chromadb
+
+app = FastAPI()
+
+# ChromaDB connection (adjust host/port if needed)
+chroma_client = chromadb.HttpClient(host="34.118.162.201", port=8000)
+collection = chroma_client.get_collection("stories")
+
+class QueryRequest(BaseModel):
+    query: str
+
+@app.post("/query")
+async def query_chromadb(request: QueryRequest):
+    try:
+        print(f"📥 Received query: {request.query}")
+        results = collection.query(query_texts=[request.query], n_results=3)
+        print(f"🧠 Retrieved documents: {results}")
+        return {"results": results.get("documents", [[]])[0]}
+    except Exception as e:
+        print(f"❌ Error during query: {e}")
+        return {"error": "ChromaDB query failed."}
+
