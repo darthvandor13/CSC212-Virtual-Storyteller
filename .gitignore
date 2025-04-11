@@ -41,3 +41,4 @@ naoqi-sdk/
 py3_env/
 
 .env
+.env*
