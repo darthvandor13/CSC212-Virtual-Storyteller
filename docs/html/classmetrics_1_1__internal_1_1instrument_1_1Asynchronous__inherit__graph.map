@@ -1,0 +1,17 @@
+<map id="metrics._internal.instrument.Asynchronous" name="metrics._internal.instrument.Asynchronous">
+<area shape="rect" id="node1" title=" " alt="" coords="339,300,525,341"/>
+<area shape="rect" id="node4" href="$classmetrics_1_1__internal_1_1instrument_1_1ObservableCounter.html" title=" " alt="" coords="573,136,760,177"/>
+<area shape="rect" id="node8" href="$classmetrics_1_1__internal_1_1instrument_1_1ObservableGauge.html" title=" " alt="" coords="573,300,760,341"/>
+<area shape="rect" id="node12" href="$classmetrics_1_1__internal_1_1instrument_1_1ObservableUpDownCounter.html" title=" " alt="" coords="573,463,760,504"/>
+<area shape="rect" id="node2" href="$classmetrics_1_1__internal_1_1instrument_1_1Instrument.html" title=" " alt="" coords="104,300,291,341"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,307,56,334"/>
+<area shape="rect" id="node5" href="$classmetrics_1_1__internal_1_1instrument_1_1NoOpObservableCounter.html" title=" " alt="" coords="828,5,1015,47"/>
+<area shape="rect" id="node6" href="$classmetrics_1_1__internal_1_1instrument_1_1__ObservableCounter.html" title=" " alt="" coords="828,71,1015,112"/>
+<area shape="rect" id="node7" href="$classmetrics_1_1__internal_1_1instrument_1_1__ProxyObservableCounter.html" title=" " alt="" coords="828,136,1015,177"/>
+<area shape="rect" id="node9" href="$classmetrics_1_1__internal_1_1instrument_1_1NoOpObservableGauge.html" title=" " alt="" coords="828,201,1015,243"/>
+<area shape="rect" id="node10" href="$classmetrics_1_1__internal_1_1instrument_1_1__ObservableGauge.html" title=" " alt="" coords="828,267,1015,308"/>
+<area shape="rect" id="node11" href="$classmetrics_1_1__internal_1_1instrument_1_1__ProxyObservableGauge.html" title=" " alt="" coords="828,332,1015,373"/>
+<area shape="rect" id="node13" href="$classmetrics_1_1__internal_1_1instrument_1_1NoOpObservableUpDownCounter.html" title=" " alt="" coords="812,397,1031,439"/>
+<area shape="rect" id="node14" href="$classmetrics_1_1__internal_1_1instrument_1_1__ObservableUpDownCounter.html" title=" " alt="" coords="825,463,1017,504"/>
+<area shape="rect" id="node15" href="$classmetrics_1_1__internal_1_1instrument_1_1__ProxyObservableUpDownCounter.html" title=" " alt="" coords="808,528,1035,569"/>
+</map>

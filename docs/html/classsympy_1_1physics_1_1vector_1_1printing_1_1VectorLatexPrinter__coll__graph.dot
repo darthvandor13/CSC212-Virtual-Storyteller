@@ -1,0 +1,15 @@
+digraph "sympy.physics.vector.printing.VectorLatexPrinter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sympy.physics.vector.printing.\lVectorLatexPrinter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.printing.latex.Latex\lPrinter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1printing_1_1latex_1_1LatexPrinter.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.printing.printer.Printer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1printing_1_1printer_1_1Printer.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" printmethod" ,fontname="Helvetica"];
+  Node4 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

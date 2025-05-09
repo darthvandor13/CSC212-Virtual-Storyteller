@@ -1,0 +1,26 @@
+digraph "sqlalchemy.dialects.mysql.pyodbc.MySQLDialect_pyodbc"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sqlalchemy.dialects.mysql.pyodbc.\lMySQLDialect_pyodbc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sqlalchemy.connectors.pyodbc.\lPyODBCConnector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1connectors_1_1pyodbc_1_1PyODBCConnector.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Connector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" fast_executemany\nsupports_native_decimal\nsupports_sane_multi\l_rowcount\nsupports_sane_rowcount\l_returning" ,fontname="Helvetica"];
+  Node4 [label="bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" default_paramstyle\ndriver" ,fontname="Helvetica"];
+  Node5 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sqlalchemy.dialects.mysql.base.\lMySQLDialect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1mysql_1_1base_1_1MySQLDialect.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="default.DefaultDialect",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cte_follows_insert\ndiv_is_floordiv\ninline_comments\ninsert_null_pk_still\l_autoincrements\nis_mariadb\nreturns_native_bytes\nsequences_optional\nsupports_alter\nsupports_comments\nsupports_default_metavalue\n..." ,fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" default_paramstyle\nname" ,fontname="Helvetica"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" max_constraint_name\l_length\nmax_identifier_length\nmax_index_name_length" ,fontname="Helvetica"];
+  Node8 [label="int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" supports_statement\l_cache\nsupports_unicode\l_statements" ,fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pyodbc_driver_name" ,fontname="Helvetica"];
+}

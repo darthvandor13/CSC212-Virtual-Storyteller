@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="onnxruntime.quantization.fusions.fusion.\lFusion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1fusions_1_1fusion_1_1Fusion.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="onnxruntime.quantization.fusions.fusion\l_gelu.FusionGelu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1fusions_1_1fusion__gelu_1_1FusionGelu.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="onnxruntime.quantization.fusions.fusion\l_layernorm.FusionLayerNormalization",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1fusions_1_1fusion__layernorm_1_1FusionLayerNormalization.html",tooltip=" "];
+}

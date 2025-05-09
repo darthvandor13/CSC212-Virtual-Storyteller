@@ -1,0 +1,42 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7000 [label="enum.IntEnum",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7000 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="flatbuffers.flexbuffers.\lBitWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classflatbuffers_1_1flexbuffers_1_1BitWidth.html",tooltip=" "];
+  Node7000 -> Node7002 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7002 [label="flatbuffers.flexbuffers.Type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classflatbuffers_1_1flexbuffers_1_1Type.html",tooltip=" "];
+  Node7000 -> Node7003 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7003 [label="grpc.Compression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgrpc_1_1Compression.html",tooltip=" "];
+  Node7000 -> Node7004 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7004 [label="grpc.aio._call._APIStyle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgrpc_1_1aio_1_1__call_1_1__APIStyle.html",tooltip=" "];
+  Node7000 -> Node7005 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7005 [label="httpcore._async.http11.HTTPConnection\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhttpcore_1_1__async_1_1http11_1_1HTTPConnectionState.html",tooltip=" "];
+  Node7000 -> Node7006 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7006 [label="httpcore._async.http2.HTTPConnection\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhttpcore_1_1__async_1_1http2_1_1HTTPConnectionState.html",tooltip=" "];
+  Node7000 -> Node7007 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7007 [label="httpcore._sync.http11.HTTPConnection\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhttpcore_1_1__sync_1_1http11_1_1HTTPConnectionState.html",tooltip=" "];
+  Node7000 -> Node7008 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7008 [label="httpcore._sync.http2.HTTPConnection\lState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhttpcore_1_1__sync_1_1http2_1_1HTTPConnectionState.html",tooltip=" "];
+  Node7000 -> Node7009 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7009 [label="packaging._elffile.EIClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpackaging_1_1__elffile_1_1EIClass.html",tooltip=" "];
+  Node7000 -> Node7010 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7010 [label="packaging._elffile.EIData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpackaging_1_1__elffile_1_1EIData.html",tooltip=" "];
+  Node7000 -> Node7011 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7011 [label="packaging._elffile.EMachine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpackaging_1_1__elffile_1_1EMachine.html",tooltip=" "];
+  Node7000 -> Node7012 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7012 [label="test_casting_unittests.Casting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__casting__unittests_1_1Casting.html",tooltip=" "];
+  Node7000 -> Node7013 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7013 [label="typing_extensions.Format",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtyping__extensions_1_1Format.html",tooltip=" "];
+  Node7000 -> Node7014 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7014 [label="websockets.frames.CloseCode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwebsockets_1_1frames_1_1CloseCode.html",tooltip=" "];
+  Node7000 -> Node7015 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7015 [label="websockets.frames.Opcode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwebsockets_1_1frames_1_1Opcode.html",tooltip=" "];
+  Node7000 -> Node7016 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7016 [label="websockets.protocol.Side",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwebsockets_1_1protocol_1_1Side.html",tooltip=" "];
+  Node7000 -> Node7017 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7017 [label="websockets.protocol.State",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwebsockets_1_1protocol_1_1State.html",tooltip=" "];
+}

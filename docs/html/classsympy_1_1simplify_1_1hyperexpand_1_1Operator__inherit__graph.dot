@@ -1,0 +1,50 @@
+digraph "sympy.simplify.hyperexpand.Operator"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.simplify.hyperexpand.\lOperator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.simplify.hyperexpand.\lMeijerShiftA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerShiftA.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.simplify.hyperexpand.\lMeijerShiftB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerShiftB.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.simplify.hyperexpand.\lMeijerShiftC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerShiftC.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.simplify.hyperexpand.\lMeijerShiftD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerShiftD.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sympy.simplify.hyperexpand.\lMeijerUnShiftA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerUnShiftA.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sympy.simplify.hyperexpand.\lMeijerUnShiftB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerUnShiftB.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sympy.simplify.hyperexpand.\lMeijerUnShiftC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerUnShiftC.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sympy.simplify.hyperexpand.\lMeijerUnShiftD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MeijerUnShiftD.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sympy.simplify.hyperexpand.\lMultOperator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1MultOperator.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sympy.simplify.hyperexpand.\lReduceOrder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1ReduceOrder.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sympy.simplify.hyperexpand.\lShiftA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1ShiftA.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="sympy.simplify.hyperexpand.\lShiftB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1ShiftB.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="sympy.simplify.hyperexpand.\lUnShiftA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1UnShiftA.html",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="sympy.simplify.hyperexpand.\lUnShiftB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1simplify_1_1hyperexpand_1_1UnShiftB.html",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

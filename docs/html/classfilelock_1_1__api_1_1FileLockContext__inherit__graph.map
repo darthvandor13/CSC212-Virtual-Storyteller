@@ -1,0 +1,6 @@
+<map id="filelock._api.FileLockContext" name="filelock._api.FileLockContext">
+<area shape="rect" id="node1" title=" " alt="" coords="91,5,281,32"/>
+<area shape="rect" id="node2" href="$classfilelock_1_1__api_1_1ThreadLocalFileContext.html" title=" " alt="" coords="5,80,172,121"/>
+<area shape="rect" id="node3" href="$classfilelock_1_1asyncio_1_1AsyncFileLockContext.html" title=" " alt="" coords="196,80,371,121"/>
+<area shape="rect" id="node4" href="$classfilelock_1_1asyncio_1_1AsyncThreadLocalFileContext.html" title=" " alt="" coords="187,169,380,211"/>
+</map>

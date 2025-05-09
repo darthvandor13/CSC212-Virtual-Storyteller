@@ -1,0 +1,29 @@
+digraph "requests.auth.AuthBase"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="requests.auth.AuthBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="requests.auth.HTTPBasicAuth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests_1_1auth_1_1HTTPBasicAuth.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="requests.auth.HTTPProxyAuth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests_1_1auth_1_1HTTPProxyAuth.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="requests.auth.HTTPDigestAuth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests_1_1auth_1_1HTTPDigestAuth.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="requests_toolbelt.auth.\l_digest_auth_compat._HTTPDigestAuth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests__toolbelt_1_1auth_1_1__digest__auth__compat_1_1__HTTPDigestAuth.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="requests_oauthlib.oauth1\l_auth.OAuth1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests__oauthlib_1_1oauth1__auth_1_1OAuth1.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="requests_oauthlib.oauth2\l_auth.OAuth2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests__oauthlib_1_1oauth2__auth_1_1OAuth2.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="requests_toolbelt.auth.handler.\lAuthHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests__toolbelt_1_1auth_1_1handler_1_1AuthHandler.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="requests_toolbelt.auth.handler.\lNullAuthStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrequests__toolbelt_1_1auth_1_1handler_1_1NullAuthStrategy.html",tooltip=" "];
+}

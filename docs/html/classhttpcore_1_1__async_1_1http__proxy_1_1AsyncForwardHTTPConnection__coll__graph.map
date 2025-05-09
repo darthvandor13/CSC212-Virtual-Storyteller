@@ -1,0 +1,5 @@
+<map id="httpcore._async.http_proxy.AsyncForwardHTTPConnection" name="httpcore._async.http_proxy.AsyncForwardHTTPConnection">
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,253,225"/>
+<area shape="rect" id="node2" href="$classhttpcore_1_1__async_1_1interfaces_1_1AsyncConnectionInterface.html" title=" " alt="" coords="39,95,219,136"/>
+<area shape="rect" id="node3" href="$classhttpcore_1_1__async_1_1interfaces_1_1AsyncRequestInterface.html" title=" " alt="" coords="39,5,219,47"/>
+</map>

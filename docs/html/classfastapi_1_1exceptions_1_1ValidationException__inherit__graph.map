@@ -1,0 +1,7 @@
+<map id="fastapi.exceptions.ValidationException" name="fastapi.exceptions.ValidationException">
+<area shape="rect" id="node1" title=" " alt="" coords="133,71,321,112"/>
+<area shape="rect" id="node3" href="$classfastapi_1_1exceptions_1_1RequestValidationError.html" title=" " alt="" coords="378,5,559,47"/>
+<area shape="rect" id="node4" href="$classfastapi_1_1exceptions_1_1ResponseValidationError.html" title=" " alt="" coords="373,71,564,112"/>
+<area shape="rect" id="node5" href="$classfastapi_1_1exceptions_1_1WebSocketRequestValidationError.html" title=" " alt="" coords="369,136,568,177"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,78,85,105"/>
+</map>

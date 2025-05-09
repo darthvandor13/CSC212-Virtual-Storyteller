@@ -1,0 +1,24 @@
+<map id="cryptography.hazmat.primitives.asymmetric.ec.EllipticCurve" name="cryptography.hazmat.primitives.asymmetric.ec.EllipticCurve">
+<area shape="rect" id="node1" title=" " alt="" coords="157,593,453,635"/>
+<area shape="rect" id="node4" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1BrainpoolP256R1.html" title=" " alt="" coords="501,5,797,47"/>
+<area shape="rect" id="node5" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1BrainpoolP384R1.html" title=" " alt="" coords="501,71,797,112"/>
+<area shape="rect" id="node6" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1BrainpoolP512R1.html" title=" " alt="" coords="501,136,797,177"/>
+<area shape="rect" id="node7" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECP192R1.html" title=" " alt="" coords="501,201,797,243"/>
+<area shape="rect" id="node8" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECP224R1.html" title=" " alt="" coords="501,267,797,308"/>
+<area shape="rect" id="node9" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECP256K1.html" title=" " alt="" coords="501,332,797,373"/>
+<area shape="rect" id="node10" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECP256R1.html" title=" " alt="" coords="501,397,797,439"/>
+<area shape="rect" id="node11" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECP384R1.html" title=" " alt="" coords="501,463,797,504"/>
+<area shape="rect" id="node12" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECP521R1.html" title=" " alt="" coords="501,528,797,569"/>
+<area shape="rect" id="node13" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT163K1.html" title=" " alt="" coords="501,593,797,635"/>
+<area shape="rect" id="node14" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT163R2.html" title=" " alt="" coords="501,659,797,700"/>
+<area shape="rect" id="node15" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT233K1.html" title=" " alt="" coords="501,724,797,765"/>
+<area shape="rect" id="node16" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT233R1.html" title=" " alt="" coords="501,789,797,831"/>
+<area shape="rect" id="node17" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT283K1.html" title=" " alt="" coords="501,855,797,896"/>
+<area shape="rect" id="node18" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT283R1.html" title=" " alt="" coords="501,920,797,961"/>
+<area shape="rect" id="node19" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT409K1.html" title=" " alt="" coords="501,985,797,1027"/>
+<area shape="rect" id="node20" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT409R1.html" title=" " alt="" coords="501,1051,797,1092"/>
+<area shape="rect" id="node21" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT571K1.html" title=" " alt="" coords="501,1116,797,1157"/>
+<area shape="rect" id="node22" href="$classcryptography_1_1hazmat_1_1primitives_1_1asymmetric_1_1ec_1_1SECT571R1.html" title=" " alt="" coords="501,1181,797,1223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="16,575,99,602"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,626,109,653"/>
+</map>

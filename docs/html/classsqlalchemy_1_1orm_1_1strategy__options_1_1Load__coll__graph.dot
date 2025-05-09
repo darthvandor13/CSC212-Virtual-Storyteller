@@ -1,0 +1,27 @@
+digraph "sqlalchemy.orm.strategy_options.Load"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sqlalchemy.orm.strategy\l_options.Load",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sqlalchemy.orm.strategy\l_options._AbstractLoad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1strategy__options_1_1__AbstractLoad.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="traversals::GenerativeOn\lTraversal",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sqlalchemy.orm.interfaces.\lLoaderOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1interfaces_1_1LoaderOption.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sqlalchemy.orm.interfaces.\lCompileStateOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1interfaces_1_1CompileStateOption.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sqlalchemy.sql.cache\l_key.HasCacheKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1sql_1_1cache__key_1_1HasCacheKey.html",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sqlalchemy.orm.interfaces.\lORMOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1interfaces_1_1ORMOption.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sqlalchemy.sql.base.Executable\lOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1sql_1_1base_1_1ExecutableOption.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sqlalchemy.sql.traversals.\lHasCopyInternals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1sql_1_1traversals_1_1HasCopyInternals.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sqlalchemy.sql.visitors.\lHasTraverseInternals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1sql_1_1visitors_1_1HasTraverseInternals.html",tooltip=" "];
+  Node11 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" propagate_to_loaders" ,fontname="Helvetica"];
+  Node11 [label="bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

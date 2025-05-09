@@ -1,0 +1,8 @@
+<map id="openai._streaming.AsyncStream" name="openai._streaming.AsyncStream">
+<area shape="rect" id="node1" title=" " alt="" coords="59,80,269,107"/>
+<area shape="rect" id="node4" href="$classopenai_1_1__base__client_1_1AsyncAPIClient.html" title=" " alt="" coords="12,155,191,196"/>
+<area shape="rect" id="node6" href="$classopenai_1_1lib_1_1azure_1_1AsyncAzureOpenAI.html" title=" " alt="" coords="70,319,258,360"/>
+<area shape="rect" id="node2" title=" " alt="" coords="92,5,159,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="183,5,222,32"/>
+<area shape="rect" id="node5" href="$classopenai_1_1__client_1_1AsyncOpenAI.html" title=" " alt="" coords="5,244,192,271"/>
+</map>

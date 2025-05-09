@@ -1,0 +1,10 @@
+<map id="pydantic.v1.errors._NumberBoundError" name="pydantic.v1.errors._NumberBoundError">
+<area shape="rect" id="node1" title=" " alt="" coords="464,104,604,145"/>
+<area shape="rect" id="node5" href="$classpydantic_1_1v1_1_1errors_1_1NumberNotGeError.html" title=" " alt="" coords="652,5,828,47"/>
+<area shape="rect" id="node6" href="$classpydantic_1_1v1_1_1errors_1_1NumberNotGtError.html" title=" " alt="" coords="652,71,828,112"/>
+<area shape="rect" id="node7" href="$classpydantic_1_1v1_1_1errors_1_1NumberNotLeError.html" title=" " alt="" coords="652,136,828,177"/>
+<area shape="rect" id="node8" href="$classpydantic_1_1v1_1_1errors_1_1NumberNotLtError.html" title=" " alt="" coords="652,201,828,243"/>
+<area shape="rect" id="node2" href="$classpydantic_1_1v1_1_1errors_1_1PydanticValueError.html" title=" " alt="" coords="235,104,416,145"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1v1_1_1errors_1_1PydanticErrorMixin.html" title=" " alt="" coords="5,75,187,116"/>
+<area shape="rect" id="node4" title=" " alt="" coords="55,141,137,167"/>
+</map>

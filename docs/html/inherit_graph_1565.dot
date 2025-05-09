@@ -1,0 +1,22 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9822 [label="NotImplementedError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9822 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="PIL.BlpImagePlugin.BLPFormat\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1BlpImagePlugin_1_1BLPFormatError.html",tooltip=" "];
+  Node9822 -> Node9824 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9824 [label="kubernetes.dynamic.client.\lVersionNotSupportedError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classkubernetes_1_1dynamic_1_1client_1_1VersionNotSupportedError.html",tooltip=" "];
+  Node9822 -> Node9825 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9825 [label="sympy.concrete.expr\l_with_intlimits.ReorderError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1concrete_1_1expr__with__intlimits_1_1ReorderError.html",tooltip=" "];
+  Node9822 -> Node9826 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9826 [label="sympy.integrals.transforms.\lIntegralTransformError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1integrals_1_1transforms_1_1IntegralTransformError.html",tooltip="Helpers / Utilities."];
+  Node9822 -> Node9827 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9827 [label="sympy.multipledispatch.dispatcher.\lMDNotImplementedError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1multipledispatch_1_1dispatcher_1_1MDNotImplementedError.html",tooltip=" "];
+  Node9822 -> Node9828 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9828 [label="sympy.printing.codeprinter.\lPrintMethodNotImplementedError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1printing_1_1codeprinter_1_1PrintMethodNotImplementedError.html",tooltip=" "];
+  Node9822 -> Node9829 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9829 [label="sympy.solvers.ode.single.\lODEMatchError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1solvers_1_1ode_1_1single_1_1ODEMatchError.html",tooltip=" "];
+}

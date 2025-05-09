@@ -1,0 +1,5 @@
+<map id="oauthlib.openid.connect.core.endpoints.userinfo.UserInfoEndpoint" name="oauthlib.openid.connect.core.endpoints.userinfo.UserInfoEndpoint">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,308,136"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="21,184,292,225"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1base_1_1BaseEndpoint.html" title=" " alt="" coords="30,5,283,47"/>
+</map>

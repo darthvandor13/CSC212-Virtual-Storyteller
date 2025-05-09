@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6268 [label="GeneralName",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6268 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="pyasn1_modules.rfc5275.DeleteGL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpyasn1__modules_1_1rfc5275_1_1DeleteGL.html",tooltip=" "];
+  Node6268 -> Node6270 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6270 [label="pyasn1_modules.rfc5275.GLKCompromise",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpyasn1__modules_1_1rfc5275_1_1GLKCompromise.html",tooltip=" "];
+}

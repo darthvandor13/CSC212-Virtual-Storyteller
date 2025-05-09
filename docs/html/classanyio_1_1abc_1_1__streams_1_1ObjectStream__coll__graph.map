@@ -1,0 +1,16 @@
+<map id="anyio.abc._streams.ObjectStream" name="anyio.abc._streams.ObjectStream">
+<area shape="rect" id="node1" title=" " alt="" coords="867,124,1045,165"/>
+<area shape="rect" id="node2" href="$classanyio_1_1abc_1_1__streams_1_1ObjectReceiveStream.html" title=" " alt="" coords="630,5,809,47"/>
+<area shape="rect" id="node3" href="$classanyio_1_1abc_1_1__streams_1_1UnreliableObjectReceiveStream.html" title=" " alt="" coords="373,113,572,155"/>
+<area shape="rect" id="node14" href="$classanyio_1_1abc_1_1__streams_1_1UnreliableObjectStream.html" title=" " alt="" coords="620,243,819,284"/>
+<area shape="rect" id="node4" title=" " alt="" coords="197,121,264,147"/>
+<area shape="rect" id="node12" href="$classanyio_1_1abc_1_1__streams_1_1UnreliableObjectSendStream.html" title=" " alt="" coords="373,237,572,279"/>
+<area shape="rect" id="node5" title=" " alt="" coords="205,51,256,78"/>
+<area shape="rect" id="node6" href="$classanyio_1_1abc_1_1__resources_1_1AsyncResource.html" title=" " alt="" coords="137,172,324,213"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,154,88,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="7,205,86,231"/>
+<area shape="rect" id="node9" href="$classanyio_1_1__core_1_1__typedattr_1_1TypedAttributeProvider.html" title=" " alt="" coords="136,237,325,279"/>
+<area shape="rect" id="node10" title=" " alt="" coords="441,179,504,206"/>
+<area shape="rect" id="node11" href="$classanyio_1_1abc_1_1__streams_1_1ObjectSendStream.html" title=" " alt="" coords="630,308,809,349"/>
+<area shape="rect" id="node13" title=" " alt="" coords="194,309,267,335"/>
+</map>

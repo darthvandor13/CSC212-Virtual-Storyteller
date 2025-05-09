@@ -1,0 +1,14 @@
+digraph "sqlalchemy.dialects.oracle.types._OracleDateLiteralRender"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sqlalchemy.dialects.oracle.types.\l_OracleDateLiteralRender",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sqlalchemy.dialects.oracle.cx\l_oracle._CXOracleTIMESTAMP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1oracle_1_1cx__oracle_1_1__CXOracleTIMESTAMP.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sqlalchemy.dialects.oracle.types.DATE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1oracle_1_1types_1_1DATE.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sqlalchemy.dialects.oracle.types.\l_OracleDate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1oracle_1_1types_1_1__OracleDate.html",tooltip=" "];
+}

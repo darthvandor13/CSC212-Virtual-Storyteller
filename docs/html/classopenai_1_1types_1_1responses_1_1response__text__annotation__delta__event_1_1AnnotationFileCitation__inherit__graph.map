@@ -1,0 +1,8 @@
+<map id="openai.types.responses.response_text_annotation_delta_event.AnnotationFileCitation" name="openai.types.responses.response_text_annotation_delta_event.AnnotationFileCitation">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,264,300"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="43,169,226,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="49,95,221,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="25,13,108,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="133,5,275,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="300,5,481,47"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="langchain_core.retrievers.BaseRetriever" name="langchain_core.retrievers.BaseRetriever">
+<area shape="rect" id="node1" title=" " alt="" coords="197,315,368,357"/>
+<area shape="rect" id="node6" href="$classlangchain_1_1retrievers_1_1contextual__compression_1_1ContextualCompressionRetriever.html" title=" " alt="" coords="416,5,663,61"/>
+<area shape="rect" id="node7" href="$classlangchain_1_1retrievers_1_1ensemble_1_1EnsembleRetriever.html" title=" " alt="" coords="440,86,639,127"/>
+<area shape="rect" id="node8" href="$classlangchain_1_1retrievers_1_1merger__retriever_1_1MergerRetriever.html" title=" " alt="" coords="450,151,629,193"/>
+<area shape="rect" id="node9" href="$classlangchain_1_1retrievers_1_1multi__query_1_1MultiQueryRetriever.html" title=" " alt="" coords="450,217,629,258"/>
+<area shape="rect" id="node10" href="$classlangchain_1_1retrievers_1_1multi__vector_1_1MultiVectorRetriever.html" title=" " alt="" coords="446,282,633,323"/>
+<area shape="rect" id="node12" href="$classlangchain_1_1retrievers_1_1re__phraser_1_1RePhraseQueryRetriever.html" title=" " alt="" coords="429,347,650,389"/>
+<area shape="rect" id="node13" href="$classlangchain_1_1retrievers_1_1self__query_1_1base_1_1SelfQueryRetriever.html" title=" " alt="" coords="436,413,643,454"/>
+<area shape="rect" id="node14" href="$classlangchain_1_1retrievers_1_1time__weighted__retriever_1_1TimeWeightedVectorStoreRetriever.html" title=" " alt="" coords="429,479,650,535"/>
+<area shape="rect" id="node15" href="$classlangchain__core_1_1indexing_1_1base_1_1DocumentIndex.html" title=" " alt="" coords="441,559,638,601"/>
+<area shape="rect" id="node17" href="$classlangchain__core_1_1vectorstores_1_1base_1_1VectorStoreRetriever.html" title=" " alt="" coords="429,625,650,666"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,247,149,273"/>
+<area shape="rect" id="node3" title=" " alt="" coords="25,297,129,324"/>
+<area shape="rect" id="node4" title=" " alt="" coords="20,348,135,375"/>
+<area shape="rect" id="node5" title=" " alt="" coords="52,399,103,425"/>
+<area shape="rect" id="node11" href="$classlangchain_1_1retrievers_1_1parent__document__retriever_1_1ParentDocumentRetriever.html" title=" " alt="" coords="711,275,952,331"/>
+<area shape="rect" id="node16" href="$classlangchain__core_1_1indexing_1_1in__memory_1_1InMemoryDocumentIndex.html" title=" " alt="" coords="717,559,945,601"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="httpx._exceptions.ProtocolError" name="httpx._exceptions.ProtocolError">
+<area shape="rect" id="node1" title=" " alt="" coords="129,333,306,375"/>
+<area shape="rect" id="node6" href="$classhttpx_1_1__exceptions_1_1LocalProtocolError.html" title=" " alt="" coords="5,423,213,464"/>
+<area shape="rect" id="node7" href="$classhttpx_1_1__exceptions_1_1RemoteProtocolError.html" title=" " alt="" coords="238,423,413,464"/>
+<area shape="rect" id="node2" href="$classhttpx_1_1__exceptions_1_1TransportError.html" title=" " alt="" coords="125,244,309,285"/>
+<area shape="rect" id="node3" href="$classhttpx_1_1__exceptions_1_1RequestError.html" title=" " alt="" coords="128,155,307,196"/>
+<area shape="rect" id="node4" href="$classhttpx_1_1__exceptions_1_1HTTPError.html" title=" " alt="" coords="121,80,313,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="177,5,257,32"/>
+</map>

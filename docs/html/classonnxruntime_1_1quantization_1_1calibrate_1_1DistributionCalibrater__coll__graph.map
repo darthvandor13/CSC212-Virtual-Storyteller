@@ -1,0 +1,5 @@
+<map id="onnxruntime.quantization.calibrate.DistributionCalibrater" name="onnxruntime.quantization.calibrate.DistributionCalibrater">
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,229,225"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1HistogramCalibrater.html" title=" " alt="" coords="5,95,229,136"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1CalibraterBase.html" title=" " alt="" coords="5,5,229,47"/>
+</map>

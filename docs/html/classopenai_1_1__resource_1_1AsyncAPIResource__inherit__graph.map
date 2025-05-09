@@ -1,0 +1,43 @@
+<map id="openai._resource.AsyncAPIResource" name="openai._resource.AsyncAPIResource">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1091,245,1118"/>
+<area shape="rect" id="node2" href="$classopenai_1_1resources_1_1audio_1_1audio_1_1AsyncAudio.html" title=" " alt="" coords="347,5,542,47"/>
+<area shape="rect" id="node3" href="$classopenai_1_1resources_1_1audio_1_1speech_1_1AsyncSpeech.html" title=" " alt="" coords="341,71,548,112"/>
+<area shape="rect" id="node4" href="$classopenai_1_1resources_1_1audio_1_1transcriptions_1_1AsyncTranscriptions.html" title=" " alt="" coords="323,136,566,177"/>
+<area shape="rect" id="node5" href="$classopenai_1_1resources_1_1audio_1_1translations_1_1AsyncTranslations.html" title=" " alt="" coords="329,201,560,243"/>
+<area shape="rect" id="node6" href="$classopenai_1_1resources_1_1batches_1_1AsyncBatches.html" title=" " alt="" coords="357,267,532,308"/>
+<area shape="rect" id="node7" href="$classopenai_1_1resources_1_1beta_1_1assistants_1_1AsyncAssistants.html" title=" " alt="" coords="335,332,554,373"/>
+<area shape="rect" id="node8" href="$classopenai_1_1resources_1_1beta_1_1beta_1_1AsyncBeta.html" title=" " alt="" coords="353,397,536,439"/>
+<area shape="rect" id="node10" href="$classopenai_1_1resources_1_1beta_1_1chat_1_1chat_1_1AsyncChat.html" title=" " alt="" coords="339,463,551,504"/>
+<area shape="rect" id="node12" href="$classopenai_1_1resources_1_1beta_1_1chat_1_1completions_1_1AsyncCompletions.html" title=" " alt="" coords="316,528,573,569"/>
+<area shape="rect" id="node14" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1realtime_1_1AsyncRealtime.html" title=" " alt="" coords="317,593,572,635"/>
+<area shape="rect" id="node15" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1sessions_1_1AsyncSessions.html" title=" " alt="" coords="315,659,575,700"/>
+<area shape="rect" id="node16" href="$classopenai_1_1resources_1_1beta_1_1threads_1_1messages_1_1AsyncMessages.html" title=" " alt="" coords="312,724,577,765"/>
+<area shape="rect" id="node17" href="$classopenai_1_1resources_1_1beta_1_1threads_1_1runs_1_1runs_1_1AsyncRuns.html" title=" " alt="" coords="315,789,574,831"/>
+<area shape="rect" id="node18" href="$classopenai_1_1resources_1_1beta_1_1threads_1_1runs_1_1steps_1_1AsyncSteps.html" title=" " alt="" coords="311,855,578,896"/>
+<area shape="rect" id="node19" href="$classopenai_1_1resources_1_1beta_1_1threads_1_1threads_1_1AsyncThreads.html" title=" " alt="" coords="321,920,569,961"/>
+<area shape="rect" id="node20" href="$classopenai_1_1resources_1_1chat_1_1chat_1_1AsyncChat.html" title=" " alt="" coords="353,985,536,1027"/>
+<area shape="rect" id="node22" href="$classopenai_1_1resources_1_1chat_1_1completions_1_1completions_1_1AsyncCompletions.html" title=" " alt="" coords="293,1051,596,1092"/>
+<area shape="rect" id="node24" href="$classopenai_1_1resources_1_1chat_1_1completions_1_1messages_1_1AsyncMessages.html" title=" " alt="" coords="299,1116,591,1157"/>
+<area shape="rect" id="node25" href="$classopenai_1_1resources_1_1completions_1_1AsyncCompletions.html" title=" " alt="" coords="345,1181,544,1223"/>
+<area shape="rect" id="node26" href="$classopenai_1_1resources_1_1embeddings_1_1AsyncEmbeddings.html" title=" " alt="" coords="345,1247,544,1288"/>
+<area shape="rect" id="node28" href="$classopenai_1_1resources_1_1files_1_1AsyncFiles.html" title=" " alt="" coords="349,1312,540,1353"/>
+<area shape="rect" id="node29" href="$classopenai_1_1resources_1_1fine__tuning_1_1fine__tuning_1_1AsyncFineTuning.html" title=" " alt="" coords="346,1378,543,1434"/>
+<area shape="rect" id="node30" href="$classopenai_1_1resources_1_1fine__tuning_1_1jobs_1_1checkpoints_1_1AsyncCheckpoints.html" title=" " alt="" coords="341,1458,548,1514"/>
+<area shape="rect" id="node31" href="$classopenai_1_1resources_1_1fine__tuning_1_1jobs_1_1jobs_1_1AsyncJobs.html" title=" " alt="" coords="350,1539,539,1580"/>
+<area shape="rect" id="node32" href="$classopenai_1_1resources_1_1images_1_1AsyncImages.html" title=" " alt="" coords="359,1604,530,1645"/>
+<area shape="rect" id="node33" href="$classopenai_1_1resources_1_1models_1_1AsyncModels.html" title=" " alt="" coords="359,1669,530,1711"/>
+<area shape="rect" id="node34" href="$classopenai_1_1resources_1_1moderations_1_1AsyncModerations.html" title=" " alt="" coords="345,1735,545,1776"/>
+<area shape="rect" id="node35" href="$classopenai_1_1resources_1_1responses_1_1input__items_1_1AsyncInputItems.html" title=" " alt="" coords="336,1800,553,1841"/>
+<area shape="rect" id="node36" href="$classopenai_1_1resources_1_1responses_1_1responses_1_1AsyncResponses.html" title=" " alt="" coords="318,1865,571,1907"/>
+<area shape="rect" id="node37" href="$classopenai_1_1resources_1_1uploads_1_1parts_1_1AsyncParts.html" title=" " alt="" coords="341,1931,548,1972"/>
+<area shape="rect" id="node38" href="$classopenai_1_1resources_1_1uploads_1_1uploads_1_1AsyncUploads.html" title=" " alt="" coords="333,1996,556,2037"/>
+<area shape="rect" id="node39" href="$classopenai_1_1resources_1_1vector__stores_1_1file__batches_1_1AsyncFileBatches.html" title=" " alt="" coords="344,2062,545,2118"/>
+<area shape="rect" id="node40" href="$classopenai_1_1resources_1_1vector__stores_1_1files_1_1AsyncFiles.html" title=" " alt="" coords="363,2143,526,2184"/>
+<area shape="rect" id="node41" href="$classopenai_1_1resources_1_1vector__stores_1_1vector__stores_1_1AsyncVectorStores.html" title=" " alt="" coords="331,2209,558,2265"/>
+<area shape="rect" id="node9" href="$classposthog_1_1ai_1_1openai_1_1openai__async_1_1WrappedBeta.html" title=" " alt="" coords="670,397,837,439"/>
+<area shape="rect" id="node11" href="$classposthog_1_1ai_1_1openai_1_1openai__async_1_1WrappedBetaChat.html" title=" " alt="" coords="666,463,841,504"/>
+<area shape="rect" id="node13" href="$classposthog_1_1ai_1_1openai_1_1openai__async_1_1WrappedBetaCompletions.html" title=" " alt="" coords="644,528,863,569"/>
+<area shape="rect" id="node21" href="$classposthog_1_1ai_1_1openai_1_1openai__async_1_1WrappedChat.html" title=" " alt="" coords="670,985,837,1027"/>
+<area shape="rect" id="node23" href="$classposthog_1_1ai_1_1openai_1_1openai__async_1_1WrappedCompletions.html" title=" " alt="" coords="657,1051,849,1092"/>
+<area shape="rect" id="node27" href="$classposthog_1_1ai_1_1openai_1_1openai__async_1_1WrappedEmbeddings.html" title=" " alt="" coords="658,1247,849,1288"/>
+</map>

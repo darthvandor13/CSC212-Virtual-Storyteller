@@ -1,0 +1,11 @@
+<map id="oauthlib.oauth2.rfc6749.errors.InvalidRequestFatalError" name="oauthlib.oauth2.rfc6749.errors.InvalidRequestFatalError">
+<area shape="rect" id="node1" title=" " alt="" coords="627,136,825,177"/>
+<area shape="rect" id="node5" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1InvalidClientIdError.html" title=" " alt="" coords="873,5,1072,47"/>
+<area shape="rect" id="node6" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1InvalidRedirectURIError.html" title=" " alt="" coords="873,71,1072,112"/>
+<area shape="rect" id="node7" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1MismatchingRedirectURIError.html" title=" " alt="" coords="873,136,1072,177"/>
+<area shape="rect" id="node8" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1MissingClientIdError.html" title=" " alt="" coords="873,201,1072,243"/>
+<area shape="rect" id="node9" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1MissingRedirectURIError.html" title=" " alt="" coords="873,267,1072,308"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1FatalClientError.html" title=" " alt="" coords="380,136,579,177"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1OAuth2Error.html" title=" " alt="" coords="133,136,332,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,143,85,170"/>
+</map>

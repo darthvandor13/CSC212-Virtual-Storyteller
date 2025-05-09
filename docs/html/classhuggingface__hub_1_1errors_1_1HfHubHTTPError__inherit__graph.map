@@ -1,0 +1,11 @@
+<map id="huggingface_hub.errors.HfHubHTTPError" name="huggingface_hub.errors.HfHubHTTPError">
+<area shape="rect" id="node1" title=" " alt="" coords="139,136,313,177"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1errors_1_1BadRequestError.html" title=" " alt="" coords="381,5,565,47"/>
+<area shape="rect" id="node4" href="$classhuggingface__hub_1_1errors_1_1DisabledRepoError.html" title=" " alt="" coords="367,71,579,112"/>
+<area shape="rect" id="node5" href="$classhuggingface__hub_1_1errors_1_1EntryNotFoundError.html" title=" " alt="" coords="377,136,569,177"/>
+<area shape="rect" id="node7" href="$classhuggingface__hub_1_1errors_1_1RepositoryNotFoundError.html" title=" " alt="" coords="361,201,585,243"/>
+<area shape="rect" id="node9" href="$classhuggingface__hub_1_1errors_1_1RevisionNotFoundError.html" title=" " alt="" coords="367,267,579,308"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,143,91,170"/>
+<area shape="rect" id="node6" href="$classhuggingface__hub_1_1errors_1_1LocalEntryNotFoundError.html" title=" " alt="" coords="635,136,827,177"/>
+<area shape="rect" id="node8" href="$classhuggingface__hub_1_1errors_1_1GatedRepoError.html" title=" " alt="" coords="633,201,829,243"/>
+</map>

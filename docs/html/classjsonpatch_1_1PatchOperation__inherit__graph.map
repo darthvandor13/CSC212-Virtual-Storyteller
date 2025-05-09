@@ -1,0 +1,10 @@
+<map id="jsonpatch.PatchOperation" name="jsonpatch.PatchOperation">
+<area shape="rect" id="node1" title=" " alt="" coords="111,132,283,159"/>
+<area shape="rect" id="node3" href="$classjsonpatch_1_1AddOperation.html" title=" " alt="" coords="343,5,505,32"/>
+<area shape="rect" id="node4" href="$classjsonpatch_1_1CopyOperation.html" title=" " alt="" coords="339,56,509,83"/>
+<area shape="rect" id="node5" href="$classjsonpatch_1_1MoveOperation.html" title=" " alt="" coords="339,107,509,133"/>
+<area shape="rect" id="node6" href="$classjsonpatch_1_1RemoveOperation.html" title=" " alt="" coords="331,157,517,184"/>
+<area shape="rect" id="node7" href="$classjsonpatch_1_1ReplaceOperation.html" title=" " alt="" coords="331,208,517,235"/>
+<area shape="rect" id="node8" href="$classjsonpatch_1_1TestOperation.html" title=" " alt="" coords="343,259,505,285"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,132,63,159"/>
+</map>

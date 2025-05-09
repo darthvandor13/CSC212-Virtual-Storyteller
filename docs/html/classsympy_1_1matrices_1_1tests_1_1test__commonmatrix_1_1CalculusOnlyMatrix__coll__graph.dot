@@ -1,0 +1,55 @@
+digraph "sympy.matrices.tests.test_commonmatrix.CalculusOnlyMatrix"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.matrices.tests.test\l_commonmatrix.CalculusOnlyMatrix",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.matrices.common.\l_MinimalMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1__MinimalMatrix.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.matrices.common.\l_CastableMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1__CastableMatrix.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.matrices.matrices.\lMatrixCalculus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1matrices_1_1MatrixCalculus.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.matrices.common.Matrix\lCommon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixCommon.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sympy.matrices.common.Matrix\lArithmetic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixArithmetic.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sympy.matrices.common.Matrix\lRequired",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixRequired.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="metaclass",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sympy.matrices.common.\l_MatrixDeprecatedMeta",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1__MatrixDeprecatedMeta.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sympy.matrices.common.Matrix\lOperations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixOperations.html",tooltip=" "];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sympy.matrices.common.Matrix\lProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixProperties.html",tooltip=" "];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="sympy.matrices.common.Matrix\lSpecial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixSpecial.html",tooltip=" "];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="sympy.matrices.common.Matrix\lShaping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1matrices_1_1common_1_1MatrixShaping.html",tooltip=" "];
+  Node7 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

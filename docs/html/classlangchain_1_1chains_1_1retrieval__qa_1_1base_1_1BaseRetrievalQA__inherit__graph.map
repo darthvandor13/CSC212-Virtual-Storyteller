@@ -1,0 +1,11 @@
+<map id="langchain.chains.retrieval_qa.base.BaseRetrievalQA" name="langchain.chains.retrieval_qa.base.BaseRetrievalQA">
+<area shape="rect" id="node1" title=" " alt="" coords="435,99,615,141"/>
+<area shape="rect" id="node8" href="$classlangchain_1_1chains_1_1retrieval__qa_1_1base_1_1RetrievalQA.html" title=" " alt="" coords="663,66,832,107"/>
+<area shape="rect" id="node9" href="$classlangchain_1_1chains_1_1retrieval__qa_1_1base_1_1VectorDBQA.html" title=" " alt="" coords="663,131,832,173"/>
+<area shape="rect" id="node2" href="$classlangchain_1_1chains_1_1base_1_1Chain.html" title=" " alt="" coords="197,107,387,133"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="54,56,101,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="58,107,97,133"/>
+<area shape="rect" id="node6" title=" " alt="" coords="55,157,100,184"/>
+<area shape="rect" id="node7" title=" " alt="" coords="52,208,103,235"/>
+</map>

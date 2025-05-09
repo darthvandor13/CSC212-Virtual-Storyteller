@@ -1,0 +1,5 @@
+<map id="onnxruntime.quantization.quantize.QuantConfig" name="onnxruntime.quantization.quantize.QuantConfig">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,229,80"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1quantize_1_1DynamicQuantConfig.html" title=" " alt="" coords="277,5,501,47"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1quantize_1_1StaticQuantConfig.html" title=" " alt="" coords="277,71,501,112"/>
+</map>

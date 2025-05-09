@@ -1,0 +1,10 @@
+<map id="chromadb.segment.SegmentImplementation" name="chromadb.segment.SegmentImplementation">
+<area shape="rect" id="node1" title=" " alt="" coords="122,155,311,196"/>
+<area shape="rect" id="node5" href="$classchromadb_1_1segment_1_1MetadataReader.html" title=" " alt="" coords="8,244,199,285"/>
+<area shape="rect" id="node7" href="$classchromadb_1_1segment_1_1VectorReader.html" title=" " alt="" coords="223,251,440,278"/>
+<area shape="rect" id="node2" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="122,80,311,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="137,5,187,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="211,5,334,32"/>
+<area shape="rect" id="node6" href="$classsqlite_1_1SqliteMetadataSegment.html" title=" " alt="" coords="5,333,201,360"/>
+<area shape="rect" id="node8" href="$classlocal__hnsw_1_1LocalHnswSegment.html" title=" " alt="" coords="228,333,435,360"/>
+</map>

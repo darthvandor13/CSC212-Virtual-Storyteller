@@ -1,0 +1,7 @@
+<map id="chromadb.auth.simple_rbac_authz.SimpleRBACAuthorizationProvider" name="chromadb.auth.simple_rbac_authz.SimpleRBACAuthorizationProvider">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,256,300"/>
+<area shape="rect" id="node2" href="$classchromadb_1_1auth_1_1ServerAuthorizationProvider.html" title=" " alt="" coords="17,155,244,196"/>
+<area shape="rect" id="node3" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="36,80,225,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="51,5,101,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="125,5,248,32"/>
+</map>

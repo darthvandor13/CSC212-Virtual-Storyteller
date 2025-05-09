@@ -1,0 +1,10 @@
+<map id="metrics._internal.aggregation.Aggregation" name="metrics._internal.aggregation.Aggregation">
+<area shape="rect" id="node1" title=" " alt="" coords="104,169,297,211"/>
+<area shape="rect" id="node3" href="$classmetrics_1_1__internal_1_1aggregation_1_1DefaultAggregation.html" title=" " alt="" coords="379,5,572,47"/>
+<area shape="rect" id="node4" href="$classmetrics_1_1__internal_1_1aggregation_1_1DropAggregation.html" title=" " alt="" coords="379,71,572,112"/>
+<area shape="rect" id="node5" href="$classmetrics_1_1__internal_1_1aggregation_1_1ExplicitBucketHistogramAggregation.html" title=" " alt="" coords="358,136,593,177"/>
+<area shape="rect" id="node6" href="$classmetrics_1_1__internal_1_1aggregation_1_1ExponentialBucketHistogramAggregation.html" title=" " alt="" coords="345,201,605,243"/>
+<area shape="rect" id="node7" href="$classmetrics_1_1__internal_1_1aggregation_1_1LastValueAggregation.html" title=" " alt="" coords="379,267,572,308"/>
+<area shape="rect" id="node8" href="$classmetrics_1_1__internal_1_1aggregation_1_1SumAggregation.html" title=" " alt="" coords="379,332,572,373"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,177,56,203"/>
+</map>

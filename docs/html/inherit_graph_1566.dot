@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16273 [label="IntFlag",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16273 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="PIL.DdsImagePlugin.DDPF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1DdsImagePlugin_1_1DDPF.html",tooltip=" "];
+  Node16273 -> Node16275 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16275 [label="PIL.DdsImagePlugin.DDSCAPS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1DdsImagePlugin_1_1DDSCAPS.html",tooltip=" "];
+  Node16273 -> Node16276 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16276 [label="PIL.DdsImagePlugin.DDSCAPS2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1DdsImagePlugin_1_1DDSCAPS2.html",tooltip=" "];
+  Node16273 -> Node16277 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16277 [label="PIL.DdsImagePlugin.DDSD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1DdsImagePlugin_1_1DDSD.html",tooltip=" "];
+  Node16273 -> Node16278 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16278 [label="PIL.ImageCms.Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageCms_1_1Flags.html",tooltip=" "];
+}

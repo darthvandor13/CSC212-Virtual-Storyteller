@@ -1,0 +1,12 @@
+<map id="pyasn1.error.PyAsn1Error" name="pyasn1.error.PyAsn1Error">
+<area shape="rect" id="node1" title=" " alt="" coords="133,209,304,235"/>
+<area shape="rect" id="node3" href="$classpyasn1_1_1error_1_1PyAsn1UnicodeError.html" title=" " alt="" coords="366,71,557,112"/>
+<area shape="rect" id="node6" href="$classpyasn1_1_1error_1_1SubstrateUnderrunError.html" title=" " alt="" coords="358,136,565,177"/>
+<area shape="rect" id="node8" href="$classpyasn1_1_1error_1_1UnsupportedSubstrateError.html" title=" " alt="" coords="376,201,547,243"/>
+<area shape="rect" id="node9" href="$classpyasn1_1_1error_1_1ValueConstraintError.html" title=" " alt="" coords="367,267,556,308"/>
+<area shape="rect" id="node10" href="$classpyasn1_1_1type_1_1error_1_1ValueConstraintError.html" title=" " alt="" coords="352,332,571,373"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,209,85,235"/>
+<area shape="rect" id="node4" href="$classpyasn1_1_1error_1_1PyAsn1UnicodeDecodeError.html" title=" " alt="" coords="619,5,809,47"/>
+<area shape="rect" id="node5" href="$classpyasn1_1_1error_1_1PyAsn1UnicodeEncodeError.html" title=" " alt="" coords="619,71,809,112"/>
+<area shape="rect" id="node7" href="$classpyasn1_1_1error_1_1EndOfStreamError.html" title=" " alt="" coords="626,136,802,177"/>
+</map>

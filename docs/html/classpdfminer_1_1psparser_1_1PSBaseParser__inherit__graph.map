@@ -1,0 +1,9 @@
+<map id="pdfminer.psparser.PSBaseParser" name="pdfminer.psparser.PSBaseParser">
+<area shape="rect" id="node1" title=" " alt="" coords="5,90,181,131"/>
+<area shape="rect" id="node2" href="$classpdfminer_1_1psparser_1_1PSStackParser.html" title=" " alt="" coords="229,90,409,131"/>
+<area shape="rect" id="node3" href="$classpdfminer_1_1cmapdb_1_1CMapParser.html" title=" " alt="" coords="459,5,658,32"/>
+<area shape="rect" id="node4" href="$classpdfminer_1_1pdffont_1_1Type1FontHeaderParser.html" title=" " alt="" coords="469,57,649,98"/>
+<area shape="rect" id="node5" href="$classpdfminer_1_1pdfinterp_1_1PDFContentParser.html" title=" " alt="" coords="457,122,660,163"/>
+<area shape="rect" id="node6" href="$classpdfminer_1_1pdfparser_1_1PDFParser.html" title=" " alt="" coords="460,188,657,215"/>
+<area shape="rect" id="node7" href="$classpdfminer_1_1pdfparser_1_1PDFStreamParser.html" title=" " alt="" coords="708,181,909,222"/>
+</map>

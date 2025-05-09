@@ -1,0 +1,52 @@
+digraph "sqlalchemy.exc.InvalidRequestError"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sqlalchemy.exc.InvalidRequest\lError",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sqlalchemy.exc.SQLAlchemy\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1SQLAlchemyError.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sqlalchemy.exc.HasDescriptionCode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1HasDescriptionCode.html",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sqlalchemy.exc.AwaitRequired",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1AwaitRequired.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sqlalchemy.exc.IllegalState\lChangeError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1IllegalStateChangeError.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sqlalchemy.exc.MissingGreenlet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1MissingGreenlet.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sqlalchemy.exc.MultipleResults\lFound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1MultipleResultsFound.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sqlalchemy.exc.NoInspection\lAvailable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoInspectionAvailable.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sqlalchemy.exc.NoReference\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoReferenceError.html",tooltip=" "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sqlalchemy.exc.NoReferenced\lColumnError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoReferencedColumnError.html",tooltip=" "];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sqlalchemy.exc.NoReferenced\lTableError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoReferencedTableError.html",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="sqlalchemy.exc.NoResultFound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoResultFound.html",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="sqlalchemy.exc.NoSuchColumn\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoSuchColumnError.html",tooltip=" "];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="sqlalchemy.exc.NoSuchTable\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1NoSuchTableError.html",tooltip=" "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="sqlalchemy.exc.PendingRollback\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1PendingRollbackError.html",tooltip=" "];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="sqlalchemy.exc.ResourceClosed\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1ResourceClosedError.html",tooltip=" "];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="sqlalchemy.exc.UnboundExecution\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1UnboundExecutionError.html",tooltip=" "];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="sqlalchemy.exc.Unreflectable\lTableError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1exc_1_1UnreflectableTableError.html",tooltip=" "];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="sqlalchemy.ext.asyncio.exc.\lAsyncContextAlreadyStarted",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1ext_1_1asyncio_1_1exc_1_1AsyncContextAlreadyStarted.html",tooltip=" "];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="sqlalchemy.ext.asyncio.exc.\lAsyncContextNotStarted",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1ext_1_1asyncio_1_1exc_1_1AsyncContextNotStarted.html",tooltip=" "];
+  Node1 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="sqlalchemy.ext.asyncio.exc.\lAsyncMethodRequired",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1ext_1_1asyncio_1_1exc_1_1AsyncMethodRequired.html",tooltip=" "];
+  Node1 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="sqlalchemy.orm.evaluator.\lUnevaluatableError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1evaluator_1_1UnevaluatableError.html",tooltip=" "];
+}

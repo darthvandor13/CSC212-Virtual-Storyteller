@@ -1,0 +1,15 @@
+<map id="PIL.ImageFile.PyDecoder" name="PIL.ImageFile.PyDecoder">
+<area shape="rect" id="node1" title=" " alt="" coords="215,285,387,312"/>
+<area shape="rect" id="node3" href="$classPIL_1_1BlpImagePlugin_1_1__BLPBaseDecoder.html" title=" " alt="" coords="477,23,618,65"/>
+<area shape="rect" id="node6" href="$classPIL_1_1BmpImagePlugin_1_1BmpRleDecoder.html" title=" " alt="" coords="449,89,645,130"/>
+<area shape="rect" id="node7" href="$classPIL_1_1DdsImagePlugin_1_1DdsRgbDecoder.html" title=" " alt="" coords="450,154,645,195"/>
+<area shape="rect" id="node8" href="$classPIL_1_1FitsImagePlugin_1_1FitsGzipDecoder.html" title=" " alt="" coords="464,219,631,261"/>
+<area shape="rect" id="node9" href="$classPIL_1_1MspImagePlugin_1_1MspDecoder.html" title=" " alt="" coords="437,285,658,312"/>
+<area shape="rect" id="node10" href="$classPIL_1_1PpmImagePlugin_1_1PpmDecoder.html" title=" " alt="" coords="435,336,660,363"/>
+<area shape="rect" id="node11" href="$classPIL_1_1PpmImagePlugin_1_1PpmPlainDecoder.html" title=" " alt="" coords="445,387,650,429"/>
+<area shape="rect" id="node12" href="$classPIL_1_1QoiImagePlugin_1_1QoiDecoder.html" title=" " alt="" coords="442,453,653,480"/>
+<area shape="rect" id="node13" href="$classPIL_1_1SgiImagePlugin_1_1SGI16Decoder.html" title=" " alt="" coords="458,505,637,546"/>
+<area shape="rect" id="node2" href="$classPIL_1_1ImageFile_1_1PyCodec.html" title=" " alt="" coords="5,285,167,312"/>
+<area shape="rect" id="node4" href="$classPIL_1_1BlpImagePlugin_1_1BLP1Decoder.html" title=" " alt="" coords="708,5,931,32"/>
+<area shape="rect" id="node5" href="$classPIL_1_1BlpImagePlugin_1_1BLP2Decoder.html" title=" " alt="" coords="708,56,931,83"/>
+</map>

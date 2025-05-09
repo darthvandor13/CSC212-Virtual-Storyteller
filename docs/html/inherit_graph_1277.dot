@@ -1,0 +1,54 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="onnxruntime.quantization.operators.base\l_operator.QuantOperatorBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1base__operator_1_1QuantOperatorBase.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="onnxruntime.quantization.operators.activation.\lQLinearActivation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1activation_1_1QLinearActivation.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="onnxruntime.quantization.operators.argmax.\lQArgMax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1argmax_1_1QArgMax.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="onnxruntime.quantization.operators.attention.\lAttentionQuant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1attention_1_1AttentionQuant.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="onnxruntime.quantization.operators.binary\l_op.QLinearBinaryOp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1binary__op_1_1QLinearBinaryOp.html",tooltip=" "];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="onnxruntime.quantization.operators.concat.\lQLinearConcat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1concat_1_1QLinearConcat.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="onnxruntime.quantization.operators.conv.\lConvInteger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1conv_1_1ConvInteger.html",tooltip=" "];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="onnxruntime.quantization.operators.conv.\lQLinearConv",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1conv_1_1QLinearConv.html",tooltip=" "];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="onnxruntime.quantization.operators.direct\l_q8.Direct8BitOp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1direct__q8_1_1Direct8BitOp.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="onnxruntime.quantization.operators.maxpool.\lQMaxPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1maxpool_1_1QMaxPool.html",tooltip=" "];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="onnxruntime.quantization.operators.resize.\lQResize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1resize_1_1QResize.html",tooltip=" "];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="onnxruntime.quantization.operators.embed\l_layernorm.EmbedLayerNormalizationQuant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1embed__layernorm_1_1EmbedLayerNormalizationQuant.html",tooltip=" "];
+  Node0 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="onnxruntime.quantization.operators.gather.\lGatherQuant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1gather_1_1GatherQuant.html",tooltip=" "];
+  Node0 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="onnxruntime.quantization.operators.gavgpool.\lQGlobalAveragePool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1gavgpool_1_1QGlobalAveragePool.html",tooltip=" "];
+  Node0 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="onnxruntime.quantization.operators.lstm.\lLSTMQuant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1lstm_1_1LSTMQuant.html",tooltip=" "];
+  Node0 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="onnxruntime.quantization.operators.matmul.\lQOpMatMul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1QOpMatMul.html",tooltip=" "];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="onnxruntime.quantization.operators.gemm.\lQLinearGemm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1gemm_1_1QLinearGemm.html",tooltip=" "];
+  Node15 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="onnxruntime.quantization.operators.matmul.\lMatMulInteger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1MatMulInteger.html",tooltip=" "];
+  Node15 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="onnxruntime.quantization.operators.matmul.\lQLinearMatMul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1QLinearMatMul.html",tooltip=" "];
+  Node0 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="onnxruntime.quantization.operators.pad.QPad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1pad_1_1QPad.html",tooltip=" "];
+  Node0 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="onnxruntime.quantization.operators.pooling.\lQLinearPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1pooling_1_1QLinearPool.html",tooltip=" "];
+  Node0 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="onnxruntime.quantization.operators.softmax.\lQLinearSoftmax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1softmax_1_1QLinearSoftmax.html",tooltip=" "];
+  Node0 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="onnxruntime.quantization.operators.split.\lQSplit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1split_1_1QSplit.html",tooltip=" "];
+  Node0 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="onnxruntime.quantization.operators.where.\lQLinearWhere",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1where_1_1QLinearWhere.html",tooltip=" "];
+}

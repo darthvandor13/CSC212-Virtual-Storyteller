@@ -1,0 +1,8 @@
+<map id="onnxruntime.quantization.calibrate.CalibraterBase" name="onnxruntime.quantization.calibrate.CalibraterBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,229,145"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1HistogramCalibrater.html" title=" " alt="" coords="277,71,501,112"/>
+<area shape="rect" id="node6" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1MinMaxCalibrater.html" title=" " alt="" coords="277,136,501,177"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1DistributionCalibrater.html" title=" " alt="" coords="549,5,773,47"/>
+<area shape="rect" id="node4" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1EntropyCalibrater.html" title=" " alt="" coords="549,71,773,112"/>
+<area shape="rect" id="node5" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1PercentileCalibrater.html" title=" " alt="" coords="549,136,773,177"/>
+</map>

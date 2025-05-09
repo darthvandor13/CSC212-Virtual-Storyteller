@@ -1,0 +1,9 @@
+<map id="langchain.smith.evaluation.config.RunEvalConfig.EmbeddingDistance" name="langchain.smith.evaluation.config.RunEvalConfig.EmbeddingDistance">
+<area shape="rect" id="node1" title=" " alt="" coords="5,348,236,389"/>
+<area shape="rect" id="node2" href="$classlangchain_1_1smith_1_1evaluation_1_1config_1_1SingleKeyEvalConfig.html" title=" " alt="" coords="11,259,230,300"/>
+<area shape="rect" id="node3" href="$classlangchain_1_1smith_1_1evaluation_1_1config_1_1EvalConfig.html" title=" " alt="" coords="11,169,230,211"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="35,95,207,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="11,13,94,39"/>
+<area shape="rect" id="node6" title=" " alt="" coords="119,5,261,47"/>
+<area shape="rect" id="node7" title=" " alt="" coords="286,5,467,47"/>
+</map>

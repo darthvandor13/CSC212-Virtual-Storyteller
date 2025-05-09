@@ -1,0 +1,5 @@
+<map id="onnxruntime.transformers.fusion_embedlayer.FusionEmbedLayerNoMask" name="onnxruntime.transformers.fusion_embedlayer.FusionEmbedLayerNoMask">
+<area shape="rect" id="node1" title=" " alt="" coords="21,95,281,136"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1fusion__embedlayer_1_1FusionEmbedLayerNormalization.html" title=" " alt="" coords="5,184,296,225"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="46,5,255,47"/>
+</map>

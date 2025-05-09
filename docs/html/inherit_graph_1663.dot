@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6603 [label="argparse.HelpFormatter",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6603 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="pip._vendor.pygments.cmdline.\lHelpFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pygments_1_1cmdline_1_1HelpFormatter.html",tooltip=" "];
+  Node6603 -> Node6605 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6605 [label="pygments.cmdline.HelpFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpygments_1_1cmdline_1_1HelpFormatter.html",tooltip=" "];
+}

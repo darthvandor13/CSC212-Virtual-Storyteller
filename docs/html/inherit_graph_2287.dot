@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16070 [label="FastIntFlag",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16070 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="sqlalchemy.dialects.postgresql.psycopg2.\lExecutemanyMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1psycopg2_1_1ExecutemanyMode.html",tooltip=" "];
+  Node16070 -> Node16072 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16072 [label="sqlalchemy.orm.base.PassiveFlag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1base_1_1PassiveFlag.html",tooltip=" "];
+  Node16070 -> Node16073 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16073 [label="sqlalchemy.sql.compiler.\lInsertmanyvaluesSentinelOpts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1sql_1_1compiler_1_1InsertmanyvaluesSentinelOpts.html",tooltip=" "];
+}

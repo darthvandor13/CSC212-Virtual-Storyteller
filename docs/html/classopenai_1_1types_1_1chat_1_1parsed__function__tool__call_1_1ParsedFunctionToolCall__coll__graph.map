@@ -1,0 +1,10 @@
+<map id="openai.types.chat.parsed_function_tool_call.ParsedFunctionToolCall" name="openai.types.chat.parsed_function_tool_call.ParsedFunctionToolCall">
+<area shape="rect" id="node1" title=" " alt="" coords="1085,57,1311,113"/>
+<area shape="rect" id="node2" href="$classopenai_1_1types_1_1chat_1_1chat__completion__message__tool__call_1_1ChatCompletionMessageToolCall.html" title=" " alt="" coords="789,57,1036,113"/>
+<area shape="rect" id="node3" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="557,72,740,99"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="236,39,408,65"/>
+<area shape="rect" id="node5" title=" " alt="" coords="55,5,137,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="25,57,167,98"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,122,187,163"/>
+<area shape="rect" id="node8" title=" " alt="" coords="289,89,355,116"/>
+</map>

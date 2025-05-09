@@ -1,0 +1,23 @@
+<map id="langchain_core.messages.base.BaseMessage" name="langchain_core.messages.base.BaseMessage">
+<area shape="rect" id="node1" title=" " alt="" coords="713,235,923,276"/>
+<area shape="rect" id="node8" href="$classlangchain__core_1_1messages_1_1ai_1_1AIMessage.html" title=" " alt="" coords="989,5,1179,47"/>
+<area shape="rect" id="node10" href="$classlangchain__core_1_1messages_1_1base_1_1BaseMessageChunk.html" title=" " alt="" coords="979,201,1189,243"/>
+<area shape="rect" id="node16" href="$classlangchain__core_1_1messages_1_1chat_1_1ChatMessage.html" title=" " alt="" coords="981,71,1187,112"/>
+<area shape="rect" id="node17" href="$classlangchain__core_1_1messages_1_1function_1_1FunctionMessage.html" title=" " alt="" coords="971,136,1197,177"/>
+<area shape="rect" id="node18" href="$classlangchain__core_1_1messages_1_1human_1_1HumanMessage.html" title=" " alt="" coords="974,267,1194,308"/>
+<area shape="rect" id="node19" href="$classlangchain__core_1_1messages_1_1modifier_1_1RemoveMessage.html" title=" " alt="" coords="971,463,1197,504"/>
+<area shape="rect" id="node20" href="$classlangchain__core_1_1messages_1_1system_1_1SystemMessage.html" title=" " alt="" coords="972,332,1196,373"/>
+<area shape="rect" id="node21" href="$classlangchain__core_1_1messages_1_1tool_1_1ToolMessage.html" title=" " alt="" coords="983,397,1185,439"/>
+<area shape="rect" id="node2" href="$classlangchain__core_1_1load_1_1serializable_1_1Serializable.html" title=" " alt="" coords="455,235,665,276"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,217,407,243"/>
+<area shape="rect" id="node4" title=" " alt="" coords="55,187,137,214"/>
+<area shape="rect" id="node5" title=" " alt="" coords="25,239,167,280"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,304,187,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="295,267,346,294"/>
+<area shape="rect" id="node9" href="$classlangchain__core_1_1messages_1_1ai_1_1AIMessageChunk.html" title=" " alt="" coords="1263,11,1454,52"/>
+<area shape="rect" id="node11" href="$classlangchain__core_1_1messages_1_1chat_1_1ChatMessageChunk.html" title=" " alt="" coords="1255,84,1462,125"/>
+<area shape="rect" id="node12" href="$classlangchain__core_1_1messages_1_1function_1_1FunctionMessageChunk.html" title=" " alt="" coords="1245,165,1472,207"/>
+<area shape="rect" id="node13" href="$classlangchain__core_1_1messages_1_1human_1_1HumanMessageChunk.html" title=" " alt="" coords="1249,263,1469,304"/>
+<area shape="rect" id="node14" href="$classlangchain__core_1_1messages_1_1system_1_1SystemMessageChunk.html" title=" " alt="" coords="1247,331,1471,372"/>
+<area shape="rect" id="node15" href="$classlangchain__core_1_1messages_1_1tool_1_1ToolMessageChunk.html" title=" " alt="" coords="1257,396,1460,437"/>
+</map>

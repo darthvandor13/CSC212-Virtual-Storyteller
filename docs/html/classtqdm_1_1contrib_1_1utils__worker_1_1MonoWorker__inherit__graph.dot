@@ -1,0 +1,20 @@
+digraph "tqdm.contrib.utils_worker.MonoWorker"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tqdm.contrib.utils\l_worker.MonoWorker",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="object",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tqdm.contrib.discord.DiscordIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtqdm_1_1contrib_1_1discord_1_1DiscordIO.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tqdm.contrib.slack.SlackIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtqdm_1_1contrib_1_1slack_1_1SlackIO.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tqdm.contrib.telegram.TelegramIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtqdm_1_1contrib_1_1telegram_1_1TelegramIO.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

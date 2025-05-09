@@ -1,0 +1,9 @@
+<map id="numpy.random.tests.test_smoke.RNG" name="numpy.random.tests.test_smoke.RNG">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,171,211"/>
+<area shape="rect" id="node2" href="$classnumpy_1_1random_1_1tests_1_1test__smoke_1_1TestDefaultRNG.html" title=" " alt="" coords="223,5,393,47"/>
+<area shape="rect" id="node3" href="$classnumpy_1_1random_1_1tests_1_1test__smoke_1_1TestMT19937.html" title=" " alt="" coords="225,71,391,112"/>
+<area shape="rect" id="node4" href="$classnumpy_1_1random_1_1tests_1_1test__smoke_1_1TestPCG64.html" title=" " alt="" coords="225,136,391,177"/>
+<area shape="rect" id="node5" href="$classnumpy_1_1random_1_1tests_1_1test__smoke_1_1TestPCG64DXSM.html" title=" " alt="" coords="219,201,397,243"/>
+<area shape="rect" id="node6" href="$classnumpy_1_1random_1_1tests_1_1test__smoke_1_1TestPhilox.html" title=" " alt="" coords="225,267,391,308"/>
+<area shape="rect" id="node7" href="$classnumpy_1_1random_1_1tests_1_1test__smoke_1_1TestSFC64.html" title=" " alt="" coords="225,332,391,373"/>
+</map>

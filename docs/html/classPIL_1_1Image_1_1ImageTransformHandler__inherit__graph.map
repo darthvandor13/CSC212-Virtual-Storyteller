@@ -1,0 +1,9 @@
+<map id="PIL.Image.ImageTransformHandler" name="PIL.Image.ImageTransformHandler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,187,171"/>
+<area shape="rect" id="node2" href="$classPIL_1_1ImageTransform_1_1Transform.html" title=" " alt="" coords="235,137,439,163"/>
+<area shape="rect" id="node3" href="$classPIL_1_1ImageTransform_1_1AffineTransform.html" title=" " alt="" coords="515,5,694,47"/>
+<area shape="rect" id="node4" href="$classPIL_1_1ImageTransform_1_1ExtentTransform.html" title=" " alt="" coords="513,71,696,112"/>
+<area shape="rect" id="node5" href="$classPIL_1_1ImageTransform_1_1MeshTransform.html" title=" " alt="" coords="487,137,723,163"/>
+<area shape="rect" id="node6" href="$classPIL_1_1ImageTransform_1_1PerspectiveTransform.html" title=" " alt="" coords="497,188,712,229"/>
+<area shape="rect" id="node7" href="$classPIL_1_1ImageTransform_1_1QuadTransform.html" title=" " alt="" coords="487,254,722,281"/>
+</map>

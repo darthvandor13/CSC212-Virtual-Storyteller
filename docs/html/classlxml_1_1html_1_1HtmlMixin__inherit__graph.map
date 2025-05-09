@@ -1,0 +1,12 @@
+<map id="lxml.html.HtmlMixin" name="lxml.html.HtmlMixin">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,144,159"/>
+<area shape="rect" id="node2" href="$classlxml_1_1html_1_1HtmlComment.html" title=" " alt="" coords="196,56,360,83"/>
+<area shape="rect" id="node3" href="$classlxml_1_1html_1_1HtmlElement.html" title=" " alt="" coords="201,107,355,133"/>
+<area shape="rect" id="node9" href="$classlxml_1_1html_1_1HtmlEntity.html" title=" " alt="" coords="207,157,349,184"/>
+<area shape="rect" id="node10" href="$classlxml_1_1html_1_1HtmlProcessingInstruction.html" title=" " alt="" coords="192,209,364,250"/>
+<area shape="rect" id="node4" href="$classlxml_1_1html_1_1FormElement.html" title="form handling" alt="" coords="422,5,579,32"/>
+<area shape="rect" id="node5" href="$classlxml_1_1html_1_1InputElement.html" title=" " alt="" coords="423,56,579,83"/>
+<area shape="rect" id="node6" href="$classlxml_1_1html_1_1LabelElement.html" title=" " alt="" coords="421,107,580,133"/>
+<area shape="rect" id="node7" href="$classlxml_1_1html_1_1SelectElement.html" title=" " alt="" coords="419,157,583,184"/>
+<area shape="rect" id="node8" href="$classlxml_1_1html_1_1TextareaElement.html" title=" " alt="" coords="412,208,589,235"/>
+</map>

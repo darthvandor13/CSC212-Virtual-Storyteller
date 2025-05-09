@@ -1,0 +1,16 @@
+digraph "sqlalchemy.dialects.oracle.cx_oracle._OracleBinaryFloat"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sqlalchemy.dialects.oracle.cx\l_oracle._OracleBinaryFloat",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sqlalchemy.dialects.oracle.cx\l_oracle._OracleNumeric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1oracle_1_1cx__oracle_1_1__OracleNumeric.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sqltypes.Numeric",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sqlalchemy.dialects.oracle.cx\l_oracle._OracleBINARY_DOUBLE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1oracle_1_1cx__oracle_1_1__OracleBINARY__DOUBLE.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sqlalchemy.dialects.oracle.cx\l_oracle._OracleBINARY_FLOAT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1oracle_1_1cx__oracle_1_1__OracleBINARY__FLOAT.html",tooltip=" "];
+}

@@ -1,0 +1,35 @@
+digraph "pypika.queries.Query"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pypika.queries.Query",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pypika.dialects.ClickHouse\lQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1ClickHouseQuery.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pypika.dialects.MSSQLQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1MSSQLQuery.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pypika.dialects.MySQLQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1MySQLQuery.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pypika.dialects.OracleQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1OracleQuery.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="pypika.dialects.PostgreSQLQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1PostgreSQLQuery.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="pypika.dialects.Redshift\lQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1RedshiftQuery.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="pypika.dialects.SQLLiteQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1SQLLiteQuery.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="pypika.dialects.Snowflake\lQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1SnowflakeQuery.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="pypika.dialects.VerticaQuery",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypika_1_1dialects_1_1VerticaQuery.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

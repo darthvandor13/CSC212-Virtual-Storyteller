@@ -1,0 +1,7 @@
+<map id="metrics._internal.exemplar.exemplar_filter.ExemplarFilter" name="metrics._internal.exemplar.exemplar_filter.ExemplarFilter">
+<area shape="rect" id="node1" title=" " alt="" coords="104,71,335,112"/>
+<area shape="rect" id="node3" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__filter_1_1AlwaysOffExemplarFilter.html" title=" " alt="" coords="383,5,613,47"/>
+<area shape="rect" id="node4" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__filter_1_1AlwaysOnExemplarFilter.html" title=" " alt="" coords="383,71,613,112"/>
+<area shape="rect" id="node5" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__filter_1_1TraceBasedExemplarFilter.html" title=" " alt="" coords="383,136,613,177"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,78,56,105"/>
+</map>

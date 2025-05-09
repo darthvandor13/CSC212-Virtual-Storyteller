@@ -1,0 +1,9 @@
+<map id="openai.types.chat.chat_completion.ChatCompletion" name="openai.types.chat.chat_completion.ChatCompletion">
+<area shape="rect" id="node1" title=" " alt="" coords="41,244,232,285"/>
+<area shape="rect" id="node7" href="$classopenai_1_1types_1_1chat_1_1parsed__chat__completion_1_1ParsedChatCompletion.html" title=" " alt="" coords="5,333,268,375"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="45,169,228,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="51,95,223,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="27,13,110,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="135,5,277,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="302,5,483,47"/>
+</map>

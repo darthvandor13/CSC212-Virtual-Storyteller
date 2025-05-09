@@ -1,0 +1,5 @@
+<map id="onnxruntime.quantization.operators.maxpool.QDQMaxPool" name="onnxruntime.quantization.operators.maxpool.QDQMaxPool">
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,288,225"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1operators_1_1direct__q8_1_1QDQDirect8BitOp.html" title=" " alt="" coords="16,95,277,136"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1operators_1_1qdq__base__operator_1_1QDQOperatorBase.html" title=" " alt="" coords="21,5,272,47"/>
+</map>

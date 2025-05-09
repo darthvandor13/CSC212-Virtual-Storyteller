@@ -1,0 +1,8 @@
+<map id="pip._internal.resolution.resolvelib.base.Requirement" name="pip._internal.resolution.resolvelib.base.Requirement">
+<area shape="rect" id="node1" title=" " alt="" coords="111,104,357,145"/>
+<area shape="rect" id="node3" href="$classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1ExplicitRequirement.html" title=" " alt="" coords="405,5,700,47"/>
+<area shape="rect" id="node4" href="$classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1RequiresPythonRequirement.html" title=" " alt="" coords="405,71,700,112"/>
+<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1SpecifierRequirement.html" title=" " alt="" coords="405,136,700,177"/>
+<area shape="rect" id="node6" href="$classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1requirements_1_1UnsatisfiableRequirement.html" title=" " alt="" coords="405,201,700,243"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,111,63,138"/>
+</map>

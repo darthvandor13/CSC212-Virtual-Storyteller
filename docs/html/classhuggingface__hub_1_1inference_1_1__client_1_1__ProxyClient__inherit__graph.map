@@ -1,0 +1,5 @@
+<map id="huggingface_hub.inference._client._ProxyClient" name="huggingface_hub.inference._client._ProxyClient">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,187,80"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1inference_1_1__client_1_1ProxyClientChat.html" title=" " alt="" coords="261,5,442,47"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1inference_1_1__client_1_1ProxyClientChatCompletions.html" title=" " alt="" coords="235,71,468,112"/>
+</map>

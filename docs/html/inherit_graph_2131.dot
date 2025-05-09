@@ -1,0 +1,16 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9268 [label="nn.Module",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9268 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="sam2.image_decoder.SAM2Image\lDecoder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsam2_1_1image__decoder_1_1SAM2ImageDecoder.html",tooltip=" "];
+  Node9268 -> Node9270 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9270 [label="sam2.image_encoder.SAM2Image\lEncoder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsam2_1_1image__encoder_1_1SAM2ImageEncoder.html",tooltip=" "];
+  Node9268 -> Node9271 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9271 [label="sam2.mask_decoder.SAM2Mask\lDecoder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsam2_1_1mask__decoder_1_1SAM2MaskDecoder.html",tooltip=" "];
+  Node9268 -> Node9272 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9272 [label="sam2.prompt_encoder.SAM2\lPromptEncoder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsam2_1_1prompt__encoder_1_1SAM2PromptEncoder.html",tooltip=" "];
+}

@@ -1,0 +1,29 @@
+digraph "sympy.physics.mechanics.joint.Joint"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.physics.mechanics.joint.\lJoint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ABC",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.physics.mechanics.joint.\lCylindricalJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1mechanics_1_1joint_1_1CylindricalJoint.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.physics.mechanics.joint.\lPinJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1mechanics_1_1joint_1_1PinJoint.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.physics.mechanics.joint.\lPlanarJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1mechanics_1_1joint_1_1PlanarJoint.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sympy.physics.mechanics.joint.\lPrismaticJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1mechanics_1_1joint_1_1PrismaticJoint.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sympy.physics.mechanics.joint.\lSphericalJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1mechanics_1_1joint_1_1SphericalJoint.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sympy.physics.mechanics.joint.\lWeldJoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1mechanics_1_1joint_1_1WeldJoint.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

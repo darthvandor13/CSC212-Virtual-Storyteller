@@ -1,0 +1,26 @@
+<map id="onnxruntime.quantization.operators.base_operator.QuantOperatorBase" name="onnxruntime.quantization.operators.base_operator.QuantOperatorBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,561,263,603"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1operators_1_1activation_1_1QLinearActivation.html" title=" " alt="" coords="311,5,600,47"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1operators_1_1argmax_1_1QArgMax.html" title=" " alt="" coords="317,71,593,112"/>
+<area shape="rect" id="node4" href="$classonnxruntime_1_1quantization_1_1operators_1_1attention_1_1AttentionQuant.html" title=" " alt="" coords="314,136,597,177"/>
+<area shape="rect" id="node5" href="$classonnxruntime_1_1quantization_1_1operators_1_1binary__op_1_1QLinearBinaryOp.html" title=" " alt="" coords="323,201,587,243"/>
+<area shape="rect" id="node6" href="$classonnxruntime_1_1quantization_1_1operators_1_1concat_1_1QLinearConcat.html" title=" " alt="" coords="319,267,591,308"/>
+<area shape="rect" id="node7" href="$classonnxruntime_1_1quantization_1_1operators_1_1conv_1_1ConvInteger.html" title=" " alt="" coords="326,332,585,373"/>
+<area shape="rect" id="node8" href="$classonnxruntime_1_1quantization_1_1operators_1_1conv_1_1QLinearConv.html" title=" " alt="" coords="326,397,585,439"/>
+<area shape="rect" id="node9" href="$classonnxruntime_1_1quantization_1_1operators_1_1direct__q8_1_1Direct8BitOp.html" title=" " alt="" coords="325,463,586,504"/>
+<area shape="rect" id="node12" href="$classonnxruntime_1_1quantization_1_1operators_1_1embed__layernorm_1_1EmbedLayerNormalizationQuant.html" title=" " alt="" coords="316,528,595,569"/>
+<area shape="rect" id="node13" href="$classonnxruntime_1_1quantization_1_1operators_1_1gather_1_1GatherQuant.html" title=" " alt="" coords="321,593,589,635"/>
+<area shape="rect" id="node14" href="$classonnxruntime_1_1quantization_1_1operators_1_1gavgpool_1_1QGlobalAveragePool.html" title=" " alt="" coords="313,659,598,700"/>
+<area shape="rect" id="node15" href="$classonnxruntime_1_1quantization_1_1operators_1_1lstm_1_1LSTMQuant.html" title=" " alt="" coords="326,724,585,765"/>
+<area shape="rect" id="node16" href="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1QOpMatMul.html" title=" " alt="" coords="317,789,593,831"/>
+<area shape="rect" id="node20" href="$classonnxruntime_1_1quantization_1_1operators_1_1pad_1_1QPad.html" title=" " alt="" coords="312,855,599,882"/>
+<area shape="rect" id="node21" href="$classonnxruntime_1_1quantization_1_1operators_1_1pooling_1_1QLinearPool.html" title=" " alt="" coords="318,907,593,948"/>
+<area shape="rect" id="node22" href="$classonnxruntime_1_1quantization_1_1operators_1_1softmax_1_1QLinearSoftmax.html" title=" " alt="" coords="315,972,595,1013"/>
+<area shape="rect" id="node23" href="$classonnxruntime_1_1quantization_1_1operators_1_1split_1_1QSplit.html" title=" " alt="" coords="327,1037,584,1079"/>
+<area shape="rect" id="node24" href="$classonnxruntime_1_1quantization_1_1operators_1_1where_1_1QLinearWhere.html" title=" " alt="" coords="321,1103,589,1144"/>
+<area shape="rect" id="node10" href="$classonnxruntime_1_1quantization_1_1operators_1_1maxpool_1_1QMaxPool.html" title=" " alt="" coords="648,431,931,472"/>
+<area shape="rect" id="node11" href="$classonnxruntime_1_1quantization_1_1operators_1_1resize_1_1QResize.html" title=" " alt="" coords="655,496,923,537"/>
+<area shape="rect" id="node17" href="$classonnxruntime_1_1quantization_1_1operators_1_1gemm_1_1QLinearGemm.html" title=" " alt="" coords="655,724,924,765"/>
+<area shape="rect" id="node18" href="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1MatMulInteger.html" title=" " alt="" coords="651,789,927,831"/>
+<area shape="rect" id="node19" href="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1QLinearMatMul.html" title=" " alt="" coords="651,855,927,896"/>
+</map>

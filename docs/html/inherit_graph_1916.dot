@@ -1,0 +1,32 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node11234 [label="_repr.Representation",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11234 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="pydantic.color.Color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpydantic_1_1color_1_1Color.html",tooltip=" "];
+  Node11234 -> Node11236 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11236 [label="pydantic.fields.FieldInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpydantic_1_1fields_1_1FieldInfo.html",tooltip=" "];
+  Node11236 -> Node11237 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11237 [label="fastapi.params.Body",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Body.html",tooltip=" "];
+  Node11237 -> Node11238 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11238 [label="fastapi.params.Form",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Form.html",tooltip=" "];
+  Node11238 -> Node11239 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11239 [label="fastapi.params.File",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1File.html",tooltip=" "];
+  Node11236 -> Node11240 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11240 [label="fastapi.params.Param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Param.html",tooltip=" "];
+  Node11240 -> Node11241 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11241 [label="fastapi.params.Cookie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Cookie.html",tooltip=" "];
+  Node11240 -> Node11242 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11242 [label="fastapi.params.Header",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Header.html",tooltip=" "];
+  Node11240 -> Node11243 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11243 [label="fastapi.params.Path",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Path.html",tooltip=" "];
+  Node11240 -> Node11244 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11244 [label="fastapi.params.Query",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfastapi_1_1params_1_1Query.html",tooltip=" "];
+  Node11234 -> Node11245 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11245 [label="pydantic.fields.ModelPrivateAttr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpydantic_1_1fields_1_1ModelPrivateAttr.html",tooltip=" "];
+  Node11234 -> Node11246 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11246 [label="pydantic.networks.NameEmail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpydantic_1_1networks_1_1NameEmail.html",tooltip=" "];
+}

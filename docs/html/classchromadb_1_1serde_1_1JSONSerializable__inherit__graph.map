@@ -1,0 +1,13 @@
+<map id="chromadb.serde.JSONSerializable" name="chromadb.serde.JSONSerializable">
+<area shape="rect" id="node1" title=" " alt="" coords="124,141,347,167"/>
+<area shape="rect" id="node4" href="$classchromadb_1_1api_1_1configuration_1_1ConfigurationInternal.html" title=" " alt="" coords="395,133,577,175"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,115,76,142"/>
+<area shape="rect" id="node3" title=" " alt="" coords="21,166,60,193"/>
+<area shape="rect" id="node5" href="$classchromadb_1_1api_1_1configuration_1_1CollectionConfigurationInternal.html" title=" " alt="" coords="651,35,851,76"/>
+<area shape="rect" id="node8" href="$classchromadb_1_1api_1_1configuration_1_1EmbeddingsQueueConfigurationInternal.html" title=" " alt="" coords="625,100,877,141"/>
+<area shape="rect" id="node9" href="$classchromadb_1_1api_1_1configuration_1_1HNSWConfigurationInternal.html" title=" " alt="" coords="659,165,843,207"/>
+<area shape="rect" id="node11" href="$classtest__configurations_1_1TestConfiguration.html" title=" " alt="" coords="671,231,832,272"/>
+<area shape="rect" id="node6" href="$classchromadb_1_1api_1_1configuration_1_1CollectionConfigurationInterface.html" title=" " alt="" coords="925,5,1133,47"/>
+<area shape="rect" id="node7" href="$classchromadb_1_1types_1_1Collection.html" title=" " alt="" coords="941,71,1118,98"/>
+<area shape="rect" id="node10" href="$classchromadb_1_1api_1_1configuration_1_1HNSWConfigurationInterface.html" title=" " alt="" coords="933,165,1125,207"/>
+</map>

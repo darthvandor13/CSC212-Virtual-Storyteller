@@ -1,0 +1,16 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18757 [label="SoupTest",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18757 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="bs4.tests.test_navigablestring.\lTestNavigableString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbs4_1_1tests_1_1test__navigablestring_1_1TestNavigableString.html",tooltip=" "];
+  Node18757 -> Node18759 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18759 [label="bs4.tests.test_navigablestring.\lTestNavigableStringSubclasses",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbs4_1_1tests_1_1test__navigablestring_1_1TestNavigableStringSubclasses.html",tooltip=" "];
+  Node18757 -> Node18760 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18760 [label="bs4.tests.test_tag.TestMulti\lValuedAttributes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbs4_1_1tests_1_1test__tag_1_1TestMultiValuedAttributes.html",tooltip=" "];
+  Node18757 -> Node18761 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18761 [label="bs4.tests.test_tag.TestTag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbs4_1_1tests_1_1test__tag_1_1TestTag.html",tooltip=" "];
+}

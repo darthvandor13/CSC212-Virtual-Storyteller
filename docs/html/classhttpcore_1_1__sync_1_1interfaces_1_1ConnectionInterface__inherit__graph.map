@@ -1,0 +1,10 @@
+<map id="httpcore._sync.interfaces.ConnectionInterface" name="httpcore._sync.interfaces.ConnectionInterface">
+<area shape="rect" id="node1" title=" " alt="" coords="227,169,400,211"/>
+<area shape="rect" id="node3" href="$classhttpcore_1_1__sync_1_1connection_1_1HTTPConnection.html" title=" " alt="" coords="464,5,643,47"/>
+<area shape="rect" id="node4" href="$classhttpcore_1_1__sync_1_1http11_1_1HTTP11Connection.html" title=" " alt="" coords="453,71,654,112"/>
+<area shape="rect" id="node5" href="$classhttpcore_1_1__sync_1_1http2_1_1HTTP2Connection.html" title=" " alt="" coords="460,136,647,177"/>
+<area shape="rect" id="node6" href="$classhttpcore_1_1__sync_1_1http__proxy_1_1ForwardHTTPConnection.html" title=" " alt="" coords="448,201,659,243"/>
+<area shape="rect" id="node7" href="$classhttpcore_1_1__sync_1_1http__proxy_1_1TunnelHTTPConnection.html" title=" " alt="" coords="452,267,655,308"/>
+<area shape="rect" id="node8" href="$classhttpcore_1_1__sync_1_1socks__proxy_1_1Socks5Connection.html" title=" " alt="" coords="467,332,640,373"/>
+<area shape="rect" id="node2" href="$classhttpcore_1_1__sync_1_1interfaces_1_1RequestInterface.html" title=" " alt="" coords="5,169,179,211"/>
+</map>

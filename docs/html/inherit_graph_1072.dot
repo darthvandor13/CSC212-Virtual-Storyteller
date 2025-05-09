@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="numpy.ma.tests.test\l_regression.TestRegression",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1tests_1_1test__regression_1_1TestRegression.html",tooltip=" "];
+}

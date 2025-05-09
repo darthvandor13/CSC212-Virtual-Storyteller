@@ -1,0 +1,12 @@
+<map id="langchain_openai.llms.base.BaseOpenAI" name="langchain_openai.llms.base.BaseOpenAI">
+<area shape="rect" id="node1" title=" " alt="" coords="468,259,655,300"/>
+<area shape="rect" id="node9" href="$classlangchain__openai_1_1llms_1_1azure_1_1AzureOpenAI.html" title=" " alt="" coords="359,348,550,389"/>
+<area shape="rect" id="node10" href="$classlangchain__openai_1_1llms_1_1base_1_1OpenAI.html" title=" " alt="" coords="575,348,761,389"/>
+<area shape="rect" id="node2" href="$classlangchain__core_1_1language__models_1_1llms_1_1BaseLLM.html" title=" " alt="" coords="479,169,644,211"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1language__models_1_1base_1_1BaseLanguageModel.html" title=" " alt="" coords="295,80,523,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="174,5,317,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="341,5,512,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="536,5,587,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="599,87,638,114"/>
+</map>

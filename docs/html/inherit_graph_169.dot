@@ -1,0 +1,22 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6114 [label="logging.Formatter",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6114 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="coloredlogs.BasicFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcoloredlogs_1_1BasicFormatter.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="coloredlogs.ColoredFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcoloredlogs_1_1ColoredFormatter.html",tooltip=" "];
+  Node6114 -> Node6117 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6117 [label="pip._internal.utils.logging.\lIndentingFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__internal_1_1utils_1_1logging_1_1IndentingFormatter.html",tooltip=" "];
+  Node6114 -> Node6118 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6118 [label="pip._vendor.pep517.colorlog.\lLogFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1LogFormatter.html",tooltip=" "];
+  Node6114 -> Node6119 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6119 [label="uvicorn.logging.Colourized\lFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classuvicorn_1_1logging_1_1ColourizedFormatter.html",tooltip=" "];
+  Node6119 -> Node6120 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6120 [label="uvicorn.logging.AccessFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classuvicorn_1_1logging_1_1AccessFormatter.html",tooltip=" "];
+  Node6119 -> Node6121 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6121 [label="uvicorn.logging.DefaultFormatter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classuvicorn_1_1logging_1_1DefaultFormatter.html",tooltip=" "];
+}

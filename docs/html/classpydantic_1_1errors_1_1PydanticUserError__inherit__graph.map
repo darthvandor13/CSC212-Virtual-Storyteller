@@ -1,0 +1,8 @@
+<map id="pydantic.errors.PydanticUserError" name="pydantic.errors.PydanticUserError">
+<area shape="rect" id="node1" title=" " alt="" coords="216,71,379,112"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1errors_1_1PydanticForbiddenQualifier.html" title=" " alt="" coords="427,5,589,47"/>
+<area shape="rect" id="node5" href="$classpydantic_1_1errors_1_1PydanticInvalidForJsonSchema.html" title=" " alt="" coords="427,71,589,112"/>
+<area shape="rect" id="node6" href="$classpydantic_1_1errors_1_1PydanticSchemaGenerationError.html" title=" " alt="" coords="427,136,589,177"/>
+<area shape="rect" id="node2" href="$classpydantic_1_1errors_1_1PydanticErrorMixin.html" title=" " alt="" coords="5,41,168,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,107,126,134"/>
+</map>

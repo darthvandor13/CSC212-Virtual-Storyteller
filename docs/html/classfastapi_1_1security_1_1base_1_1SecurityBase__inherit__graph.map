@@ -1,0 +1,10 @@
+<map id="fastapi.security.base.SecurityBase" name="fastapi.security.base.SecurityBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,166,228,193"/>
+<area shape="rect" id="node2" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyBase.html" title=" " alt="" coords="315,71,445,112"/>
+<area shape="rect" id="node6" href="$classfastapi_1_1security_1_1http_1_1HTTPBase.html" title=" " alt="" coords="278,137,482,163"/>
+<area shape="rect" id="node7" href="$classfastapi_1_1security_1_1oauth2_1_1OAuth2.html" title=" " alt="" coords="302,188,458,229"/>
+<area shape="rect" id="node8" href="$classfastapi_1_1security_1_1open__id__connect__url_1_1OpenIdConnect.html" title=" " alt="" coords="276,253,484,295"/>
+<area shape="rect" id="node3" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyCookie.html" title=" " alt="" coords="532,5,671,47"/>
+<area shape="rect" id="node4" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyHeader.html" title=" " alt="" coords="532,71,671,112"/>
+<area shape="rect" id="node5" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyQuery.html" title=" " alt="" coords="535,136,667,177"/>
+</map>

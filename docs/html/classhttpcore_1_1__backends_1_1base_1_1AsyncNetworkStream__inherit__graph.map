@@ -1,0 +1,7 @@
+<map id="httpcore._backends.base.AsyncNetworkStream" name="httpcore._backends.base.AsyncNetworkStream">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,177,145"/>
+<area shape="rect" id="node2" href="$classhttpcore_1_1__async_1_1http11_1_1AsyncHTTP11UpgradeStream.html" title=" " alt="" coords="225,5,421,47"/>
+<area shape="rect" id="node3" href="$classhttpcore_1_1__backends_1_1anyio_1_1AnyIOStream.html" title=" " alt="" coords="236,71,411,112"/>
+<area shape="rect" id="node4" href="$classhttpcore_1_1__backends_1_1mock_1_1AsyncMockStream.html" title=" " alt="" coords="235,136,411,177"/>
+<area shape="rect" id="node5" href="$classhttpcore_1_1__backends_1_1trio_1_1TrioStream.html" title=" " alt="" coords="242,201,405,243"/>
+</map>

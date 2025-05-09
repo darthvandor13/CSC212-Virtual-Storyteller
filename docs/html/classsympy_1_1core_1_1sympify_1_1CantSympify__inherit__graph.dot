@@ -1,0 +1,38 @@
+digraph "sympy.core.sympify.CantSympify"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.core.sympify.CantSympify",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.combinatorics.free\l_groups.FreeGroupElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1combinatorics_1_1free__groups_1_1FreeGroupElement.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.polys.fields.FracElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1fields_1_1FracElement.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.polys.polyclasses.ANP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1polyclasses_1_1ANP.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.polys.polyclasses.DMF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1polyclasses_1_1DMF.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sympy.polys.polyclasses.DMP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1polyclasses_1_1DMP.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sympy.polys.polyclasses.\lDMP_Python",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1polyclasses_1_1DMP__Python.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sympy.polys.polyclasses.\lDUP_Flint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1polyclasses_1_1DUP__Flint.html",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sympy.polys.rings.PolyElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1rings_1_1PolyElement.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sympy.tensor.tensor.\l_IndexStructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1__IndexStructure.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sympy.tensor.tensor.\l_TensorDataLazyEvaluator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1__TensorDataLazyEvaluator.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

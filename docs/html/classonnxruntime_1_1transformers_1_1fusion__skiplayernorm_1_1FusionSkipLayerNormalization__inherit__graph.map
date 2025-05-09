@@ -1,0 +1,5 @@
+<map id="onnxruntime.transformers.fusion_skiplayernorm.FusionSkipLayerNormalization" name="onnxruntime.transformers.fusion_skiplayernorm.FusionSkipLayerNormalization">
+<area shape="rect" id="node1" title=" " alt="" coords="263,13,553,54"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1fusion__simplified__layernorm_1_1FusionSkipSimplifiedLayerNormalization.html" title=" " alt="" coords="601,5,876,61"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="5,13,215,54"/>
+</map>

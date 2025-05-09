@@ -1,0 +1,9 @@
+<map id="openai.cli._api.audio.CLITranslationArgs" name="openai.cli._api.audio.CLITranslationArgs">
+<area shape="rect" id="node1" title=" " alt="" coords="5,319,261,345"/>
+<area shape="rect" id="node2" href="$classopenai_1_1cli_1_1__models_1_1BaseModel.html" title=" " alt="" coords="34,244,233,271"/>
+<area shape="rect" id="node3" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="42,169,225,196"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="47,95,219,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="24,13,107,39"/>
+<area shape="rect" id="node6" title=" " alt="" coords="131,5,274,47"/>
+<area shape="rect" id="node7" title=" " alt="" coords="299,5,480,47"/>
+</map>

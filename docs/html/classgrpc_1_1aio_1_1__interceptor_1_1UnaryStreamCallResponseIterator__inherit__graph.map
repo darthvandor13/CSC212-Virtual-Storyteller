@@ -1,0 +1,12 @@
+<map id="grpc.aio._interceptor.UnaryStreamCallResponseIterator" name="grpc.aio._interceptor.UnaryStreamCallResponseIterator">
+<area shape="rect" id="node1" title=" " alt="" coords="844,99,1031,141"/>
+<area shape="rect" id="node2" href="$classgrpc_1_1aio_1_1__interceptor_1_1__StreamCallResponseIterator.html" title=" " alt="" coords="601,66,796,107"/>
+<area shape="rect" id="node3" href="$classgrpc_1_1aio_1_1__base__call_1_1UnaryStreamCall.html" title=" " alt="" coords="612,131,785,173"/>
+<area shape="rect" id="node4" title=" " alt="" coords="439,5,506,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="423,56,522,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="418,107,527,133"/>
+<area shape="rect" id="node7" href="$classgrpc_1_1aio_1_1__base__call_1_1Call.html" title=" " alt="" coords="392,275,553,301"/>
+<area shape="rect" id="node8" href="$classgrpc_1_1aio_1_1__base__call_1_1RpcContext.html" title=" " alt="" coords="136,307,344,333"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,244,88,271"/>
+<area shape="rect" id="node10" title=" " alt="" coords="7,369,86,396"/>
+</map>

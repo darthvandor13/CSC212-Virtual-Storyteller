@@ -1,0 +1,5 @@
+<map id="anyio.from_thread.BlockingPortal" name="anyio.from_thread.BlockingPortal">
+<area shape="rect" id="node1" title=" " alt="" coords="113,5,293,47"/>
+<area shape="rect" id="node2" href="$classanyio_1_1__backends_1_1__asyncio_1_1BlockingPortal.html" title=" " alt="" coords="5,95,185,136"/>
+<area shape="rect" id="node3" href="$classanyio_1_1__backends_1_1__trio_1_1BlockingPortal.html" title=" " alt="" coords="210,95,413,136"/>
+</map>

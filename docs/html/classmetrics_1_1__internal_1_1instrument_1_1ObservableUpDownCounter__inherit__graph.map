@@ -1,0 +1,11 @@
+<map id="metrics._internal.instrument.ObservableUpDownCounter" name="metrics._internal.instrument.ObservableUpDownCounter">
+<area shape="rect" id="node1" title=" " alt="" coords="593,104,780,145"/>
+<area shape="rect" id="node7" href="$classmetrics_1_1__internal_1_1instrument_1_1NoOpObservableUpDownCounter.html" title=" " alt="" coords="832,5,1051,47"/>
+<area shape="rect" id="node8" href="$classmetrics_1_1__internal_1_1instrument_1_1__ObservableUpDownCounter.html" title=" " alt="" coords="845,71,1037,112"/>
+<area shape="rect" id="node9" href="$classmetrics_1_1__internal_1_1instrument_1_1__ProxyObservableUpDownCounter.html" title=" " alt="" coords="828,136,1055,177"/>
+<area shape="rect" id="node2" href="$classmetrics_1_1__internal_1_1instrument_1_1Asynchronous.html" title=" " alt="" coords="349,39,535,80"/>
+<area shape="rect" id="node3" href="$classmetrics_1_1__internal_1_1instrument_1_1Instrument.html" title=" " alt="" coords="104,39,291,80"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,46,56,73"/>
+<area shape="rect" id="node5" href="$classmetrics_1_1__internal_1_1instrument_1_1__Asynchronous.html" title=" " alt="" coords="349,104,535,145"/>
+<area shape="rect" id="node6" title=" " alt="" coords="339,170,545,197"/>
+</map>

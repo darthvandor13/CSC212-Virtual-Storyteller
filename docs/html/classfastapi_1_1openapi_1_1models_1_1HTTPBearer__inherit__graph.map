@@ -1,0 +1,10 @@
+<map id="fastapi.openapi.models.HTTPBearer" name="fastapi.openapi.models.HTTPBearer">
+<area shape="rect" id="node1" title=" " alt="" coords="8,408,241,435"/>
+<area shape="rect" id="node2" href="$classfastapi_1_1openapi_1_1models_1_1HTTPBase.html" title=" " alt="" coords="12,333,237,360"/>
+<area shape="rect" id="node3" href="$classfastapi_1_1openapi_1_1models_1_1SecurityBase.html" title=" " alt="" coords="5,259,244,285"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="39,95,211,121"/>
+<area shape="rect" id="node8" href="$classfastapi_1_1openapi_1_1models_1_1BaseModelWithConfig.html" title=" " alt="" coords="96,169,287,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="15,13,98,39"/>
+<area shape="rect" id="node6" title=" " alt="" coords="123,5,265,47"/>
+<area shape="rect" id="node7" title=" " alt="" coords="290,5,471,47"/>
+</map>

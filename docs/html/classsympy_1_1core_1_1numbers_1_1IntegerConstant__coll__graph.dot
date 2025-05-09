@@ -1,0 +1,47 @@
+digraph "sympy.core.numbers.IntegerConstant"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sympy.core.numbers.Integer\lConstant",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.core.numbers.Integer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1numbers_1_1Integer.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.core.numbers.Rational",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1numbers_1_1Rational.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.core.numbers.Number",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1numbers_1_1Number.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.core.expr.AtomicExpr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1expr_1_1AtomicExpr.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sympy.core.basic.Atom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1basic_1_1Atom.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sympy.core.basic.Basic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1basic_1_1Basic.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sympy.core._print_helpers.\lPrintable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1__print__helpers_1_1Printable.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_Add\nis_AlgebraicNumber\nis_Atom\nis_Boolean\nis_Derivative\nis_Dummy\nis_Equality\nis_Float\nis_Function\nis_Indexed\n..." ,fontname="Helvetica"];
+  Node9 [label="bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_Atom" ,fontname="Helvetica"];
+  Node10 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sympy.core.expr.Expr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1expr_1_1Expr.html",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sympy.core.evalf.EvalfMixin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1evalf_1_1EvalfMixin.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" n" ,fontname="Helvetica"];
+  Node12 [label="def",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_scalar" ,fontname="Helvetica"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_Number\nis_commutative\nis_number" ,fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_Rational\nis_integer\nis_number\nis_rational\nis_real" ,fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_Integer\nis_integer\nis_number" ,fontname="Helvetica"];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" q" ,fontname="Helvetica"];
+  Node13 [label="int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

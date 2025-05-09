@@ -1,0 +1,23 @@
+digraph "tokenizers.implementations.base_tokenizer.BaseTokenizer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tokenizers.implementations.base\l_tokenizer.BaseTokenizer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="tokenizers.implementations.bert\l_wordpiece.BertWordPieceTokenizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtokenizers_1_1implementations_1_1bert__wordpiece_1_1BertWordPieceTokenizer.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tokenizers.implementations.byte\l_level_bpe.ByteLevelBPETokenizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtokenizers_1_1implementations_1_1byte__level__bpe_1_1ByteLevelBPETokenizer.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="tokenizers.implementations.char\l_level_bpe.CharBPETokenizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtokenizers_1_1implementations_1_1char__level__bpe_1_1CharBPETokenizer.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tokenizers.implementations.sentencepiece\l_bpe.SentencePieceBPETokenizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtokenizers_1_1implementations_1_1sentencepiece__bpe_1_1SentencePieceBPETokenizer.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="tokenizers.implementations.sentencepiece\l_unigram.SentencePieceUnigramTokenizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtokenizers_1_1implementations_1_1sentencepiece__unigram_1_1SentencePieceUnigramTokenizer.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

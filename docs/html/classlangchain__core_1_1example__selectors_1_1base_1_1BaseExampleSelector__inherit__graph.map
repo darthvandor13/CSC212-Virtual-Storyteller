@@ -1,0 +1,8 @@
+<map id="langchain_core.example_selectors.base.BaseExampleSelector" name="langchain_core.example_selectors.base.BaseExampleSelector">
+<area shape="rect" id="node1" title=" " alt="" coords="104,53,351,94"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1example__selectors_1_1length__based_1_1LengthBasedExampleSelector.html" title=" " alt="" coords="399,5,605,61"/>
+<area shape="rect" id="node4" href="$classlangchain__core_1_1example__selectors_1_1semantic__similarity_1_1__VectorStoreExampleSelector.html" title=" " alt="" coords="402,85,602,141"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,60,56,87"/>
+<area shape="rect" id="node5" href="$classlangchain__core_1_1example__selectors_1_1semantic__similarity_1_1MaxMarginalRelevanceExampleSelector.html" title=" " alt="" coords="653,45,911,101"/>
+<area shape="rect" id="node6" href="$classlangchain__core_1_1example__selectors_1_1semantic__similarity_1_1SemanticSimilarityExampleSelector.html" title=" " alt="" coords="667,125,897,181"/>
+</map>

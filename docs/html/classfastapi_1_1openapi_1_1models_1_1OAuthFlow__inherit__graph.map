@@ -1,0 +1,12 @@
+<map id="fastapi.openapi.models.OAuthFlow" name="fastapi.openapi.models.OAuthFlow">
+<area shape="rect" id="node1" title=" " alt="" coords="693,111,919,138"/>
+<area shape="rect" id="node7" href="$classfastapi_1_1openapi_1_1models_1_1OAuthFlowAuthorizationCode.html" title=" " alt="" coords="967,5,1164,47"/>
+<area shape="rect" id="node8" href="$classfastapi_1_1openapi_1_1models_1_1OAuthFlowClientCredentials.html" title=" " alt="" coords="967,71,1164,112"/>
+<area shape="rect" id="node9" href="$classfastapi_1_1openapi_1_1models_1_1OAuthFlowImplicit.html" title=" " alt="" coords="967,136,1164,177"/>
+<area shape="rect" id="node10" href="$classfastapi_1_1openapi_1_1models_1_1OAuthFlowPassword.html" title=" " alt="" coords="967,201,1164,243"/>
+<area shape="rect" id="node2" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,111,407,138"/>
+<area shape="rect" id="node6" href="$classfastapi_1_1openapi_1_1models_1_1BaseModelWithConfig.html" title=" " alt="" coords="455,133,645,175"/>
+<area shape="rect" id="node3" title=" " alt="" coords="55,82,137,109"/>
+<area shape="rect" id="node4" title=" " alt="" coords="25,133,167,175"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,199,187,240"/>
+</map>

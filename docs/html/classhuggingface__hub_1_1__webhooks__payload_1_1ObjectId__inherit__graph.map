@@ -1,0 +1,8 @@
+<map id="huggingface_hub._webhooks_payload.ObjectId" name="huggingface_hub._webhooks_payload.ObjectId">
+<area shape="rect" id="node1" title=" " alt="" coords="244,104,435,145"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1__webhooks__payload_1_1WebhookPayloadComment.html" title=" " alt="" coords="487,5,723,47"/>
+<area shape="rect" id="node4" href="$classhuggingface__hub_1_1__webhooks__payload_1_1WebhookPayloadDiscussion.html" title=" " alt="" coords="483,71,727,112"/>
+<area shape="rect" id="node5" href="$classhuggingface__hub_1_1__webhooks__payload_1_1WebhookPayloadRepo.html" title=" " alt="" coords="499,136,710,177"/>
+<area shape="rect" id="node6" href="$classhuggingface__hub_1_1__webhooks__payload_1_1WebhookPayloadWebhook.html" title=" " alt="" coords="488,201,721,243"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1__webhooks__payload_1_1BaseModel.html" title=" " alt="" coords="5,104,196,145"/>
+</map>

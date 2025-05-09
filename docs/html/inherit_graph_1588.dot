@@ -1,0 +1,52 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="PIL.ImageFilter.Filter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1Filter.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PIL.ImageFilter.ModeFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1ModeFilter.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PIL.ImageFilter.Multiband\lFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1MultibandFilter.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PIL.ImageFilter.BoxBlur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1BoxBlur.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PIL.ImageFilter.BuiltinFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1BuiltinFilter.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PIL.ImageFilter.BLUR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1BLUR.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PIL.ImageFilter.CONTOUR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1CONTOUR.html",tooltip=" "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PIL.ImageFilter.DETAIL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1DETAIL.html",tooltip=" "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PIL.ImageFilter.EDGE\l_ENHANCE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1EDGE__ENHANCE.html",tooltip=" "];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PIL.ImageFilter.EDGE\l_ENHANCE_MORE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1EDGE__ENHANCE__MORE.html",tooltip=" "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PIL.ImageFilter.EMBOSS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1EMBOSS.html",tooltip=" "];
+  Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PIL.ImageFilter.FIND\l_EDGES",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1FIND__EDGES.html",tooltip=" "];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PIL.ImageFilter.Kernel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1Kernel.html",tooltip=" "];
+  Node4 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PIL.ImageFilter.SHARPEN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1SHARPEN.html",tooltip=" "];
+  Node4 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PIL.ImageFilter.SMOOTH",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1SMOOTH.html",tooltip=" "];
+  Node4 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PIL.ImageFilter.SMOOTH_MORE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1SMOOTH__MORE.html",tooltip=" "];
+  Node2 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PIL.ImageFilter.Color3DLUT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1Color3DLUT.html",tooltip=" "];
+  Node2 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PIL.ImageFilter.GaussianBlur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1GaussianBlur.html",tooltip=" "];
+  Node2 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="PIL.ImageFilter.UnsharpMask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1UnsharpMask.html",tooltip=" "];
+  Node0 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="PIL.ImageFilter.RankFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1RankFilter.html",tooltip=" "];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="PIL.ImageFilter.MaxFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1MaxFilter.html",tooltip=" "];
+  Node19 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="PIL.ImageFilter.MedianFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1MedianFilter.html",tooltip=" "];
+  Node19 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="PIL.ImageFilter.MinFilter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPIL_1_1ImageFilter_1_1MinFilter.html",tooltip=" "];
+}

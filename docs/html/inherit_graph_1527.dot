@@ -1,0 +1,26 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="pdfminer.cmapdb.CMapBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1CMapBase.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="pdfminer.cmapdb.CMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1CMap.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pdfminer.cmapdb.FileCMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1FileCMap.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pdfminer.cmapdb.PyCMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1PyCMap.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pdfminer.cmapdb.IdentityCMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1IdentityCMap.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pdfminer.cmapdb.Identity\lCMapByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1IdentityCMapByte.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="pdfminer.cmapdb.UnicodeMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1UnicodeMap.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="pdfminer.cmapdb.FileUnicodeMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1FileUnicodeMap.html",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="pdfminer.cmapdb.Identity\lUnicodeMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1IdentityUnicodeMap.html",tooltip=" "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="pdfminer.cmapdb.PyUnicodeMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1cmapdb_1_1PyUnicodeMap.html",tooltip=" "];
+}

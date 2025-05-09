@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node15442 [label="AbstractFileSystem",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15442 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="fsspec.implementations.sftp.\lSFTPFileSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1sftp_1_1SFTPFileSystem.html",tooltip=" "];
+  Node15442 -> Node15444 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15444 [label="fsspec.implementations.smb.\lSMBFileSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1smb_1_1SMBFileSystem.html",tooltip=" "];
+}

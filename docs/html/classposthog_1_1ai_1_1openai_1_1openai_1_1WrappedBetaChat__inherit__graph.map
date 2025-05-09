@@ -1,0 +1,5 @@
+<map id="posthog.ai.openai.openai.WrappedBetaChat" name="posthog.ai.openai.openai.WrappedBetaChat">
+<area shape="rect" id="node1" title=" " alt="" coords="40,155,211,196"/>
+<area shape="rect" id="node2" href="$classopenai_1_1resources_1_1beta_1_1chat_1_1chat_1_1Chat.html" title=" " alt="" coords="5,80,245,107"/>
+<area shape="rect" id="node3" href="$classopenai_1_1__resource_1_1SyncAPIResource.html" title=" " alt="" coords="9,5,242,32"/>
+</map>

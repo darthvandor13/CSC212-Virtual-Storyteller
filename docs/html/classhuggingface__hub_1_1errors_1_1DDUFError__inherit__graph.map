@@ -1,0 +1,7 @@
+<map id="huggingface_hub.errors.DDUFError" name="huggingface_hub.errors.DDUFError">
+<area shape="rect" id="node1" title=" " alt="" coords="133,46,360,73"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1errors_1_1DDUFCorruptedFileError.html" title=" " alt="" coords="408,5,664,47"/>
+<area shape="rect" id="node4" href="$classhuggingface__hub_1_1errors_1_1DDUFExportError.html" title=" " alt="" coords="417,71,655,112"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,46,85,73"/>
+<area shape="rect" id="node5" href="$classhuggingface__hub_1_1errors_1_1DDUFInvalidEntryNameError.html" title=" " alt="" coords="712,71,949,112"/>
+</map>

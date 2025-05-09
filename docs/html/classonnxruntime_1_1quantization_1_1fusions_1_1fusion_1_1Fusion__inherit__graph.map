@@ -1,0 +1,5 @@
+<map id="onnxruntime.quantization.fusions.fusion.Fusion" name="onnxruntime.quantization.fusions.fusion.Fusion">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,261,80"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1fusions_1_1fusion__gelu_1_1FusionGelu.html" title=" " alt="" coords="309,5,561,47"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1fusions_1_1fusion__layernorm_1_1FusionLayerNormalization.html" title=" " alt="" coords="309,71,561,112"/>
+</map>

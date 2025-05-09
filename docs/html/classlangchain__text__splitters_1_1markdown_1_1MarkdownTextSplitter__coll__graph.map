@@ -1,0 +1,7 @@
+<map id="langchain_text_splitters.markdown.MarkdownTextSplitter" name="langchain_text_splitters.markdown.MarkdownTextSplitter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,348,232,389"/>
+<area shape="rect" id="node2" href="$classlangchain__text__splitters_1_1character_1_1RecursiveCharacterTextSplitter.html" title=" " alt="" coords="9,259,229,300"/>
+<area shape="rect" id="node3" href="$classlangchain__text__splitters_1_1base_1_1TextSplitter.html" title=" " alt="" coords="21,169,216,211"/>
+<area shape="rect" id="node4" href="$classlangchain__core_1_1documents_1_1transformers_1_1BaseDocumentTransformer.html" title=" " alt="" coords="73,80,332,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="93,5,144,32"/>
+</map>

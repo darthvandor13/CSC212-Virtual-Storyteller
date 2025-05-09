@@ -1,0 +1,30 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="onnxruntime.quantization.operators.qdq\l_base_operator.QDQOperatorBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1qdq__base__operator_1_1QDQOperatorBase.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="onnxruntime.quantization.operators.activation.\lQDQRemovableActivation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1activation_1_1QDQRemovableActivation.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="onnxruntime.quantization.operators.conv.\lQDQConv",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1conv_1_1QDQConv.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="onnxruntime.quantization.operators.direct\l_q8.QDQDirect8BitOp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1direct__q8_1_1QDQDirect8BitOp.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="onnxruntime.quantization.operators.maxpool.\lQDQMaxPool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1maxpool_1_1QDQMaxPool.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="onnxruntime.quantization.operators.resize.\lQDQResize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1resize_1_1QDQResize.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="onnxruntime.quantization.operators.gather.\lQDQGather",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1gather_1_1QDQGather.html",tooltip=" "];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="onnxruntime.quantization.operators.matmul.\lQDQMatMul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1QDQMatMul.html",tooltip=" "];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="onnxruntime.quantization.operators.norm.\lQDQNormalization",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1norm_1_1QDQNormalization.html",tooltip=" "];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="onnxruntime.quantization.operators.pad.\lQDQPad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1pad_1_1QDQPad.html",tooltip=" "];
+  Node0 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="onnxruntime.quantization.operators.split.\lQDQSplit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1split_1_1QDQSplit.html",tooltip=" "];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="onnxruntime.quantization.operators.where.\lQDQWhere",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classonnxruntime_1_1quantization_1_1operators_1_1where_1_1QDQWhere.html",tooltip=" "];
+}

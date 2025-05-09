@@ -1,0 +1,9 @@
+<map id="PIL.ImageShow.UnixViewer" name="PIL.ImageShow.UnixViewer">
+<area shape="rect" id="node1" title=" " alt="" coords="211,107,395,133"/>
+<area shape="rect" id="node3" href="$classPIL_1_1ImageShow_1_1DisplayViewer.html" title=" " alt="" coords="453,5,655,32"/>
+<area shape="rect" id="node4" href="$classPIL_1_1ImageShow_1_1EogViewer.html" title=" " alt="" coords="464,56,644,83"/>
+<area shape="rect" id="node5" href="$classPIL_1_1ImageShow_1_1GmDisplayViewer.html" title=" " alt="" coords="443,107,665,133"/>
+<area shape="rect" id="node6" href="$classPIL_1_1ImageShow_1_1XDGViewer.html" title=" " alt="" coords="461,157,647,184"/>
+<area shape="rect" id="node7" href="$classPIL_1_1ImageShow_1_1XVViewer.html" title=" " alt="" coords="467,208,641,235"/>
+<area shape="rect" id="node2" href="$classPIL_1_1ImageShow_1_1Viewer.html" title=" " alt="" coords="5,107,163,133"/>
+</map>

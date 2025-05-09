@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="sympy.stats.joint_rv.Sample\lJointNumpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1stats_1_1joint__rv_1_1SampleJointNumpy.html",tooltip=" "];
+}

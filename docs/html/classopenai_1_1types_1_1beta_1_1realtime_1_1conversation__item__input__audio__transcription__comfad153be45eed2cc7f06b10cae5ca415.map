@@ -1,0 +1,8 @@
+<map id="openai.types.beta.realtime.conversation_item_input_audio_transcription_completed_event.ConversationItemInputAudioTranscriptionCompletedEvent" name="openai.types.beta.realtime.conversation_item_input_audio_transcription_completed_event.ConversationItemInputAudioTranscriptionCompletedEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,303,315"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="63,169,245,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="68,95,240,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="45,13,127,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="152,5,295,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="319,5,501,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="onnxruntime.transformers.onnx_model_phi.Fission" name="onnxruntime.transformers.onnx_model_phi.Fission">
+<area shape="rect" id="node1" title=" " alt="" coords="263,116,465,157"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1onnx__model__phi_1_1FissionTransformerBlockPhi.html" title=" " alt="" coords="529,5,785,47"/>
+<area shape="rect" id="node4" href="$classonnxruntime_1_1transformers_1_1onnx__model__phi_1_1FissionTransformerCausalLMHeadPhi.html" title=" " alt="" coords="535,71,780,127"/>
+<area shape="rect" id="node5" href="$classonnxruntime_1_1transformers_1_1onnx__model__phi_1_1FissionTransformerEmbeddingPhi.html" title=" " alt="" coords="513,152,801,193"/>
+<area shape="rect" id="node6" href="$classonnxruntime_1_1transformers_1_1onnx__model__phi_1_1FissionTransformerLayerNormPhi.html" title=" " alt="" coords="539,218,775,274"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="5,116,215,157"/>
+</map>

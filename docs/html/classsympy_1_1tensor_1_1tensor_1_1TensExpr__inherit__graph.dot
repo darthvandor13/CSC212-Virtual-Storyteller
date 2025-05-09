@@ -1,0 +1,41 @@
+digraph "sympy.tensor.tensor.TensExpr"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.tensor.tensor.TensExpr",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.core.expr.Expr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1expr_1_1Expr.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.core.basic.Basic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1basic_1_1Basic.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.core._print_helpers.\lPrintable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1__print__helpers_1_1Printable.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.core.evalf.EvalfMixin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1core_1_1evalf_1_1EvalfMixin.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ABC",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sympy.tensor.tensor.TensAdd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1TensAdd.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sympy.tensor.tensor.TensMul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1TensMul.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sympy.tensor.tensor.Tensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1Tensor.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sympy.tensor.tensor.Wild\lTensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1WildTensor.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sympy.tensor.tensor.Tensor\lElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1tensor_1_1TensorElement.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sympy.tensor.toperators.\lPartialDerivative",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1toperators_1_1PartialDerivative.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

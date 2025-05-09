@@ -1,0 +1,4 @@
+<map id="huggingface_hub._commit_api.CommitOperationAdd" name="huggingface_hub._commit_api.CommitOperationAdd">
+<area shape="rect" id="node1" title=" " alt="" coords="49,5,224,47"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1__upload__large__folder_1_1HackyCommitOperationAdd.html" title="Hacks with CommitOperationAdd to bypass checks/sha256 calculation." alt="" coords="5,95,268,136"/>
+</map>

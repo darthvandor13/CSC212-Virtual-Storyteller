@@ -1,0 +1,22 @@
+<map id="openai.cli._models.BaseModel" name="openai.cli._models.BaseModel">
+<area shape="rect" id="node1" title=" " alt="" coords="685,409,884,436"/>
+<area shape="rect" id="node7" href="$classopenai_1_1cli_1_1__api_1_1audio_1_1CLITranscribeArgs.html" title=" " alt="" coords="933,5,1187,32"/>
+<area shape="rect" id="node8" href="$classopenai_1_1cli_1_1__api_1_1audio_1_1CLITranslationArgs.html" title=" " alt="" coords="932,56,1188,83"/>
+<area shape="rect" id="node9" href="$classopenai_1_1cli_1_1__api_1_1chat_1_1completions_1_1CLIChatCompletionCreateArgs.html" title=" " alt="" coords="954,107,1166,149"/>
+<area shape="rect" id="node10" href="$classopenai_1_1cli_1_1__api_1_1completions_1_1CLICompletionCreateArgs.html" title=" " alt="" coords="969,173,1151,214"/>
+<area shape="rect" id="node11" href="$classopenai_1_1cli_1_1__api_1_1files_1_1CLIFileCreateArgs.html" title=" " alt="" coords="971,238,1149,279"/>
+<area shape="rect" id="node12" href="$classopenai_1_1cli_1_1__api_1_1files_1_1CLIFileIDArgs.html" title=" " alt="" coords="971,303,1149,345"/>
+<area shape="rect" id="node13" href="$classopenai_1_1cli_1_1__api_1_1image_1_1CLIImageCreateArgs.html" title=" " alt="" coords="957,369,1163,410"/>
+<area shape="rect" id="node14" href="$classopenai_1_1cli_1_1__api_1_1image_1_1CLIImageCreateVariationArgs.html" title=" " alt="" coords="957,434,1163,475"/>
+<area shape="rect" id="node15" href="$classopenai_1_1cli_1_1__api_1_1image_1_1CLIImageEditArgs.html" title=" " alt="" coords="957,499,1163,541"/>
+<area shape="rect" id="node16" href="$classopenai_1_1cli_1_1__api_1_1models_1_1CLIModelIDArgs.html" title=" " alt="" coords="955,565,1165,606"/>
+<area shape="rect" id="node17" href="$classopenai_1_1cli_1_1__cli_1_1Arguments.html" title=" " alt="" coords="976,631,1144,657"/>
+<area shape="rect" id="node18" href="$classopenai_1_1cli_1_1__tools_1_1fine__tunes_1_1PrepareDataArgs.html" title=" " alt="" coords="977,682,1143,723"/>
+<area shape="rect" id="node19" href="$classopenai_1_1cli_1_1__tools_1_1migrate_1_1GritArgs.html" title=" " alt="" coords="977,747,1143,789"/>
+<area shape="rect" id="node20" href="$classopenai_1_1cli_1_1__tools_1_1migrate_1_1MigrateArgs.html" title=" " alt="" coords="977,813,1143,854"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="455,409,637,436"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,409,407,436"/>
+<area shape="rect" id="node4" title=" " alt="" coords="55,380,137,407"/>
+<area shape="rect" id="node5" title=" " alt="" coords="25,431,167,473"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,497,187,538"/>
+</map>

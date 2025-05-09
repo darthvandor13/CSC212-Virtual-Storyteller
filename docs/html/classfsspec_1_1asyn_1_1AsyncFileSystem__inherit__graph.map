@@ -1,0 +1,12 @@
+<map id="fsspec.asyn.AsyncFileSystem" name="fsspec.asyn.AsyncFileSystem">
+<area shape="rect" id="node1" title=" " alt="" coords="512,143,712,170"/>
+<area shape="rect" id="node6" href="$classfsspec_1_1generic_1_1GenericFileSystem.html" title=" " alt="" coords="786,5,963,47"/>
+<area shape="rect" id="node7" href="$classfsspec_1_1implementations_1_1asyn__wrapper_1_1AsyncFileSystemWrapper.html" title=" " alt="" coords="760,71,989,112"/>
+<area shape="rect" id="node8" href="$classfsspec_1_1implementations_1_1dirfs_1_1DirFileSystem.html" title=" " alt="" coords="778,136,971,177"/>
+<area shape="rect" id="node9" href="$classfsspec_1_1implementations_1_1http_1_1HTTPFileSystem.html" title=" " alt="" coords="779,201,970,243"/>
+<area shape="rect" id="node10" href="$classfsspec_1_1implementations_1_1reference_1_1ReferenceFileSystem.html" title=" " alt="" coords="763,267,986,308"/>
+<area shape="rect" id="node2" href="$classfsspec_1_1spec_1_1AbstractFileSystem.html" title=" " alt="" coords="297,136,464,177"/>
+<area shape="rect" id="node3" title=" " alt="" coords="133,118,216,145"/>
+<area shape="rect" id="node4" href="$classfsspec_1_1spec_1_1__Cached.html" title=" " alt="" coords="100,169,249,195"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,169,52,195"/>
+</map>

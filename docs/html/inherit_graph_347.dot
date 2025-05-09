@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18860 [label="TestCase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18860 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="greenlet.tests.test\l_cpp.CPPTests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgreenlet_1_1tests_1_1test__cpp_1_1CPPTests.html",tooltip=" "];
+  Node18860 -> Node18862 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18862 [label="greenlet.tests.test\l_extension_interface.CAPITests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgreenlet_1_1tests_1_1test__extension__interface_1_1CAPITests.html",tooltip=" "];
+  Node18860 -> Node18863 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18863 [label="greenlet.tests.test\l_leaks.TestLeaks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgreenlet_1_1tests_1_1test__leaks_1_1TestLeaks.html",tooltip=" "];
+  Node18860 -> Node18864 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18864 [label="greenlet.tests.test\l_tracing.TestGreenletTracing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgreenlet_1_1tests_1_1test__tracing_1_1TestGreenletTracing.html",tooltip=" "];
+  Node18860 -> Node18865 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18865 [label="greenlet.tests.test\l_tracing.TestPythonTracing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgreenlet_1_1tests_1_1test__tracing_1_1TestPythonTracing.html",tooltip=" "];
+}

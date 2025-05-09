@@ -1,0 +1,9 @@
+<map id="kubernetes.config.kube_config_test.BaseTestCase" name="kubernetes.config.kube_config_test.BaseTestCase">
+<area shape="rect" id="node1" title=" " alt="" coords="179,136,361,177"/>
+<area shape="rect" id="node3" href="$classkubernetes_1_1config_1_1kube__config__test_1_1TestConfigNode.html" title=" " alt="" coords="429,5,620,47"/>
+<area shape="rect" id="node4" href="$classkubernetes_1_1config_1_1kube__config__test_1_1TestFileOrData.html" title=" " alt="" coords="432,71,617,112"/>
+<area shape="rect" id="node5" href="$classkubernetes_1_1config_1_1kube__config__test_1_1TestKubeConfigLoader.html" title=" " alt="" coords="410,136,639,177"/>
+<area shape="rect" id="node6" href="$classkubernetes_1_1config_1_1kube__config__test_1_1TestKubeConfigMerger.html" title=" " alt="" coords="409,201,640,243"/>
+<area shape="rect" id="node7" href="$classkubernetes_1_1config_1_1kube__config__test_1_1TestKubernetesClientConfiguration.html" title=" " alt="" coords="413,267,636,323"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,143,131,170"/>
+</map>

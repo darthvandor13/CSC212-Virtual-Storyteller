@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="qnn.mixed_precision\l_overrides_utils.MixedPrecision\lTensorQuantOverridesFixer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classqnn_1_1mixed__precision__overrides__utils_1_1MixedPrecisionTensorQuantOverridesFixer.html",tooltip=" "];
+}

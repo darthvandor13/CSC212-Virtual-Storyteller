@@ -1,0 +1,58 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7032 [label="io.IOBase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7032 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="fsspec.implementations.arrow.\lArrowFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1arrow_1_1ArrowFile.html",tooltip=" "];
+  Node7032 -> Node7034 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7034 [label="fsspec.implementations.local.\lLocalFileOpener",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1local_1_1LocalFileOpener.html",tooltip=" "];
+  Node7032 -> Node7035 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7035 [label="fsspec.spec.AbstractBufferedFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1spec_1_1AbstractBufferedFile.html",tooltip=" "];
+  Node7035 -> Node7036 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7036 [label="fsspec.asyn.AbstractAsync\lStreamedFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1asyn_1_1AbstractAsyncStreamedFile.html",tooltip=" "];
+  Node7036 -> Node7037 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7037 [label="fsspec.implementations.http.\lAsyncStreamFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1http_1_1AsyncStreamFile.html",tooltip=" "];
+  Node7035 -> Node7038 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7038 [label="fsspec.compression.SnappyFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1compression_1_1SnappyFile.html",tooltip=" "];
+  Node7035 -> Node7039 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7039 [label="fsspec.implementations.dask.\lDaskFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1dask_1_1DaskFile.html",tooltip=" "];
+  Node7035 -> Node7040 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7040 [label="fsspec.implementations.dbfs.\lDatabricksFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1dbfs_1_1DatabricksFile.html",tooltip=" "];
+  Node7035 -> Node7041 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7041 [label="fsspec.implementations.ftp.\lFTPFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1ftp_1_1FTPFile.html",tooltip=" "];
+  Node7035 -> Node7042 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7042 [label="fsspec.implementations.http.\lHTTPFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1http_1_1HTTPFile.html",tooltip=" "];
+  Node7035 -> Node7043 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7043 [label="fsspec.implementations.http.\lHTTPStreamFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1http_1_1HTTPStreamFile.html",tooltip=" "];
+  Node7035 -> Node7044 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7044 [label="fsspec.implementations.http\l_sync.HTTPFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1http__sync_1_1HTTPFile.html",tooltip=" "];
+  Node7035 -> Node7045 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7045 [label="fsspec.implementations.http\l_sync.HTTPStreamFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1http__sync_1_1HTTPStreamFile.html",tooltip=" "];
+  Node7035 -> Node7046 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7046 [label="fsspec.implementations.jupyter.\lSimpleFileWriter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1jupyter_1_1SimpleFileWriter.html",tooltip=" "];
+  Node7035 -> Node7047 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7047 [label="fsspec.implementations.reference.\lReferenceFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1reference_1_1ReferenceFile.html",tooltip=" "];
+  Node7035 -> Node7048 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7048 [label="fsspec.implementations.webhdfs.\lWebHDFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfsspec_1_1implementations_1_1webhdfs_1_1WebHDFile.html",tooltip=" "];
+  Node7035 -> Node7049 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7049 [label="huggingface_hub.hf\l_file_system.HfFileSystemFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhuggingface__hub_1_1hf__file__system_1_1HfFileSystemFile.html",tooltip=" "];
+  Node7035 -> Node7050 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7050 [label="huggingface_hub.hf\l_file_system.HfFileSystemStreamFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classhuggingface__hub_1_1hf__file__system_1_1HfFileSystemStreamFile.html",tooltip=" "];
+  Node7032 -> Node7051 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7051 [label="kubernetes.client.rest.RESTResponse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classkubernetes_1_1client_1_1rest_1_1RESTResponse.html",tooltip=" "];
+  Node7032 -> Node7052 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7052 [label="pip._vendor.urllib3.response.\lHTTPResponse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1urllib3_1_1response_1_1HTTPResponse.html",tooltip=" "];
+  Node7032 -> Node7053 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7053 [label="pyasn1.codec.streaming.Caching\lStreamWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpyasn1_1_1codec_1_1streaming_1_1CachingStreamWrapper.html",tooltip=" "];
+  Node7032 -> Node7054 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7054 [label="urllib3.response.BaseHTTPResponse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1response_1_1BaseHTTPResponse.html",tooltip=" "];
+  Node7054 -> Node7055 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7055 [label="urllib3.contrib.emscripten.response.\lEmscriptenHttpResponseWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1contrib_1_1emscripten_1_1response_1_1EmscriptenHttpResponseWrapper.html",tooltip=" "];
+  Node7054 -> Node7056 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7056 [label="urllib3.http2.connection.\lHTTP2Response",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1http2_1_1connection_1_1HTTP2Response.html",tooltip=" "];
+  Node7054 -> Node7057 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7057 [label="urllib3.response.HTTPResponse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classurllib3_1_1response_1_1HTTPResponse.html",tooltip=" "];
+}

@@ -1,0 +1,26 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2081 [label="pdfium_i.AutoCloseable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2081 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="pypdfium2._helpers.bitmap.\lPdfBitmap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1bitmap_1_1PdfBitmap.html",tooltip=" "];
+  Node2081 -> Node2083 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2083 [label="pypdfium2._helpers.document.\lPdfDocument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1document_1_1PdfDocument.html",tooltip=" "];
+  Node2081 -> Node2084 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2084 [label="pypdfium2._helpers.document.\lPdfFormEnv",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1document_1_1PdfFormEnv.html",tooltip=" "];
+  Node2081 -> Node2085 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2085 [label="pypdfium2._helpers.document.\lPdfXObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1document_1_1PdfXObject.html",tooltip=" "];
+  Node2081 -> Node2086 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2086 [label="pypdfium2._helpers.page.\lPdfPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1page_1_1PdfPage.html",tooltip=" "];
+  Node2081 -> Node2087 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2087 [label="pypdfium2._helpers.pageobjects.\lPdfObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1pageobjects_1_1PdfObject.html",tooltip=" "];
+  Node2087 -> Node2088 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2088 [label="pypdfium2._helpers.pageobjects.\lPdfImage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1pageobjects_1_1PdfImage.html",tooltip=" "];
+  Node2081 -> Node2089 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2089 [label="pypdfium2._helpers.textpage.\lPdfTextPage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1textpage_1_1PdfTextPage.html",tooltip=" "];
+  Node2081 -> Node2090 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2090 [label="pypdfium2._helpers.textpage.\lPdfTextSearcher",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpypdfium2_1_1__helpers_1_1textpage_1_1PdfTextSearcher.html",tooltip=" "];
+}

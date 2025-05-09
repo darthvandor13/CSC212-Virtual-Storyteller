@@ -1,0 +1,15 @@
+<map id="filelock._api.BaseFileLock" name="filelock._api.BaseFileLock">
+<area shape="rect" id="node1" title=" " alt="" coords="369,123,544,150"/>
+<area shape="rect" id="node7" href="$classfilelock_1_1__soft_1_1SoftFileLock.html" title=" " alt="" coords="597,6,770,33"/>
+<area shape="rect" id="node9" href="$classfilelock_1_1__unix_1_1UnixFileLock.html" title=" " alt="" coords="594,123,773,150"/>
+<area shape="rect" id="node11" href="$classfilelock_1_1__windows_1_1WindowsFileLock.html" title=" " alt="" coords="592,175,775,216"/>
+<area shape="rect" id="node13" href="$classfilelock_1_1asyncio_1_1BaseAsyncFileLock.html" title=" " alt="" coords="592,57,775,99"/>
+<area shape="rect" id="node2" title=" " alt="" coords="132,47,321,74"/>
+<area shape="rect" id="node3" title=" " alt="" coords="185,98,268,125"/>
+<area shape="rect" id="node4" href="$classfilelock_1_1__api_1_1FileLockMeta.html" title=" " alt="" coords="140,149,313,175"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,149,84,175"/>
+<area shape="rect" id="node6" title=" " alt="" coords="134,199,319,226"/>
+<area shape="rect" id="node8" href="$classfilelock_1_1asyncio_1_1AsyncSoftFileLock.html" title=" " alt="" coords="837,5,1015,47"/>
+<area shape="rect" id="node10" href="$classfilelock_1_1asyncio_1_1AsyncUnixFileLock.html" title=" " alt="" coords="836,76,1016,117"/>
+<area shape="rect" id="node12" href="$classfilelock_1_1asyncio_1_1AsyncWindowsFileLock.html" title=" " alt="" coords="823,152,1029,193"/>
+</map>

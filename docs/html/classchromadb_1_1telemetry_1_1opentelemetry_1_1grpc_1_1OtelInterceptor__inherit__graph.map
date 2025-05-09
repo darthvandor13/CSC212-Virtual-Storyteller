@@ -1,0 +1,8 @@
+<map id="chromadb.telemetry.opentelemetry.grpc.OtelInterceptor" name="chromadb.telemetry.opentelemetry.grpc.OtelInterceptor">
+<area shape="rect" id="node1" title=" " alt="" coords="407,74,659,115"/>
+<area shape="rect" id="node2" href="$classgrpc_1_1UnaryUnaryClientInterceptor.html" title=" " alt="" coords="135,5,352,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,81,80,108"/>
+<area shape="rect" id="node4" href="$classgrpc_1_1UnaryStreamClientInterceptor.html" title=" " alt="" coords="131,56,355,83"/>
+<area shape="rect" id="node5" href="$classgrpc_1_1StreamUnaryClientInterceptor.html" title=" " alt="" coords="131,107,355,133"/>
+<area shape="rect" id="node6" href="$classgrpc_1_1StreamStreamClientInterceptor.html" title=" " alt="" coords="128,157,359,184"/>
+</map>

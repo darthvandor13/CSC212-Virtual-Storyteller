@@ -1,0 +1,16 @@
+<map id="cffi.model.BaseType" name="cffi.model.BaseType">
+<area shape="rect" id="node1" title=" " alt="" coords="359,132,500,159"/>
+<area shape="rect" id="node4" href="$classcffi_1_1model_1_1ArrayType.html" title=" " alt="" coords="573,19,715,45"/>
+<area shape="rect" id="node5" href="$classcffi_1_1model_1_1BaseFunctionType.html" title=" " alt="" coords="549,69,739,96"/>
+<area shape="rect" id="node8" href="$classcffi_1_1model_1_1BasePrimitiveType.html" title=" " alt="" coords="548,132,740,159"/>
+<area shape="rect" id="node12" href="$classcffi_1_1model_1_1PointerType.html" title=" " alt="" coords="568,183,720,209"/>
+<area shape="rect" id="node14" href="$classcffi_1_1model_1_1VoidType.html" title=" " alt="" coords="575,233,713,260"/>
+<area shape="rect" id="node2" href="$classcffi_1_1model_1_1BaseTypeByIdentity.html" title=" " alt="" coords="111,132,311,159"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,132,63,159"/>
+<area shape="rect" id="node6" href="$classcffi_1_1model_1_1FunctionPtrType.html" title=" " alt="" coords="802,5,981,32"/>
+<area shape="rect" id="node7" href="$classcffi_1_1model_1_1RawFunctionType.html" title=" " alt="" coords="797,56,985,83"/>
+<area shape="rect" id="node9" href="$classcffi_1_1model_1_1PrimitiveType.html" title=" " alt="" coords="810,107,973,133"/>
+<area shape="rect" id="node10" href="$classcffi_1_1model_1_1UnknownFloatType.html" title=" " alt="" coords="794,157,989,184"/>
+<area shape="rect" id="node11" href="$classcffi_1_1model_1_1UnknownIntegerType.html" title=" " alt="" coords="788,208,995,235"/>
+<area shape="rect" id="node13" href="$classcffi_1_1model_1_1NamedPointerType.html" title=" " alt="" coords="794,259,989,285"/>
+</map>

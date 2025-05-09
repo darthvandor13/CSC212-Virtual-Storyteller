@@ -1,0 +1,8 @@
+<map id="onnxruntime.quantization.matmul_4bits_quantizer.WeightOnlyQuantConfig" name="onnxruntime.quantization.matmul_4bits_quantizer.WeightOnlyQuantConfig">
+<area shape="rect" id="node1" title=" " alt="" coords="5,151,265,193"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1matmul__4bits__quantizer_1_1DefaultWeightOnlyQuantConfig.html" title=" " alt="" coords="353,5,582,61"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1matmul__4bits__quantizer_1_1GPTQWeightOnlyQuantConfig.html" title=" " alt="" coords="319,86,616,127"/>
+<area shape="rect" id="node4" href="$classonnxruntime_1_1quantization_1_1matmul__4bits__quantizer_1_1HQQWeightOnlyQuantConfig.html" title=" " alt="" coords="322,151,613,193"/>
+<area shape="rect" id="node5" href="$classonnxruntime_1_1quantization_1_1matmul__4bits__quantizer_1_1NVAWQWeightOnlyQuantConfig.html" title=" " alt="" coords="313,217,621,258"/>
+<area shape="rect" id="node6" href="$classonnxruntime_1_1quantization_1_1matmul__4bits__quantizer_1_1RTNWeightOnlyQuantConfig.html" title=" " alt="" coords="323,282,611,323"/>
+</map>

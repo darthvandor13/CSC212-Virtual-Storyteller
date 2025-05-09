@@ -1,0 +1,8 @@
+<map id="openai.types.beta.threads.runs.run_step.Usage" name="openai.types.beta.threads.runs.run_step.Usage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,228,285"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="25,169,208,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="31,95,203,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="7,13,90,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="115,5,257,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="282,5,463,47"/>
+</map>

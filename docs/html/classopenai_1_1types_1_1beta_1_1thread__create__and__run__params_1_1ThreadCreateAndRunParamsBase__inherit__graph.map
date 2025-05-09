@@ -1,0 +1,8 @@
+<map id="openai.types.beta.thread_create_and_run_params.ThreadCreateAndRunParamsBase" name="openai.types.beta.thread_create_and_run_params.ThreadCreateAndRunParamsBase">
+<area shape="rect" id="node1" title=" " alt="" coords="135,45,385,101"/>
+<area shape="rect" id="node5" href="$classopenai_1_1types_1_1beta_1_1thread__create__and__run__params_1_1ThreadCreateAndRunParamsNonStreaming.html" title=" " alt="" coords="433,5,684,61"/>
+<area shape="rect" id="node6" href="$classopenai_1_1types_1_1beta_1_1thread__create__and__run__params_1_1ThreadCreateAndRunParamsStreaming.html" title=" " alt="" coords="433,85,684,141"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,9,87,36"/>
+<area shape="rect" id="node3" title=" " alt="" coords="23,60,69,87"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,111,73,137"/>
+</map>

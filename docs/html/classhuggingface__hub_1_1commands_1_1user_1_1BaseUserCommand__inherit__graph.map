@@ -1,0 +1,9 @@
+<map id="huggingface_hub.commands.user.BaseUserCommand" name="huggingface_hub.commands.user.BaseUserCommand">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,225,211"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1commands_1_1user_1_1AuthListCommand.html" title=" " alt="" coords="273,5,493,47"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1commands_1_1user_1_1AuthSwitchCommand.html" title=" " alt="" coords="273,71,493,112"/>
+<area shape="rect" id="node4" href="$classhuggingface__hub_1_1commands_1_1user_1_1LoginCommand.html" title=" " alt="" coords="273,136,493,177"/>
+<area shape="rect" id="node5" href="$classhuggingface__hub_1_1commands_1_1user_1_1LogoutCommand.html" title=" " alt="" coords="273,201,493,243"/>
+<area shape="rect" id="node6" href="$classhuggingface__hub_1_1commands_1_1user_1_1RepoCreateCommand.html" title=" " alt="" coords="273,267,493,308"/>
+<area shape="rect" id="node7" href="$classhuggingface__hub_1_1commands_1_1user_1_1WhoamiCommand.html" title=" " alt="" coords="273,332,493,373"/>
+</map>

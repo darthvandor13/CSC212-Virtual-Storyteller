@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7416 [label="threading.local",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7416 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="pip._vendor.rich.console.\lConsoleThreadLocals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__vendor_1_1rich_1_1console_1_1ConsoleThreadLocals.html",tooltip=" "];
+  Node7416 -> Node7418 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7418 [label="rich.console.ConsoleThread\lLocals",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrich_1_1console_1_1ConsoleThreadLocals.html",tooltip=" "];
+  Node7416 -> Node7419 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7419 [label="sniffio._impl._ThreadLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsniffio_1_1__impl_1_1__ThreadLocal.html",tooltip=" "];
+}

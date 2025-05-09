@@ -1,0 +1,22 @@
+digraph "sympy.polys.domains.old_fractionfield.FractionField"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.polys.domains.old\l_fractionfield.FractionField",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.polys.domains.field.\lField",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1domains_1_1field_1_1Field.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.polys.domains.ring.Ring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1domains_1_1ring_1_1Ring.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.polys.domains.domain.\lDomain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1domains_1_1domain_1_1Domain.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.polys.domains.compositedomain.\lCompositeDomain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1polys_1_1domains_1_1compositedomain_1_1CompositeDomain.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,6 @@
+<map id="oauthlib.oauth2.rfc6749.errors.UnsupportedCodeChallengeMethodError" name="oauthlib.oauth2.rfc6749.errors.UnsupportedCodeChallengeMethodError">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,261,300"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1InvalidRequestError.html" title=" " alt="" coords="34,169,233,211"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1OAuth2Error.html" title=" " alt="" coords="34,80,233,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="93,5,173,32"/>
+</map>

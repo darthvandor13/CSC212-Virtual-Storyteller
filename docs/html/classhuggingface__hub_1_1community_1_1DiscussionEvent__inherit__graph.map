@@ -1,0 +1,7 @@
+<map id="huggingface_hub.community.DiscussionEvent" name="huggingface_hub.community.DiscussionEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,196,145"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1community_1_1DiscussionComment.html" title=" " alt="" coords="244,5,435,47"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1community_1_1DiscussionCommit.html" title=" " alt="" coords="244,71,435,112"/>
+<area shape="rect" id="node4" href="$classhuggingface__hub_1_1community_1_1DiscussionStatusChange.html" title=" " alt="" coords="244,136,435,177"/>
+<area shape="rect" id="node5" href="$classhuggingface__hub_1_1community_1_1DiscussionTitleChange.html" title=" " alt="" coords="244,201,435,243"/>
+</map>

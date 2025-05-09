@@ -1,0 +1,16 @@
+<map id="langchain_text_splitters.base.TextSplitter" name="langchain_text_splitters.base.TextSplitter">
+<area shape="rect" id="node1" title=" " alt="" coords="411,201,605,243"/>
+<area shape="rect" id="node4" href="$classlangchain__text__splitters_1_1base_1_1TokenTextSplitter.html" title=" " alt="" coords="693,5,887,47"/>
+<area shape="rect" id="node5" href="$classlangchain__text__splitters_1_1character_1_1CharacterTextSplitter.html" title=" " alt="" coords="680,71,900,112"/>
+<area shape="rect" id="node6" href="$classlangchain__text__splitters_1_1character_1_1RecursiveCharacterTextSplitter.html" title=" " alt="" coords="680,136,900,177"/>
+<area shape="rect" id="node11" href="$classlangchain__text__splitters_1_1konlpy_1_1KonlpyTextSplitter.html" title=" " alt="" coords="689,201,891,243"/>
+<area shape="rect" id="node12" href="$classlangchain__text__splitters_1_1nltk_1_1NLTKTextSplitter.html" title=" " alt="" coords="696,267,884,308"/>
+<area shape="rect" id="node13" href="$classlangchain__text__splitters_1_1sentence__transformers_1_1SentenceTransformersTokenTextSplitter.html" title=" " alt="" coords="653,333,927,389"/>
+<area shape="rect" id="node14" href="$classlangchain__text__splitters_1_1spacy_1_1SpacyTextSplitter.html" title=" " alt="" coords="690,413,890,455"/>
+<area shape="rect" id="node2" href="$classlangchain__core_1_1documents_1_1transformers_1_1BaseDocumentTransformer.html" title=" " alt="" coords="104,231,363,272"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,209,56,235"/>
+<area shape="rect" id="node7" href="$classlangchain__text__splitters_1_1jsx_1_1JSFrameworkTextSplitter.html" title=" " alt="" coords="996,39,1180,80"/>
+<area shape="rect" id="node8" href="$classlangchain__text__splitters_1_1latex_1_1LatexTextSplitter.html" title=" " alt="" coords="991,104,1185,145"/>
+<area shape="rect" id="node9" href="$classlangchain__text__splitters_1_1markdown_1_1MarkdownTextSplitter.html" title=" " alt="" coords="975,169,1201,211"/>
+<area shape="rect" id="node10" href="$classlangchain__text__splitters_1_1python_1_1PythonCodeTextSplitter.html" title=" " alt="" coords="985,235,1191,276"/>
+</map>

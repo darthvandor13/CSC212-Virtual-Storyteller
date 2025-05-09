@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="numpy.distutils.tests.test\l_exec_command.redirect_stderr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1distutils_1_1tests_1_1test__exec__command_1_1redirect__stderr.html",tooltip=" "];
+}

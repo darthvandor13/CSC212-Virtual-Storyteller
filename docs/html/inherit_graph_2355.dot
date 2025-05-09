@@ -1,0 +1,26 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="sqlalchemy.orm.unitofwork.\lIterateMappersMixin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1IterateMappersMixin.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="sqlalchemy.orm.unitofwork.\lPreprocess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1Preprocess.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sqlalchemy.orm.unitofwork.\lProcessAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1ProcessAll.html",tooltip=" "];
+  Node10457 [label="sqlalchemy.orm.unitofwork.\lPostSortRec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1PostSortRec.html",tooltip=" "];
+  Node10457 -> Node10458 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10458 [label="sqlalchemy.orm.unitofwork.\lDeleteAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1DeleteAll.html",tooltip=" "];
+  Node10457 -> Node10459 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10459 [label="sqlalchemy.orm.unitofwork.\lDeleteState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1DeleteState.html",tooltip=" "];
+  Node10457 -> Node10460 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10460 [label="sqlalchemy.orm.unitofwork.\lPostUpdateAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1PostUpdateAll.html",tooltip=" "];
+  Node10457 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10457 -> Node10461 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10461 [label="sqlalchemy.orm.unitofwork.\lProcessState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1ProcessState.html",tooltip=" "];
+  Node10457 -> Node10462 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10462 [label="sqlalchemy.orm.unitofwork.\lSaveUpdateAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1SaveUpdateAll.html",tooltip=" "];
+  Node10457 -> Node10463 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10463 [label="sqlalchemy.orm.unitofwork.\lSaveUpdateState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1unitofwork_1_1SaveUpdateState.html",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+<map id="httpx._types.AsyncByteStream" name="httpx._types.AsyncByteStream">
+<area shape="rect" id="node1" title=" " alt="" coords="5,195,209,222"/>
+<area shape="rect" id="node2" href="$classhttpx_1_1__client_1_1BoundAsyncStream.html" title=" " alt="" coords="293,5,464,47"/>
+<area shape="rect" id="node3" href="$classhttpx_1_1__content_1_1AsyncIteratorByteStream.html" title=" " alt="" coords="285,71,472,112"/>
+<area shape="rect" id="node4" href="$classhttpx_1_1__content_1_1ByteStream.html" title=" " alt="" coords="289,137,468,163"/>
+<area shape="rect" id="node5" href="$classhttpx_1_1__content_1_1UnattachedStream.html" title=" " alt="" coords="291,188,467,229"/>
+<area shape="rect" id="node6" href="$classhttpx_1_1__multipart_1_1MultipartStream.html" title=" " alt="" coords="295,253,462,295"/>
+<area shape="rect" id="node7" href="$classhttpx_1_1__transports_1_1asgi_1_1ASGIResponseStream.html" title=" " alt="" coords="257,319,500,360"/>
+<area shape="rect" id="node8" href="$classhttpx_1_1__transports_1_1default_1_1AsyncResponseStream.html" title=" " alt="" coords="295,384,462,425"/>
+</map>

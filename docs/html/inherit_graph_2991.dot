@@ -1,0 +1,36 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="test_scalarinherit.A",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1A.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="test_scalarinherit.B",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1B.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="test_scalarinherit.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1C.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="test_scalarinherit.D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1D.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="test_scalarinherit.B0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1B0.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="test_scalarinherit.C0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1C0.html",tooltip=" "];
+  Node6089 [label="np.float64",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6089 -> Node6090 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6090 [label="array_constructors.SubClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classarray__constructors_1_1SubClass.html",tooltip=" "];
+  Node6089 -> Node6091 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6091 [label="ndarray_misc.SubClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classndarray__misc_1_1SubClass.html",tooltip=" "];
+  Node6089 -> Node6092 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6092 [label="numeric.SubClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumeric_1_1SubClass.html",tooltip=" "];
+  Node6089 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6089 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6089 -> Node6093 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6093 [label="test_scalarinherit.B1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1B1.html",tooltip=" "];
+  Node6576 [label="test_scalarinherit.HasNew",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__scalarinherit_1_1HasNew.html",tooltip=" "];
+  Node6576 -> Node6093 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9592 [label="npt.NDArray",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9592 -> Node6090 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9592 -> Node6091 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9592 -> Node6092 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

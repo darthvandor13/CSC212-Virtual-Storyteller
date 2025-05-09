@@ -1,0 +1,9 @@
+<map id="openai.types.model.Model" name="openai.types.model.Model">
+<area shape="rect" id="node1" title=" " alt="" coords="99,261,274,288"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="95,185,278,212"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="30,96,202,123"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,13,88,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="113,5,255,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="280,5,461,47"/>
+<area shape="rect" id="node7" title=" " alt="" coords="226,96,291,123"/>
+</map>

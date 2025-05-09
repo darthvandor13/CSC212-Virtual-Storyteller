@@ -1,0 +1,8 @@
+<map id="openai.types.beta.realtime.conversation_item_truncated_event.ConversationItemTruncatedEvent" name="openai.types.beta.realtime.conversation_item_truncated_event.ConversationItemTruncatedEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,359,285"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="91,169,273,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="96,95,268,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="73,13,155,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="180,5,323,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="347,5,529,47"/>
+</map>

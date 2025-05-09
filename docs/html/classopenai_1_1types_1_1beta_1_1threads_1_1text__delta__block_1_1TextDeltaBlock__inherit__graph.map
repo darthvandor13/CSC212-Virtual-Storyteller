@@ -1,0 +1,8 @@
+<map id="openai.types.beta.threads.text_delta_block.TextDeltaBlock" name="openai.types.beta.threads.text_delta_block.TextDeltaBlock">
+<area shape="rect" id="node1" title=" " alt="" coords="15,244,214,285"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="23,169,206,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="29,95,201,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,13,88,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="113,5,255,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="280,5,461,47"/>
+</map>

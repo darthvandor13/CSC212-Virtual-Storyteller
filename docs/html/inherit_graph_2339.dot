@@ -1,0 +1,20 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7025 [label="sa_exc.InvalidRequestError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7025 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="sqlalchemy.orm.exc.Loader\lStrategyException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1exc_1_1LoaderStrategyException.html",tooltip=" "];
+  Node7025 -> Node7027 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7027 [label="sqlalchemy.orm.exc.Object\lDeletedError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1exc_1_1ObjectDeletedError.html",tooltip=" "];
+  Node7025 -> Node7028 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7028 [label="sqlalchemy.orm.exc.Unmapped\lColumnError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1exc_1_1UnmappedColumnError.html",tooltip=" "];
+  Node7025 -> Node7029 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7029 [label="sqlalchemy.orm.exc.Unmapped\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1exc_1_1UnmappedError.html",tooltip=" "];
+  Node7029 -> Node7030 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7030 [label="sqlalchemy.orm.exc.Unmapped\lClassError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1exc_1_1UnmappedClassError.html",tooltip=" "];
+  Node7029 -> Node7031 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7031 [label="sqlalchemy.orm.exc.Unmapped\lInstanceError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1orm_1_1exc_1_1UnmappedInstanceError.html",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+<map id="cryptography.x509.general_name.GeneralName" name="cryptography.x509.general_name.GeneralName">
+<area shape="rect" id="node1" title=" " alt="" coords="157,201,331,243"/>
+<area shape="rect" id="node4" href="$classcryptography_1_1x509_1_1general__name_1_1DNSName.html" title=" " alt="" coords="401,5,574,47"/>
+<area shape="rect" id="node5" href="$classcryptography_1_1x509_1_1general__name_1_1DirectoryName.html" title=" " alt="" coords="401,71,574,112"/>
+<area shape="rect" id="node6" href="$classcryptography_1_1x509_1_1general__name_1_1IPAddress.html" title=" " alt="" coords="401,136,574,177"/>
+<area shape="rect" id="node7" href="$classcryptography_1_1x509_1_1general__name_1_1OtherName.html" title=" " alt="" coords="401,201,574,243"/>
+<area shape="rect" id="node8" href="$classcryptography_1_1x509_1_1general__name_1_1RFC822Name.html" title=" " alt="" coords="401,267,574,308"/>
+<area shape="rect" id="node9" href="$classcryptography_1_1x509_1_1general__name_1_1RegisteredID.html" title=" " alt="" coords="401,332,574,373"/>
+<area shape="rect" id="node10" href="$classcryptography_1_1x509_1_1general__name_1_1UniformResourceIdentifier.html" title=" " alt="" coords="379,397,596,439"/>
+<area shape="rect" id="node2" title=" " alt="" coords="16,183,99,210"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,234,109,261"/>
+</map>

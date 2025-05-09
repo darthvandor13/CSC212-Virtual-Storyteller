@@ -1,0 +1,30 @@
+digraph "sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.Error",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.DatabaseError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1DatabaseError.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.DataError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1DataError.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.IntegrityError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1IntegrityError.html",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.InternalError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1InternalError.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.InternalServerError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1InternalServerError.html",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.NotSupportedError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1NotSupportedError.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.InvalidCachedStatementError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1InvalidCachedStatementError.html",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.OperationalError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1OperationalError.html",tooltip=" "];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.ProgrammingError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1ProgrammingError.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sqlalchemy.dialects.postgresql.asyncpg.\lAsyncAdapt_asyncpg_dbapi.InterfaceError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1dialects_1_1postgresql_1_1asyncpg_1_1AsyncAdapt__asyncpg__dbapi_1_1InterfaceError.html",tooltip=" "];
+}

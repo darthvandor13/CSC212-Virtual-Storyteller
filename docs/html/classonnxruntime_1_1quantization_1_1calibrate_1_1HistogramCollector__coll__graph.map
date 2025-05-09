@@ -1,0 +1,6 @@
+<map id="onnxruntime.quantization.calibrate.HistogramCollector" name="onnxruntime.quantization.calibrate.HistogramCollector">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,229,211"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1calibrate_1_1CalibrationDataCollector.html" title=" " alt="" coords="5,80,229,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="17,5,100,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="124,5,228,32"/>
+</map>

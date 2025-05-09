@@ -1,0 +1,10 @@
+<map id="oauthlib.oauth2.rfc6749.endpoints.revocation.RevocationEndpoint" name="oauthlib.oauth2.rfc6749.endpoints.revocation.RevocationEndpoint">
+<area shape="rect" id="node1" title=" " alt="" coords="307,169,592,211"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1BackendApplicationServer.html" title=" " alt="" coords="652,5,899,47"/>
+<area shape="rect" id="node4" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1LegacyApplicationServer.html" title=" " alt="" coords="656,71,895,112"/>
+<area shape="rect" id="node5" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1MobileApplicationServer.html" title=" " alt="" coords="656,136,895,177"/>
+<area shape="rect" id="node6" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="656,201,895,243"/>
+<area shape="rect" id="node7" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1WebApplicationServer.html" title=" " alt="" coords="656,267,895,308"/>
+<area shape="rect" id="node8" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="640,332,911,373"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1base_1_1BaseEndpoint.html" title=" " alt="" coords="5,169,259,211"/>
+</map>

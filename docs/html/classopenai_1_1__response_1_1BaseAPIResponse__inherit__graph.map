@@ -1,0 +1,11 @@
+<map id="openai._response.BaseAPIResponse" name="openai._response.BaseAPIResponse">
+<area shape="rect" id="node1" title=" " alt="" coords="120,97,359,124"/>
+<area shape="rect" id="node4" href="$classopenai_1_1__response_1_1APIResponse.html" title=" " alt="" coords="425,64,635,91"/>
+<area shape="rect" id="node7" href="$classopenai_1_1__response_1_1AsyncAPIResponse.html" title=" " alt="" coords="407,129,653,156"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,72,72,99"/>
+<area shape="rect" id="node3" title=" " alt="" coords="19,123,58,149"/>
+<area shape="rect" id="node5" href="$classopenai_1_1__response_1_1BinaryAPIResponse.html" title=" " alt="" coords="701,5,948,32"/>
+<area shape="rect" id="node6" href="$classopenai_1_1__response_1_1StreamedBinaryAPIResponse.html" title=" " alt="" coords="733,57,917,98"/>
+<area shape="rect" id="node8" href="$classopenai_1_1__response_1_1AsyncBinaryAPIResponse.html" title=" " alt="" coords="723,122,926,163"/>
+<area shape="rect" id="node9" href="$classopenai_1_1__response_1_1AsyncStreamedBinaryAPIResponse.html" title=" " alt="" coords="714,187,935,229"/>
+</map>

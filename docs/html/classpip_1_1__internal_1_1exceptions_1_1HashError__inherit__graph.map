@@ -1,0 +1,11 @@
+<map id="pip._internal.exceptions.HashError" name="pip._internal.exceptions.HashError">
+<area shape="rect" id="node1" title=" " alt="" coords="555,136,717,177"/>
+<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1exceptions_1_1DirectoryUrlHashUnsupported.html" title=" " alt="" coords="765,5,963,47"/>
+<area shape="rect" id="node6" href="$classpip_1_1__internal_1_1exceptions_1_1HashMismatch.html" title=" " alt="" coords="783,71,945,112"/>
+<area shape="rect" id="node7" href="$classpip_1_1__internal_1_1exceptions_1_1HashMissing.html" title=" " alt="" coords="783,136,945,177"/>
+<area shape="rect" id="node8" href="$classpip_1_1__internal_1_1exceptions_1_1HashUnpinned.html" title=" " alt="" coords="783,201,945,243"/>
+<area shape="rect" id="node9" href="$classpip_1_1__internal_1_1exceptions_1_1VcsHashUnsupported.html" title=" " alt="" coords="783,267,945,308"/>
+<area shape="rect" id="node2" href="$classpip_1_1__internal_1_1exceptions_1_1InstallationError.html" title=" " alt="" coords="344,136,507,177"/>
+<area shape="rect" id="node3" href="$classpip_1_1__internal_1_1exceptions_1_1PipError.html" title=" " alt="" coords="133,136,296,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,143,85,170"/>
+</map>

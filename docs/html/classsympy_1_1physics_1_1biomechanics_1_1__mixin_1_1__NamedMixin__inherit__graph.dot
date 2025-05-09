@@ -1,0 +1,23 @@
+digraph "sympy.physics.biomechanics._mixin._NamedMixin"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="sympy.physics.biomechanics.\l_mixin._NamedMixin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="sympy.physics.biomechanics.activation.\lActivationBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1biomechanics_1_1activation_1_1ActivationBase.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sympy.physics.biomechanics.activation.\lFirstOrderActivationDeGroote2016",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1biomechanics_1_1activation_1_1FirstOrderActivationDeGroote2016.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sympy.physics.biomechanics.activation.\lZerothOrderActivation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1biomechanics_1_1activation_1_1ZerothOrderActivation.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sympy.physics.biomechanics.musculotendon.\lMusculotendonBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1biomechanics_1_1musculotendon_1_1MusculotendonBase.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sympy.physics.biomechanics.musculotendon.\lMusculotendonDeGroote2016",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1biomechanics_1_1musculotendon_1_1MusculotendonDeGroote2016.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

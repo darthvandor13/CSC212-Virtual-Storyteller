@@ -1,0 +1,8 @@
+<map id="pip._vendor.urllib3.connectionpool.ConnectionPool" name="pip._vendor.urllib3.connectionpool.ConnectionPool">
+<area shape="rect" id="node1" title=" " alt="" coords="111,39,332,80"/>
+<area shape="rect" id="node3" href="$classpip_1_1__vendor_1_1urllib3_1_1connectionpool_1_1HTTPConnectionPool.html" title=" " alt="" coords="380,39,601,80"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,46,63,73"/>
+<area shape="rect" id="node4" href="$classpip_1_1__vendor_1_1urllib3_1_1connectionpool_1_1HTTPSConnectionPool.html" title=" " alt="" coords="649,5,871,47"/>
+<area shape="rect" id="node6" href="$classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1socks_1_1SOCKSHTTPConnectionPool.html" title=" " alt="" coords="654,71,866,112"/>
+<area shape="rect" id="node5" href="$classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1socks_1_1SOCKSHTTPSConnectionPool.html" title=" " alt="" coords="919,5,1131,47"/>
+</map>

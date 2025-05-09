@@ -1,0 +1,6 @@
+<map id="chromadb.segment.impl.manager.cache.cache.SegmentCache" name="chromadb.segment.impl.manager.cache.cache.SegmentCache">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,301,121"/>
+<area shape="rect" id="node3" href="$classchromadb_1_1segment_1_1impl_1_1manager_1_1cache_1_1cache_1_1BasicCache.html" title=" " alt="" coords="5,169,301,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="128,5,179,32"/>
+<area shape="rect" id="node4" href="$classchromadb_1_1segment_1_1impl_1_1manager_1_1cache_1_1cache_1_1SegmentLRUCache.html" title=" " alt="" coords="5,259,301,300"/>
+</map>

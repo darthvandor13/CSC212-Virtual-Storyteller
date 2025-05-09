@@ -1,0 +1,7 @@
+<map id="pyasn1.codec.ber.decoder.SequenceOrSequenceOfPayloadDecoder" name="pyasn1.codec.ber.decoder.SequenceOrSequenceOfPayloadDecoder">
+<area shape="rect" id="node1" title=" " alt="" coords="5,348,268,389"/>
+<area shape="rect" id="node2" href="$classpyasn1_1_1codec_1_1ber_1_1decoder_1_1ConstructedPayloadDecoderBase.html" title=" " alt="" coords="27,259,246,300"/>
+<area shape="rect" id="node3" href="$classpyasn1_1_1codec_1_1ber_1_1decoder_1_1AbstractConstructedPayloadDecoder.html" title=" " alt="" coords="17,169,256,211"/>
+<area shape="rect" id="node4" href="$classpyasn1_1_1codec_1_1ber_1_1decoder_1_1AbstractPayloadDecoder.html" title=" " alt="" coords="48,80,225,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="108,5,165,32"/>
+</map>

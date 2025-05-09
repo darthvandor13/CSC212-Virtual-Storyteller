@@ -1,0 +1,29 @@
+<map id="importlib_resources.tests.util.DiskSetup" name="importlib_resources.tests.util.DiskSetup">
+<area shape="rect" id="node1" title=" " alt="" coords="247,657,440,699"/>
+<area shape="rect" id="node3" href="$classimportlib__resources_1_1tests_1_1test__contents_1_1ContentsDiskTests.html" title=" " alt="" coords="540,5,735,47"/>
+<area shape="rect" id="node4" href="$classimportlib__resources_1_1tests_1_1test__contents_1_1ContentsNamespaceTests.html" title=" " alt="" coords="518,71,757,112"/>
+<area shape="rect" id="node5" href="$classimportlib__resources_1_1tests_1_1test__files_1_1ImplicitContextFilesDiskTests.html" title=" " alt="" coords="521,136,753,177"/>
+<area shape="rect" id="node6" href="$classimportlib__resources_1_1tests_1_1test__files_1_1ModuleFilesDiskTests.html" title=" " alt="" coords="540,201,735,243"/>
+<area shape="rect" id="node7" href="$classimportlib__resources_1_1tests_1_1test__files_1_1OpenDiskTests.html" title=" " alt="" coords="540,267,735,308"/>
+<area shape="rect" id="node8" href="$classimportlib__resources_1_1tests_1_1test__files_1_1OpenNamespaceTests.html" title=" " alt="" coords="540,332,735,373"/>
+<area shape="rect" id="node9" href="$classimportlib__resources_1_1tests_1_1test__functional_1_1FunctionalAPITest__ModuleAnchor__Disk.html" title=" " alt="" coords="539,398,735,454"/>
+<area shape="rect" id="node10" href="$classimportlib__resources_1_1tests_1_1test__functional_1_1FunctionalAPITest__StringAnchor__Disk.html" title=" " alt="" coords="539,478,735,534"/>
+<area shape="rect" id="node11" href="$classimportlib__resources_1_1tests_1_1test__open_1_1OpenDiskNamespaceTests.html" title=" " alt="" coords="527,559,748,600"/>
+<area shape="rect" id="node12" href="$classimportlib__resources_1_1tests_1_1test__open_1_1OpenDiskTests.html" title=" " alt="" coords="540,624,735,665"/>
+<area shape="rect" id="node13" href="$classimportlib__resources_1_1tests_1_1test__path_1_1PathDiskTests.html" title=" " alt="" coords="540,689,735,731"/>
+<area shape="rect" id="node14" href="$classimportlib__resources_1_1tests_1_1test__read_1_1ReadDiskTests.html" title=" " alt="" coords="540,755,735,796"/>
+<area shape="rect" id="node15" href="$classimportlib__resources_1_1tests_1_1test__read_1_1ReadNamespaceTests.html" title=" " alt="" coords="540,820,735,861"/>
+<area shape="rect" id="node16" href="$classimportlib__resources_1_1tests_1_1test__reader_1_1MultiplexedPathTest.html" title=" " alt="" coords="540,885,735,927"/>
+<area shape="rect" id="node17" href="$classimportlib__resources_1_1tests_1_1test__reader_1_1NamespaceReaderTest.html" title=" " alt="" coords="535,951,740,992"/>
+<area shape="rect" id="node18" href="$classimportlib__resources_1_1tests_1_1test__resource_1_1ResourceCornerCaseTests.html" title=" " alt="" coords="517,1016,758,1057"/>
+<area shape="rect" id="node19" href="$classimportlib__resources_1_1tests_1_1test__resource_1_1ResourceDiskTests.html" title=" " alt="" coords="538,1081,737,1123"/>
+<area shape="rect" id="node20" href="$classimportlib__resources_1_1tests_1_1test__resource_1_1ResourceFromNamespaceDiskTests.html" title=" " alt="" coords="488,1147,787,1188"/>
+<area shape="rect" id="node21" href="$classimportlib__resources_1_1tests_1_1test__resource_1_1ResourceLoaderTests.html" title=" " alt="" coords="532,1212,743,1253"/>
+<area shape="rect" id="node22" href="$classimportlib__resources_1_1tests_1_1util_1_1CommonTests.html" title=" " alt="" coords="541,1277,734,1319"/>
+<area shape="rect" id="node2" href="$classimportlib__resources_1_1tests_1_1util_1_1ModuleSetup.html" title=" " alt="" coords="5,657,199,699"/>
+<area shape="rect" id="node23" href="$classimportlib__resources_1_1tests_1_1test__open_1_1CommonBinaryTests.html" title=" " alt="" coords="835,1147,1029,1188"/>
+<area shape="rect" id="node24" href="$classimportlib__resources_1_1tests_1_1test__open_1_1CommonTextTests.html" title=" " alt="" coords="835,1212,1029,1253"/>
+<area shape="rect" id="node25" href="$classimportlib__resources_1_1tests_1_1test__path_1_1CommonTests.html" title=" " alt="" coords="835,1277,1029,1319"/>
+<area shape="rect" id="node26" href="$classimportlib__resources_1_1tests_1_1test__read_1_1CommonBinaryTests.html" title=" " alt="" coords="835,1343,1029,1384"/>
+<area shape="rect" id="node27" href="$classimportlib__resources_1_1tests_1_1test__read_1_1CommonTextTests.html" title=" " alt="" coords="835,1408,1029,1449"/>
+</map>

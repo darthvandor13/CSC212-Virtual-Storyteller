@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="pdfminer.pdfdocument.PDFStandard\lSecurityHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdfdocument_1_1PDFStandardSecurityHandler.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="pdfminer.pdfdocument.PDFStandard\lSecurityHandlerV4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdfdocument_1_1PDFStandardSecurityHandlerV4.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pdfminer.pdfdocument.PDFStandard\lSecurityHandlerV5",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdfdocument_1_1PDFStandardSecurityHandlerV5.html",tooltip=" "];
+}

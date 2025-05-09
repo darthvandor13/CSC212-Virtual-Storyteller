@@ -1,0 +1,4 @@
+<map id="onnxruntime.quantization.operators.pooling.QLinearPool" name="onnxruntime.quantization.operators.pooling.QLinearPool">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,280,136"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1operators_1_1base__operator_1_1QuantOperatorBase.html" title=" " alt="" coords="14,5,271,47"/>
+</map>

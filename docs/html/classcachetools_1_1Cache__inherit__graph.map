@@ -1,0 +1,13 @@
+<map id="cachetools.Cache" name="cachetools.Cache">
+<area shape="rect" id="node1" title=" " alt="" coords="261,132,388,159"/>
+<area shape="rect" id="node4" href="$classcachetools_1_1FIFOCache.html" title=" " alt="" coords="443,5,600,32"/>
+<area shape="rect" id="node5" href="$classcachetools_1_1LFUCache.html" title=" " alt="" coords="445,56,597,83"/>
+<area shape="rect" id="node6" href="$classcachetools_1_1LRUCache.html" title=" " alt="" coords="444,107,599,133"/>
+<area shape="rect" id="node7" href="$classcachetools_1_1MRUCache.html" title=" " alt="" coords="442,157,601,184"/>
+<area shape="rect" id="node8" href="$classcachetools_1_1RRCache.html" title=" " alt="" coords="448,208,595,235"/>
+<area shape="rect" id="node9" href="$classcachetools_1_1__TimedCache.html" title=" " alt="" coords="436,259,607,285"/>
+<area shape="rect" id="node2" title=" " alt="" coords="26,95,193,137"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,161,213,188"/>
+<area shape="rect" id="node10" href="$classcachetools_1_1TLRUCache.html" title=" " alt="" coords="655,233,817,260"/>
+<area shape="rect" id="node11" href="$classcachetools_1_1TTLCache.html" title=" " alt="" coords="661,284,811,311"/>
+</map>

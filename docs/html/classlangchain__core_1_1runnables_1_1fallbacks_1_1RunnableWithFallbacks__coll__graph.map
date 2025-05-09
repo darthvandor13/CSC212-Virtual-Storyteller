@@ -1,0 +1,14 @@
+<map id="langchain_core.runnables.fallbacks.RunnableWithFallbacks" name="langchain_core.runnables.fallbacks.RunnableWithFallbacks">
+<area shape="rect" id="node1" title=" " alt="" coords="967,285,1196,326"/>
+<area shape="rect" id="node2" href="$classlangchain__core_1_1runnables_1_1base_1_1RunnableSerializable.html" title=" " alt="" coords="713,183,919,225"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1load_1_1serializable_1_1Serializable.html" title=" " alt="" coords="455,59,665,101"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,35,407,61"/>
+<area shape="rect" id="node5" title=" " alt="" coords="55,5,137,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="25,57,167,98"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,122,187,163"/>
+<area shape="rect" id="node8" title=" " alt="" coords="295,85,346,112"/>
+<area shape="rect" id="node9" href="$classlangchain__core_1_1runnables_1_1base_1_1Runnable.html" title=" " alt="" coords="457,125,663,166"/>
+<area shape="rect" id="node10" title=" " alt="" coords="287,136,354,163"/>
+<area shape="rect" id="node11" title=" " alt="" coords="295,191,346,217"/>
+<area shape="rect" id="node12" title=" " alt="" coords="290,241,351,268"/>
+</map>

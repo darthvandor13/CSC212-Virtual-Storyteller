@@ -1,0 +1,10 @@
+<map id="chromadb.auth.ServerAuthenticationProvider" name="chromadb.auth.ServerAuthenticationProvider">
+<area shape="rect" id="node1" title=" " alt="" coords="413,133,647,174"/>
+<area shape="rect" id="node5" href="$classchromadb_1_1auth_1_1basic__authn_1_1BasicAuthenticationServerProvider.html" title=" " alt="" coords="751,5,933,61"/>
+<area shape="rect" id="node6" href="$classchromadb_1_1auth_1_1token__authn_1_1TokenAuthenticationServerProvider.html" title=" " alt="" coords="751,85,933,141"/>
+<area shape="rect" id="node7" href="$classchromadb_1_1test_1_1client_1_1test__database__tenant__auth_1_1ExampleAuthenticationProvider.html" title=" " alt="" coords="695,165,989,221"/>
+<area shape="rect" id="node8" href="$classtest__base__class__behavior_1_1DummyServerAuthenticationProvider.html" title=" " alt="" coords="723,246,961,287"/>
+<area shape="rect" id="node2" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="176,140,365,167"/>
+<area shape="rect" id="node3" title=" " alt="" coords="41,115,92,141"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,165,128,192"/>
+</map>

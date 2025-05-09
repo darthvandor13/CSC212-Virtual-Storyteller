@@ -1,0 +1,10 @@
+<map id="pip._internal.exceptions.DiagnosticPipError" name="pip._internal.exceptions.DiagnosticPipError">
+<area shape="rect" id="node1" title=" " alt="" coords="344,104,507,145"/>
+<area shape="rect" id="node4" href="$classpip_1_1__internal_1_1exceptions_1_1InstallationSubprocessError.html" title=" " alt="" coords="566,5,749,47"/>
+<area shape="rect" id="node6" href="$classpip_1_1__internal_1_1exceptions_1_1InvalidPyProjectBuildRequires.html" title=" " alt="" coords="558,71,757,112"/>
+<area shape="rect" id="node7" href="$classpip_1_1__internal_1_1exceptions_1_1LegacyInstallFailure.html" title=" " alt="" coords="576,136,739,177"/>
+<area shape="rect" id="node8" href="$classpip_1_1__internal_1_1exceptions_1_1MissingPyProjectBuildRequires.html" title=" " alt="" coords="555,201,760,243"/>
+<area shape="rect" id="node2" href="$classpip_1_1__internal_1_1exceptions_1_1PipError.html" title=" " alt="" coords="133,104,296,145"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,111,85,138"/>
+<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1exceptions_1_1MetadataGenerationFailed.html" title=" " alt="" coords="808,5,983,47"/>
+</map>

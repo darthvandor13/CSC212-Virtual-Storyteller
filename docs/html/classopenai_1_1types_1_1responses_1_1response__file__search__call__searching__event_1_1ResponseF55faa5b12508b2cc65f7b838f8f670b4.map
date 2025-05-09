@@ -1,0 +1,8 @@
+<map id="openai.types.responses.response_file_search_call_searching_event.ResponseFileSearchCallSearchingEvent" name="openai.types.responses.response_file_search_call_searching_event.ResponseFileSearchCallSearchingEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,307,300"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="65,169,247,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="70,95,242,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="47,13,129,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="154,5,297,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="321,5,503,47"/>
+</map>

@@ -1,0 +1,13 @@
+digraph "sqlalchemy.dialects.sqlite.base.SQLiteDialect"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sqlalchemy.dialects.sqlite.base.\lSQLiteDialect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="default.DefaultDialect",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" delete_returning\ninsert_null_pk_still\l_autoincrements\ninsert_returning\nsupports_alter\nsupports_cast\nsupports_default\l_metavalue\nsupports_default\l_values\nsupports_empty\l_insert\nsupports_multivalues\l_insert\nsupports_sane_rowcount\l_returning\n..." ,fontname="Helvetica"];
+  Node3 [label="bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" default_metavalue_token\ndefault_paramstyle\nname" ,fontname="Helvetica"];
+  Node4 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

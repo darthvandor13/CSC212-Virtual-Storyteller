@@ -1,0 +1,16 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18554 [label="Plugin",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18554 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="numpy.typing.mypy_plugin.\l_NumpyPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin.html",tooltip=" "];
+  Node18554 -> Node18556 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18556 [label="pydantic.mypy.PydanticPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpydantic_1_1mypy_1_1PydanticPlugin.html",tooltip=" "];
+  Node18554 -> Node18557 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18557 [label="pydantic.v1.mypy.Pydantic\lPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpydantic_1_1v1_1_1mypy_1_1PydanticPlugin.html",tooltip=" "];
+  Node18554 -> Node18558 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18558 [label="sqlalchemy.ext.mypy.plugin.\lSQLAlchemyPlugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsqlalchemy_1_1ext_1_1mypy_1_1plugin_1_1SQLAlchemyPlugin.html",tooltip=" "];
+}

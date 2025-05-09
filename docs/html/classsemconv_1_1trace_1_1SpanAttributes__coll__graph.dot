@@ -1,0 +1,9 @@
+digraph "semconv.trace.SpanAttributes"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="semconv.trace.SpanAttributes",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" AWS_DYNAMODB_ATTRIBUTES\l_TO_GET\nAWS_DYNAMODB_ATTRIBUTE\l_DEFINITIONS\nAWS_DYNAMODB_CONSISTENT\l_READ\nAWS_DYNAMODB_CONSUMED\l_CAPACITY\nAWS_DYNAMODB_COUNT\nAWS_DYNAMODB_EXCLUSIVE\l_START_TABLE\nAWS_DYNAMODB_INDEX_NAME\nAWS_DYNAMODB_LIMIT\nAWS_DYNAMODB_PROJECTION\nAWS_DYNAMODB_SCANNED_COUNT\n..." ,fontname="Helvetica"];
+  Node2 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,15 @@
+<map id="openai.pagination.SyncPage" name="openai.pagination.SyncPage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,504,192,531"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__base__client_1_1BaseSyncPage.html" title=" " alt="" coords="199,413,369,455"/>
+<area shape="rect" id="node3" href="$classopenai_1_1__base__client_1_1BasePage.html" title=" " alt="" coords="174,337,375,364"/>
+<area shape="rect" id="node4" href="$classopenai_1_1__models_1_1GenericModel.html" title=" " alt="" coords="171,261,368,288"/>
+<area shape="rect" id="node5" title=" " alt="" coords="150,185,282,212"/>
+<area shape="rect" id="node6" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="306,185,489,212"/>
+<area shape="rect" id="node7" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="215,96,387,123"/>
+<area shape="rect" id="node8" title=" " alt="" coords="191,13,273,39"/>
+<area shape="rect" id="node9" title=" " alt="" coords="298,5,441,47"/>
+<area shape="rect" id="node10" title=" " alt="" coords="465,5,647,47"/>
+<area shape="rect" id="node11" title=" " alt="" coords="411,96,477,123"/>
+<area shape="rect" id="node12" title=" " alt="" coords="392,261,459,288"/>
+<area shape="rect" id="node13" title=" " alt="" coords="62,261,101,288"/>
+</map>

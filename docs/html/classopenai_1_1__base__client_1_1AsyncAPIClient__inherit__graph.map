@@ -1,0 +1,14 @@
+<map id="openai._base_client.AsyncAPIClient" name="openai._base_client.AsyncAPIClient">
+<area shape="rect" id="node1" title=" " alt="" coords="473,175,652,217"/>
+<area shape="rect" id="node11" href="$classopenai_1_1__client_1_1AsyncOpenAI.html" title=" " alt="" coords="700,183,887,209"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__base__client_1_1BaseClient.html" title=" " alt="" coords="235,70,405,111"/>
+<area shape="rect" id="node3" title=" " alt="" coords="53,107,119,133"/>
+<area shape="rect" id="node8" href="$classopenai_1_1__streaming_1_1AsyncStream.html" title=" " alt="" coords="215,157,425,184"/>
+<area shape="rect" id="node4" title=" " alt="" coords="35,5,137,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="25,56,147,83"/>
+<area shape="rect" id="node6" href="$classhttpx_1_1__client_1_1AsyncClient.html" title=" " alt="" coords="236,208,404,235"/>
+<area shape="rect" id="node7" href="$classhttpx_1_1__client_1_1BaseClient.html" title=" " alt="" coords="5,208,167,235"/>
+<area shape="rect" id="node9" title=" " alt="" coords="67,157,105,184"/>
+<area shape="rect" id="node10" title=" " alt="" coords="297,259,343,285"/>
+<area shape="rect" id="node12" href="$classopenai_1_1lib_1_1azure_1_1AsyncAzureOpenAI.html" title=" " alt="" coords="935,175,1123,217"/>
+</map>

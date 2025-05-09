@@ -1,0 +1,6 @@
+<map id="chromadb.api.async_api.AsyncAdminAPI" name="chromadb.api.async_api.AsyncAdminAPI">
+<area shape="rect" id="node1" title=" " alt="" coords="11,80,157,121"/>
+<area shape="rect" id="node3" href="$classchromadb_1_1api_1_1async__api_1_1AsyncServerAPI.html" title=" " alt="" coords="11,169,157,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="59,5,109,32"/>
+<area shape="rect" id="node4" href="$classchromadb_1_1api_1_1async__fastapi_1_1AsyncFastAPI.html" title=" " alt="" coords="5,259,163,300"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="langchain.memory.entity.ConversationEntityMemory" name="langchain.memory.entity.ConversationEntityMemory">
+<area shape="rect" id="node1" title=" " alt="" coords="7,457,187,499"/>
+<area shape="rect" id="node2" href="$classlangchain_1_1memory_1_1chat__memory_1_1BaseChatMemory.html" title=" " alt="" coords="5,367,188,408"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1memory_1_1BaseMemory.html" title=" " alt="" coords="93,276,285,317"/>
+<area shape="rect" id="node4" href="$classlangchain__core_1_1load_1_1serializable_1_1Serializable.html" title=" " alt="" coords="230,172,441,213"/>
+<area shape="rect" id="node5" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="249,96,421,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="202,13,285,39"/>
+<area shape="rect" id="node7" title=" " alt="" coords="309,5,452,47"/>
+<area shape="rect" id="node8" title=" " alt="" coords="477,5,658,47"/>
+<area shape="rect" id="node9" title=" " alt="" coords="91,96,142,123"/>
+<area shape="rect" id="node10" title=" " alt="" coords="155,179,201,206"/>
+</map>

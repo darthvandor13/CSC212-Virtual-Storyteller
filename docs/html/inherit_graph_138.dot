@@ -1,0 +1,10 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node15504 [label="AsyncClientCreator",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15504 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="chromadb.test.conftest.Async\lClientCreatorSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classchromadb_1_1test_1_1conftest_1_1AsyncClientCreatorSync.html",tooltip=" "];
+}

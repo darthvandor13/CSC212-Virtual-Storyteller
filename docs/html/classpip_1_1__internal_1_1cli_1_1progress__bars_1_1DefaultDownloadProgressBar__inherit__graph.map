@@ -1,0 +1,9 @@
+<map id="pip._internal.cli.progress_bars.DefaultDownloadProgressBar" name="pip._internal.cli.progress_bars.DefaultDownloadProgressBar">
+<area shape="rect" id="node1" title=" " alt="" coords="624,100,855,141"/>
+<area shape="rect" id="node2" href="$classpip_1_1__internal_1_1cli_1_1progress__bars_1_1BaseDownloadProgressBar.html" title=" " alt="" coords="357,71,576,112"/>
+<area shape="rect" id="node3" href="$classpip_1_1__internal_1_1cli_1_1progress__bars_1_1WindowsMixin.html" title=" " alt="" coords="129,5,291,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,78,63,105"/>
+<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1cli_1_1progress__bars_1_1InterruptibleMixin.html" title=" " alt="" coords="129,71,291,112"/>
+<area shape="rect" id="node6" href="$classpip_1_1__internal_1_1cli_1_1progress__bars_1_1DownloadProgressMixin.html" title=" " alt="" coords="111,136,309,177"/>
+<area shape="rect" id="node7" title=" " alt="" coords="427,137,506,163"/>
+</map>

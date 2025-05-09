@@ -1,0 +1,18 @@
+<map id="openai._compat.GenericModel" name="openai._compat.GenericModel">
+<area shape="rect" id="node1" title=" " alt="" coords="455,297,653,324"/>
+<area shape="rect" id="node7" href="$classopenai_1_1__models_1_1RootModel.html" title=" " alt="" coords="751,5,931,32"/>
+<area shape="rect" id="node8" href="$classopenai_1_1lib_1_1streaming_1_1chat_1_1__events_1_1ContentDoneEvent.html" title=" " alt="" coords="749,57,932,98"/>
+<area shape="rect" id="node9" href="$classopenai_1_1lib_1_1streaming_1_1responses_1_1__events_1_1ResponseCompletedEvent.html" title=" " alt="" coords="727,122,955,163"/>
+<area shape="rect" id="node10" href="$classopenai_1_1lib_1_1streaming_1_1responses_1_1__events_1_1ResponseTextDoneEvent.html" title=" " alt="" coords="730,187,951,229"/>
+<area shape="rect" id="node11" href="$classopenai_1_1types_1_1chat_1_1parsed__chat__completion_1_1ParsedChatCompletion.html" title=" " alt="" coords="709,253,972,294"/>
+<area shape="rect" id="node12" href="$classopenai_1_1types_1_1chat_1_1parsed__chat__completion_1_1ParsedChatCompletionMessage.html" title=" " alt="" coords="709,319,972,375"/>
+<area shape="rect" id="node13" href="$classopenai_1_1types_1_1chat_1_1parsed__chat__completion_1_1ParsedChoice.html" title=" " alt="" coords="735,399,946,441"/>
+<area shape="rect" id="node14" href="$classopenai_1_1types_1_1responses_1_1parsed__response_1_1ParsedResponse.html" title=" " alt="" coords="739,465,942,506"/>
+<area shape="rect" id="node15" href="$classopenai_1_1types_1_1responses_1_1parsed__response_1_1ParsedResponseOutputMessage.html" title=" " alt="" coords="701,530,980,571"/>
+<area shape="rect" id="node16" href="$classopenai_1_1types_1_1responses_1_1parsed__response_1_1ParsedResponseOutputText.html" title=" " alt="" coords="715,595,966,637"/>
+<area shape="rect" id="node2" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,297,407,324"/>
+<area shape="rect" id="node3" title=" " alt="" coords="55,268,137,295"/>
+<area shape="rect" id="node4" title=" " alt="" coords="25,319,167,361"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,385,187,426"/>
+<area shape="rect" id="node6" title=" " alt="" coords="257,349,385,390"/>
+</map>

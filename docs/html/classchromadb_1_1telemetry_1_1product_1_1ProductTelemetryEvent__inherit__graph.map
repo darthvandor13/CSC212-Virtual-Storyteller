@@ -1,0 +1,11 @@
+<map id="chromadb.telemetry.product.ProductTelemetryEvent" name="chromadb.telemetry.product.ProductTelemetryEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,235,192,276"/>
+<area shape="rect" id="node2" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1ClientCreateCollectionEvent.html" title=" " alt="" coords="240,5,469,47"/>
+<area shape="rect" id="node3" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1ClientStartEvent.html" title=" " alt="" coords="240,71,469,112"/>
+<area shape="rect" id="node4" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1CollectionAddEvent.html" title=" " alt="" coords="240,136,469,177"/>
+<area shape="rect" id="node5" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1CollectionDeleteEvent.html" title=" " alt="" coords="240,201,469,243"/>
+<area shape="rect" id="node6" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1CollectionGetEvent.html" title=" " alt="" coords="240,267,469,308"/>
+<area shape="rect" id="node7" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1CollectionQueryEvent.html" title=" " alt="" coords="240,332,469,373"/>
+<area shape="rect" id="node8" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1CollectionUpdateEvent.html" title=" " alt="" coords="240,397,469,439"/>
+<area shape="rect" id="node9" href="$classchromadb_1_1telemetry_1_1product_1_1events_1_1ServerStartEvent.html" title=" " alt="" coords="240,463,469,504"/>
+</map>

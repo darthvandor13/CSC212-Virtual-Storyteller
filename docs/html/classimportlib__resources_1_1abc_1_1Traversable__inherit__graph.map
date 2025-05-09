@@ -1,0 +1,11 @@
+<map id="importlib_resources.abc.Traversable" name="importlib_resources.abc.Traversable">
+<area shape="rect" id="node1" title=" " alt="" coords="124,246,288,287"/>
+<area shape="rect" id="node3" href="$classimportlib__resources_1_1__adapters_1_1CompatibilityFiles_1_1ChildPath.html" title=" " alt="" coords="352,5,543,61"/>
+<area shape="rect" id="node4" href="$classimportlib__resources_1_1__adapters_1_1CompatibilityFiles_1_1OrphanPath.html" title=" " alt="" coords="352,85,543,141"/>
+<area shape="rect" id="node5" href="$classimportlib__resources_1_1__adapters_1_1CompatibilityFiles_1_1SpecPath.html" title=" " alt="" coords="352,165,543,221"/>
+<area shape="rect" id="node6" href="$classimportlib__resources_1_1readers_1_1MultiplexedPath.html" title=" " alt="" coords="354,246,541,287"/>
+<area shape="rect" id="node7" href="$classimportlib__resources_1_1simple_1_1ResourceContainer.html" title=" " alt="" coords="357,311,538,353"/>
+<area shape="rect" id="node8" href="$classimportlib__resources_1_1simple_1_1ResourceHandle.html" title=" " alt="" coords="357,377,538,418"/>
+<area shape="rect" id="node9" href="$classimportlib__resources_1_1tests_1_1util_1_1MemorySetup_1_1MemoryTraversable.html" title=" " alt="" coords="336,442,559,483"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,253,76,280"/>
+</map>

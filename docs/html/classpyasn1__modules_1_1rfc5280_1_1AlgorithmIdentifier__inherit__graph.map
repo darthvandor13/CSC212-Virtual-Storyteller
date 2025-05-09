@@ -1,0 +1,21 @@
+<map id="pyasn1_modules.rfc5280.AlgorithmIdentifier" name="pyasn1_modules.rfc5280.AlgorithmIdentifier">
+<area shape="rect" id="node1" title=" " alt="" coords="160,528,387,569"/>
+<area shape="rect" id="node3" href="$classpyasn1__modules_1_1rfc3274_1_1CompressionAlgorithmIdentifier.html" title=" " alt="" coords="435,5,683,47"/>
+<area shape="rect" id="node4" href="$classpyasn1__modules_1_1rfc3565_1_1AlgorithmIdentifier.html" title=" " alt="" coords="445,71,672,112"/>
+<area shape="rect" id="node5" href="$classpyasn1__modules_1_1rfc4055_1_1HashAlgorithm.html" title=" " alt="" coords="457,136,660,177"/>
+<area shape="rect" id="node6" href="$classpyasn1__modules_1_1rfc4055_1_1MaskGenAlgorithm.html" title=" " alt="" coords="457,201,660,243"/>
+<area shape="rect" id="node7" href="$classpyasn1__modules_1_1rfc5649_1_1AlgorithmIdentifier.html" title=" " alt="" coords="445,267,672,308"/>
+<area shape="rect" id="node8" href="$classpyasn1__modules_1_1rfc5652_1_1ContentEncryptionAlgorithmIdentifier.html" title=" " alt="" coords="450,332,667,373"/>
+<area shape="rect" id="node9" href="$classpyasn1__modules_1_1rfc5652_1_1DigestAlgorithmIdentifier.html" title=" " alt="" coords="454,397,663,439"/>
+<area shape="rect" id="node10" href="$classpyasn1__modules_1_1rfc5652_1_1KeyDerivationAlgorithmIdentifier.html" title=" " alt="" coords="461,463,656,504"/>
+<area shape="rect" id="node11" href="$classpyasn1__modules_1_1rfc5652_1_1KeyEncryptionAlgorithmIdentifier.html" title=" " alt="" coords="461,528,656,569"/>
+<area shape="rect" id="node12" href="$classpyasn1__modules_1_1rfc5652_1_1MessageAuthenticationCodeAlgorithm.html" title=" " alt="" coords="447,593,671,635"/>
+<area shape="rect" id="node13" href="$classpyasn1__modules_1_1rfc5652_1_1SignatureAlgorithmIdentifier.html" title=" " alt="" coords="445,659,672,700"/>
+<area shape="rect" id="node14" href="$classpyasn1__modules_1_1rfc5958_1_1KeyEncryptionAlgorithmIdentifier.html" title=" " alt="" coords="461,724,656,765"/>
+<area shape="rect" id="node15" href="$classpyasn1__modules_1_1rfc5958_1_1PrivateKeyAlgorithmIdentifier.html" title=" " alt="" coords="453,789,665,831"/>
+<area shape="rect" id="node16" href="$classpyasn1__modules_1_1rfc8410_1_1KeyEncryptionAlgorithmIdentifier.html" title=" " alt="" coords="461,855,656,896"/>
+<area shape="rect" id="node17" href="$classpyasn1__modules_1_1rfc8410_1_1SignatureAlgorithmIdentifier.html" title=" " alt="" coords="445,920,672,961"/>
+<area shape="rect" id="node18" href="$classpyasn1__modules_1_1rfc8418_1_1KeyEncryptionAlgorithmIdentifier.html" title=" " alt="" coords="461,985,656,1027"/>
+<area shape="rect" id="node19" href="$classpyasn1__modules_1_1rfc8418_1_1KeyWrapAlgorithmIdentifier.html" title=" " alt="" coords="461,1051,656,1092"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,535,112,562"/>
+</map>

@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="stable_diffusion.diffusion\l_schedulers.UniPCMultistepScheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classstable__diffusion_1_1diffusion__schedulers_1_1UniPCMultistepScheduler.html",tooltip=" "];
+}

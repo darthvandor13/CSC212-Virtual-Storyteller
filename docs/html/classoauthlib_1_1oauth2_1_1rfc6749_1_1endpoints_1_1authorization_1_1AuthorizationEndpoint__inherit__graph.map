@@ -1,0 +1,8 @@
+<map id="oauthlib.oauth2.rfc6749.endpoints.authorization.AuthorizationEndpoint" name="oauthlib.oauth2.rfc6749.endpoints.authorization.AuthorizationEndpoint">
+<area shape="rect" id="node1" title=" " alt="" coords="307,104,605,145"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1MobileApplicationServer.html" title=" " alt="" coords="669,5,908,47"/>
+<area shape="rect" id="node4" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="669,71,908,112"/>
+<area shape="rect" id="node5" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1WebApplicationServer.html" title=" " alt="" coords="669,136,908,177"/>
+<area shape="rect" id="node6" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="653,201,924,243"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1base_1_1BaseEndpoint.html" title=" " alt="" coords="5,104,259,145"/>
+</map>

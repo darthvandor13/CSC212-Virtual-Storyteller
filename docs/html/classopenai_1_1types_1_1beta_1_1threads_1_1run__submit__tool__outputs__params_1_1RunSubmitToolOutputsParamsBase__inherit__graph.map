@@ -1,0 +1,8 @@
+<map id="openai.types.beta.threads.run_submit_tool_outputs_params.RunSubmitToolOutputsParamsBase" name="openai.types.beta.threads.run_submit_tool_outputs_params.RunSubmitToolOutputsParamsBase">
+<area shape="rect" id="node1" title=" " alt="" coords="135,45,400,101"/>
+<area shape="rect" id="node5" href="$classopenai_1_1types_1_1beta_1_1threads_1_1run__submit__tool__outputs__params_1_1RunSubmitToolOutputsParamsNonStreaming.html" title=" " alt="" coords="448,5,713,61"/>
+<area shape="rect" id="node6" href="$classopenai_1_1types_1_1beta_1_1threads_1_1run__submit__tool__outputs__params_1_1RunSubmitToolOutputsParamsStreaming.html" title=" " alt="" coords="448,85,713,141"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,9,87,36"/>
+<area shape="rect" id="node3" title=" " alt="" coords="23,60,69,87"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,111,73,137"/>
+</map>

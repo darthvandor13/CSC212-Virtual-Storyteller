@@ -1,0 +1,7 @@
+<map id="pyasn1.codec.ber.decoder.UniversalStringPayloadDecoder" name="pyasn1.codec.ber.decoder.UniversalStringPayloadDecoder">
+<area shape="rect" id="node1" title=" " alt="" coords="5,348,212,389"/>
+<area shape="rect" id="node2" href="$classpyasn1_1_1codec_1_1ber_1_1decoder_1_1OctetStringPayloadDecoder.html" title=" " alt="" coords="17,259,201,300"/>
+<area shape="rect" id="node3" href="$classpyasn1_1_1codec_1_1ber_1_1decoder_1_1AbstractSimplePayloadDecoder.html" title=" " alt="" coords="5,169,212,211"/>
+<area shape="rect" id="node4" href="$classpyasn1_1_1codec_1_1ber_1_1decoder_1_1AbstractPayloadDecoder.html" title=" " alt="" coords="20,80,197,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="80,5,137,32"/>
+</map>

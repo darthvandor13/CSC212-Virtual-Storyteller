@@ -1,0 +1,5 @@
+<map id="huggingface_hub.hub_mixin.ModelHubMixin" name="huggingface_hub.hub_mixin.ModelHubMixin">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,160,80"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1hub__mixin_1_1PyTorchModelHubMixin.html" title=" " alt="" coords="208,5,411,47"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1keras__mixin_1_1KerasModelHubMixin.html" title=" " alt="" coords="215,71,403,112"/>
+</map>

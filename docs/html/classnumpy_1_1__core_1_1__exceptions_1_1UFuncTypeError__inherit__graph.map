@@ -1,0 +1,9 @@
+<map id="numpy._core._exceptions.UFuncTypeError" name="numpy._core._exceptions.UFuncTypeError">
+<area shape="rect" id="node1" title=" " alt="" coords="132,104,305,145"/>
+<area shape="rect" id="node3" href="$classnumpy_1_1__core_1_1__exceptions_1_1__UFuncCastingError.html" title=" " alt="" coords="353,71,527,112"/>
+<area shape="rect" id="node6" href="$classnumpy_1_1__core_1_1__exceptions_1_1__UFuncNoLoopError.html" title=" " alt="" coords="353,136,527,177"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,111,84,138"/>
+<area shape="rect" id="node4" href="$classnumpy_1_1__core_1_1__exceptions_1_1__UFuncInputCastingError.html" title=" " alt="" coords="585,5,759,47"/>
+<area shape="rect" id="node5" href="$classnumpy_1_1__core_1_1__exceptions_1_1__UFuncOutputCastingError.html" title=" " alt="" coords="582,71,762,112"/>
+<area shape="rect" id="node7" href="$classnumpy_1_1__core_1_1__exceptions_1_1__UFuncBinaryResolutionError.html" title=" " alt="" coords="575,136,769,177"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="onnxruntime.transformers.fusion_gpt_attention.FusionGptAttentionPastBase" name="onnxruntime.transformers.fusion_gpt_attention.FusionGptAttentionPastBase">
+<area shape="rect" id="node1" title=" " alt="" coords="263,43,540,84"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1fusion__gpt__attention_1_1FusionGptAttention.html" title=" " alt="" coords="619,5,839,47"/>
+<area shape="rect" id="node4" href="$classonnxruntime_1_1transformers_1_1fusion__gpt__attention__megatron_1_1FusionGptAttentionMegatron.html" title=" " alt="" coords="588,71,869,127"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="5,43,215,84"/>
+</map>

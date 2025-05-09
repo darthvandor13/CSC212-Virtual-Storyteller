@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="pdfminer.pdffont.PDFFont",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdffont_1_1PDFFont.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="pdfminer.pdffont.PDFCIDFont",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdffont_1_1PDFCIDFont.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pdfminer.pdffont.PDFSimpleFont",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdffont_1_1PDFSimpleFont.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pdfminer.pdffont.PDFType1Font",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdffont_1_1PDFType1Font.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pdfminer.pdffont.PDFTrue\lTypeFont",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdffont_1_1PDFTrueTypeFont.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pdfminer.pdffont.PDFType3Font",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpdfminer_1_1pdffont_1_1PDFType3Font.html",tooltip=" "];
+}

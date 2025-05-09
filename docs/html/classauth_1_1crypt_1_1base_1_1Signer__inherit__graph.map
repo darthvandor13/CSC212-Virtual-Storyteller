@@ -1,0 +1,8 @@
+<map id="auth.crypt.base.Signer" name="auth.crypt.base.Signer">
+<area shape="rect" id="node1" title=" " alt="" coords="157,78,311,105"/>
+<area shape="rect" id="node4" href="$classauth_1_1crypt_1_1__cryptography__rsa_1_1RSASigner.html" title=" " alt="" coords="375,5,541,47"/>
+<area shape="rect" id="node5" href="$classauth_1_1crypt_1_1__python__rsa_1_1RSASigner.html" title=" " alt="" coords="393,71,523,112"/>
+<area shape="rect" id="node6" href="$classauth_1_1crypt_1_1es256_1_1ES256Signer.html" title=" " alt="" coords="359,137,557,163"/>
+<area shape="rect" id="node2" title=" " alt="" coords="16,53,99,79"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,103,109,130"/>
+</map>

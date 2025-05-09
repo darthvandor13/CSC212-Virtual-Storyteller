@@ -1,0 +1,13 @@
+<map id="langchain.memory.summary.ConversationSummaryMemory" name="langchain.memory.summary.ConversationSummaryMemory">
+<area shape="rect" id="node1" title=" " alt="" coords="1376,53,1579,94"/>
+<area shape="rect" id="node2" href="$classlangchain_1_1memory_1_1chat__memory_1_1BaseChatMemory.html" title=" " alt="" coords="1144,81,1327,122"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1memory_1_1BaseMemory.html" title=" " alt="" coords="903,174,1095,215"/>
+<area shape="rect" id="node4" href="$classlangchain__core_1_1load_1_1serializable_1_1Serializable.html" title=" " alt="" coords="457,139,668,181"/>
+<area shape="rect" id="node5" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="236,39,408,65"/>
+<area shape="rect" id="node11" href="$classlangchain_1_1memory_1_1summary_1_1SummarizerMixin.html" title=" " alt="" coords="692,15,879,57"/>
+<area shape="rect" id="node6" title=" " alt="" coords="55,5,137,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="25,57,167,98"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,122,187,163"/>
+<area shape="rect" id="node9" title=" " alt="" coords="297,147,347,173"/>
+<area shape="rect" id="node10" title=" " alt="" coords="539,205,586,232"/>
+</map>

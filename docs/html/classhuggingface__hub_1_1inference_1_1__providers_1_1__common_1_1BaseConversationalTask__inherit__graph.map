@@ -1,0 +1,13 @@
+<map id="huggingface_hub.inference._providers._common.BaseConversationalTask" name="huggingface_hub.inference._providers._common.BaseConversationalTask">
+<area shape="rect" id="node1" title=" " alt="" coords="276,297,568,339"/>
+<area shape="rect" id="node3" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1cerebras_1_1CerebrasConversationalTask.html" title=" " alt="" coords="633,5,941,47"/>
+<area shape="rect" id="node4" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1cohere_1_1CohereConversationalTask.html" title=" " alt="" coords="643,71,930,112"/>
+<area shape="rect" id="node5" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1fireworks__ai_1_1FireworksAIConversationalTask.html" title=" " alt="" coords="678,137,895,193"/>
+<area shape="rect" id="node6" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1hyperbolic_1_1HyperbolicTextGenerationTask.html" title=" " alt="" coords="681,217,892,273"/>
+<area shape="rect" id="node7" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1nebius_1_1NebiusConversationalTask.html" title=" " alt="" coords="645,297,929,339"/>
+<area shape="rect" id="node8" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1novita_1_1NovitaConversationalTask.html" title=" " alt="" coords="647,363,926,404"/>
+<area shape="rect" id="node9" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1openai_1_1OpenAIConversationalTask.html" title=" " alt="" coords="643,428,930,469"/>
+<area shape="rect" id="node10" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1sambanova_1_1SambanovaConversationalTask.html" title=" " alt="" coords="616,493,957,535"/>
+<area shape="rect" id="node11" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1together_1_1TogetherConversationalTask.html" title=" " alt="" coords="636,559,937,600"/>
+<area shape="rect" id="node2" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1__common_1_1TaskProviderHelper.html" title=" " alt="" coords="5,290,228,346"/>
+</map>

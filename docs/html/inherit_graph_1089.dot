@@ -1,0 +1,46 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7544 [label="np.matrix",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7544 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="numpy.matrixlib.tests.test\l_masked_matrix.MMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1matrixlib_1_1tests_1_1test__masked__matrix_1_1MMatrix.html",tooltip=" "];
+  Node9581 [label="np.ndarray",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9581 -> Node9582 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9582 [label="numpy.lib.tests.test\l_stride_tricks.VerySimpleSub\lClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1lib_1_1tests_1_1test__stride__tricks_1_1VerySimpleSubClass.html",tooltip=" "];
+  Node9582 -> Node9583 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9583 [label="numpy.lib.tests.test\l_stride_tricks.SimpleSubClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1lib_1_1tests_1_1test__stride__tricks_1_1SimpleSubClass.html",tooltip=" "];
+  Node9581 -> Node9584 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9584 [label="numpy.ma.tests.test\l_subclassing.SubArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1tests_1_1test__subclassing_1_1SubArray.html",tooltip=" "];
+  Node9584 -> Node9585 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9585 [label="numpy.ma.tests.test\l_subclassing.ComplicatedSub\lArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1tests_1_1test__subclassing_1_1ComplicatedSubArray.html",tooltip=" "];
+  Node9584 -> Node9586 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9586 [label="numpy.ma.tests.test\l_subclassing.MSubArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1tests_1_1test__subclassing_1_1MSubArray.html",tooltip=" "];
+  Node9581 -> Node9587 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9587 [label="test_arrayobject.MyArr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__arrayobject_1_1MyArr.html",tooltip=" "];
+  Node9581 -> Node9588 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9588 [label="test_arrayobject.MyArrNoWrap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__arrayobject_1_1MyArrNoWrap.html",tooltip=" "];
+  Node9581 -> Node9589 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9589 [label="test_multiarray.TestArray\lPriority.Bar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__multiarray_1_1TestArrayPriority_1_1Bar.html",tooltip=" "];
+  Node9581 -> Node9590 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9590 [label="test_multiarray.TestArray\lPriority.Foo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__multiarray_1_1TestArrayPriority_1_1Foo.html",tooltip=" "];
+  Node9581 -> Node9591 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9591 [label="test_numeric.TestKeepdims.sub\l_array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__numeric_1_1TestKeepdims_1_1sub__array.html",tooltip=" "];
+  Node16485 [label="ndarray",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16485 -> Node16486 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16486 [label="numpy.ma.core.MaskedArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1core_1_1MaskedArray.html",tooltip=" "];
+  Node16486 -> Node16487 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16487 [label="numpy.ma.core.MaskedConstant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1core_1_1MaskedConstant.html",tooltip=" "];
+  Node16486 -> Node16488 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16488 [label="numpy.ma.core.mvoid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1core_1_1mvoid.html",tooltip=" "];
+  Node16486 -> Node16489 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16489 [label="numpy.ma.mrecords.Masked\lRecords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1mrecords_1_1MaskedRecords.html",tooltip=" "];
+  Node16486 -> Node9586 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16486 -> Node16490 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16490 [label="numpy.ma.tests.test\l_subclassing.SubMaskedArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1ma_1_1tests_1_1test__subclassing_1_1SubMaskedArray.html",tooltip=" "];
+  Node16486 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16485 -> Node16491 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16491 [label="test_function_base.Physical\lQuantity2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtest__function__base_1_1PhysicalQuantity2.html",tooltip=" "];
+}

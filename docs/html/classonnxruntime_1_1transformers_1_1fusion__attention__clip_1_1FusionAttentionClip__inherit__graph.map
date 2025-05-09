@@ -1,0 +1,5 @@
+<map id="onnxruntime.transformers.fusion_attention_clip.FusionAttentionClip" name="onnxruntime.transformers.fusion_attention_clip.FusionAttentionClip">
+<area shape="rect" id="node1" title=" " alt="" coords="5,184,229,225"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__attention_1_1FusionAttention.html" title=" " alt="" coords="13,95,222,136"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="13,5,222,47"/>
+</map>

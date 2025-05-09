@@ -1,0 +1,11 @@
+<map id="anyio.streams.memory.MemoryObjectSendStream" name="anyio.streams.memory.MemoryObjectSendStream">
+<area shape="rect" id="node1" title=" " alt="" coords="374,348,578,389"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,87,72,114"/>
+<area shape="rect" id="node5" href="$classanyio_1_1abc_1_1__streams_1_1UnreliableObjectSendStream.html" title=" " alt="" coords="211,169,410,211"/>
+<area shape="rect" id="node3" title=" " alt="" coords="521,87,594,114"/>
+<area shape="rect" id="node4" href="$classanyio_1_1abc_1_1__streams_1_1ObjectSendStream.html" title=" " alt="" coords="305,259,484,300"/>
+<area shape="rect" id="node6" href="$classanyio_1_1abc_1_1__resources_1_1AsyncResource.html" title=" " alt="" coords="96,80,283,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="96,5,179,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="203,5,282,32"/>
+<area shape="rect" id="node9" href="$classanyio_1_1__core_1_1__typedattr_1_1TypedAttributeProvider.html" title=" " alt="" coords="307,80,496,121"/>
+</map>

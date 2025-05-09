@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16482 [label="ndarray",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16482 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="numpy._core.defchararray.chararray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1__core_1_1defchararray_1_1chararray.html",tooltip=" "];
+  Node16482 -> Node16484 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16484 [label="numpy._core.memmap.memmap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnumpy_1_1__core_1_1memmap_1_1memmap.html",tooltip=" "];
+}

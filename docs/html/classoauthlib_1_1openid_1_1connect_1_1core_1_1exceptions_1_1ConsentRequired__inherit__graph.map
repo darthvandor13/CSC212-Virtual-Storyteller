@@ -1,0 +1,6 @@
+<map id="oauthlib.openid.connect.core.exceptions.ConsentRequired" name="oauthlib.openid.connect.core.exceptions.ConsentRequired">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,264,300"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1exceptions_1_1OpenIDClientError.html" title=" " alt="" coords="5,169,264,211"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1errors_1_1OAuth2Error.html" title=" " alt="" coords="35,80,234,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="95,5,175,32"/>
+</map>

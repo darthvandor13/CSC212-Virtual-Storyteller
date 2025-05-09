@@ -1,0 +1,9 @@
+<map id="numpy.linalg.tests.test_linalg.TestPinv" name="numpy.linalg.tests.test_linalg.TestPinv">
+<area shape="rect" id="node1" title=" " alt="" coords="684,108,836,149"/>
+<area shape="rect" id="node2" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1PinvCases.html" title=" " alt="" coords="484,108,636,149"/>
+<area shape="rect" id="node3" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1LinalgSquareTestCase.html" title=" " alt="" coords="224,5,419,47"/>
+<area shape="rect" id="node4" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1LinalgTestCase.html" title=" " alt="" coords="5,108,159,149"/>
+<area shape="rect" id="node5" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1LinalgNonsquareTestCase.html" title=" " alt="" coords="213,71,429,112"/>
+<area shape="rect" id="node6" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1LinalgGeneralizedSquareTestCase.html" title=" " alt="" coords="218,137,425,193"/>
+<area shape="rect" id="node7" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1LinalgGeneralizedNonsquareTestCase.html" title=" " alt="" coords="207,217,436,273"/>
+</map>

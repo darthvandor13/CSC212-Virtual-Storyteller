@@ -1,0 +1,16 @@
+<map id="oauthlib.oauth2.rfc6749.endpoints.base.BaseEndpoint" name="oauthlib.oauth2.rfc6749.endpoints.base.BaseEndpoint">
+<area shape="rect" id="node1" title=" " alt="" coords="5,201,259,243"/>
+<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1authorization_1_1AuthorizationEndpoint.html" title=" " alt="" coords="309,5,607,47"/>
+<area shape="rect" id="node7" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1introspect_1_1IntrospectEndpoint.html" title=" " alt="" coords="317,201,599,243"/>
+<area shape="rect" id="node10" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1metadata_1_1MetadataEndpoint.html" title=" " alt="" coords="319,397,597,439"/>
+<area shape="rect" id="node11" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1resource_1_1ResourceEndpoint.html" title=" " alt="" coords="321,71,595,112"/>
+<area shape="rect" id="node12" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1revocation_1_1RevocationEndpoint.html" title=" " alt="" coords="315,136,601,177"/>
+<area shape="rect" id="node13" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1token_1_1TokenEndpoint.html" title=" " alt="" coords="329,267,587,308"/>
+<area shape="rect" id="node14" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1endpoints_1_1userinfo_1_1UserInfoEndpoint.html" title=" " alt="" coords="307,332,609,373"/>
+<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1MobileApplicationServer.html" title=" " alt="" coords="673,5,912,47"/>
+<area shape="rect" id="node4" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="673,71,912,112"/>
+<area shape="rect" id="node5" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1WebApplicationServer.html" title=" " alt="" coords="673,136,912,177"/>
+<area shape="rect" id="node6" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1endpoints_1_1pre__configured_1_1Server.html" title=" " alt="" coords="657,267,928,308"/>
+<area shape="rect" id="node8" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1BackendApplicationServer.html" title=" " alt="" coords="669,332,916,373"/>
+<area shape="rect" id="node9" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1endpoints_1_1pre__configured_1_1LegacyApplicationServer.html" title=" " alt="" coords="673,201,912,243"/>
+</map>

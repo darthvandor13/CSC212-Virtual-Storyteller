@@ -1,0 +1,12 @@
+<map id="langchain.memory.buffer_window.ConversationBufferWindowMemory" name="langchain.memory.buffer_window.ConversationBufferWindowMemory">
+<area shape="rect" id="node1" title=" " alt="" coords="5,457,240,513"/>
+<area shape="rect" id="node2" href="$classlangchain_1_1memory_1_1chat__memory_1_1BaseChatMemory.html" title=" " alt="" coords="31,367,214,408"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1memory_1_1BaseMemory.html" title=" " alt="" coords="119,276,311,317"/>
+<area shape="rect" id="node4" href="$classlangchain__core_1_1load_1_1serializable_1_1Serializable.html" title=" " alt="" coords="256,172,467,213"/>
+<area shape="rect" id="node5" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="275,96,447,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="228,13,311,39"/>
+<area shape="rect" id="node7" title=" " alt="" coords="335,5,478,47"/>
+<area shape="rect" id="node8" title=" " alt="" coords="503,5,684,47"/>
+<area shape="rect" id="node9" title=" " alt="" coords="117,96,168,123"/>
+<area shape="rect" id="node10" title=" " alt="" coords="181,179,227,206"/>
+</map>

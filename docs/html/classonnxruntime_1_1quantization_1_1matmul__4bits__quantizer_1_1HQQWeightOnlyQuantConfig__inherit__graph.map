@@ -1,0 +1,4 @@
+<map id="onnxruntime.quantization.matmul_4bits_quantizer.HQQWeightOnlyQuantConfig" name="onnxruntime.quantization.matmul_4bits_quantizer.HQQWeightOnlyQuantConfig">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,296,136"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1matmul__4bits__quantizer_1_1WeightOnlyQuantConfig.html" title=" " alt="" coords="21,5,281,47"/>
+</map>

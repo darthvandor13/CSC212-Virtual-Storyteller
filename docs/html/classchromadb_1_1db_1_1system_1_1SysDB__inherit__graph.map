@@ -1,0 +1,8 @@
+<map id="chromadb.db.system.SysDB" name="chromadb.db.system.SysDB">
+<area shape="rect" id="node1" title=" " alt="" coords="48,155,239,181"/>
+<area shape="rect" id="node5" href="$classclient_1_1GrpcSysDB.html" title=" " alt="" coords="5,229,132,256"/>
+<area shape="rect" id="node6" href="$classsysdb_1_1SqlSysDB.html" title=" " alt="" coords="157,229,279,256"/>
+<area shape="rect" id="node2" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="49,80,238,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="63,5,114,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="138,5,261,32"/>
+</map>

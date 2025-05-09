@@ -1,0 +1,18 @@
+<map id="onnxruntime.transformers.onnx_model.OnnxModel" name="onnxruntime.transformers.onnx_model.OnnxModel">
+<area shape="rect" id="node1" title=" " alt="" coords="5,365,208,407"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1onnx__model__bert_1_1BertOnnxModel.html" title=" " alt="" coords="289,300,491,341"/>
+<area shape="rect" id="node15" href="$classonnxruntime_1_1transformers_1_1onnx__model__phi_1_1PhiOnnxModel.html" title=" " alt="" coords="289,365,491,407"/>
+<area shape="rect" id="node16" href="$classonnxruntime_1_1transformers_1_1shape__optimizer_1_1BertOnnxModelShapeOptimizer.html" title=" " alt="" coords="256,431,524,472"/>
+<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1onnx__model__bart_1_1BartOnnxModel.html" title=" " alt="" coords="600,5,803,47"/>
+<area shape="rect" id="node4" href="$classonnxruntime_1_1transformers_1_1onnx__model__bert__tf_1_1BertOnnxModelTF.html" title=" " alt="" coords="592,71,811,112"/>
+<area shape="rect" id="node6" href="$classonnxruntime_1_1transformers_1_1onnx__model__clip_1_1ClipOnnxModel.html" title=" " alt="" coords="600,136,803,177"/>
+<area shape="rect" id="node7" href="$classonnxruntime_1_1transformers_1_1onnx__model__conformer_1_1ConformerOnnxModel.html" title=" " alt="" coords="572,201,831,243"/>
+<area shape="rect" id="node8" href="$classonnxruntime_1_1transformers_1_1onnx__model__gpt2_1_1Gpt2OnnxModel.html" title=" " alt="" coords="600,267,803,308"/>
+<area shape="rect" id="node9" href="$classonnxruntime_1_1transformers_1_1onnx__model__mmdit_1_1MmditOnnxModel.html" title=" " alt="" coords="595,332,808,373"/>
+<area shape="rect" id="node10" href="$classonnxruntime_1_1transformers_1_1onnx__model__sam2_1_1Sam2OnnxModel.html" title=" " alt="" coords="598,397,805,439"/>
+<area shape="rect" id="node11" href="$classonnxruntime_1_1transformers_1_1onnx__model__t5_1_1T5OnnxModel.html" title=" " alt="" coords="600,463,803,504"/>
+<area shape="rect" id="node12" href="$classonnxruntime_1_1transformers_1_1onnx__model__tnlr_1_1TnlrOnnxModel.html" title=" " alt="" coords="600,528,803,569"/>
+<area shape="rect" id="node13" href="$classonnxruntime_1_1transformers_1_1onnx__model__unet_1_1UnetOnnxModel.html" title=" " alt="" coords="600,593,803,635"/>
+<area shape="rect" id="node5" href="$classonnxruntime_1_1transformers_1_1onnx__model__bert__keras_1_1BertOnnxModelKeras.html" title=" " alt="" coords="879,71,1139,112"/>
+<area shape="rect" id="node14" href="$classonnxruntime_1_1transformers_1_1onnx__model__vae_1_1VaeOnnxModel.html" title=" " alt="" coords="907,593,1110,635"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="langchain_core.callbacks.base.BaseCallbackManager" name="langchain_core.callbacks.base.BaseCallbackManager">
+<area shape="rect" id="node1" title=" " alt="" coords="257,39,461,80"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1callbacks_1_1manager_1_1AsyncCallbackManager.html" title=" " alt="" coords="509,5,735,47"/>
+<area shape="rect" id="node5" href="$classlangchain__core_1_1callbacks_1_1manager_1_1CallbackManager.html" title=" " alt="" coords="509,71,735,112"/>
+<area shape="rect" id="node2" href="$classlangchain__core_1_1callbacks_1_1base_1_1CallbackManagerMixin.html" title=" " alt="" coords="5,39,209,80"/>
+<area shape="rect" id="node4" href="$classlangchain__core_1_1callbacks_1_1manager_1_1AsyncCallbackManagerForChainGroup.html" title=" " alt="" coords="783,5,1031,47"/>
+<area shape="rect" id="node6" href="$classlangchain__core_1_1callbacks_1_1manager_1_1CallbackManagerForChainGroup.html" title=" " alt="" coords="794,71,1019,112"/>
+</map>

@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="sympy.physics.quantum.matrixutils.scipy\l_sparse_matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1quantum_1_1matrixutils_1_1scipy__sparse__matrix.html",tooltip=" "];
+}

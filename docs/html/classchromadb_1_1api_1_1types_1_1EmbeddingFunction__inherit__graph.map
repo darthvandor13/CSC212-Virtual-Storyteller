@@ -1,0 +1,29 @@
+<map id="chromadb.api.types.EmbeddingFunction" name="chromadb.api.types.EmbeddingFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="568,795,773,836"/>
+<area shape="rect" id="node9" href="$classchromadb_1_1utils_1_1embedding__functions_1_1amazon__bedrock__embedding__function_1_1AmazonBedrockEmbeddingFunction.html" title=" " alt="" coords="836,5,1081,76"/>
+<area shape="rect" id="node10" href="$classchromadb_1_1utils_1_1embedding__functions_1_1cohere__embedding__function_1_1CohereEmbeddingFunction.html" title=" " alt="" coords="841,101,1077,157"/>
+<area shape="rect" id="node11" href="$classchromadb_1_1utils_1_1embedding__functions_1_1google__embedding__function_1_1GoogleGenerativeAiEmbeddingFunction.html" title=" " alt="" coords="829,181,1089,252"/>
+<area shape="rect" id="node12" href="$classchromadb_1_1utils_1_1embedding__functions_1_1google__embedding__function_1_1GooglePalmEmbeddingFunction.html" title=" " alt="" coords="826,277,1091,333"/>
+<area shape="rect" id="node13" href="$classchromadb_1_1utils_1_1embedding__functions_1_1google__embedding__function_1_1GoogleVertexEmbeddingFunction.html" title=" " alt="" coords="822,357,1095,413"/>
+<area shape="rect" id="node14" href="$classchromadb_1_1utils_1_1embedding__functions_1_1huggingface__embedding__function_1_1HuggingFaceEmbeddingFunction.html" title=" " alt="" coords="845,437,1072,508"/>
+<area shape="rect" id="node15" href="$classchromadb_1_1utils_1_1embedding__functions_1_1huggingface__embedding__function_1_1HuggingFaceEmbeddingServer.html" title=" " alt="" coords="845,532,1072,603"/>
+<area shape="rect" id="node16" href="$classchromadb_1_1utils_1_1embedding__functions_1_1instructor__embedding__function_1_1InstructorEmbeddingFunction.html" title=" " alt="" coords="834,627,1083,683"/>
+<area shape="rect" id="node17" href="$classchromadb_1_1utils_1_1embedding__functions_1_1jina__embedding__function_1_1JinaEmbeddingFunction.html" title=" " alt="" coords="849,707,1068,763"/>
+<area shape="rect" id="node18" href="$classchromadb_1_1utils_1_1embedding__functions_1_1ollama__embedding__function_1_1OllamaEmbeddingFunction.html" title=" " alt="" coords="841,787,1076,843"/>
+<area shape="rect" id="node19" href="$classchromadb_1_1utils_1_1embedding__functions_1_1onnx__mini__lm__l6__v2_1_1ONNXMiniLM__L6__V2.html" title=" " alt="" coords="864,867,1053,923"/>
+<area shape="rect" id="node20" href="$classchromadb_1_1utils_1_1embedding__functions_1_1open__clip__embedding__function_1_1OpenCLIPEmbeddingFunction.html" title=" " alt="" coords="831,947,1086,1003"/>
+<area shape="rect" id="node21" href="$classchromadb_1_1utils_1_1embedding__functions_1_1openai__embedding__function_1_1OpenAIEmbeddingFunction.html" title=" " alt="" coords="839,1027,1078,1083"/>
+<area shape="rect" id="node22" href="$classchromadb_1_1utils_1_1embedding__functions_1_1roboflow__embedding__function_1_1RoboflowEmbeddingFunction.html" title=" " alt="" coords="834,1107,1083,1163"/>
+<area shape="rect" id="node23" href="$classchromadb_1_1utils_1_1embedding__functions_1_1sentence__transformer__embedding__function_1_139d98987c719e0ea7ccab9ca4a9fad50.html" title=" " alt="" coords="821,1188,1096,1259"/>
+<area shape="rect" id="node24" href="$classchromadb_1_1utils_1_1embedding__functions_1_1text2vec__embedding__function_1_1Text2VecEmbeddingFunction.html" title=" " alt="" coords="834,1283,1083,1339"/>
+<area shape="rect" id="node25" href="$classchromadb_1_1utils_1_1embedding__functions_1_1voyageai__embedding__function_1_1VoyageAIEmbeddingFunction.html" title=" " alt="" coords="833,1363,1084,1419"/>
+<area shape="rect" id="node26" href="$classtest__cross__version__persist_1_1not__implemented__ef.html" title=" " alt="" coords="864,1444,1053,1485"/>
+<area shape="rect" id="node27" href="$classtest__multimodal__ef_1_1hashing__multimodal__ef.html" title=" " alt="" coords="868,1509,1049,1551"/>
+<area shape="rect" id="node2" href="$classtyping__extensions_1_1Protocol.html" title=" " alt="" coords="341,777,520,803"/>
+<area shape="rect" id="node3" title=" " alt="" coords="175,726,281,753"/>
+<area shape="rect" id="node4" title=" " alt="" coords="187,777,269,803"/>
+<area shape="rect" id="node5" href="$classtyping__extensions_1_1__ProtocolMeta.html" title=" " alt="" coords="163,828,293,869"/>
+<area shape="rect" id="node6" title=" " alt="" coords="37,810,83,837"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,861,115,887"/>
+<area shape="rect" id="node8" title=" " alt="" coords="411,827,450,854"/>
+</map>

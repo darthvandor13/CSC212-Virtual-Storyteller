@@ -1,0 +1,11 @@
+<map id="langchain_core.messages.tool.ToolMessage" name="langchain_core.messages.tool.ToolMessage">
+<area shape="rect" id="node1" title=" " alt="" coords="971,86,1173,127"/>
+<area shape="rect" id="node2" href="$classlangchain__core_1_1messages_1_1base_1_1BaseMessage.html" title=" " alt="" coords="713,53,923,94"/>
+<area shape="rect" id="node3" href="$classlangchain__core_1_1load_1_1serializable_1_1Serializable.html" title=" " alt="" coords="455,53,665,94"/>
+<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,35,407,61"/>
+<area shape="rect" id="node5" title=" " alt="" coords="55,5,137,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="25,57,167,98"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,122,187,163"/>
+<area shape="rect" id="node8" title=" " alt="" coords="295,85,346,112"/>
+<area shape="rect" id="node9" href="$classlangchain__core_1_1messages_1_1tool_1_1ToolOutputMixin.html" title=" " alt="" coords="717,118,919,159"/>
+</map>

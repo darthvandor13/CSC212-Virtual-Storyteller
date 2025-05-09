@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node12797 [label="logging.StreamHandler",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12797 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="coloredlogs.StandardError\lHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcoloredlogs_1_1StandardErrorHandler.html",tooltip=" "];
+  Node12797 -> Node12799 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12799 [label="pip._internal.utils.logging.\lColorizedStreamHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpip_1_1__internal_1_1utils_1_1logging_1_1ColorizedStreamHandler.html",tooltip=" "];
+  Node12797 -> Node12800 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12800 [label="tqdm.contrib.logging.\l_TqdmLoggingHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtqdm_1_1contrib_1_1logging_1_1__TqdmLoggingHandler.html",tooltip=" "];
+}

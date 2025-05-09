@@ -1,0 +1,8 @@
+<map id="openai.types.responses.response_reasoning_item.ResponseReasoningItem" name="openai.types.responses.response_reasoning_item.ResponseReasoningItem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,273,285"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="48,169,231,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="53,95,225,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="30,13,113,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="137,5,280,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="305,5,486,47"/>
+</map>

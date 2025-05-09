@@ -1,0 +1,8 @@
+<map id="openai.types.beta.realtime.conversation_item_input_audio_transcription_failed_event.ConversationItemInputAudioTranscriptionFailedEvent" name="openai.types.beta.realtime.conversation_item_input_audio_transcription_failed_event.ConversationItemInputAudioTranscriptionFailedEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,348,315"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="85,169,268,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="91,95,263,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="67,13,150,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="175,5,317,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="342,5,523,47"/>
+</map>

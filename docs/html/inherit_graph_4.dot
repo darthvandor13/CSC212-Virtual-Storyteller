@@ -1,0 +1,12 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node16307 [label="LogRecordProcessor",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node16307 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="_logs._internal.export.Batch\lLogRecordProcessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class__logs_1_1__internal_1_1export_1_1BatchLogRecordProcessor.html",tooltip=" "];
+  Node16307 -> Node16309 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16309 [label="_logs._internal.export.Simple\lLogRecordProcessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class__logs_1_1__internal_1_1export_1_1SimpleLogRecordProcessor.html",tooltip=" "];
+}

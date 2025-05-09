@@ -1,0 +1,4 @@
+<map id="onnxruntime.transformers.onnx_model_t5.FusionRelativePositionBiasBlock" name="onnxruntime.transformers.onnx_model_t5.FusionRelativePositionBiasBlock">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,225,151"/>
+<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="11,5,220,47"/>
+</map>

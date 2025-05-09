@@ -1,0 +1,8 @@
+<map id="openai.types.beta.realtime.rate_limits_updated_event.RateLimitsUpdatedEvent" name="openai.types.beta.realtime.rate_limits_updated_event.RateLimitsUpdatedEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,244,308,285"/>
+<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="65,169,248,196"/>
+<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="71,95,243,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="47,13,130,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="155,5,297,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="322,5,503,47"/>
+</map>

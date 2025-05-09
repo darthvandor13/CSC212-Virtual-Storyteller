@@ -1,0 +1,9 @@
+<map id="click.core.Parameter" name="click.core.Parameter">
+<area shape="rect" id="node1" title=" " alt="" coords="221,5,363,32"/>
+<area shape="rect" id="node2" href="$classclick_1_1core_1_1Argument.html" title=" " alt="" coords="45,80,184,107"/>
+<area shape="rect" id="node4" href="$classclick_1_1core_1_1Option.html" title=" " alt="" coords="232,80,352,107"/>
+<area shape="rect" id="node7" href="$classtyper_1_1models_1_1CallbackParam.html" title=" " alt="" coords="376,80,565,107"/>
+<area shape="rect" id="node3" href="$classtyper_1_1core_1_1TyperArgument.html" title=" " alt="" coords="5,155,176,181"/>
+<area shape="rect" id="node5" href="$classclick_1_1decorators_1_1HelpOption.html" title=" " alt="" coords="201,155,383,181"/>
+<area shape="rect" id="node6" href="$classtyper_1_1core_1_1TyperOption.html" title=" " alt="" coords="407,155,561,181"/>
+</map>

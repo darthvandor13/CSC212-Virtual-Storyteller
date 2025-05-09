@@ -1,0 +1,11 @@
+digraph "regex.test_regex.RegexTests"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="regex.test_regex.RegexTests",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="unittest.TestCase",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" BAD_CHAR_RANGE\nBAD_ESCAPE\nBAD_GROUP_NAME\nBAD_OCTAL_ESCAPE\nBAD_SET\nBYTES_PAT_ON_STR\nBYTES_PAT_STR_TEMPL\nBYTES_PAT_UNI_FLAG\nCANT_TURN_OFF\nDUPLICATE_GROUP\n..." ,fontname="Helvetica"];
+  Node3 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

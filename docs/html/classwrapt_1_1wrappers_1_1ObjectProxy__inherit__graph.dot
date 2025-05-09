@@ -1,0 +1,50 @@
+digraph "wrapt.wrappers.ObjectProxy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="wrapt.wrappers.ObjectProxy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="with_metaclass",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="wrapt.wrappers._ObjectProxy\lMetaType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1wrappers_1_1__ObjectProxyMetaType.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="wrapt.importer._ImportHook\lChainedLoader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1importer_1_1__ImportHookChainedLoader.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="wrapt.weakrefs.WeakFunction\lProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1weakrefs_1_1WeakFunctionProxy.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="wrapt.wrappers.CallableObject\lProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1wrappers_1_1CallableObjectProxy.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="wrapt.decorators._Adapter\lFunctionCode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1decorators_1_1__AdapterFunctionCode.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="wrapt.decorators._Adapter\lFunctionSurrogate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1decorators_1_1__AdapterFunctionSurrogate.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="wrapt.wrappers.PartialCallable\lObjectProxy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1wrappers_1_1PartialCallableObjectProxy.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="wrapt.wrappers._Function\lWrapperBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1wrappers_1_1__FunctionWrapperBase.html",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="wrapt.wrappers.BoundFunction\lWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1wrappers_1_1BoundFunctionWrapper.html",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="wrapt.decorators._BoundAdapter\lWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1decorators_1_1__BoundAdapterWrapper.html",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="wrapt.wrappers.FunctionWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1wrappers_1_1FunctionWrapper.html",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="wrapt.decorators.Adapter\lWrapper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrapt_1_1decorators_1_1AdapterWrapper.html",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

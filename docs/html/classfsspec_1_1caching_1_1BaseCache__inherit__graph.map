@@ -1,0 +1,11 @@
+<map id="fsspec.caching.BaseCache" name="fsspec.caching.BaseCache">
+<area shape="rect" id="node1" title=" " alt="" coords="5,203,188,229"/>
+<area shape="rect" id="node2" href="$classfsspec_1_1caching_1_1AllBytes.html" title=" " alt="" coords="249,5,411,32"/>
+<area shape="rect" id="node3" href="$classfsspec_1_1caching_1_1BackgroundBlockCache.html" title=" " alt="" coords="239,57,421,98"/>
+<area shape="rect" id="node4" href="$classfsspec_1_1caching_1_1BlockCache.html" title=" " alt="" coords="237,123,423,149"/>
+<area shape="rect" id="node5" href="$classfsspec_1_1caching_1_1BytesCache.html" title=" " alt="" coords="237,173,423,200"/>
+<area shape="rect" id="node6" href="$classfsspec_1_1caching_1_1FirstChunkCache.html" title=" " alt="" coords="241,225,419,266"/>
+<area shape="rect" id="node7" href="$classfsspec_1_1caching_1_1KnownPartsOfAFile.html" title=" " alt="" coords="237,290,423,331"/>
+<area shape="rect" id="node8" href="$classfsspec_1_1caching_1_1MMapCache.html" title=" " alt="" coords="236,356,424,383"/>
+<area shape="rect" id="node9" href="$classfsspec_1_1caching_1_1ReadAheadCache.html" title=" " alt="" coords="239,407,421,449"/>
+</map>
