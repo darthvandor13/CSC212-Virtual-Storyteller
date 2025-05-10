@@ -203,4 +203,176 @@ tts.say(story_text)
 🔹 **Dialogflow CX processes request** → Extracts story parameters  
 🔹 **Webhook sends request to ChatGPT** → AI generates a custom story  
 🔹 **Webhook returns the story to Dialogflow CX**  
-🔹 **NAO reads the story aloud** using TTS  
+🔹 **NAO reads the story aloud** using TTS
+
+
+# NAO Virtual Storyteller
+
+## Project Objective
+
+This project demonstrates a **proof of concept** where a **NAO robot** serves as the expressive medium for a **virtual storyteller** powered by **generative AI**. The robot listens for spoken keywords, sends them to an OpenAI-powered story generation service, and narrates the resulting story using its onboard Text-to-Speech (TTS) engine.
+
+The system is designed to be easily extensible. While this version uses keyword recognition and a simple webhook, the architecture could integrate with more robust conversation engines such as **Google Dialogflow CX** and **Vertex AI Conversational Agents** for richer, multi-turn dialogue.
+
+---
+
+## Documentation & Downloads
+
+- **NAO Developer Documentation**  
+  [http://doc.aldebaran.com/2-8/home_nao.html](http://doc.aldebaran.com/2-8/home_nao.html)
+
+- **NAO Software Downloads**  
+  [https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/](https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/)
+
+---
+
+## Directory Structure
+
+```
+naoqi_tests/
+├── chatgpt_webhook.py     # Flask-based story generation API
+├── test_naoqi.py          # Basic NAO connectivity test
+├── test_tts.py            # Simple speech playback test
+├── test_asr.py            # Full storyteller integration loop
+├── venv/                  # Python 2.7 virtual environment
+└── README.md              # (this file)
+```
+
+---
+
+## Network Requirements
+
+To communicate with the NAO robot:
+- Ensure both your computer and the robot are on the **same local subnet** (e.g., `192.168.1.X`).
+- Find the NAO robot’s IP via its touchscreen or audio prompt after boot.
+- Update the `NAO_IP` variable in your scripts (e.g., `test_asr.py`) to match the robot's IP.
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Set Up a Python 2.7 Virtual Environment
+
+```bash
+sudo apt install python2.7 python2.7-venv
+mkdir -p ~/naoqi_env
+cd ~/naoqi_env
+virtualenv -p python2.7 venv
+source venv/bin/activate
+```
+
+---
+
+### 2. Install Required Packages
+
+```bash
+pip install flask requests
+```
+
+---
+
+### 3. Configure Your OpenAI API Key
+
+Add the following to your `~/.bashrc`:
+```bash
+export AI_STORYTELLER_TEST_KEY_CV="sk-...your API key..."
+```
+
+Apply it in your current shell:
+```bash
+source ~/.bashrc
+```
+
+---
+
+### 4. Run Tests
+
+#### 🔸 Verify NAO Connectivity
+```bash
+python2 test_naoqi.py
+```
+
+#### 🔸 Confirm NAO Can Speak
+```bash
+python2 test_tts.py
+```
+
+#### 🔸 Start the Flask Story Generator Webhook
+```bash
+python2 chatgpt_webhook.py
+```
+
+Then, test it with:
+
+```bash
+curl -X POST http://localhost:5000/generate_story \
+     -H "Content-Type: application/json" \
+     -d '{"word": "robot"}'
+```
+
+---
+
+### 5. Run the Virtual Storyteller
+
+```bash
+python2 test_asr.py
+```
+
+Then speak one of the following words near NAO:
+- `hello`
+- `story`
+- `robot`
+
+The system will:
+1. Recognize your spoken keyword using NAO’s ASR.
+2. Send it to the Flask server.
+3. Generate a short story using the OpenAI API.
+4. Speak the story aloud using NAO’s built-in speakers.
+
+---
+
+## Internals
+
+This project uses:
+- `ALSpeechRecognition` for listening
+- `ALMemory` for retrieving recognized words
+- `ALTextToSpeech` for playback
+- Flask (`chatgpt_webhook.py`) to serve `/generate_story`
+- OpenAI’s `chat/completions` API with the model `gpt-4o-mini`
+
+For technical reference, all scripts have been refactored for [Doxygen](https://www.doxygen.nl/) compatibility with documented parameters, types, and call graphs.
+
+---
+
+## Scripts Overview
+
+| File               | Purpose                                                  |
+|--------------------|----------------------------------------------------------|
+| `test_naoqi.py`    | Verifies connection to the NAO robot and TTS subsystem   |
+| `test_tts.py`      | Sends a single test sentence to the NAO for speech       |
+| `chatgpt_webhook.py` | Flask server that generates stories using OpenAI       |
+| `test_asr.py`      | End-to-end: speech → story generation → TTS playback     |
+
+---
+
+## Future Possibilities
+
+This setup validates the feasibility of **using NAO as a front-end for a generative AI-based virtual storyteller**. With this foundation, the following enhancements are possible:
+- Integrating **Dialogflow CX or Vertex AI Agents** to manage conversation logic.
+- Adding **multi-turn story generation** with memory of previous interactions.
+- Expanding vocabulary dynamically via the web interface.
+- Hosting the webhook on a public domain via `ngrok` or GCP/AWS.
+
+---
+
+## License
+
+MIT License — See source files for copyright.
+
+---
+
+## Questions or Contributions?
+
+Feel free to fork this repo, submit pull requests, or open an issue with suggestions for enhancements!
+```
+
