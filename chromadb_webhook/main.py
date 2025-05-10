@@ -1,3 +1,7 @@
+##! @file main.py
+##! @brief  Cloud-Function webhook that proxies a query to ChromaDB and returns the top stories.
+##! @author Calvin Vandor
+
 import requests
 from flask import jsonify, Request
 

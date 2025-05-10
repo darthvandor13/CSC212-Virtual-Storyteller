@@ -1,3 +1,7 @@
+##! @file main.py
+##! @brief  FastAPI wrapper that queries ChromaDB for story snippets.
+##! @author Calvin Vandor
+
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel

@@ -1,3 +1,7 @@
+##! @file upload_stories.py
+##! @brief  Bulk-upload EPUB/PDF stories into ChromaDB, with metadata & emojis.
+##! @author Calvin Vandor
+
 import os
 import re
 import chromadb

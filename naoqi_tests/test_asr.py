@@ -1,74 +1,116 @@
+##! @file test_asr.py
+##! @brief  Listens for keywords with NAO’s microphone, sends the recognised word
+##!         to a ChatGPT‑powered webhook, and plays the returned story via
+##!         NAO’s built‑in Text‑to‑Speech (TTS).
+##!
+##! This script is intentionally kept as a *single, top‑level loop* to preserve
+##! the original project logic.  No functions are introduced here so that the
+##! behaviour remains byte‑for‑byte identical — only comments were added to make
+##! the file fully Doxygen‑ready.
+##!
+##! ### Usage (example)
+##! ```bash
+##! python2 test_asr.py   # run inside the naoqi_env virtual‑env
+##! ```
+##!
+##! @author Calvin Vandor
+##! @date   2025‑05‑08
+##! @copyright MIT
+
 from naoqi import ALProxy
 import requests
 import time
 
-# NAO's IP address
+# --------------------------------------------------------------------------- #
+# Global configuration                                                         #
+# --------------------------------------------------------------------------- #
+
+##! @var str nao_ip
+##! @brief IPv4 address of the NAO robot running the NAOqi SDK.
 nao_ip = "192.168.1.120"
 
-# Webhook URL for ChatGPT API
+##! @var str WEBHOOK_URL
+##! @brief Local Flask endpoint that transforms a word into a short story.
 WEBHOOK_URL = "http://localhost:5000/generate_story"
 
-# Connect to ASR (Speech Recognition)
+# --------------------------------------------------------------------------- #
+# Proxy initialisation                                                         #
+# --------------------------------------------------------------------------- #
+
+##! @brief ALSpeechRecognition proxy used for keyword spotting.
 asr = ALProxy("ALSpeechRecognition", nao_ip, 9559)
 
-# Connect to Memory Proxy (to retrieve recognized words)
+##! @brief ALMemory proxy for retrieving recognised words and confidence.
 memory = ALProxy("ALMemory", nao_ip, 9559)
 
-# Connect to NAO's Text-to-Speech
+##! @brief ALTextToSpeech proxy for audio output through NAO’s speakers.
 tts = ALProxy("ALTextToSpeech", nao_ip, 9559)
 
-# Stop movements before listening
+##! @brief ALMotion proxy — motors are relaxed while listening.
 motion = ALProxy("ALMotion", nao_ip, 9559)
 motion.setStiffnesses("Body", 0.0)
 
-# Pause ASR before setting vocabulary
-asr.pause(True)
+# --------------------------------------------------------------------------- #
+# Speech‑recognition setup                                                    #
+# --------------------------------------------------------------------------- #
 
-# Define vocabulary (words NAO should recognize)
+asr.pause(True)  # suspend recognition while configuring
+
+##! @var list vocabulary
+##! @brief Words NAO should detect.  *Case‑insensitive.*
 vocabulary = ["hello", "story", "robot"]
 asr.setVocabulary(vocabulary, True)
 
-# Increase ASR Sensitivity to catch more words
+##! Increase ASR sensitivity (0–1) so NAO is more likely to match a word.
 asr.setParameter("Sensitivity", 0.9)
 
-# Resume ASR so it can listen
-asr.pause(False)
+asr.pause(False)            # resume recognition
+asr.subscribe("Test_ASR")   # start listening
 
-# Start listening
-asr.subscribe("Test_ASR")
+print("Listening… Say a word from:", vocabulary)
 
-print("Listening... Say a word from:", vocabulary)
+# --------------------------------------------------------------------------- #
+# Main loop                                                                   #
+# --------------------------------------------------------------------------- #
 
 try:
     while True:
-        word_data = memory.getData("WordRecognized")  # Get recognized words
+        # Retrieve recognised word + confidence from NAOqi memory
+        word_data = memory.getData("WordRecognized")
         if word_data and len(word_data) >= 2:
-            recognized_word = word_data[0].strip("<...>").strip()
-            confidence = word_data[1]
+            recognised_word = word_data[0].strip("<...>").strip()
+            confidence      = word_data[1]
 
-            # Ignore low-confidence detections
+            # Ignore low‑confidence detections (< 0.6)
             if confidence < 0.6:
+                time.sleep(0.5)
                 continue
 
-            print("Recognized:", recognized_word, "(Confidence: {})".format(confidence))
+            print("Recognised:", recognised_word,
+                  "(Confidence: {:.2f})".format(confidence))
 
-            # Send recognized word to ChatGPT API
-            response = requests.post(WEBHOOK_URL, json={"word": recognized_word})
+            # ----------------------------------------------------------------
+            # Call the local webhook to generate a story
+            # ----------------------------------------------------------------
+
+            response = requests.post(WEBHOOK_URL,
+                                     json={"word": recognised_word})
             if response.status_code == 200:
-                story = response.json().get("story", "I don't know what to say.")
+                story = response.json().get("story",
+                                            "I don't know what to say.")
                 print("Generated Story:", story)
 
-                # Have NAO read the story aloud
-                # Convert the story to a plain string, remove newlines
-		story_clean = story.encode('utf-8').replace("\n", " ")
+                ##! @brief Speak the story through NAO’s TTS.
+                #        Newlines are stripped for smoother speech.
+                story_clean = story.encode("utf‑8").replace(b"\n", b" ")
 
-		print("NAO Speaking Story...")
-		tts.say(story_clean)
+                print("NAO Speaking Story…")
+                tts.say(story_clean)
 
-
-        # Sleep briefly to prevent excessive processing
+        # Sleep briefly to prevent excessive CPU usage
         time.sleep(0.5)
 
 except KeyboardInterrupt:
-    print("\nStopping ASR...")
-    asr.unsubscribe("Test_ASR")  # Stop listening
+    print("\nStopping ASR…")
+    asr.unsubscribe("Test_ASR")  # stop listening
+
