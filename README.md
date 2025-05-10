@@ -414,7 +414,7 @@ This will give you a full class/function reference, parameter table, call graphs
 
 > **Note**: Ensure your `Doxyfile` is configured for Python with `OPTIMIZE_OUTPUT_FOR_C = NO` and `EXTENSION_MAPPING = py=Python`.
 
-📖 **Browse the full documentation here →** https://<username>.github.io/<repo>/
+📖 **Browse the full documentation here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
 
 
 
