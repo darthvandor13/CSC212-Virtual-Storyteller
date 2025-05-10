@@ -1,120 +1,137 @@
-##! @file main.py
-##! @brief  Cloud‑function handler that queries ChromaDB for story snippets and returns them to Dialogflow CX.
-##!
-##! This refactored version separates concerns into small helper functions so that
-##! Doxygen can provide rich parameter/return tables while preserving the original
-##! behaviour and emoji logging.  Runtime‑critical constants are exposed at the top
-##! for easy configuration via environment variables.
-##!
-##! @author Calvin Vandor
-##! @date   2025‑05‑08
-##! @copyright MIT
+## @file main.py
+## @brief Google Cloud Function webhook for Dialogflow CX using Flask.
+## @details This script defines a Flask application to serve as an HTTP webhook for Dialogflow CX.
+##          It receives a query from Dialogflow, proxies it to a specified ChromaDB HTTP API,
+##          processes the ChromaDB response, and returns a formatted fulfillment text to Dialogflow.
+##          It includes error handling for API requests, timeouts, and response parsing.
+## @author Calvin Vandor
+## @date 2025-05-10
+## @version 1.1
 
-from __future__ import annotations
-
-import os
 import requests
-from typing import Dict, List
-from flask import Request, jsonify
+from flask import jsonify, Request as FlaskRequest # Explicitly alias for clarity
+import os # For environment variables, though not used in this version for CHROMA_HOST
 
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
+## @var CHROMA_DB_HOST
+# The base URL (including http/https) of the ChromaDB HTTP API server.
+# Example: "http://<your-chroma-db-ip-or-domain>:<port>"
+CHROMA_DB_HOST = "http://34.118.162.201:8000"
 
-CHROMA_DB_HOST: str = os.getenv("CHROMA_DB_HOST", "http://34.118.162.201:8000")
-COLLECTION_NAME: str = os.getenv("COLLECTION_NAME", "stories")
-CHROMA_TIMEOUT_SEC: int = int(os.getenv("CHROMA_TIMEOUT_SEC", "10"))
+## @var COLLECTION_NAME
+# The name of the ChromaDB collection to be queried.
+COLLECTION_NAME = "stories"
 
-# ---------------------------------------------------------------------------
-# Helper functions
-# ---------------------------------------------------------------------------
+## @var REQUEST_TIMEOUT
+# Timeout in seconds for the HTTP request to the ChromaDB API.
+REQUEST_TIMEOUT = 10 # seconds
 
-def parse_user_query(payload: Dict) -> str:
-    """Extract protagonist, theme, and moral from Dialogflow CX JSON.
-
-    @param payload Raw JSON body sent by Dialogflow CX.
-    @return Space‑separated query string. Empty if nothing supplied.
+##
+# @brief Main entry point for the Google Cloud Function.
+# @details This function is triggered by an HTTP request. It expects a JSON payload
+#          from Dialogflow CX, extracts the user's query text, queries the
+#          ChromaDB HTTP API, and formats the search results or error messages
+#          into a JSON response suitable for Dialogflow's `fulfillmentText`.
+# @param request flask.Request The incoming HTTP request object from Google Cloud Functions.
+#        It's expected to contain a JSON payload, typically from Dialogflow CX,
+#        with the user's query located at `queryResult.queryText`.
+# @return flask.Response A JSON response object suitable for Dialogflow fulfillment.
+#         The JSON object will have a key `fulfillmentText` containing the response string.
+# @note This function handles various potential errors during its execution,
+#       such as issues with the incoming payload, ChromaDB API errors (HTTP errors, timeouts),
+#       and problems parsing the ChromaDB response. Error messages are user-friendly.
+def main(request: FlaskRequest):
     """
-    params = payload.get("sessionInfo", {}).get("parameters", {})
-    protagonist = params.get("protagonist", "").strip()
-    theme       = params.get("theme", "").strip()
-    moral       = params.get("moral", "").strip()
-    return " ".join(filter(None, (protagonist, theme, moral)))
-
-
-def query_chromadb(query: str, n_results: int = 3) -> List[str]:
-    """Perform a REST query against ChromaDB.
-
-    @param query       Prepared search string.
-    @param n_results   Maximum number of documents to return.
-    @return List of document strings (may be empty).
-    @throws HTTPError  If the ChromaDB server responds with non‑200.
+    Handles incoming Dialogflow CX webhook requests, queries ChromaDB via HTTP,
+    and returns a formatted response.
     """
-    response = requests.post(
-        f"{CHROMA_DB_HOST}/api/v1/query",
-        json={
-            "collection_name": COLLECTION_NAME,
-            "query_texts": [query],
-            "n_results": n_results,
-        },
-        timeout=CHROMA_TIMEOUT_SEC,
-    )
-    response.raise_for_status()
-    data = response.json()
-    docs = data.get("documents", [[]])
-    return docs[0] if docs and isinstance(docs[0], list) else []
-
-
-def make_dialogflow_response(text: str) -> Dict:
-    """Wrap plain text in Dialogflow CX fulfillment JSON."""
-    return {
-        "fulfillment_response": {
-            "messages": [{"text": {"text": [text]}}]
-        }
-    }
-
-# ---------------------------------------------------------------------------
-# Entrypoint
-# ---------------------------------------------------------------------------
-
-def main(request: Request):
-    """Google Cloud Functions / Cloud Run entry‑point.
-
-    @param request Flask Request object provided by the platform.
-    @return Flask Response (JSON) understood by Dialogflow CX.
-    """
-    payload = request.get_json(silent=True) or {}
-    query_string = parse_user_query(payload)
-    print(f"📥 User query: '{query_string}'")
-
-    if not query_string:
-        return jsonify(make_dialogflow_response(
-            "I didn't catch the hero, theme, or moral. Could you repeat that?"
-        ))
+    response_text = "An unexpected error occurred while processing your request." # Default error
 
     try:
-        docs = query_chromadb(query_string, n_results=3)
-        if docs:
-            reply = "Here are some stories I found: " + ", ".join(docs[:3])
+        req_json = request.get_json(silent=True) # Use silent=True to prevent raising an exception for non-JSON/empty body
+        if not req_json:
+            print("❌ Error: Request body is not valid JSON or is empty.")
+            response_text = "I received an invalid request. Please try again."
+            return jsonify({"fulfillmentText": response_text})
+
+        # Extract user query from Dialogflow's typical payload structure
+        user_query = req_json.get('queryResult', {}).get('queryText', '')
+        print(f"📥 Received query: '{user_query}'")
+
+        if not user_query:
+            print("⚠️ Warning: User query is empty.")
+            response_text = "It seems your query was empty. Could you please try asking again?"
+            return jsonify({"fulfillmentText": response_text})
+
+        # Prepare and send the query to ChromaDB HTTP API
+        chroma_api_endpoint = f"{CHROMA_DB_HOST}/api/v1/collections/{COLLECTION_NAME}/query" # More common ChromaDB API path
+        # Note: The /api/v1/query endpoint you used might be older or custom.
+        # The one above is common for querying a specific collection if client.query() is not available.
+        # However, if your /api/v1/query expects collection_name in body, stick to it:
+        # chroma_api_endpoint = f"{CHROMA_DB_HOST}/api/v1/query"
+        # Using the one that seems more standard with collection name in path if possible,
+        # but will adapt Doxygen comments to match the payload if the original path is firm.
+        # For now, I'll assume your endpoint `f"{CHROMA_DB_HOST}/api/v1/query"` expecting collection_name in payload is correct.
+        chroma_api_endpoint_original = f"{CHROMA_DB_HOST}/api/v1/query"
+
+
+        print(f"📡 Querying ChromaDB endpoint: {chroma_api_endpoint_original}")
+        api_response = requests.post(
+            chroma_api_endpoint_original, # Using the original endpoint you specified
+            json={
+                "collection_name": COLLECTION_NAME, # If using /api/v1/query
+                "query_texts": [user_query],
+                "n_results": 3
+            },
+            timeout=REQUEST_TIMEOUT
+        )
+
+        print(f"🌐 ChromaDB API Response Status: {api_response.status_code}")
+        print(f"📦 ChromaDB API Response Body: {api_response.text[:500]}...") # Log snippet of body
+
+        # Check for HTTP errors (4xx or 5xx)
+        api_response.raise_for_status()
+
+        # Parse the JSON response from ChromaDB
+        result = api_response.json()
+        documents = result.get("documents") # Chroma typically returns [[doc1, doc2]]
+
+        # Process documents
+        if documents and isinstance(documents, list) and len(documents) > 0 and \
+           isinstance(documents[0], list) and len(documents[0]) > 0:
+            top_docs = [str(doc) for doc in documents[0][:3] if isinstance(doc, str) and doc.strip()]
+            if top_docs:
+                response_text = "Here are some stories: " + ", ".join(top_docs)
+            else:
+                response_text = "I found some entries, but they were empty. Try a different query."
         else:
-            reply = "Sorry, I couldn't find any stories that match your request."
-    except Exception as exc:
-        print(f"❌ ChromaDB error: {exc}")
-        reply = "Something went wrong while searching the story database."
+            response_text = "Sorry, I couldn't find any stories that match your request."
 
-    return jsonify({"story_snippet": reply})
+    except requests.exceptions.Timeout:
+        print(f"❌ Timeout error querying ChromaDB at {CHROMA_DB_HOST}")
+        response_text = "Sorry, the story archive took too long to respond. Please try again."
+    except requests.exceptions.HTTPError as http_err:
+        print(f"❌ HTTP error during ChromaDB query: {http_err}. Response: {http_err.response.text[:500]}")
+        response_text = "There was an issue communicating with the story archive. Please check the details and try again."
+    except requests.exceptions.RequestException as req_err: # Catches other requests-related errors (e.g., connection error)
+        print(f"❌ Request error during ChromaDB query: {req_err}")
+        response_text = "I'm having trouble connecting to the story archive right now. Please check the connection or try again later."
+    except ValueError as json_err: # Raised if api_response.json() fails to decode
+        print(f"❌ Error decoding ChromaDB JSON response: {json_err}")
+        response_text = "The story archive returned an unexpected response format. Please try again."
+    except Exception as e:
+        print(f"❌ An unexpected error occurred during query processing: {e}")
+        import traceback
+        traceback.print_exc() # Log full traceback for unexpected errors
+        response_text = "Something went wrong while I was searching for stories. I've noted the issue."
 
-# ---------------------------------------------------------------------------
-# Local dev server
-# ---------------------------------------------------------------------------
-if __name__ == "__main__":
-    from flask import Flask, request as _req
+    print(f"💬 Sending fulfillmentText: '{response_text}'")
+    return jsonify({"fulfillmentText": response_text})
 
-    flask_app = Flask(__name__)
-
-    @flask_app.post("/query")
-    def _local_query():
-        return main(_req)
-
-    flask_app.run(host="0.0.0.0", port=int(os.getenv("PORT", "8080")), debug=True)
-
+# Note: For Google Cloud Functions, the `if __name__ == "__main__":` block
+# is not typically used for running a Flask dev server, as GCF handles invocation.
+# If you were testing locally with Flask's built-in server (not GCF emulator), you would add:
+# if __name__ == '__main__':
+#     app = Flask(__name__)
+#     app.route('/', methods=['POST'])(main) # Assuming POST requests to root for local Flask dev
+#     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+# However, the provided script is a single function for GCF.
