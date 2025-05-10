@@ -387,7 +387,7 @@ This repository includes full developer-level documentation using [Doxygen](http
 - Mermaid diagrams (e.g., ASR → Webhook → TTS flowchart in `test_asr.py`)
 - Module constants and environmental variable documentation
 
-### 📂 Entry Points
+### Entry Points
 
 | Script               | Purpose                                                |
 |----------------------|--------------------------------------------------------|
@@ -396,7 +396,7 @@ This repository includes full developer-level documentation using [Doxygen](http
 | `test_naoqi.py`      | Connectivity check to NAO’s `ALTextToSpeech` proxy    |
 | `test_tts.py`        | Basic smoke test of NAO’s speech output               |
 
-### 📄 To Generate Documentation
+### To Generate Documentation
 
 To build the Doxygen HTML output:
 
@@ -414,7 +414,7 @@ This will give you a full class/function reference, parameter table, call graphs
 
 > **Note**: Ensure your `Doxyfile` is configured for Python with `OPTIMIZE_OUTPUT_FOR_C = NO` and `EXTENSION_MAPPING = py=Python`.
 
-📖 **Browse the full documentation here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
+ℹ️ **Browse the full documentation here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
 
 
 
