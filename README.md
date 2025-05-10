@@ -69,7 +69,7 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
 ## Other Resources
 
 - **[gptars YouTube Channel](https://www.youtube.com/@gptars)**  
-- **[Dialogflow CX Documentation](https://cloud.google.com/dialogflow/cx/docs)** – Google Cloud  
+- **[Conversational Agents (Dialogflow CX) documentation](https://cloud.google.com/dialogflow/cx/docs)** – Google Cloud  
 
 ---
 
@@ -118,10 +118,10 @@ Instead of just telling one long story, the system could allow for interactive c
 ### 🔹 What’s Needed to Make This Work?
 Building this system requires connecting three main components:  
 1️⃣ **The NAO Robot** – The physical device that listens, speaks, and interacts.  
-2️⃣ **Dialogflow CX** – A system that helps manage the conversation flow and decides what should happen next.  
+2️⃣ **Conversational Agents (Dialogflow CX)** – A system that helps manage the conversation flow and decides what should happen next.  
 3️⃣ **ChatGPT API** – The AI that generates the actual story.  
 
-To make them work together, we need a **bridge**—a small program called a **webhook** that connects Dialogflow CX to ChatGPT.
+To make them work together, we need a **bridge**—a small program called a **webhook** that connects Conversational Agents (Dialogflow CX) to ChatGPT.
 
 ### 🔹 How Long Will This Take?
 Since we’re working under a deadline, we’re focusing on the core goal: ✅ Make the robot listen, generate, and tell a story smoothly. 🚀 If time allows, we’ll explore adding extra features, like gestures or interactive choices.
@@ -145,10 +145,10 @@ This project is about integrating **robotics and AI** to create an interactive s
 
 ### 🔹 Core Components:
 - **NAO Robot** → Captures voice input and outputs speech.  
-- **Dialogflow CX** → Manages the conversation and processes user input.  
+- **Conversational Agents (Dialogflow CX)** → Manages the conversation and processes user input.  
 - **ChatGPT API** → Generates the story dynamically based on user preferences.  
 
-A **webhook** is developed to **bridge** Dialogflow CX and ChatGPT.
+A **webhook** is developed to **bridge** Conversational Agents (Dialogflow CX) and ChatGPT.
 
 ### 🔹 Step 1: User Input & Speech Processing
 The interaction begins when the user talks to NAO:
@@ -157,18 +157,18 @@ The interaction begins when the user talks to NAO:
 
 #### 🔹 How This Works Technically:
 1. NAO records the user’s voice and converts speech to text.  
-2. The text is sent to Dialogflow CX, which classifies the intent (e.g., “Story Request”) and extracts parameters (e.g., “astronaut theme”).  
-3. Dialogflow forwards this request to our custom webhook, which will call ChatGPT.
+2. The text is sent to Conversational Agents (Dialogflow CX), which classifies the intent (e.g., “Story Request”) and extracts parameters (e.g., “astronaut theme”).  
+3. Conversational Agents (Dialogflow CX) forwards this request to our custom webhook, which will call ChatGPT.
 
 ### 🔹 Step 2: Webhook & AI Story Generation
-The webhook is a simple backend service (**Python/Flask** or **Node.js**) that processes Dialogflow’s structured request and queries **ChatGPT’s API**.
+The webhook is a simple backend service (**Python/Flask** or **Node.js**) that processes Conversational Agents' (Dialogflow CX) structured request and queries **ChatGPT’s API**.
 
 #### 🔹 Technical Breakdown:
-- Webhook receives a **JSON request** from Dialogflow CX.  
+- Webhook receives a **JSON request** from Conversational Agents (Dialogflow CX).  
 - Extracts the user’s theme preference (e.g., “astronaut adventure”).  
 - Formats the request and sends it to **ChatGPT’s API**.  
 - ChatGPT generates a structured response, returning a **short story**.  
-- Webhook parses the response and sends it back to Dialogflow CX.
+- Webhook parses the response and sends it back to **Dialogflow CX**.
 
 ##### Example API Call to ChatGPT
 ```python
@@ -185,8 +185,8 @@ print(response["choices"][0]["message"]["content"])
 Once the AI-generated story is returned, it’s sent back to **NAO for speech synthesis**.
 
 #### 🔹 How This Works:
-- The **formatted story text** is sent back to **Dialogflow CX**.  
-- Dialogflow forwards the response to **NAO**.  
+- The **formatted story text** is sent back to **Conversational Agents (Dialogflow CX)**.  
+- Conversational Agents (Dialogflow CX) forwards the response to **NAO**.  
 - NAO’s **Text-to-Speech (TTS)** engine converts the text to spoken words.
 
 ##### Example NAO TTS Code
@@ -200,9 +200,9 @@ tts.say(story_text)
 
 ### 🔹 Summary of the System Flow:
 🔹 **User speaks to NAO** → Speech converted to text  
-🔹 **Dialogflow CX processes request** → Extracts story parameters  
+🔹 **Conversational Agents (Dialogflow CX) processes request** → Extracts story parameters  
 🔹 **Webhook sends request to ChatGPT** → AI generates a custom story  
-🔹 **Webhook returns the story to Dialogflow CX**  
+🔹 **Webhook returns the story to Conversational Agents (Dialogflow CX)**  
 🔹 **NAO reads the story aloud** using TTS
 
 
@@ -212,7 +212,7 @@ tts.say(story_text)
 
 This project demonstrates a **proof of concept** where a **NAO robot** serves as the expressive medium for a **virtual storyteller** powered by **generative AI**. The robot listens for spoken keywords, sends them to an OpenAI-powered story generation service, and narrates the resulting story using its onboard Text-to-Speech (TTS) engine.
 
-The system is designed to be easily extensible. While this version uses keyword recognition and a simple webhook, the architecture could integrate with more robust conversation engines such as **Google Dialogflow CX** and **Vertex AI Conversational Agents** for richer, multi-turn dialogue.
+The system is designed to be easily extensible. While this version uses keyword recognition and a simple webhook, the architecture could integrate with more robust conversation engines such as **Google Conversational Agents (Dialogflow CX)** for richer, multi-turn dialogue.
 
 ---
 
@@ -358,7 +358,7 @@ For technical reference, all scripts have been refactored for [Doxygen](https://
 ## Future Possibilities
 
 This setup validates the feasibility of **using NAO as a front-end for a generative AI-based virtual storyteller**. With this foundation, the following enhancements are possible:
-- Integrating **Dialogflow CX or Vertex AI Agents** to manage conversation logic.
+- Integrating **Conversational Agents (Dialogflow CX)** to manage conversation logic.
 - Adding **multi-turn story generation** with memory of previous interactions.
 - Expanding vocabulary dynamically via the web interface.
 - Hosting the webhook on a public domain via `ngrok` or GCP/AWS.
