@@ -1,8 +1,8 @@
 import os
 import json
 import openai
+import chromadb
 from langchain_openai import OpenAIEmbeddings
-from langchain_chroma import Chroma
 
 # Load API Keys
 openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -11,13 +11,12 @@ if not openai_api_key:
 
 openai.api_key = openai_api_key
 
-# Initialize ChromaDB client
-vector_store = Chroma(
-    collection_name="stories",
-    embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key),
-    persist_directory="./chroma_db"
-)
+# Connect to ChromaDB using PersistentClient
+CHROMA_DB_PATH = "/home/cvandor/chroma_db"
+chroma_client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+vector_store = chroma_client.get_or_create_collection("stories")
 
+# File to store user memory
 MEMORY_FILE = "user_memory.json"
 
 def load_user_memory(username):
@@ -52,7 +51,7 @@ def ask_chatgpt(prompt, user_memory):
     response = openai.chat.completions.create(
         model="gpt-4",
         messages=messages,
-        max_tokens=300
+        max_tokens=500
     )
 
     # Store this exchange in memory
@@ -63,18 +62,24 @@ def ask_chatgpt(prompt, user_memory):
 
 def search_stories(query):
     """Search for stories similar to the user's request."""
-    results = vector_store.similarity_search(query, k=3)
+    results = vector_store.query(
+        query_texts=[query],
+        n_results=3
+    )
 
-    unique_results = {}
-    for result in results:
-        title = result.metadata.get("title", "Unknown Title")
-        snippet = result.page_content[:200]
-        key = (title, snippet)
+    if not results or not results['documents']:
+        return []
 
-        if key not in unique_results:
-            unique_results[key] = result
+    unique_results = []
+    for i, doc in enumerate(results['documents'][0]):
+        metadata = results['metadatas'][0][i]
+        unique_results.append({
+            "title": metadata.get("title", "Unknown Title"),
+            "content": doc,
+            "metadata": metadata
+        })
 
-    return list(unique_results.values())
+    return unique_results
 
 def summarize_story(story_content):
     """Generate a 1-2 sentence summary of a story."""
@@ -109,22 +114,22 @@ story_request = input("\n🤔 What kind of story would you like to hear? (e.g., 
 matching_stories = search_stories(story_request)
 
 if matching_stories:
-    print("\n📚 I found a similar story in my collection!")
-    user_choice = input("Would you like to hear an existing story, or should I make up a new one? (existing/new): ").strip().lower()
+    print("\n📚 I found some similar stories in my collection!")
+    for i, story in enumerate(matching_stories):
+        summary = summarize_story(story["content"])
+        print(f"\n🔹 Story {i+1}: {story['title']}")
+        print(f"📖 {summary}")
+
+    user_choice = input("\nWould you like to hear one of these stories, or should I make up a new one? (existing/new): ").strip().lower()
 
     if user_choice == "existing":
-        selected_story = matching_stories[0]
-        title = selected_story.metadata.get("title", "Unknown Title")
-        summary = summarize_story(selected_story.page_content)
-
-        print(f"\n🎭 I have a story called '{title}'. Here’s a brief summary:\n📜 {summary}")
-        confirmation = input("Would you like me to tell this story? (yes/no): ").strip().lower()
-
-        if confirmation == "yes":
-            print(f"\n📖 Here is '{title}':\n")
-            print(selected_story.page_content)
+        chosen_index = int(input("\nEnter the story number (1, 2, 3): ").strip()) - 1
+        if 0 <= chosen_index < len(matching_stories):
+            chosen_story = matching_stories[chosen_index]
+            print(f"\n📖 Here is '{chosen_story['title']}':\n")
+            print(chosen_story["content"])
         else:
-            story_request = refine_story_request(story_request)
+            print("\n❌ Invalid choice. Generating a new story instead.")
             ai_story = ask_chatgpt(f"Tell me a story about {story_request}", user_memory)
             print(f"\n🤖 AI-Generated Story:\n📖 {ai_story}")
     else:
@@ -148,4 +153,3 @@ else:
 
 # Save the updated memory
 save_user_memory(username, user_memory)
-
