@@ -374,5 +374,47 @@ MIT License — See source files for copyright.
 ## Questions or Contributions?
 
 Feel free to fork this repo, submit pull requests, or open an issue with suggestions for enhancements!
+
+
+---
+
+## 🧾 Developer Reference (Doxygen)
+
+This repository includes full developer-level documentation using [Doxygen](https://www.doxygen.nl/). All Python source files are annotated with:
+
+- `@file`, `@brief`, `@param`, `@return`, `@author`
+- Function-level docstrings structured for auto-generation
+- Mermaid diagrams (e.g., ASR → Webhook → TTS flowchart in `test_asr.py`)
+- Module constants and environmental variable documentation
+
+### 📂 Entry Points
+
+| Script               | Purpose                                                |
+|----------------------|--------------------------------------------------------|
+| `test_asr.py`        | Speech input → OpenAI webhook → TTS output            |
+| `chatgpt_webhook.py` | Flask server to generate stories via OpenAI API       |
+| `test_naoqi.py`      | Connectivity check to NAO’s `ALTextToSpeech` proxy    |
+| `test_tts.py`        | Basic smoke test of NAO’s speech output               |
+
+### 📄 To Generate Documentation
+
+To build the Doxygen HTML output:
+
+```bash
+doxygen Doxyfile
 ```
+
+Then open the generated file:
+
+```bash
+xdg-open docs/html/index.html
+```
+
+This will give you a full class/function reference, parameter table, call graphs, and links between modules.
+
+> **Note**: Ensure your `Doxyfile` is configured for Python with `OPTIMIZE_OUTPUT_FOR_C = NO` and `EXTENSION_MAPPING = py=Python`.
+
+📖 **Browse the full documentation here →** https://<username>.github.io/<repo>/
+
+
 
