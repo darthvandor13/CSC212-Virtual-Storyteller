@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">chatgpt_webhook.py File Reference</div>  </div>
@@ -82,23 +81,19 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacechatgpt__webhook"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechatgpt__webhook.html">chatgpt_webhook</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a61606d27eeeb88cc468512039ca4f17e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechatgpt__webhook.html#a61606d27eeeb88cc468512039ca4f17e">chatgpt_webhook.generate_story</a> (str keyword, *str|None api_key=None, str model=&quot;gpt-4o-mini&quot;)</td></tr>
-<tr class="separator:a61606d27eeeb88cc468512039ca4f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad14eb9ed7a7d5d145776f23648b9e186"><td class="memItemLeft" align="right" valign="top">Flask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechatgpt__webhook.html#ad14eb9ed7a7d5d145776f23648b9e186">chatgpt_webhook.create_app</a> ()</td></tr>
-<tr class="separator:ad14eb9ed7a7d5d145776f23648b9e186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ab79878d676aa448b0b2629de07b894d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechatgpt__webhook.html#ab79878d676aa448b0b2629de07b894d5">chatgpt_webhook.str</a></td></tr>
 <tr class="separator:ab79878d676aa448b0b2629de07b894d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba2a54cdffc0a54e313fa86ddf49328"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechatgpt__webhook.html#a4ba2a54cdffc0a54e313fa86ddf49328">chatgpt_webhook.int</a></td></tr>
+<tr class="separator:a4ba2a54cdffc0a54e313fa86ddf49328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>! ! </p>
-<p>Flask webhook that turns a single keyword into a children’s story ! using the OpenAI ChatCompletion API. ! ! This refactor wraps the global Flask instance and the OpenAI logic in small, ! documented helper functions so that Doxygen can export a neat API reference ! (parameter tables, call‑graphs). Runtime behaviour is <b>identical</b> to the ! legacy script — just <code>python chatgpt_webhook.py</code> to run a local server on ! port&#160;5000. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025‑05‑08 ! </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! ! ### Environment variables ! * <b>AI_STORYTELLER_TEST_KEY_CV</b> –&#160;your OpenAI API key (secret) ! ! ### Example (curl) ! ```bash ! curl -X POST <a href="http://localhost:5000/generate_story">http://localhost:5000/generate_story</a> \ ! -H "Content-Type: application/json" \ ! -d '{"word": "dragon"}' ! ``<code> ! returns</code>{ "story": "Once upon a time…" }` ! </dd></dl>
+<p>Flask webhook that turns a single keyword into a children’s story ! using the OpenAI ChatCompletion API, with enhanced error handling. ! ! This refactored version wraps the Flask instance and OpenAI logic in small, ! documented helper functions for Doxygen API reference generation. ! Runtime behaviour aims for robustness, especially in handling API calls ! and providing informative error feedback. ! Run <code>python chatgpt_webhook.py</code> for a local server on port 5000. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-10 ! </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 ! </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! ! ### Environment variables ! * <b>AI_STORYTELLER_TEST_KEY_CV</b> – Your OpenAI API key (secret). ! ! ### Example (curl) ! ```bash ! curl -X POST <a href="http://localhost:5000/generate_story">http://localhost:5000/generate_story</a> \ ! -H "Content-Type: application/json" \ ! -d '{"word": "dragon"}' ! ``<code> ! returns (on success):</code>{ "story": "Once upon a time there was a friendly dragon..." }<code> ! or (on error):</code>{ "story": "Error: ..." }` </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

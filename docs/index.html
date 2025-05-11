@@ -73,13 +73,80 @@ Abstract</h1>
 <p>Caregivers, educators, and professionals working with ASD may benefit from NAO-integrated storytelling as a tool for engagement and guided learning. By leveraging CoRAG, we aim to develop an accessible and contextually adaptive storytelling platform that fosters meaningful interaction within caregiver-supported environments. Looking ahead, we envision a future where the NAO robot’s mechanical expressiveness further enhances the storytelling experience through emotionally expressive movements, deepening engagement and immersion.</p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md3"></a>
+Table of Contents</h1>
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#research">Research</a><ul>
+<li><a href="#core-research">Core Research</a></li>
+<li><a href="#supplemental-research">Supplemental Research</a></li>
+</ul>
+</li>
+<li><a href="#other-resources">Other Resources</a></li>
+<li><a href="#how-our-ai-storytelling-robot-works--chatgpt-version-explained-for-everyone-">How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :)</a><ul>
+<li><a href="#-step-1-the-user-talks-to-the-robot">🔹 Step 1: The User Talks to the Robot</a></li>
+<li><a href="#-step-2-processing-the-story-request">🔹 Step 2: Processing the Story Request</a></li>
+<li><a href="#-step-3-the-robot-tells-the-story">🔹 Step 3: The Robot Tells the Story</a></li>
+<li><a href="#-step-4-user-interaction-optional-future-feature">🔹 Step 4: User Interaction (Optional Future Feature)</a></li>
+<li><a href="#-whats-needed-to-make-this-work">🔹 What’s Needed to Make This Work?</a></li>
+<li><a href="#-how-long-will-this-take">🔹 How Long Will This Take?</a></li>
+<li><a href="#-why-this-matters">🔹 Why This Matters</a></li>
+<li><a href="#-summary-the-big-picture">🔹 Summary: The Big Picture</a></li>
+</ul>
+</li>
+<li><a href="#how-our-ai-storytelling-system-works--chatgpt-version-explained-for-a-cs-student">How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Student)</a><ul>
+<li><a href="#-core-components">🔹 Core Components:</a></li>
+<li><a href="#-step-1-user-input--speech-processing">🔹 Step 1: User Input &amp; Speech Processing</a></li>
+<li><a href="#-step-2-webhook--ai-story-generation">🔹 Step 2: Webhook &amp; AI Story Generation</a></li>
+<li><a href="#-step-3-nao-reads-the-story-aloud">🔹 Step 3: NAO Reads the Story Aloud</a></li>
+<li><a href="#-summary-of-the-system-flow">🔹 Summary of the System Flow:</a></li>
+</ul>
+</li>
+<li><a href="#nao-virtual-storyteller-project-setup--guide">NAO Virtual Storyteller: Project Setup &amp; Guide</a><ul>
+<li><a href="#project-objective">Project Objective</a> - <a href="#documentation--downloads-nao-specific">Documentation &amp; Downloads (NAO Specific)</a></li>
+</ul>
+</li>
+<li><a href="#repository-structure-overview">Repository Structure Overview</a></li>
+<li><a href="#section-1-nao-robot-interaction-setup-python-2--naoqi-sdk">Section 1: NAO Robot Interaction Setup (Python 2 &amp; NAOqi SDK)</a><ul>
+<li><a href="#11-network-setup-for-nao-robot">1.1. Network Setup for NAO Robot</a></li>
+<li><a href="#12-install-python-27-on-ubuntu-2204-using-pyenv">1.2. Install Python 2.7 on Ubuntu 22.04 (using <code>pyenv</code>)</a></li>
+<li><a href="#13-create-a-python-2-virtual-environment">1.3. Create a Python 2 Virtual Environment</a></li>
+<li><a href="#14-install-the-naoqi-python-2-sdk">1.4. Install the NAOqi Python 2 SDK</a></li>
+<li><a href="#15-install-python-2-dependencies-for-nao-scripts">1.5. Install Python 2 Dependencies for NAO Scripts</a></li>
+<li><a href="#16-troubleshooting-nao-setup">1.6. Troubleshooting NAO Setup</a></li>
+</ul>
+</li>
+<li><a href="#section-2-dialogflow-cx-ai-storyteller-agent-setup">Section 2: Dialogflow CX AI Storyteller Agent Setup</a><ul>
+<li><a href="#21-project-overview-dialogflow-cx-agent">2.1. Project Overview (Dialogflow CX Agent)</a></li>
+<li><a href="#22-technology-stack-dialogflow-cx-agent">2.2. Technology Stack (Dialogflow CX Agent)</a></li>
+<li><a href="#23-core-concepts-rag-via-gcs-data-store">2.3. Core Concepts: RAG via GCS Data Store</a></li>
+<li><a href="#24-setup--prerequisites-dialogflow-cx-start-to-finish">2.4. Setup &amp; Prerequisites (Dialogflow CX Start-to-Finish)</a></li>
+<li><a href="#25-agent-configuration-steps-dialogflow-cx-console">2.5. Agent Configuration Steps (Dialogflow CX Console)</a></li>
+<li><a href="#26-how-to-usetest-dialogflow-cx-agent">2.6. How to Use/Test Dialogflow CX Agent</a></li>
+<li><a href="#27-known-issues--troubleshooting-context-dialogflow-cx">2.7. Known Issues / Troubleshooting Context (Dialogflow CX)</a></li>
+</ul>
+</li>
+<li><a href="#section-3-running-the-nao-storyteller-system">Section 3: Running the NAO Storyteller System</a><ul>
+<li><a href="#31-configure-openai-api-key-for-chatgpt_webhookpy">3.1. Configure OpenAI API Key (for <code>chatgpt_webhook.py</code>)</a></li>
+<li><a href="#32-running-the-components">3.2. Running the Components</a></li>
+</ul>
+</li>
+<li><a href="#internals-nao-interaction-scripts">Internals (NAO Interaction Scripts)</a></li>
+<li><a href="#scripts-overview-table">Scripts Overview Table</a></li>
+<li><a href="#future-possibilities">Future Possibilities</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#questions-or-contributions">Questions or Contributions?</a></li>
+<li><a href="#-developer-reference-doxygen">🧾 Developer Reference (Doxygen)</a><ul>
+<li><a href="#entry-points-python-scripts">Entry Points (Python Scripts)</a></li>
+<li><a href="#to-generate-doxygen-documentation">To Generate Doxygen Documentation</a></li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Research</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Core Research</h2>
 <ol type="1">
-<li><b><a href="https://www.researchgate.net/publication/369799144_A_systematic_review_of_artificial_intelligence_technologies_used_for_story_writing">A Systematic Review of Artificial Intelligence Technologies Used for Story Writing</a></b> <br  />
- <em>Fang, Xiaoxuan; Ng, Davy Tsz Kit; Leung, Jac; Chu, Samuel. (2023).</em> <br  />
- <em>Education and Information Technologies</em>. <a href="https://doi.org/10.1007/s10639-023-11741-5">https://doi.org/10.1007/s10639-023-11741-5</a> <br  />
+<li><b><a href="https://www.researchgate.net/publication/369799144_A_systematic_review_of_artificial_intelligence_technologies_used_for_story_writing">A Systematic Review of Artificial Intelligence Technologies Used for Story Writing</a></b> <em>Fang, Xiaoxuan; Ng, Davy Tsz Kit; Leung, Jac; Chu, Samuel. (2023).</em> <em>Education and Information Technologies</em>. <a href="https://doi.org/10.1007/s10639-023-11741-5">https://doi.org/10.1007/s10639-023-11741-5</a> <br  />
 <ul>
 <li>Validates AI-driven storytelling for engagement and creativity. <br  />
 </li>
@@ -90,9 +157,7 @@ Core Research</h2>
 <li>Encourages human-AI collaboration — AI assists rather than replaces.</li>
 </ul>
 </li>
-<li><b><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/">Integrating GPT-Based AI into Virtual Patients</a></b> <br  />
- <em>Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).</em> <br  />
- <em>JMIR Form Res.</em> <a href="https://doi.org/10.2196/58623">https://doi.org/10.2196/58623</a> <br  />
+<li><b><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/">Integrating GPT-Based AI into Virtual Patients</a></b> <em>Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).</em> <em>JMIR Form Res.</em> <a href="https://doi.org/10.2196/58623">https://doi.org/10.2196/58623</a> <br  />
 <ul>
 <li>Demonstrates GPT in real-time verbal interactions. <br  />
 </li>
@@ -103,9 +168,7 @@ Core Research</h2>
 <li>Notes the role of expressive speech and gestures.</li>
 </ul>
 </li>
-<li><b><a href="https://arxiv.org/abs/2404.15576">Designing AI-Enabled Games for Children with Autism</a></b> <br  />
- <em>Lyu, Y.; An, P.; Zhang, H.; Katsuragawa, K.; Zhao, J. (2024).</em> <br  />
- <em>CHI 2024 Workshop</em>. arXiv:2404.15576 <br  />
+<li><b><a href="https://arxiv.org/abs/2404.15576">Designing AI-Enabled Games for Children with Autism</a></b> <em>Lyu, Y.; An, P.; Zhang, H.; Katsuragawa, K.; Zhao, J. (2024).</em> <em>CHI 2024 Workshop</em>. arXiv:2404.15576 <br  />
 <ul>
 <li>Applies adaptive storytelling for emotional development. <br  />
 </li>
@@ -114,9 +177,7 @@ Core Research</h2>
 <li>Highlights robotic integration potential.</li>
 </ul>
 </li>
-<li><b><a href="https://arxiv.org/abs/2402.00260">Human-Mediated LLMs for Robotic Intervention</a></b> <br  />
- <em>Mishra, R.; Welch, K. C.; Popa, D. O. (2024).</em> <br  />
- arXiv:2402.00260 <br  />
+<li><b><a href="https://arxiv.org/abs/2402.00260">Human-Mediated LLMs for Robotic Intervention</a></b> <em>Mishra, R.; Welch, K. C.; Popa, D. O. (2024).</em> arXiv:2402.00260 <br  />
 <ul>
 <li>LLMs generate meaningful real-time dialogue. <br  />
 </li>
@@ -125,9 +186,7 @@ Core Research</h2>
 <li>Discusses NAO’s speech recognition limitations and therapy potential.</li>
 </ul>
 </li>
-<li><b><a href="https://www.mdpi.com/2076-328X/14/2/131">Robots vs Humans: Social Interaction with ASD</a></b> <br  />
- <em>Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).</em> <br  />
- <em>Behavioral Sciences</em>, 14(2), 131. <a href="https://doi.org/10.3390/bs14020131">https://doi.org/10.3390/bs14020131</a> <br  />
+<li><b><a href="https://www.mdpi.com/2076-328X/14/2/131">Robots vs Humans: Social Interaction with ASD</a></b> <em>Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).</em> <em>Behavioral Sciences</em>, 14(2), 131. <a href="https://doi.org/10.3390/bs14020131">https://doi.org/10.3390/bs14020131</a> <br  />
 <ul>
 <li>Validates robotic storytelling for ASD engagement. <br  />
 </li>
@@ -137,7 +196,7 @@ Core Research</h2>
 </ul>
 </li>
 </ol>
-<h3><a class="anchor" id="autotoc_md5"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 Supplemental Research</h3>
 <ul>
 <li><b><a href="https://doi.org/10.1016/j.rasd.2022.102092">Narrative Ability in Autism</a></b> – Greco et al. (2022) <br  />
@@ -154,23 +213,21 @@ Supplemental Research</h3>
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Other Resources</h1>
 <ul>
-<li>**<a href="https://www.youtube.com/@gptars">gptars YouTube Channel</a>** <br  />
-</li>
-<li><b><a href="https://cloud.google.com/dialogflow/cx/docs">Conversational Agents (Dialogflow CX) documentation</a></b> – Google Cloud <br  />
+<li>**<a href="https://www.youtube.com/@gptars">gptars YouTube Channel</a>** - <b><a href="https://cloud.google.com/dialogflow/cx/docs">Conversational Agents (Dialogflow CX) documentation</a></b> – Google Cloud <br  />
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :)</h1>
 <p>Imagine a robot storyteller that listens to you, understands what kind of story you want, and then tells you an engaging, AI-generated tale—all in real-time. Our project is about making that happen using a humanoid robot (NAO), AI storytelling technology (ChatGPT), and a system that connects them.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 🔹 Step 1: The User Talks to the Robot</h2>
 <p>The interaction starts when a person speaks to the NAO robot—just like talking to a smart assistant (e.g., Siri, Alexa). They might say:</p>
 <p>🗣️ <em>“Tell me a story about a brave astronaut!”</em></p>
-<h3><a class="anchor" id="autotoc_md11"></a>
+<h3><a class="anchor" id="autotoc_md12"></a>
 🔹 What Happens Next?</h3>
 <ul>
 <li>The robot listens using its built-in microphone. <br  />
@@ -180,10 +237,10 @@ How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone)
 <li>The request is sent to our AI-powered storytelling system for processing. <br  />
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 🔹 Step 2: Processing the Story Request</h2>
 <p>Once the user’s request is received, the system figures out what kind of story to generate.</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 🔹 How It Works Behind the Scenes:</h3>
 <ul>
 <li>The request is sent to ChatGPT, an advanced AI model that can generate human-like text. <br  />
@@ -195,13 +252,13 @@ How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone)
 <li>The finished story is sent back to the robot to be spoken aloud. <br  />
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
 🔹 For Example:</h3>
 <p>If the user asked for a space adventure, ChatGPT might generate a story about: 🚀 <em>“Captain Luna, a brave astronaut, who embarks on a journey to find a lost alien civilization.”</em></p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 🔹 Step 3: The Robot Tells the Story</h2>
 <p>Now that the story has been created, the robot brings it to life!</p>
-<h3><a class="anchor" id="autotoc_md16"></a>
+<h3><a class="anchor" id="autotoc_md17"></a>
 🔹 What Happens Now?</h3>
 <ul>
 <li>The AI-generated story is converted back into speech using the robot’s built-in voice. <br  />
@@ -211,14 +268,14 @@ How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone)
 <li>If time allows, we might also make the robot move its arms, nod, or react during the story. <br  />
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 🔹 Step 4: User Interaction (Optional Future Feature)</h2>
 <p>Instead of just telling one long story, the system could allow for interactive choices, where the listener gets to decide what happens next.</p>
-<h3><a class="anchor" id="autotoc_md18"></a>
+<h3><a class="anchor" id="autotoc_md19"></a>
 🔹 For Example:</h3>
 <p>🗣️ *"Should Captain Luna explore the dark cave or send a drone first?"* 🤖 The robot waits for an answer and then continues the story based on the choice.</p>
 <p>*(This would take extra time to implement, so we may stick to straightforward storytelling for now!)*</p>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 🔹 What’s Needed to Make This Work?</h2>
 <p>Building this system requires connecting three main components: <br  />
  1️⃣ <b>The NAO Robot</b> – The physical device that listens, speaks, and interacts. <br  />
@@ -226,14 +283,14 @@ How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone)
  3️⃣ <b>ChatGPT API</b> – The AI that generates the actual story. <br  />
 </p>
 <p>To make them work together, we need a <b>bridge**—a small program called a **webhook</b> that connects Conversational Agents (Dialogflow CX) to ChatGPT.</p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 🔹 How Long Will This Take?</h2>
 <p>Since we’re working under a deadline, we’re focusing on the core goal: ✅ Make the robot listen, generate, and tell a story smoothly. 🚀 If time allows, we’ll explore adding extra features, like gestures or interactive choices.</p>
-<h2><a class="anchor" id="autotoc_md21"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 🔹 Why This Matters</h2>
 <p>This AI-powered storytelling system could be useful for <b>educators, therapists, and caregivers</b>, helping them introduce engaging, AI-generated stories in an interactive way. It also provides a hands-free, voice-activated experience, making it easy to use.</p>
 <p>While this is a technical research project, it’s also about <b>bringing storytelling to life</b> using AI and robotics!</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 🔹 Summary: The Big Picture</h2>
 <p>🔹 User speaks to the robot → 🗣️ NAO listens <br  />
  🔹 Request is sent to ChatGPT → 💡 AI generates a unique story <br  />
@@ -241,10 +298,10 @@ How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone)
  🔹 Potential future expansion → 🔄 Interactive choices <br  />
 </p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Student)</h1>
 <p>This project is about integrating <b>robotics and AI</b> to create an interactive storytelling system where a humanoid robot (NAO) listens to user input, processes the request using AI (ChatGPT), and narrates a dynamically generated story.</p>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md26"></a>
 🔹 Core Components:</h2>
 <ul>
 <li><b>NAO Robot</b> → Captures voice input and outputs speech. <br  />
@@ -255,11 +312,11 @@ How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Stu
 </li>
 </ul>
 <p>A <b>webhook</b> is developed to <b>bridge</b> Conversational Agents (Dialogflow CX) and ChatGPT.</p>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md27"></a>
 🔹 Step 1: User Input &amp; Speech Processing</h2>
 <p>The interaction begins when the user talks to NAO:</p>
 <p>🗣️ <em>Example: “Tell me a story about a brave astronaut.”</em></p>
-<h3><a class="anchor" id="autotoc_md27"></a>
+<h3><a class="anchor" id="autotoc_md28"></a>
 🔹 How This Works Technically:</h3>
 <ol type="1">
 <li>NAO records the user’s voice and converts speech to text. <br  />
@@ -268,10 +325,10 @@ How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Stu
 </li>
 <li>Conversational Agents (Dialogflow CX) forwards this request to our custom webhook, which will call ChatGPT.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 🔹 Step 2: Webhook &amp; AI Story Generation</h2>
 <p>The webhook is a simple backend service (<b>Python/Flask</b> or <b>Node.js</b>) that processes Conversational Agents' (Dialogflow CX) structured request and queries <b>ChatGPT’s API</b>.</p>
-<h3><a class="anchor" id="autotoc_md29"></a>
+<h3><a class="anchor" id="autotoc_md30"></a>
 🔹 Technical Breakdown:</h3>
 <ul>
 <li>Webhook receives a <b>JSON request</b> from Conversational Agents (Dialogflow CX). <br  />
@@ -284,7 +341,7 @@ How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Stu
 </li>
 <li>Webhook parses the response and sends it back to <b>Dialogflow CX</b>.</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md30"></a>
+<h4><a class="anchor" id="autotoc_md31"></a>
 Example API Call to ChatGPT</h4>
 <div class="fragment"><div class="line">import openai</div>
 <div class="line"> </div>
@@ -293,10 +350,10 @@ Example API Call to ChatGPT</h4>
 <div class="line">    messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;Tell a short astronaut adventure story.&quot;}]</div>
 <div class="line">)</div>
 <div class="line">print(response[&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md32"></a>
 🔹 Step 3: NAO Reads the Story Aloud</h2>
 <p>Once the AI-generated story is returned, it’s sent back to <b>NAO for speech synthesis</b>.</p>
-<h3><a class="anchor" id="autotoc_md32"></a>
+<h3><a class="anchor" id="autotoc_md33"></a>
 🔹 How This Works:</h3>
 <ul>
 <li>The <b>formatted story text</b> is sent back to <b>Conversational Agents (Dialogflow CX)</b>. <br  />
@@ -305,158 +362,423 @@ Example API Call to ChatGPT</h4>
 </li>
 <li>NAO’s <b>Text-to-Speech (TTS)</b> engine converts the text to spoken words.</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md33"></a>
+<h4><a class="anchor" id="autotoc_md34"></a>
 Example NAO TTS Code</h4>
 <div class="fragment"><div class="line">from naoqi import ALProxy</div>
 <div class="line"> </div>
 <div class="line">tts = ALProxy(&quot;ALTextToSpeech&quot;, &quot;&lt;NAO_IP&gt;&quot;, 9559)</div>
 <div class="line">story_text = &quot;Captain Luna soared through space on a mission to find the lost alien civilization.&quot;</div>
 <div class="line">tts.say(story_text)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md34"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md35"></a>
 🔹 Summary of the System Flow:</h2>
 <p>🔹 <b>User speaks to NAO</b> → Speech converted to text <br  />
  🔹 <b>Conversational Agents (Dialogflow CX) processes request</b> → Extracts story parameters <br  />
  🔹 <b>Webhook sends request to ChatGPT</b> → AI generates a custom story <br  />
- 🔹 <b>Webhook returns the story to Conversational Agents (Dialogflow CX)</b> <br  />
- 🔹 <b>NAO reads the story aloud</b> using TTS</p>
-<h1><a class="anchor" id="autotoc_md35"></a>
-NAO Virtual Storyteller</h1>
-<h2><a class="anchor" id="autotoc_md36"></a>
-Project Objective</h2>
-<p>This project demonstrates a <b>proof of concept</b> where a <b>NAO robot</b> serves as the expressive medium for a <b>virtual storyteller</b> powered by <b>generative AI</b>. The robot listens for spoken keywords, sends them to an OpenAI-powered story generation service, and narrates the resulting story using its onboard Text-to-Speech (TTS) engine.</p>
-<p>The system is designed to be easily extensible. While this version uses keyword recognition and a simple webhook, the architecture could integrate with more robust conversation engines such as <b>Google Conversational Agents (Dialogflow CX)</b> for richer, multi-turn dialogue.</p>
+ 🔹 <b>Webhook returns the story to Conversational Agents (Dialogflow CX)</b> 🔹 <b>NAO reads the story aloud</b> using TTS</p>
 <hr  />
+<h1><a class="anchor" id="autotoc_md37"></a>
+NAO Virtual Storyteller: Project Setup &amp; Guide</h1>
 <h2><a class="anchor" id="autotoc_md38"></a>
-Documentation &amp; Downloads</h2>
-<ul>
-<li><b>NAO Developer Documentation</b> <br  />
- <a href="http://doc.aldebaran.com/2-8/home_nao.html">http://doc.aldebaran.com/2-8/home_nao.html</a></li>
-<li><b>NAO Software Downloads</b> <br  />
- <a href="https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/">https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/</a></li>
-</ul>
-<hr  />
-<h2><a class="anchor" id="autotoc_md40"></a>
-Directory Structure</h2>
-<div class="fragment"><div class="line">naoqi_tests/</div>
-<div class="line">├── chatgpt_webhook.py     # Flask-based story generation API</div>
-<div class="line">├── test_naoqi.py          # Basic NAO connectivity test</div>
-<div class="line">├── test_tts.py            # Simple speech playback test</div>
-<div class="line">├── test_asr.py            # Full storyteller integration loop</div>
-<div class="line">├── venv/                  # Python 2.7 virtual environment</div>
-<div class="line">└── README.md              # (this file)</div>
-</div><!-- fragment --><hr  />
-<h2><a class="anchor" id="autotoc_md42"></a>
-Network Requirements</h2>
-<p>To communicate with the NAO robot:</p><ul>
-<li>Ensure both your computer and the robot are on the <b>same local subnet</b> (e.g., <code>192.168.1.X</code>).</li>
-<li>Find the NAO robot’s IP via its touchscreen or audio prompt after boot.</li>
-<li>Update the <code>NAO_IP</code> variable in your scripts (e.g., <code>test_asr.py</code>) to match the robot's IP.</li>
-</ul>
-<hr  />
-<h2><a class="anchor" id="autotoc_md44"></a>
-⚙️ Setup Instructions</h2>
-<h3><a class="anchor" id="autotoc_md45"></a>
-1. Set Up a Python 2.7 Virtual Environment</h3>
-<div class="fragment"><div class="line">sudo apt install python2.7 python2.7-venv</div>
-<div class="line">mkdir -p ~/naoqi_env</div>
-<div class="line">cd ~/naoqi_env</div>
-<div class="line">virtualenv -p python2.7 venv</div>
-<div class="line">source venv/bin/activate</div>
-</div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md47"></a>
-2. Install Required Packages</h3>
-<div class="fragment"><div class="line">pip install flask requests</div>
-</div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md49"></a>
-3. Configure Your OpenAI API Key</h3>
-<p>Add the following to your <code>~/.bashrc</code>: </p><div class="fragment"><div class="line">export AI_STORYTELLER_TEST_KEY_CV=&quot;sk-...your API key...&quot;</div>
-</div><!-- fragment --><p>Apply it in your current shell: </p><div class="fragment"><div class="line">source ~/.bashrc</div>
-</div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md51"></a>
-4. Run Tests</h3>
-<h4><a class="anchor" id="autotoc_md52"></a>
-🔸 Verify NAO Connectivity</h4>
-<div class="fragment"><div class="line">python2 test_naoqi.py</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md53"></a>
-🔸 Confirm NAO Can Speak</h4>
-<div class="fragment"><div class="line">python2 test_tts.py</div>
-</div><!-- fragment --><h4><a class="anchor" id="autotoc_md54"></a>
-🔸 Start the Flask Story Generator Webhook</h4>
-<div class="fragment"><div class="line">python2 chatgpt_webhook.py</div>
-</div><!-- fragment --><p>Then, test it with:</p>
-<div class="fragment"><div class="line">curl -X POST http://localhost:5000/generate_story \</div>
-<div class="line">     -H &quot;Content-Type: application/json&quot; \</div>
-<div class="line">     -d &#39;{&quot;word&quot;: &quot;robot&quot;}&#39;</div>
-</div><!-- fragment --><hr  />
-<h3><a class="anchor" id="autotoc_md56"></a>
-5. Run the Virtual Storyteller</h3>
-<div class="fragment"><div class="line">python2 test_asr.py</div>
-</div><!-- fragment --><p>Then speak one of the following words near NAO:</p><ul>
-<li><code>hello</code></li>
-<li><code>story</code></li>
-<li><code>robot</code></li>
-</ul>
-<p>The system will:</p><ol type="1">
-<li>Recognize your spoken keyword using NAO’s ASR.</li>
-<li>Send it to the Flask server.</li>
-<li>Generate a short story using the OpenAI API.</li>
-<li>Speak the story aloud using NAO’s built-in speakers.</li>
+Project Objective</h2>
+<p>This project demonstrates a <b>proof of concept</b> where a <b>NAO robot</b> serves as the expressive medium for a <b>virtual storyteller</b>. The current core of the storytelling logic resides within a <b>Google Cloud Dialogflow CX agent</b>, which uses Retrieval-Augmented Generation (RAG) with a GCS Data Store.</p>
+<p>Earlier iterations and proof-of-concept scripts explored direct NAO interaction with local webhooks and vector databases (like ChromaDB). These scripts, primarily for Python 2 and NAOqi interaction, are included in this repository for completeness, testing, and to showcase the project's evolution.</p>
+<p>This README provides setup instructions for both:</p><ol type="1">
+<li>The <b>NAO robot interaction components</b> (requiring Python 2.7 and the NAOqi SDK).</li>
+<li>The <b>Dialogflow CX AI Storyteller Agent</b> (requiring Google Cloud Platform setup).</li>
 </ol>
 <hr  />
-<h2><a class="anchor" id="autotoc_md58"></a>
-Internals</h2>
-<p>This project uses:</p><ul>
-<li><code>ALSpeechRecognition</code> for listening</li>
-<li><code>ALMemory</code> for retrieving recognized words</li>
-<li><code>ALTextToSpeech</code> for playback</li>
-<li>Flask (<code>chatgpt_webhook.py</code>) to serve <code>/generate_story</code></li>
-<li>OpenAI’s <code>chat/completions</code> API with the model <code>gpt-4o-mini</code></li>
+<h2><a class="anchor" id="autotoc_md40"></a>
+Documentation &amp; Downloads (NAO Specific)</h2>
+<ul>
+<li><b>NAO Developer Documentation</b> <a href="http://doc.aldebaran.com/2-8/home_nao.html">http://doc.aldebaran.com/2-8/home_nao.html</a></li>
+<li><b>NAO Software Downloads</b> <a href="https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/">https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/</a></li>
 </ul>
-<p>For technical reference, all scripts have been refactored for <a href="https://www.doxygen.nl/">Doxygen</a> compatibility with documented parameters, types, and call graphs.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md60"></a>
-Scripts Overview</h2>
+<h2><a class="anchor" id="autotoc_md42"></a>
+Repository Structure Overview</h2>
+<div class="fragment"><div class="line">.</div>
+<div class="line">├── naoqi_tests/               # Scripts for NAO interaction (Python 2)</div>
+<div class="line">│   ├── chatgpt_webhook.py     # Flask webhook (can be run with Py2 for test_asr.py)</div>
+<div class="line">│   ├── test_naoqi.py          # Basic NAO connectivity test</div>
+<div class="line">│   ├── test_tts.py            # Simple speech playback test</div>
+<div class="line">│   └── test_asr.py            # Full NAO ASR -&gt; Webhook -&gt; TTS loop</div>
+<div class="line">├── docs/                      # Doxygen generated documentation (if built)</div>
+<div class="line">├── (other_python3_scripts/)   # Placeholder for Python 3 components (e.g., upload_stories.py)</div>
+<div class="line">├── naoqi_env/                 # Recommended name for Python 2.7 virtual environment</div>
+<div class="line">├── .env_example               # Example for environment variables</div>
+<div class="line">├── Doxyfile                   # Doxygen configuration file</div>
+<div class="line">└── README.md                  # This file</div>
+</div><!-- fragment --><p> *(Note: Python 3 scripts like <code>upload_stories.py</code> or more complex webhooks should ideally be in their own Python 3 virtual environment, separate from <code>naoqi_env</code>.)*</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md44"></a>
+Section 1: NAO Robot Interaction Setup (Python 2 &amp; NAOqi SDK)</h2>
+<p>This section details setting up your Ubuntu 22.04 system to run the Python 2 scripts that interact directly with the NAO robot.</p>
+<h3><a class="anchor" id="autotoc_md45"></a>
+1.1. Network Setup for NAO Robot</h3>
+<p>For your computer to communicate with the NAO robot, both must be on the same network.</p>
+<h4><a class="anchor" id="autotoc_md46"></a>
+1.1.1. Connect NAO to the Network</h4>
+<ul>
+<li><b>Wi-Fi:</b> You can configure Wi-Fi on your NAO by connecting to its embedded web page. When NAO starts, it may announce its IP address or create its own Wi-Fi hotspot for initial configuration. Refer to your NAO's documentation for specific instructions.</li>
+<li><b>Ethernet:</b> Connect an Ethernet cable from the NAO to your router or network switch.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md47"></a>
+1.1.2. Find NAO's IP Address</h4>
+<ul>
+<li><b>Chest Button:</b> Press NAO's chest button once. It should say its IP address.</li>
+<li><b>Router's DHCP Client List:</b> Check your router's administration page for a list of connected devices and find the NAO's IP address.</li>
+<li><b>Network Scanning Tools:</b> Tools like <code>nmap</code> (e.g., <code>nmap -sP YOUR_NETWORK_CIDR</code> like <code>192.168.1.0/24</code>) can help discover devices on your network.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md48"></a>
+1.1.3. Ensure Network Connectivity</h4>
+<ul>
+<li>Once you have NAO's IP address (e.g., <code>192.168.1.120</code>), try to ping it from your Ubuntu machine: ```bash ping YOUR_NAO_IP_ADDRESS ```</li>
+<li>Ensure your PC and NAO are on the same subnet.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md49"></a>
+1.1.4. Firewall Considerations</h4>
+<ul>
+<li>The NAOqi SDK typically communicates on port <code>9559</code>. Ensure that no firewall on your Ubuntu machine or network is blocking TCP traffic on this port to or from the NAO's IP address.<ul>
+<li>You can temporarily disable <code>ufw</code> (if active) for testing: <code>sudo ufw disable</code> (remember to re-enable it later with <code>sudo ufw enable</code> and configure rules if necessary).</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md50"></a>
+1.2. Install Python 2.7 on Ubuntu 22.04 (using &lt;tt&gt;pyenv&lt;/tt&gt;)</h3>
+<p>Ubuntu 22.04 does not include Python 2 by default. Using <code>pyenv</code> is a clean way to install and manage Python 2.7 without interfering with the system's Python 3.</p>
+<h4><a class="anchor" id="autotoc_md51"></a>
+1.2.1. Install &lt;tt&gt;pyenv&lt;/tt&gt; Dependencies</h4>
+<p>These packages are needed to compile Python versions with <code>pyenv</code>: </p><div class="fragment"><div class="line">sudo apt update</div>
+<div class="line">sudo apt install -y make build-essential libssl-dev zlib1g-dev     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm     libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md52"></a>
+1.2.2. Install &lt;tt&gt;pyenv&lt;/tt&gt;</h4>
+<p>The recommended way to install <code>pyenv</code> is using the <code>pyenv-installer</code>: </p><div class="fragment"><div class="line">curl https://pyenv.run | bash</div>
+</div><!-- fragment --><p> This script will also show you how to set up your shell environment for <code>pyenv</code>.</p>
+<h4><a class="anchor" id="autotoc_md53"></a>
+1.2.3. Configure Shell for &lt;tt&gt;pyenv&lt;/tt&gt;</h4>
+<p>After installation, add the following lines to your shell configuration file (e.g., <code>~/.bashrc</code>, <code>~/.zshrc</code>): </p><div class="fragment"><div class="line">export PYENV_ROOT=&quot;$HOME/.pyenv&quot;</div>
+<div class="line">export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;</div>
+<div class="line">if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then</div>
+<div class="line">  eval &quot;$(pyenv init --path)&quot;</div>
+<div class="line">  eval &quot;$(pyenv init -)&quot;</div>
+<div class="line">fi</div>
+</div><!-- fragment --><p> Then, apply the changes by sourcing the file (e.g., <code>source ~/.bashrc</code>) or opening a new terminal session.</p>
+<h4><a class="anchor" id="autotoc_md54"></a>
+1.2.4. Install Python 2.7.18 with &lt;tt&gt;pyenv&lt;/tt&gt;</h4>
+<p>Python 2.7.18 was the final release of Python 2. </p><div class="fragment"><div class="line">pyenv install 2.7.18</div>
+</div><!-- fragment --><p> This might take some time as it compiles Python from source.</p>
+<h4><a class="anchor" id="autotoc_md55"></a>
+1.2.5. (Optional) Set Python 2.7.18 as Local Default for Your Project</h4>
+<p>Navigate to your project directory (or the <code>naoqi_tests</code> subdirectory): </p><div class="fragment"><div class="line">cd /path/to/your/nao_project # Or ./naoqi_tests</div>
+<div class="line">pyenv local 2.7.18</div>
+</div><!-- fragment --><p> This creates a <code>.python-version</code> file, and <code>pyenv</code> will automatically use Python 2.7.18 here.</p>
+<h3><a class="anchor" id="autotoc_md56"></a>
+1.3. Create a Python 2 Virtual Environment</h3>
+<p>It's highly recommended to use a virtual environment. Let's name it <code>naoqi_env</code>.</p>
+<h4><a class="anchor" id="autotoc_md57"></a>
+1.3.1. Ensure &lt;tt&gt;pip&lt;/tt&gt; for Python 2.7 is Available</h4>
+<p>If <code>pyenv local 2.7.18</code> is active, <code>python</code> should point to Python 2.7. Ensure <code>pip</code> is installed and up-to-date for this Python 2.7 version: </p><div class="fragment"><div class="line">python -m ensurepip --upgrade</div>
+<div class="line">python -m pip install --upgrade pip setuptools wheel</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md58"></a>
+1.3.2. Install &lt;tt&gt;virtualenv&lt;/tt&gt;</h4>
+<div class="fragment"><div class="line">python -m pip install virtualenv</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md59"></a>
+1.3.3. Create and Activate the Virtual Environment</h4>
+<p>In your project directory (e.g., where <code>naoqi_tests</code> is located): </p><div class="fragment"><div class="line">python -m virtualenv naoqi_env # Creates &#39;naoqi_env&#39; folder</div>
+<div class="line">source naoqi_env/bin/activate   # Activates the environment</div>
+</div><!-- fragment --><p> Your command prompt should now be prefixed with <code>(naoqi_env)</code>.</p>
+<h3><a class="anchor" id="autotoc_md60"></a>
+1.4. Install the NAOqi Python 2 SDK</h3>
+<p>This guide assumes you have downloaded the NAOqi Python 2 SDK for Linux (e.g., <code>pynaoqi-python2.7-X.X.X.X-linux64.tar.gz</code>).</p>
+<h4><a class="anchor" id="autotoc_md61"></a>
+1.4.1. Extract the SDK</h4>
+<p>Extract the SDK archive to a known location, e.g., <code>~/naoqi_sdks/</code>. The key library files (<code>naoqi.py</code>, <code>_naoqi.so</code>) are usually within a path like <code>pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages/</code>.</p>
+<h4><a class="anchor" id="autotoc_md62"></a>
+1.4.2. Make NAOqi SDK available to your Python 2 Environment</h4>
+<p><b>Option A: Setting <code>PYTHONPATH</code> (Recommended)</b></p><ol type="1">
+<li>Identify the full path to the SDK's <code>site-packages</code> directory (e.g., <code>~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages</code>). Let this be <code>NAOQI_PYTHON_LIB_DIR</code>.</li>
+<li>Add to your virtual environment's activation script: ```bash </li>
+</ol>
+<h1><a class="anchor" id="autotoc_md63"></a>
+(Ensure naoqi_env is activated)</h1>
+<h1><a class="anchor" id="autotoc_md64"></a>
+(Replace /path/to/your/NAOQI_PYTHON_LIB_DIR with the actual, absolute path)</h1>
+<p>echo 'export PYTHONPATH="${PYTHONPATH}:/path/to/your/NAOQI_PYTHON_LIB_DIR"' &gt;&gt; naoqi_env/bin/activate ``<code> Deactivate and reactivate (</code>deactivate<code>, then</code>source naoqi_env/bin/activate`).</p>
+<p><b>Option B: Copying SDK files into Virtual Environment</b></p><ol type="1">
+<li>Activate <code>naoqi_env</code>.</li>
+<li>Copy <code>naoqi.py</code>, <code>_naoqi.so</code>, and other relevant files (e.g., <code>motion_definitions.py</code>) from the SDK's <code>site-packages</code> to <code>naoqi_env/lib/python2.7/site-packages/</code>. ```bash </li>
+</ol>
+<h1><a class="anchor" id="autotoc_md65"></a>
+Example (replace with your actual SDK path):</h1>
+<h1><a class="anchor" id="autotoc_md66"></a>
+SDK_LIB_PATH="~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages"</h1>
+<h1><a class="anchor" id="autotoc_md67"></a>
+VENV_LIB_PATH="naoqi_env/lib/python2.7/site-packages"</h1>
+<h1><a class="anchor" id="autotoc_md68"></a>
+cp "${SDK_LIB_PATH}/naoqi.py" "${VENV_LIB_PATH}/"; cp "${SDK_LIB_PATH}/_naoqi.so" "${VENV_LIB_PATH}/"</h1>
+<p>```</p>
+<h4><a class="anchor" id="autotoc_md69"></a>
+1.4.3. Test NAOqi Import</h4>
+<p>With <code>naoqi_env</code> activated: </p><div class="fragment"><div class="line">python -c &quot;import naoqi; print &#39;NAOqi SDK imported successfully!&#39;&quot;</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md70"></a>
+1.5. Install Python 2 Dependencies for NAO Scripts</h3>
+<p>The <code>test_asr.py</code> script calls a webhook and needs <code>requests</code>: </p><div class="fragment"><div class="line"># (Ensure &#39;naoqi_env&#39; is activated)</div>
+<div class="line">pip install requests</div>
+</div><!-- fragment --><p> If running <code>chatgpt_webhook.py</code> under Python 2 (not generally recommended for modern Flask/OpenAI usage), install Flask: </p><div class="fragment"><div class="line"># pip install Flask</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md71"></a>
+1.6. Troubleshooting NAO Setup</h3>
+<ul>
+<li>**"ImportError: No module named naoqi"**: Check venv activation, <code>PYTHONPATH</code> (Option A) or file copy (Option B).</li>
+<li><b>Connection Errors to NAO</b>: Verify IP, network, ping, firewall (port 9559 TCP).</li>
+<li><b>SDK/OS Version:</b> Ensure NAOqi Python SDK and NAO's OS are compatible.</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md73"></a>
+Section 2: Dialogflow CX AI Storyteller Agent Setup</h2>
+<p>This section details the setup for the current core of the virtual storyteller, which uses Google Cloud Dialogflow CX with a GCS Data Store for Retrieval-Augmented Generation (RAG). *(This content is adapted from the README of the <a href="https://github.com/darthvandor13/ai-storyteller-agent-config">ai-storyteller-agent-config</a> repository).*</p>
+<h3><a class="anchor" id="autotoc_md74"></a>
+2.1. Project Overview (Dialogflow CX Agent)</h3>
+<p>This component implements a conversational AI agent using <b>Google Cloud Dialogflow CX</b> designed to act as a virtual storyteller. The agent engages users in a conversation to gather preferences (protagonist name, story theme, moral) and then generates a unique short story (300-350 words).</p>
+<p>The core mechanism is <b>Retrieval-Augmented Generation (RAG)</b>. The agent retrieves relevant context snippets from a predefined knowledge base of stories (hosted in Google Cloud Storage) and uses these snippets, along with the user's parameters, as strict inspiration to generate a new, original story. It is explicitly instructed <em>not</em> to use external knowledge or copy directly from the source material.</p>
+<p>*(<b>Note on Initial Approach:</b> An earlier iteration attempted using ChromaDB via a webhook and parameter presets. This approach was paused due to platform issues encountered with parameter preset handling – specifically, the UI automatically adding quotes to <code>$webhookResponse</code> paths.)*</p>
+<h3><a class="anchor" id="autotoc_md75"></a>
+2.2. Technology Stack (Dialogflow CX Agent)</h3>
+<ul>
+<li><b>Conversational Platform:</b> Google Cloud Dialogflow CX</li>
+<li><b>Knowledge Base Backend:</b> Google Cloud Storage (GCS)</li>
+<li><b>Secrets Management:</b> Google Cloud Secret Manager</li>
+<li><b>Version Control (for Agent Config):</b> GitHub (via Dialogflow CX Git Integration)</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md76"></a>
+2.3. Core Concepts: RAG via GCS Data Store</h3>
+<ol type="1">
+<li><b>Data Storage:</b> Source story texts (PDF, TXT, HTML formats supported) are stored in a GCS bucket.</li>
+<li><b>Data Store Resource:</b> A Dialogflow "Data Store" resource is created within the Agent Builder environment, configured to point to the GCS bucket and index the unstructured content.</li>
+<li><b>Data Store Tool:</b> A "Data Store Tool" is created within the agent and linked to the specific Data Store resource.</li>
+<li><b>Retrieval:</b> The agent's playbook logic calls this Data Store Tool, sending a query based on user input.</li>
+<li><b>Generation:</b> The tool returns relevant text snippets. These snippets, along with user parameters, are used within a generative prompt executed by the agent's playbook to create the final story.</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md77"></a>
+2.4. Setup &amp; Prerequisites (Dialogflow CX Start-to-Finish)</h3>
+<p>This guide assumes you have a Google Cloud project with billing enabled.</p>
+<ol type="1">
+<li><b>Enable APIs:</b><ul>
+<li>In the Google Cloud Console, ensure the following APIs are enabled for your project:<ul>
+<li>Dialogflow API</li>
+<li>Secret Manager API</li>
+<li>Cloud Storage API</li>
+<li>Vertex AI Agent Builder API (or Vertex AI Search and Conversation API)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Create GCS Bucket:</b><ul>
+<li>Navigate to Cloud Storage -&gt; Buckets. Click "Create".</li>
+<li>Choose a unique <b>Bucket name</b> (e.g., <code>[YOUR_PROJECT_ID]-story-data</code>).</li>
+<li>Select <b>Location type: Region</b> and choose the <b>SAME REGION</b> as your Dialogflow agent (e.g., <code>us-central1</code>). This is critical.</li>
+<li>Select <b>Storage class: Standard</b>. Configure access control. Click "Create".</li>
+</ul>
+</li>
+<li><b>Upload Story Files:</b><ul>
+<li>Upload your source story files (e.g., <code>.pdf</code>, <code>.txt</code>) to the GCS bucket.</li>
+</ul>
+</li>
+<li><b>Create GitHub Repository (for Agent Config Sync):</b><ul>
+<li>Create a new, <b>dedicated repository</b> on GitHub (e.g., <code>ai-storyteller-agent-config</code>).</li>
+<li>Ensure the primary branch (e.g., <code>main</code>) exists.</li>
+</ul>
+</li>
+<li><b>Create GitHub Personal Access Token (PAT):</b><ul>
+<li>In GitHub: Settings -&gt; Developer settings -&gt; Personal access tokens -&gt; Fine-grained tokens.</li>
+<li>Click "Generate new token". Name it (e.g., <code>dialogflow-cx-sync</code>), set Expiration.</li>
+<li>Under "Repository access", select **"Only select repositories"** and choose the repo from step 4.</li>
+<li>Under "Permissions" -&gt; "Repository permissions", find **"Contents"** and set access to **"Read and write"**.</li>
+<li>Click "Generate token". <b>COPY THE TOKEN IMMEDIATELY.</b></li>
+</ul>
+</li>
+<li><b>Store PAT in Secret Manager:</b><ul>
+<li>In Google Cloud Console -&gt; Security -&gt; Secret Manager. Click "+ Create Secret".</li>
+<li>Enter a <b>Name</b> (e.g., <code>github-dialogflow-pat</code>). Paste the PAT into <b>Secret value</b>. Click "Create Secret".</li>
+</ul>
+</li>
+<li><b>Grant Dialogflow Access to Secret:</b><ul>
+<li>In Secret Manager, open the secret. Go to "Permissions" tab. Click "+ Grant Access".</li>
+<li><b>New principals:</b> <code>service-[YOUR_PROJECT_NUMBER]@gcp-sa-dialogflow.iam.gserviceaccount.com</code> (Replace <code>[YOUR_PROJECT_NUMBER]</code>).</li>
+<li><b>Assign roles:</b> <code>Secret Manager Secret Accessor</code>. Click "Save".</li>
+</ul>
+</li>
+<li><b>Grant Dialogflow Access to GCS Bucket:</b><ul>
+<li>Navigate to your story data GCS Bucket -&gt; "Permissions" tab. Click "+ Grant Access".</li>
+<li><b>New principals:</b> <code>service-[YOUR_PROJECT_NUMBER]@gcp-sa-dialogflow.iam.gserviceaccount.com</code>.</li>
+<li><b>Assign roles:</b> <code>Storage Object Viewer</code>. Click "Save".</li>
+</ul>
+</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md78"></a>
+2.5. Agent Configuration Steps (Dialogflow CX Console)</h3>
+<ol type="1">
+<li><b>Create Agent (if needed):</b><ul>
+<li>Create a new agent ("Build your own"). Specify Agent Name, <b>Location/Region</b> (must match GCS bucket), Time zone, Default language.</li>
+</ul>
+</li>
+<li><b>Create Data Store Resource:</b><ul>
+<li>Go to "Data Stores". Click "Create new data store".</li>
+<li>Source: **"Cloud Storage"**. Select your GCS bucket/folder.</li>
+<li>Data type: **"Unstructured documents"**.</li>
+<li>Sync frequency: **"One time"** (workaround for potential UI issues). Click "Continue".</li>
+<li><b>Configure data connector:</b> Location (e.g., <code>us (multi-region)</code> for agent in <code>us-central1</code>), unique Connector name. Click "Create".</li>
+<li>Wait for indexing ("Data Ingestion Activity" should show "Succeeded").</li>
+</ul>
+</li>
+<li><b>Create Data Store Tool:</b><ul>
+<li>Go to "Tools". Click "+ Create".</li>
+<li><b>Tool Name:</b> e.g., <code>WorkspaceStoryContextTool-OneTime</code>.</li>
+<li><b>Tool Type:</b> <code>Data store</code>.</li>
+<li><b>Data stores:</b> Add the data store created above.</li>
+<li>Add a Description. Click "Save".</li>
+</ul>
+</li>
+<li><b>Configure GitHub Integration (in Agent Settings):</b><ul>
+<li>Go to Agent Settings (⚙️ icon) -&gt; "Git integration". Click "+ Add Git integration".</li>
+<li><b>Display name:</b> e.g., <code>GitHub Sync - Storyteller Agent</code>.</li>
+<li><b>Git repository:</b> HTTPS URL of your dedicated GitHub repo for agent config.</li>
+<li><b>Branch:</b> e.g., <code>main</code>.</li>
+<li><b>Access token secret:</b> Full resource name of the Secret Manager secret version (e.g., <code>projects/[PROJECT_ID]/secrets/[SECRET_NAME]/versions/latest</code>).</li>
+<li>Click "Connect", then "Save" agent settings.</li>
+</ul>
+</li>
+<li><b>Import/Configure Playbook:</b><ul>
+<li>Import the playbook from the <code>ai-storyteller-agent-config</code> repository if you have one, or configure a new one.</li>
+<li>Ensure you are working with the correct playbook (e.g., <code>Storyteller Playbook - GCS Test</code>).</li>
+</ul>
+</li>
+<li><b>Configure Playbook Instructions:</b><ul>
+<li>Paste the playbook instructions (which define how the agent uses parameters and tool outputs to generate the story) into the "Instructions" field.</li>
+</ul>
+</li>
+<li><b>Configure Playbook Example:</b><ul>
+<li>Edit/create an example demonstrating the successful path.</li>
+<li>Tool Use step should call your Data Store Tool. Example Input JSON for the tool: ```json { "query": "Story about $session.params.theme with a moral of $session.params.moral", "filter": "", "userMetadata": {} } ``<code></code></li>
+<li><p class="startli"><code>Agent response step should contain the generative prompt, referencing user parameters (</code>$session.params.*<code>) and the tool output (e.g.,</code>$tool.WorkspaceStoryContextTool-OneTime.snippets<code>). Example Prompt Text: </code>`&lsquo;text Okay, traveler! Using the inspiration found in our archives ($tool.WorkspaceStoryContextTool-OneTime.snippets), here is a new short story (300-350 words) about $session.params.protagonist in a $session.params.theme setting. The story must teach the moral &rsquo;$session.params.moral'. Remember to base the story ONLY on the retrieved context from the archives, adapting creatively but not adding external information or copying verbatim. Make sure it has a beginning, middle, and end.</p>
+<p class="startli">Would you like me to craft another tale, traveler? ```</p>
+</li>
+<li>Configure "End example with output information". Save.</li>
+</ul>
+</li>
+<li><b>Configure Agent Generative Settings:</b><ul>
+<li>Agent Settings -&gt; Generative AI -&gt; Playbook.</li>
+<li>Select <b>Model</b> (e.g., <code>gemini-1.5-flash-001</code>), <b>Temperature</b>, <b>Token Limit</b>. Save.</li>
+</ul>
+</li>
+<li><b>Initial Git Push (from Dialogflow CX Agent Settings):</b><ul>
+<li>Go to Agent Settings -&gt; Git integration. Find your connection. Click **"Push"**.</li>
+</ul>
+</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md79"></a>
+2.6. How to Use/Test Dialogflow CX Agent</h3>
+<ol type="1">
+<li>Open Dialogflow CX console, select your agent.</li>
+<li>Open the <b>Simulator</b>.</li>
+<li>Simulator settings: Environment (<code>Draft</code>), Start Resource (<code>Playbook</code>), select your specific playbook.</li>
+<li>Interact by providing protagonist, theme, and moral when prompted.</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md80"></a>
+2.7. Known Issues / Troubleshooting Context (Dialogflow CX)</h3>
+<ul>
+<li><b>Webhook Parameter Preset Bug (Historical):</b> Initial ChromaDB/Webhook approach using parameter presets failed due to a UI bug. This led to the GCS Data Store method.</li>
+<li><b>GCS Data Store Visibility:</b> "One time" sync for Data Stores was found more reliable for immediate tool linking than "Periodic" sync during development.</li>
+<li><b>GCS Permissions:</b> Ensure Dialogflow Service Agent has <code>Storage Object Viewer</code> on the GCS bucket.</li>
+<li><b>Data Store Indexing:</b> Can take time. Check "DATA INGESTION ACTIVITY".</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md82"></a>
+Section 3: Running the NAO Storyteller System</h2>
+<p>This section explains how to run the NAO interaction scripts and, if applicable, the local webhook for testing the end-to-end flow.</p>
+<h3><a class="anchor" id="autotoc_md83"></a>
+3.1. Configure OpenAI API Key (for &lt;tt&gt;chatgpt_webhook.py&lt;/tt&gt;)</h3>
+<p>Ensure the <code>AI_STORYTELLER_TEST_KEY_CV</code> environment variable is set in your shell environment where <code>chatgpt_webhook.py</code> will run: </p><div class="fragment"><div class="line">export AI_STORYTELLER_TEST_KEY_CV=&quot;sk-...your API key...&quot;</div>
+<div class="line"># Add to ~/.bashrc or ~/.zshrc for persistence</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md84"></a>
+3.2. Running the Components</h3>
+<p><b>A. Start the Story Generation Webhook (if not using Dialogflow CX directly with NAO)</b></p>
+<p>The <code>test_asr.py</code> script for NAO is designed to call a webhook.</p><ul>
+<li><b>If using <code>chatgpt_webhook.py</code> for local testing:</b> This webhook generates stories using OpenAI. It's generally recommended to run modern web services and AI library interactions in a <b>Python 3 environment</b>.<ol type="1">
+<li>Open a <em>new terminal</em>.</li>
+<li>Activate your Python 3 virtual environment for this script (if different from the NAOqi env).</li>
+<li>Run: <code>python /path/to/chatgpt_webhook.py</code> (ensure Flask is installed in this env). Keep this server running.</li>
+</ol>
+</li>
+<li><b>If integrating NAO with your Dialogflow CX Agent:</b> The Dialogflow CX agent <em>is</em> your "story generation service." The NAO scripts would need to be adapted to send their recognized keywords to a new webhook that, in turn, interacts with your Dialogflow CX agent's API (e.g., using the Dialogflow CX Python client library). This is a more advanced setup beyond the scope of the current <code>test_asr.py</code>. For now, <code>test_asr.py</code> uses the simpler <code>chatgpt_webhook.py</code>.</li>
+</ul>
+<p><b>B. Run the NAO Interaction Scripts</b></p>
+<p>Ensure your NAO robot is on, connected to the network, and you have updated the <code>NAO_IP</code> variable in the Python 2 scripts (<code>test_naoqi.py</code>, <code>test_tts.py</code>, <code>test_asr.py</code>) to match your robot's actual IP address.</p>
+<ol type="1">
+<li>Open a new terminal.</li>
+<li>Navigate to your project directory: <code>cd /path/to/your/nao_project</code></li>
+<li>Activate the Python 2 virtual environment: <code>source naoqi_env/bin/activate</code></li>
+<li><b>Verify NAO Connectivity:</b> ```bash python test_naoqi.py ```</li>
+<li><b>Confirm NAO Can Speak:</b> ```bash python test_tts.py ```</li>
+<li><b>Run the Full Virtual Storyteller Loop (NAO ASR -&gt; Webhook -&gt; NAO TTS):</b> Make sure the <code>chatgpt_webhook.py</code> (or your equivalent story generation service) is running. ```bash python test_asr.py ``<code> Then speak one of the keywords (</code>hello<code>,</code>story<code>,</code>robot`) near NAO.</li>
+</ol>
+<hr  />
+<h2><a class="anchor" id="autotoc_md86"></a>
+Internals (NAO Interaction Scripts)</h2>
+<p>The Python 2 scripts for NAO interaction use:</p><ul>
+<li><code>ALSpeechRecognition</code> for listening.</li>
+<li><code>ALMemory</code> for retrieving recognized words.</li>
+<li><code>ALTextToSpeech</code> for playback.</li>
+<li>The <code>chatgpt_webhook.py</code> (Flask) serves <code>/generate_story</code> using OpenAI’s <code>chat/completions</code> API (model <code>gpt-4o-mini</code>).</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md88"></a>
+Scripts Overview Table</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">File   </th><th class="markdownTableHeadNone">Purpose    </th></tr>
+<th class="markdownTableHeadNone">File   </th><th class="markdownTableHeadNone">Purpose   </th><th class="markdownTableHeadNone">Python Version Recommendation   </th><th class="markdownTableHeadNone">Environment    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>test_naoqi.py</code>   </td><td class="markdownTableBodyNone">Verifies connection to the NAO robot and TTS subsystem    </td></tr>
+<td class="markdownTableBodyNone"><code>test_naoqi.py</code>   </td><td class="markdownTableBodyNone">Verifies NAO connectivity (TTS subsystem)   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>test_tts.py</code>   </td><td class="markdownTableBodyNone">Sends a single test sentence to the NAO for speech    </td></tr>
+<td class="markdownTableBodyNone"><code>test_tts.py</code>   </td><td class="markdownTableBodyNone">Simple NAO speech test   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>chatgpt_webhook.py</code>   </td><td class="markdownTableBodyNone">Flask server that generates stories using OpenAI    </td></tr>
+<td class="markdownTableBodyNone"><code>test_asr.py</code>   </td><td class="markdownTableBodyNone">NAO ASR → Webhook → NAO TTS loop   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>test_asr.py</code>   </td><td class="markdownTableBodyNone">End-to-end: speech → story generation → TTS playback   </td></tr>
+<td class="markdownTableBodyNone"><code>chatgpt_webhook.py</code>   </td><td class="markdownTableBodyNone">Flask server for OpenAI story generation (called by ASR)   </td><td class="markdownTableBodyNone">Python 3 (recommended)   </td><td class="markdownTableBodyNone">Separate Py3 venv    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>upload_stories.py</code>   </td><td class="markdownTableBodyNone">Bulk story uploader to ChromaDB (historical/utility)   </td><td class="markdownTableBodyNone">Python 3   </td><td class="markdownTableBodyNone">Separate Py3 venv    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Dialogflow CX Agent   </td><td class="markdownTableBodyNone">Core storyteller logic, RAG with GCS Data Store   </td><td class="markdownTableBodyNone">N/A (Google Cloud Platform)   </td><td class="markdownTableBodyNone">GCP   </td></tr>
 </table>
 <hr  />
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md90"></a>
 Future Possibilities</h2>
-<p>This setup validates the feasibility of <b>using NAO as a front-end for a generative AI-based virtual storyteller</b>. With this foundation, the following enhancements are possible:</p><ul>
-<li>Integrating <b>Conversational Agents (Dialogflow CX)</b> to manage conversation logic.</li>
-<li>Adding <b>multi-turn story generation</b> with memory of previous interactions.</li>
-<li>Expanding vocabulary dynamically via the web interface.</li>
-<li>Hosting the webhook on a public domain via <code>ngrok</code> or GCP/AWS.</li>
+<ul>
+<li><b>Direct NAO to Dialogflow CX Integration:</b> Adapt NAO scripts to interact directly with the Dialogflow CX API for a more robust conversational experience, replacing the simpler <code>chatgpt_webhook.py</code>.</li>
+<li><b>Enhanced NAO Expressiveness:</b> Incorporate NAO's gestures and movements synchronized with storytelling.</li>
+<li><b>Multi-turn Story Generation:</b> Leverage Dialogflow CX's capabilities for more interactive, choice-driven narratives.</li>
+<li><b>Dynamic Vocabulary:</b> Allow NAO's recognized vocabulary to be updated dynamically.</li>
+<li><b>Cloud Deployment:</b> Host webhooks or intermediary services on GCP Cloud Functions or Cloud Run for scalability.</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md92"></a>
 License</h2>
 <p>MIT License — See source files for copyright.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md66"></a>
+<h2><a class="anchor" id="autotoc_md94"></a>
 Questions or Contributions?</h2>
 <p>Feel free to fork this repo, submit pull requests, or open an issue with suggestions for enhancements!</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md96"></a>
 🧾 Developer Reference (Doxygen)</h2>
-<p>This repository includes full developer-level documentation using <a href="https://www.doxygen.nl/">Doxygen</a>. All Python source files are annotated with:</p>
+<p>This repository includes full developer-level documentation using <a href="https://www.doxygen.nl/">Doxygen</a> for the Python scripts. All Python source files are annotated with:</p>
 <ul>
 <li><code>@file</code>, <code>@brief</code>, <code>@param</code>, <code>@return</code>, <code>@author</code></li>
 <li>Function-level docstrings structured for auto-generation</li>
 <li>Mermaid diagrams (e.g., ASR → Webhook → TTS flowchart in <code>test_asr.py</code>)</li>
 <li>Module constants and environmental variable documentation</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md69"></a>
-Entry Points</h3>
+<h3><a class="anchor" id="autotoc_md97"></a>
+Entry Points (Python Scripts)</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Script   </th><th class="markdownTableHeadNone">Purpose    </th></tr>
@@ -469,17 +791,17 @@ Entry Points</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>test_tts.py</code>   </td><td class="markdownTableBodyNone">Basic smoke test of NAO’s speech output   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md70"></a>
-To Generate Documentation</h3>
-<p>To build the Doxygen HTML output:</p>
+<h3><a class="anchor" id="autotoc_md98"></a>
+To Generate Doxygen Documentation</h3>
+<p>To build the Doxygen HTML output for the Python scripts:</p>
 <div class="fragment"><div class="line">doxygen Doxyfile</div>
-</div><!-- fragment --><p>Then open the generated file:</p>
+</div><!-- fragment --><p>Then open the generated file (usually in a <code>docs/html/</code> subdirectory):</p>
 <div class="fragment"><div class="line">xdg-open docs/html/index.html</div>
-</div><!-- fragment --><p>This will give you a full class/function reference, parameter table, call graphs, and links between modules.</p>
+</div><!-- fragment --><p>This will give you a full class/function reference, parameter table, call graphs, and links between modules for the Python code.</p>
 <blockquote class="doxtable">
-<p><b>Note</b>: Ensure your <code>Doxyfile</code> is configured for Python with <code>OPTIMIZE_OUTPUT_FOR_C = NO</code> and <code>EXTENSION_MAPPING = py=Python</code>. </p>
+<p><b>Note</b>: Ensure your <code>Doxyfile</code> is configured for Python (e.g., <code>OPTIMIZE_OUTPUT_FOR_C = NO</code>, <code>EXTENSION_MAPPING = py=Python</code>, correct <code>INPUT</code> path). </p>
 </blockquote>
-<p>ℹ️ <b>Browse the full documentation here →</b> <a href="https://darthvandor13.github.io/CSC212-Virtual-Storyteller/">github.io/CSC212-Virtual-Storyteller</a> </p>
+<p>ℹ️ <b>Browse the full project documentation (including Doxygen output if hosted) here →</b> <a href="https://darthvandor13.github.io/CSC212-Virtual-Storyteller/">github.io/CSC212-Virtual-Storyteller</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

@@ -95,20 +95,16 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ab481d38b43c6cccd12c6112e48aa68b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#ab481d38b43c6cccd12c6112e48aa68b0">webhook.None</a></td></tr>
 <tr class="separator:ab481d38b43c6cccd12c6112e48aa68b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c7b954d9e7950401e98ae15057eb26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a53c7b954d9e7950401e98ae15057eb26">webhook.api_key</a></td></tr>
-<tr class="separator:a53c7b954d9e7950401e98ae15057eb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8991c7d58ebf7c71026c7798dda0c650"><td class="memItemLeft" align="right" valign="top">Flask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a8991c7d58ebf7c71026c7798dda0c650">webhook.flask_app</a> = create_app()</td></tr>
 <tr class="separator:a8991c7d58ebf7c71026c7798dda0c650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa499842104f08e603831179f7f56b84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#aaa499842104f08e603831179f7f56b84">webhook.host</a></td></tr>
 <tr class="separator:aaa499842104f08e603831179f7f56b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b460fa9438ae8233f749d6f79a5c60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a35b460fa9438ae8233f749d6f79a5c60">webhook.port</a></td></tr>
-<tr class="separator:a35b460fa9438ae8233f749d6f79a5c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>! ! </p>
-<p>Dialogflow&#160;CX fulfilment webhook that generates an interactive ! short story with OpenAI&#160;ChatCompletion. ! ! This version is reorganised into small, reusable functions so that ! Doxygen can render clear parameter / return tables and call graphs while ! preserving the original runtime behaviour. ! !&#160;</p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor !&#160;</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>&#160;&#160;&#160;2025‑05‑08 !&#160;</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! !&#160;### Environment variables !&#160;* <b>OPENAI_API_KEY</b> — secret API key for the ChatCompletion endpoint. ! !&#160;### Flask routes !&#160;* <b>POST /webhook</b> — primary Dialogflow&#160;CX fulfilment entry‑point. ! !&#160;&mdash; </dd></dl>
+<p>Dialogflow CX fulfilment webhook that generates an interactive ! short story with OpenAI ChatCompletion. ! ! This version is reorganised into small, reusable functions so that ! Doxygen can render clear parameter / return tables and call graphs while ! preserving the original runtime behaviour (with error HTTP status corrected to 200 OK). ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-08 ! </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! ! ### Environment variables ! * <b>OPENAI_API_KEY</b> — secret API key for the ChatCompletion endpoint. ! ! ### Flask routes ! * <b>POST /webhook</b> — primary Dialogflow CX fulfilment entry-point. ! ! &mdash; </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

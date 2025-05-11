@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>! !  
+<p>Google Cloud Function webhook for Dialogflow CX using Flask.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -84,27 +84,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a40d209568e58494e896babac4f80eaa2"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a40d209568e58494e896babac4f80eaa2">main.parse_user_query</a> (Dict payload)</td></tr>
-<tr class="separator:a40d209568e58494e896babac4f80eaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b67c4f5b69c36cfa1ac376dd615b62"><td class="memItemLeft" align="right" valign="top">List[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a84b67c4f5b69c36cfa1ac376dd615b62">main.query_chromadb</a> (str query, int n_results=3)</td></tr>
-<tr class="separator:a84b67c4f5b69c36cfa1ac376dd615b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df925781d67f4e8e622c6dc58ea915a"><td class="memItemLeft" align="right" valign="top">Dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a8df925781d67f4e8e622c6dc58ea915a">main.make_dialogflow_response</a> (str text)</td></tr>
-<tr class="separator:a8df925781d67f4e8e622c6dc58ea915a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2073acbb9e5d80a9b67fb0dc83b03bd9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a2073acbb9e5d80a9b67fb0dc83b03bd9">main.main</a> (Request request)</td></tr>
-<tr class="separator:a2073acbb9e5d80a9b67fb0dc83b03bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79a122a5bdf3e941b4605f7020e3dc3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ab79a122a5bdf3e941b4605f7020e3dc3">main.main</a> (FlaskRequest request)</td></tr>
+<tr class="memdesc:ab79a122a5bdf3e941b4605f7020e3dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main entry point for the Google Cloud Function.  <a href="namespacemain.html#ab79a122a5bdf3e941b4605f7020e3dc3">More...</a><br /></td></tr>
+<tr class="separator:ab79a122a5bdf3e941b4605f7020e3dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:afada0b1ee63ecc933d4230aabb4c3460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#afada0b1ee63ecc933d4230aabb4c3460">main.flask_app</a> = Flask(__name__)</td></tr>
-<tr class="separator:afada0b1ee63ecc933d4230aabb4c3460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800974c07a8e7de9888fff8cd98a827e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a800974c07a8e7de9888fff8cd98a827e">main.debug</a></td></tr>
-<tr class="separator:a800974c07a8e7de9888fff8cd98a827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5140030336c5e6df9d59dbd2f11621"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a8d5140030336c5e6df9d59dbd2f11621">main.REQUEST_TIMEOUT</a> = 10</td></tr>
+<tr class="memdesc:a8d5140030336c5e6df9d59dbd2f11621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout in seconds for the HTTP request to the ChromaDB API.  <a href="namespacemain.html#a8d5140030336c5e6df9d59dbd2f11621">More...</a><br /></td></tr>
+<tr class="separator:a8d5140030336c5e6df9d59dbd2f11621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>! ! </p>
-<p>Cloud‑function handler that queries ChromaDB for story snippets and returns them to Dialogflow CX. ! ! This refactored version separates concerns into small helper functions so that ! Doxygen can provide rich parameter/return tables while preserving the original ! behaviour and emoji logging. Runtime‑critical constants are exposed at the top ! for easy configuration via environment variables. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025‑05‑08 ! </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>MIT </dd></dl>
+<div class="textblock"><p>Google Cloud Function webhook for Dialogflow CX using Flask. </p>
+<p>This script defines a Flask application to serve as an HTTP webhook for Dialogflow CX. It receives a query from Dialogflow, proxies it to a specified ChromaDB HTTP API, processes the ChromaDB response, and returns a formatted fulfillment text to Dialogflow. It includes error handling for API requests, timeouts, and response parsing. </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-10 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

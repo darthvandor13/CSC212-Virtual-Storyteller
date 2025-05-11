@@ -74,13 +74,14 @@ $(function() {
 <div class="title">main.py File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>! !  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1QueryRequest.html">main.QueryRequest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1DialogflowParameters.html">main.DialogflowParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1DialogflowSessionInfo.html">main.DialogflowSessionInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1DialogflowWebhookRequest.html">main.DialogflowWebhookRequest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -90,16 +91,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1a845863ab35e51e4d99ab951e994bd1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a1a845863ab35e51e4d99ab951e994bd1">main.create_chroma_collection</a> (str host, int port, str name)</td></tr>
-<tr class="separator:a1a845863ab35e51e4d99ab951e994bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75812e85849cf346c3cd9ed099b58498"><td class="memItemLeft" align="right" valign="top">Optional[chromadb.api.models.Collection.Collection]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a75812e85849cf346c3cd9ed099b58498">main.create_chroma_collection</a> (str host, int port, str name)</td></tr>
+<tr class="separator:a75812e85849cf346c3cd9ed099b58498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512f8c221a901675d84f9c813321f2ee"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a512f8c221a901675d84f9c813321f2ee">main.build_query_string</a> (str protagonist, str theme, str moral)</td></tr>
 <tr class="separator:a512f8c221a901675d84f9c813321f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8813ad6d40a9936be1ebe7214ef35fac"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a8813ad6d40a9936be1ebe7214ef35fac">main.search_stories</a> (collection, str query, int n_results=3)</td></tr>
-<tr class="separator:a8813ad6d40a9936be1ebe7214ef35fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2117fc211ea2e1a55f7d25133dd3bc1"><td class="memItemLeft" align="right" valign="top">Dict[str, Any]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ad2117fc211ea2e1a55f7d25133dd3bc1">main.format_dialogflow_error</a> (str message)</td></tr>
-<tr class="separator:ad2117fc211ea2e1a55f7d25133dd3bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f51a6d4bc989f0ff821196ddf3af697"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a9f51a6d4bc989f0ff821196ddf3af697">main.query_endpoint</a> (Request request)</td></tr>
-<tr class="separator:a9f51a6d4bc989f0ff821196ddf3af697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f471be739ad11c03bae4d44c8a32d43"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a6f471be739ad11c03bae4d44c8a32d43">main.search_stories</a> (chromadb.api.models.Collection.Collection collection, str query, int n_results=DEFAULT_N_RESULTS)</td></tr>
+<tr class="separator:a6f471be739ad11c03bae4d44c8a32d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7710bdb0c31032acf6c50ec97aee588"><td class="memItemLeft" align="right" valign="top">Dict[str, Any]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ad7710bdb0c31032acf6c50ec97aee588">main.format_dialogflow_error_response</a> (str message)</td></tr>
+<tr class="separator:ad7710bdb0c31032acf6c50ec97aee588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10d8b25755a7aadb5933274b6c50307"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ae10d8b25755a7aadb5933274b6c50307">main.startup_event</a> ()</td></tr>
+<tr class="separator:ae10d8b25755a7aadb5933274b6c50307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dce9941b6e9b45a6cacd8b0ce5f385d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a0dce9941b6e9b45a6cacd8b0ce5f385d">main.query_endpoint</a> (DialogflowWebhookRequest request)</td></tr>
+<tr class="separator:a0dce9941b6e9b45a6cacd8b0ce5f385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -107,15 +110,10 @@ Variables</h2></td></tr>
 <tr class="separator:a26f656d825a0ffd09a95f3e7953445e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65ea1f7cf2ee4911befba82862a89dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#af65ea1f7cf2ee4911befba82862a89dc">main.int</a></td></tr>
 <tr class="separator:af65ea1f7cf2ee4911befba82862a89dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9485e518ba44a1f2ff03adea7cfa18d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#aa9485e518ba44a1f2ff03adea7cfa18d">main.COLLECTION</a> = create_chroma_collection(CHROMA_HOST, CHROMA_PORT, COLLECTION_NAME)</td></tr>
-<tr class="separator:aa9485e518ba44a1f2ff03adea7cfa18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c48b44a1e8e7c372b0ba1ae27308f6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a4c48b44a1e8e7c372b0ba1ae27308f6a">main.server_port</a> = int(os.getenv(&quot;PORT&quot;, &quot;8080&quot;))</td></tr>
+<tr class="separator:a4c48b44a1e8e7c372b0ba1ae27308f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>! ! </p>
-<p>FastAPI wrapper that exposes a /query endpoint to search ChromaDB ! for story snippets based on protagonist, theme, and moral. ! ! <em>Refactor rationale</em>: split startup, parameter‑parsing, query, and error ! handling into dedicated functions so Doxygen can provide granular API docs ! and call graphs while preserving behaviour and emoji logging. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025‑05‑08 ! </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
