@@ -13,43 +13,33 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
 
 ### Core Research
 
-1. **[A Systematic Review of Artificial Intelligence Technologies Used for Story Writing](https://www.researchgate.net/publication/369799144_A_systematic_review_of_artificial_intelligence_technologies_used_for_story_writing)**  
-   *Fang, Xiaoxuan; Ng, Davy Tsz Kit; Leung, Jac; Chu, Samuel. (2023).*  
-   *Education and Information Technologies*. https://doi.org/10.1007/s10639-023-11741-5  
+1. **[A Systematic Review of Artificial Intelligence Technologies Used for Story Writing](https://www.researchgate.net/publication/369799144_A_systematic_review_of_artificial_intelligence_technologies_used_for_story_writing)** *Fang, Xiaoxuan; Ng, Davy Tsz Kit; Leung, Jac; Chu, Samuel. (2023).* *Education and Information Technologies*. https://doi.org/10.1007/s10639-023-11741-5  
 
    - Validates AI-driven storytelling for engagement and creativity.  
    - Supports the CoRAG (Conversational Retrieval-Augmented Generation) approach.  
    - Highlights challenges in coherence, emotion, and user engagement.  
    - Encourages human-AI collaboration — AI assists rather than replaces.
 
-2. **[Integrating GPT-Based AI into Virtual Patients](https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/)**  
-   *Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).*  
-   *JMIR Form Res.* https://doi.org/10.2196/58623  
+2. **[Integrating GPT-Based AI into Virtual Patients](https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/)** *Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).* *JMIR Form Res.* https://doi.org/10.2196/58623  
 
    - Demonstrates GPT in real-time verbal interactions.  
    - Emphasizes reducing AI response latency for better usability.  
    - Aligns with CoRAG and prompt engineering techniques.  
    - Notes the role of expressive speech and gestures.
 
-3. **[Designing AI-Enabled Games for Children with Autism](https://arxiv.org/abs/2404.15576)**  
-   *Lyu, Y.; An, P.; Zhang, H.; Katsuragawa, K.; Zhao, J. (2024).*  
-   *CHI 2024 Workshop*. arXiv:2404.15576  
+3. **[Designing AI-Enabled Games for Children with Autism](https://arxiv.org/abs/2404.15576)** *Lyu, Y.; An, P.; Zhang, H.; Katsuragawa, K.; Zhao, J. (2024).* *CHI 2024 Workshop*. arXiv:2404.15576  
 
    - Applies adaptive storytelling for emotional development.  
    - Suggests multimodal feedback via NAO’s movements.  
    - Highlights robotic integration potential.
 
-4. **[Human-Mediated LLMs for Robotic Intervention](https://arxiv.org/abs/2402.00260)**  
-   *Mishra, R.; Welch, K. C.; Popa, D. O. (2024).*  
-   arXiv:2402.00260  
+4. **[Human-Mediated LLMs for Robotic Intervention](https://arxiv.org/abs/2402.00260)** *Mishra, R.; Welch, K. C.; Popa, D. O. (2024).* arXiv:2402.00260  
 
    - LLMs generate meaningful real-time dialogue.  
    - Human-mediated AI ensures appropriateness.  
    - Discusses NAO’s speech recognition limitations and therapy potential.
 
-5. **[Robots vs Humans: Social Interaction with ASD](https://www.mdpi.com/2076-328X/14/2/131)**  
-   *Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).*  
-   *Behavioral Sciences*, 14(2), 131. https://doi.org/10.3390/bs14020131  
+5. **[Robots vs Humans: Social Interaction with ASD](https://www.mdpi.com/2076-328X/14/2/131)** *Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).* *Behavioral Sciences*, 14(2), 131. https://doi.org/10.3390/bs14020131  
 
    - Validates robotic storytelling for ASD engagement.  
    - Suggests CoRAG enhances structured interaction.  
@@ -68,8 +58,7 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
 
 ## Other Resources
 
-- **[gptars YouTube Channel](https://www.youtube.com/@gptars)**  
-- **[Conversational Agents (Dialogflow CX) documentation](https://cloud.google.com/dialogflow/cx/docs)** – Google Cloud  
+- **[gptars YouTube Channel](https://www.youtube.com/@gptars)** - **[Conversational Agents (Dialogflow CX) documentation](https://cloud.google.com/dialogflow/cx/docs)** – Google Cloud  
 
 ---
 
@@ -202,9 +191,9 @@ tts.say(story_text)
 🔹 **User speaks to NAO** → Speech converted to text  
 🔹 **Conversational Agents (Dialogflow CX) processes request** → Extracts story parameters  
 🔹 **Webhook sends request to ChatGPT** → AI generates a custom story  
-🔹 **Webhook returns the story to Conversational Agents (Dialogflow CX)**  
-🔹 **NAO reads the story aloud** using TTS
+🔹 **Webhook returns the story to Conversational Agents (Dialogflow CX)** 🔹 **NAO reads the story aloud** using TTS
 
+---
 
 # NAO Virtual Storyteller
 
@@ -218,11 +207,9 @@ The system is designed to be easily extensible. While this version uses keyword 
 
 ## Documentation & Downloads
 
-- **NAO Developer Documentation**  
-  [http://doc.aldebaran.com/2-8/home_nao.html](http://doc.aldebaran.com/2-8/home_nao.html)
+- **NAO Developer Documentation** [http://doc.aldebaran.com/2-8/home_nao.html](http://doc.aldebaran.com/2-8/home_nao.html)
 
-- **NAO Software Downloads**  
-  [https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/](https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/)
+- **NAO Software Downloads** [https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/](https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/)
 
 ---
 
@@ -234,46 +221,191 @@ naoqi_tests/
 ├── test_naoqi.py          # Basic NAO connectivity test
 ├── test_tts.py            # Simple speech playback test
 ├── test_asr.py            # Full storyteller integration loop
-├── venv/                  # Python 2.7 virtual environment
+├── naoqi_env/             # Python 2.7 virtual environment (as per new guide)
 └── README.md              # (this file)
 ```
 
+*(Note: The Python 2.7 virtual environment directory is named `naoqi_env` as per the detailed setup guide below).*
+
 ---
 
-## Network Requirements
+## Network Setup for NAO Robot
 
-To communicate with the NAO robot:
-- Ensure both your computer and the robot are on the **same local subnet** (e.g., `192.168.1.X`).
-- Find the NAO robot’s IP via its touchscreen or audio prompt after boot.
-- Update the `NAO_IP` variable in your scripts (e.g., `test_asr.py`) to match the robot's IP.
+For your computer to communicate with the NAO robot, both must be on the same network.
+
+### 1.1. Connect NAO to the Network
+* **Wi-Fi:** You can configure Wi-Fi on your NAO by connecting to its embedded web page. When NAO starts, it may announce its IP address or create its own Wi-Fi hotspot for initial configuration. Refer to your NAO's documentation for specific instructions.
+* **Ethernet:** Connect an Ethernet cable from the NAO to your router or network switch.
+
+### 1.2. Find NAO's IP Address
+* **Chest Button:** Press NAO's chest button once. It should say its IP address.
+* **Router's DHCP Client List:** Check your router's administration page for a list of connected devices and find the NAO's IP address.
+* **Network Scanning Tools:** Tools like `nmap` (e.g., `nmap -sP YOUR_NETWORK_CIDR` like `192.168.1.0/24`) can help discover devices on your network.
+
+### 1.3. Ensure Network Connectivity
+* Once you have NAO's IP address (e.g., `192.168.1.120`), try to ping it from your Ubuntu machine:
+    ```bash
+    ping YOUR_NAO_IP_ADDRESS
+    ```
+* Ensure your PC and NAO are on the same subnet.
+
+### 1.4. Firewall Considerations
+* The NAOqi SDK typically communicates on port `9559`. Ensure that no firewall on your Ubuntu machine or network is blocking TCP traffic on this port to or from the NAO's IP address.
+    * You can temporarily disable `ufw` (if active) for testing: `sudo ufw disable` (remember to re-enable it later with `sudo ufw enable` and configure rules if necessary).
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1. Set Up a Python 2.7 Virtual Environment
+The following steps will guide you through setting up the Python 2 environment required for interacting with the NAO robot using the `naoqi` SDK on an **Ubuntu 22.04 system**. For other parts of this project that might use Python 3 (e.g., webhooks if they use modern libraries, advanced data processing), please manage a separate Python 3 environment.
 
+**Important Note on Python Versions:** The NAOqi SDK historically relies on **Python 2.7**. Ubuntu 22.04 does not include Python 2 by default. The instructions below use `pyenv` for a clean installation of Python 2.7.
+
+### 1. Install Python 2.7 on Ubuntu 22.04 (using `pyenv`)
+
+Using `pyenv` is a clean way to install and manage different Python versions without interfering with the system's Python 3.
+
+#### 1.1. Install `pyenv` Dependencies
+These packages are needed to compile Python versions with `pyenv`:
 ```bash
-sudo apt install python2.7 python2.7-venv
-mkdir -p ~/naoqi_env
-cd ~/naoqi_env
-virtualenv -p python2.7 venv
-source venv/bin/activate
+sudo apt update
+sudo apt install -y make build-essential libssl-dev zlib1g-dev     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm     libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+```
+
+#### 1.2. Install `pyenv`
+The recommended way to install `pyenv` is using the `pyenv-installer`:
+```bash
+curl https://pyenv.run | bash
+```
+This script will also show you how to set up your shell environment for `pyenv`.
+
+#### 1.3. Configure Shell for `pyenv`
+After installation, add the following lines to your shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`):
+```bash
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+fi
+```
+Then, apply the changes by sourcing the file (e.g., `source ~/.bashrc`) or opening a new terminal session.
+
+#### 1.4. Install Python 2.7.18 with `pyenv`
+Python 2.7.18 was the final release of Python 2.
+```bash
+pyenv install 2.7.18
+```
+This might take some time as it compiles Python from source.
+
+#### 1.5. (Optional) Set Python 2.7.18 as Local Default for Your Project
+Navigate to your project directory where you'll keep the NAO scripts:
+```bash
+cd /path/to/your/nao_project # Adjust to your project path
+pyenv local 2.7.18
+```
+This creates a `.python-version` file in your project directory, and `pyenv` will automatically use Python 2.7.18 when you are in this directory. Now, running `python --version` in this directory should show Python 2.7.18.
+
+---
+
+### 2. Create a Python 2 Virtual Environment
+
+It's highly recommended to use a virtual environment for your project to manage dependencies cleanly. Let's name it `naoqi_env`.
+
+#### 2.1. Ensure `pip` for Python 2.7 is Available
+If you used `pyenv local 2.7.18`, the `python` command in your project directory should point to Python 2.7.
+Ensure `pip` is installed and up-to-date for this Python 2.7 version:
+```bash
+# (Ensure you are in your project directory where pyenv local 2.7.18 is set)
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip setuptools wheel
+```
+
+#### 2.2. Install `virtualenv`
+```bash
+python -m pip install virtualenv
+```
+
+#### 2.3. Create and Activate the Virtual Environment
+In your project directory:
+```bash
+python -m virtualenv naoqi_env # Creates a folder named 'naoqi_env'
+source naoqi_env/bin/activate   # Activates the environment
+```
+Your command prompt should now be prefixed with `(naoqi_env)`. Running `python --version` inside this activated environment should show Python 2.7.18.
+
+---
+
+### 3. Install the NAOqi Python 2 SDK
+
+This guide assumes you have downloaded the NAOqi Python 2 SDK for Linux (e.g., `pynaoqi-python2.7-X.X.X.X-linux64.tar.gz`).
+
+#### 3.1. Extract the SDK
+Extract the SDK archive to a known location. For example:
+```bash
+mkdir -p ~/naoqi_sdks # Or any other location you prefer
+tar -xzf /path/to/your/pynaoqi-python2.7-sdk.tar.gz -C ~/naoqi_sdks/
+```
+This will create a directory structure, often containing a `pynaoqi` folder or similar. The key library files (`naoqi.py`, `_naoqi.so`, etc.) are usually found within a path like `pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages/`.
+
+#### 3.2. Make NAOqi SDK available to your Python 2 Environment
+You have two main options:
+
+**Option A: Setting `PYTHONPATH` (Recommended for flexibility)**
+1.  Identify the full path to the directory *inside* your extracted SDK that contains `naoqi.py` and `_naoqi.so`. (e.g., `~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages`). Let's call this `NAOQI_PYTHON_LIB_DIR`.
+2.  For a more permanent solution *within your virtual environment*, add this `export` line to your virtual environment's activation script:
+    ```bash
+    # (Make sure your naoqi_env is activated: source naoqi_env/bin/activate)
+    # (Replace /path/to/your/NAOQI_PYTHON_LIB_DIR with the actual, absolute path)
+    echo 'export PYTHONPATH="${PYTHONPATH}:/path/to/your/NAOQI_PYTHON_LIB_DIR"' >> naoqi_env/bin/activate
+    ```
+    You'll need to deactivate and reactivate your environment (`deactivate`, then `source naoqi_env/bin/activate`) for this change to take effect.
+
+**Option B: Copying SDK files into Virtual Environment (Simpler for self-contained venvs)**
+1.  Activate your virtual environment: `source naoqi_env/bin/activate`
+2.  Identify your virtual environment's `site-packages` directory (usually `naoqi_env/lib/python2.7/site-packages/`).
+3.  Copy `naoqi.py`, `_naoqi.so`, and any other relevant `.py` or `.so` files (like `vision_definitions.py`, `motion_definitions.py`) from the SDK's Python library directory directly into your virtual environment's `site-packages` directory.
+    ```bash
+    # Example (replace with your actual SDK path and ensure paths are correct):
+    # SDK_LIB_PATH="~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages"
+    # VENV_LIB_PATH="naoqi_env/lib/python2.7/site-packages"
+    # cp "${SDK_LIB_PATH}/naoqi.py" "${VENV_LIB_PATH}/"
+    # cp "${SDK_LIB_PATH}/_naoqi.so" "${VENV_LIB_PATH}/"
+    # cp "${SDK_LIB_PATH}/motion_definitions.py" "${VENV_LIB_PATH}/" # If it exists and is needed
+    # cp "${SDK_LIB_PATH}/vision_definitions.py" "${VENV_LIB_PATH}/" # If it exists and is needed
+    ```
+    Please ensure the source path (`SDK_LIB_PATH`) is correct and exists before running copy commands.
+
+#### 3.3. Test NAOqi Import
+With your `naoqi_env` virtual environment activated:
+```bash
+python -c "import naoqi; print 'NAOqi SDK imported successfully!'"
+```
+If this runs without errors, your SDK is likely set up correctly.
+
+---
+
+### 4. Install Python 2 Dependencies for NAO Scripts
+
+The NAO interaction scripts might require a few external Python 2 compatible libraries. Install them into your **activated `naoqi_env` virtual environment**.
+
+The `test_asr.py` script, for example, calls a webhook and needs the `requests` library:
+```bash
+# (Ensure 'naoqi_env' is activated: source naoqi_env/bin/activate)
+pip install requests
+```
+If your `chatgpt_webhook.py` is intended to run under Python 2 (which is less common for modern Flask/OpenAI usage but possible for simpler versions), you would also install Flask here:
+```bash
+# pip install Flask  # Uncomment if running chatgpt_webhook.py in this Python 2 env
 ```
 
 ---
 
-### 2. Install Required Packages
+### 5. Configure Your OpenAI API Key
 
-```bash
-pip install flask requests
-```
+(This step is relevant for the `chatgpt_webhook.py` script, which `test_asr.py` interacts with.)
 
----
-
-### 3. Configure Your OpenAI API Key
-
-Add the following to your `~/.bashrc`:
+Add the following to your `~/.bashrc` (or `~/.zshrc`):
 ```bash
 export AI_STORYTELLER_TEST_KEY_CV="sk-...your API key..."
 ```
@@ -282,40 +414,55 @@ Apply it in your current shell:
 ```bash
 source ~/.bashrc
 ```
+Ensure the `chatgpt_webhook.py` script (or whichever environment it runs in) can access this environment variable.
 
 ---
 
-### 4. Run Tests
+### 6. Running Tests and the Virtual Storyteller
 
-#### 🔸 Verify NAO Connectivity
+Ensure your NAO robot is on, connected to the network, and you have updated the `NAO_IP` variable in scripts like `test_naoqi.py`, `test_tts.py`, and `test_asr.py` to match your robot's actual IP address.
+
+**Activate your Python 2 virtual environment in each new terminal session:**
 ```bash
-python2 test_naoqi.py
+cd /path/to/your/nao_project # Adjust to your project path
+source naoqi_env/bin/activate
 ```
 
-#### 🔸 Confirm NAO Can Speak
+#### 6.1. Verify NAO Connectivity
 ```bash
-python2 test_tts.py
+python test_naoqi.py
 ```
 
-#### 🔸 Start the Flask Story Generator Webhook
+#### 6.2. Confirm NAO Can Speak
 ```bash
-python2 chatgpt_webhook.py
+python test_tts.py
 ```
 
-Then, test it with:
+#### 6.3. Start the Flask Story Generator Webhook
+This webhook (`chatgpt_webhook.py`) generates stories using OpenAI.
+**Recommendation:** Run modern web services and AI library interactions (like OpenAI API calls) in a **Python 3 environment**.
+If you have `chatgpt_webhook.py` configured for Python 3:
+1. Open a *new terminal*.
+2. Activate your Python 3 virtual environment for that script.
+3. Run `python /path/to/chatgpt_webhook.py`.
 
+If you have adapted `chatgpt_webhook.py` to run under Python 2 (and installed Flask in `naoqi_env`):
 ```bash
-curl -X POST http://localhost:5000/generate_story \
-     -H "Content-Type: application/json" \
-     -d '{"word": "robot"}'
+# In a separate terminal, ensure naoqi_env is activated if running webhook under Python 2
+# source naoqi_env/bin/activate 
+python chatgpt_webhook.py
+```
+Keep this webhook server running.
+
+Then, test the webhook from another terminal:
+```bash
+curl -X POST http://localhost:5000/generate_story          -H "Content-Type: application/json"          -d '{"word": "robot"}'
 ```
 
----
-
-### 5. Run the Virtual Storyteller
-
+#### 6.4. Run the Virtual Storyteller
+Ensure the `chatgpt_webhook.py` server is running. In your terminal with the `naoqi_env` (Python 2) activated:
 ```bash
-python2 test_asr.py
+python test_asr.py
 ```
 
 Then speak one of the following words near NAO:
@@ -323,11 +470,25 @@ Then speak one of the following words near NAO:
 - `story`
 - `robot`
 
-The system will:
-1. Recognize your spoken keyword using NAO’s ASR.
-2. Send it to the Flask server.
-3. Generate a short story using the OpenAI API.
-4. Speak the story aloud using NAO’s built-in speakers.
+---
+
+## 7. Troubleshooting Tips
+
+* **"ImportError: No module named naoqi"**:
+    * Ensure your Python 2 virtual environment (`naoqi_env`) is activated.
+    * Verify `PYTHONPATH` is correct (Option 4.2.A) OR SDK files are in venv's `site-packages` (Option 4.2.B).
+    * Confirm you're using the Python interpreter from `naoqi_env`.
+* **Connection Errors ("Connection refused", "Host not found", Timeout to NAO):**
+    * Double-check NAO's IP in the scripts.
+    * Ensure NAO is on and on the same network.
+    * Ping NAO's IP.
+    * Check firewalls (port 9559 TCP).
+* **SDK Version Compatibility:** Match NAOqi Python SDK version with NAO's OS version.
+* **Python 2 Quirks:** Remember `print` syntax (unless `from __future__ import print_function` is used), string/unicode differences from Python 3.
+* **Webhook Issues:**
+    * Ensure `chatgpt_webhook.py` is running and accessible (check its console output for errors).
+    * Verify `AI_STORYTELLER_TEST_KEY_CV` is set correctly and accessible by the webhook script.
+    * Test the webhook with `curl` first to isolate issues.
 
 ---
 
@@ -346,12 +507,14 @@ For technical reference, all scripts have been refactored for [Doxygen](https://
 
 ## Scripts Overview
 
-| File               | Purpose                                                  |
-|--------------------|----------------------------------------------------------|
-| `test_naoqi.py`    | Verifies connection to the NAO robot and TTS subsystem   |
-| `test_tts.py`      | Sends a single test sentence to the NAO for speech       |
-| `chatgpt_webhook.py` | Flask server that generates stories using OpenAI       |
-| `test_asr.py`      | End-to-end: speech → story generation → TTS playback     |
+| File               | Purpose                                                  | Python Version Recommendation |
+|--------------------|----------------------------------------------------------|-------------------------------|
+| `test_naoqi.py`    | Verifies connection to the NAO robot and TTS subsystem   | Python 2.7 (via `naoqi_env`)  |
+| `test_tts.py`      | Sends a single test sentence to the NAO for speech       | Python 2.7 (via `naoqi_env`)  |
+| `chatgpt_webhook.py` | Flask server that generates stories using OpenAI       | Python 3 (in a separate venv) |
+| `test_asr.py`      | End-to-end: speech → story generation → TTS playback     | Python 2.7 (via `naoqi_env`)  |
+
+*(Other scripts like `upload_stories.py` or FastAPI webhooks for ChromaDB would typically require Python 3 and their own setup.)*
 
 ---
 
@@ -415,6 +578,3 @@ This will give you a full class/function reference, parameter table, call graphs
 > **Note**: Ensure your `Doxyfile` is configured for Python with `OPTIMIZE_OUTPUT_FOR_C = NO` and `EXTENSION_MAPPING = py=Python`.
 
 ℹ️ **Browse the full documentation here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
-
-
-
