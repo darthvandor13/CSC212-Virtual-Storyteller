@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NAO Virtual Storyteller: webhook.py File Reference</title>
+<title>NAO Virtual Storyteller: scripts_doxygenated/webhook.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,6 +59,10 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a2bba897c8f56fd2d777353cbd8435ff.html">scripts_doxygenated</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -80,17 +84,31 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac5039dabf72dde91723a40ed3a8b5411"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#ac5039dabf72dde91723a40ed3a8b5411">webhook.webhook</a> ()</td></tr>
-<tr class="separator:ac5039dabf72dde91723a40ed3a8b5411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfe7184f328242ba207eb3354f98465"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#accfe7184f328242ba207eb3354f98465">webhook.build_prompt</a> (str username, str theme, str moral)</td></tr>
+<tr class="separator:accfe7184f328242ba207eb3354f98465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa018f52de8113d81df563e126f2ed4f7"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#aa018f52de8113d81df563e126f2ed4f7">webhook.call_chatgpt</a> (str prompt)</td></tr>
+<tr class="separator:aa018f52de8113d81df563e126f2ed4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fdbcd703ff623d9ca7d5c920cf4d65"><td class="memItemLeft" align="right" valign="top">Flask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a95fdbcd703ff623d9ca7d5c920cf4d65">webhook.create_app</a> ()</td></tr>
+<tr class="separator:a95fdbcd703ff623d9ca7d5c920cf4d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8e7a060b159c3b7210fbb0e05abeba8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a8e7a060b159c3b7210fbb0e05abeba8b">webhook.app</a> = Flask(__name__)</td></tr>
-<tr class="separator:a8e7a060b159c3b7210fbb0e05abeba8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab481d38b43c6cccd12c6112e48aa68b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#ab481d38b43c6cccd12c6112e48aa68b0">webhook.None</a></td></tr>
+<tr class="separator:ab481d38b43c6cccd12c6112e48aa68b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c7b954d9e7950401e98ae15057eb26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a53c7b954d9e7950401e98ae15057eb26">webhook.api_key</a></td></tr>
+<tr class="separator:a53c7b954d9e7950401e98ae15057eb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8991c7d58ebf7c71026c7798dda0c650"><td class="memItemLeft" align="right" valign="top">Flask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a8991c7d58ebf7c71026c7798dda0c650">webhook.flask_app</a> = create_app()</td></tr>
+<tr class="separator:a8991c7d58ebf7c71026c7798dda0c650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b460fa9438ae8233f749d6f79a5c60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#a35b460fa9438ae8233f749d6f79a5c60">webhook.port</a> = int(os.getenv(&quot;PORT&quot;, &quot;3000&quot;))</td></tr>
+<tr class="separator:a35b460fa9438ae8233f749d6f79a5c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa499842104f08e603831179f7f56b84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewebhook.html#aaa499842104f08e603831179f7f56b84">webhook.host</a></td></tr>
+<tr class="separator:aaa499842104f08e603831179f7f56b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>! ! </p>
-<p>Dialogflow CX webhook that returns a short, themed children’s story. ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<p>Dialogflow CX fulfilment webhook that generates an interactive ! short story with OpenAI ChatCompletion. ! ! This version is reorganised into small, reusable functions so that ! Doxygen can render clear parameter / return tables and call graphs while ! preserving the original runtime behaviour (with error HTTP status corrected to 200 OK). ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-08 ! </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! ! ### Environment variables ! * <b>OPENAI_API_KEY</b> — secret API key for the ChatCompletion endpoint. ! ! ### Flask routes ! * <b>POST /webhook</b> — primary Dialogflow CX fulfilment entry-point. ! ! &mdash; </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

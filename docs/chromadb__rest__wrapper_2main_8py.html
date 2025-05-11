@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NAO Virtual Storyteller: chromadb_rest_wrapper/main.py File Reference</title>
+<title>NAO Virtual Storyteller: scripts_doxygenated/chromadb_rest_wrapper/main.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_ced05a4d2d7620c57b63405c5cb7b037.html">chromadb_rest_wrapper</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a2bba897c8f56fd2d777353cbd8435ff.html">scripts_doxygenated</a></li><li class="navelem"><a class="el" href="dir_d1dc73a3f573d9d6f3e794dfca93a2b9.html">chromadb_rest_wrapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,13 +74,14 @@ $(function() {
 <div class="title">main.py File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>! !  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1QueryRequest.html">main.QueryRequest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1DialogflowParameters.html">main.DialogflowParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1DialogflowSessionInfo.html">main.DialogflowSessionInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_1_1DialogflowWebhookRequest.html">main.DialogflowWebhookRequest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -90,37 +91,37 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab8b0cfcd1729a205866b3f7afea867ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ab8b0cfcd1729a205866b3f7afea867ca">main.query_endpoint</a> (Request request)</td></tr>
-<tr class="separator:ab8b0cfcd1729a205866b3f7afea867ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75812e85849cf346c3cd9ed099b58498"><td class="memItemLeft" align="right" valign="top">Optional[chromadb.api.models.Collection.Collection]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a75812e85849cf346c3cd9ed099b58498">main.create_chroma_collection</a> (str host, int port, str name)</td></tr>
+<tr class="separator:a75812e85849cf346c3cd9ed099b58498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512f8c221a901675d84f9c813321f2ee"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a512f8c221a901675d84f9c813321f2ee">main.build_query_string</a> (str protagonist, str theme, str moral)</td></tr>
+<tr class="separator:a512f8c221a901675d84f9c813321f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f471be739ad11c03bae4d44c8a32d43"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a6f471be739ad11c03bae4d44c8a32d43">main.search_stories</a> (chromadb.api.models.Collection.Collection collection, str query, int n_results=DEFAULT_N_RESULTS)</td></tr>
+<tr class="separator:a6f471be739ad11c03bae4d44c8a32d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7710bdb0c31032acf6c50ec97aee588"><td class="memItemLeft" align="right" valign="top">Dict[str, Any]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ad7710bdb0c31032acf6c50ec97aee588">main.format_dialogflow_error_response</a> (str message)</td></tr>
+<tr class="separator:ad7710bdb0c31032acf6c50ec97aee588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10d8b25755a7aadb5933274b6c50307"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ae10d8b25755a7aadb5933274b6c50307">main.startup_event</a> ()</td></tr>
+<tr class="separator:ae10d8b25755a7aadb5933274b6c50307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dce9941b6e9b45a6cacd8b0ce5f385d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a0dce9941b6e9b45a6cacd8b0ce5f385d">main.query_endpoint</a> (DialogflowWebhookRequest request)</td></tr>
+<tr class="separator:a0dce9941b6e9b45a6cacd8b0ce5f385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5fa94f0581009434c7a63791944d6ff4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a5fa94f0581009434c7a63791944d6ff4">main.app</a> = FastAPI()</td></tr>
+<tr class="memitem:a26f656d825a0ffd09a95f3e7953445e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a26f656d825a0ffd09a95f3e7953445e5">main.str</a></td></tr>
+<tr class="separator:a26f656d825a0ffd09a95f3e7953445e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65ea1f7cf2ee4911befba82862a89dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#af65ea1f7cf2ee4911befba82862a89dc">main.int</a></td></tr>
+<tr class="separator:af65ea1f7cf2ee4911befba82862a89dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa94f0581009434c7a63791944d6ff4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a5fa94f0581009434c7a63791944d6ff4">main.app</a></td></tr>
 <tr class="separator:a5fa94f0581009434c7a63791944d6ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc29717208697fc1aebeccaaa9ebfe9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a5cc29717208697fc1aebeccaaa9ebfe9">main.CHROMA_HOST</a> = &quot;34.118.162.201&quot;</td></tr>
-<tr class="separator:a5cc29717208697fc1aebeccaaa9ebfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae291dca78089c67b1044adf639eab579"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ae291dca78089c67b1044adf639eab579">main.CHROMA_PORT</a> = 8000</td></tr>
-<tr class="separator:ae291dca78089c67b1044adf639eab579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb824366a50b502a9ca83278d34f9f8a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#afb824366a50b502a9ca83278d34f9f8a">main.COLLECTION_NAME</a> = &quot;stories&quot;</td></tr>
-<tr class="memdesc:afb824366a50b502a9ca83278d34f9f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the ChromaDB collection to be queried.  <a href="namespacemain.html#afb824366a50b502a9ca83278d34f9f8a">More...</a><br /></td></tr>
-<tr class="separator:afb824366a50b502a9ca83278d34f9f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9777db9ece4966c2215da65eab883ba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a9777db9ece4966c2215da65eab883ba5">main.chroma_client</a> = chromadb.HttpClient(host=CHROMA_HOST, port=CHROMA_PORT)</td></tr>
-<tr class="separator:a9777db9ece4966c2215da65eab883ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9541a672f2ce4a1df1cedb9c025b17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#aec9541a672f2ce4a1df1cedb9c025b17">main.collection</a> = chroma_client.get_collection(COLLECTION_NAME)</td></tr>
-<tr class="separator:aec9541a672f2ce4a1df1cedb9c025b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a218621cc146629b2797c3a1aa4e88c03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a218621cc146629b2797c3a1aa4e88c03">main.file</a></td></tr>
-<tr class="separator:a218621cc146629b2797c3a1aa4e88c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12fac67ac230690557ab76d3faa71d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a12fac67ac230690557ab76d3faa71d8c">main.port</a> = int(os.environ.get(&quot;PORT&quot;, 8080))</td></tr>
-<tr class="separator:a12fac67ac230690557ab76d3faa71d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c48b44a1e8e7c372b0ba1ae27308f6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a4c48b44a1e8e7c372b0ba1ae27308f6a">main.server_port</a> = int(os.getenv(&quot;PORT&quot;, &quot;8080&quot;))</td></tr>
+<tr class="separator:a4c48b44a1e8e7c372b0ba1ae27308f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf58d9b4a444874a8cf80fdf162b0fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a0cf58d9b4a444874a8cf80fdf162b0fb">main.host</a></td></tr>
 <tr class="separator:a0cf58d9b4a444874a8cf80fdf162b0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12fac67ac230690557ab76d3faa71d8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a12fac67ac230690557ab76d3faa71d8c">main.port</a></td></tr>
+<tr class="separator:a12fac67ac230690557ab76d3faa71d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c322ab299aa203b2c0f9c76a76c5c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#af5c322ab299aa203b2c0f9c76a76c5c2">main.reload</a></td></tr>
 <tr class="separator:af5c322ab299aa203b2c0f9c76a76c5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>! ! </p>
-<p>FastAPI wrapper that queries ChromaDB for story snippets. ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

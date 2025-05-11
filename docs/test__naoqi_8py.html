@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NAO Virtual Storyteller: naoqi_tests/test_naoqi.py File Reference</title>
+<title>NAO Virtual Storyteller: scripts_doxygenated/naoqi_tests/test_naoqi.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,12 +61,13 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6c0445dd0e1d6debcb9034f31c08f3dd.html">naoqi_tests</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a2bba897c8f56fd2d777353cbd8435ff.html">scripts_doxygenated</a></li><li class="navelem"><a class="el" href="dir_d878424d1b4c875cb5b1f63d311c5f84.html">naoqi_tests</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">test_naoqi.py File Reference</div>  </div>
@@ -81,16 +82,27 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacetest__naoqi"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html">test_naoqi</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9b111d63f94879b845e7ca74010b906e"><td class="memItemLeft" align="right" valign="top">Tuple[bool, Optional[str]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html#a9b111d63f94879b845e7ca74010b906e">test_naoqi.connect_to_tts</a> (str ip_address, int port)</td></tr>
+<tr class="separator:a9b111d63f94879b845e7ca74010b906e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3129c788d2f07a97cd1d76892dba401"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html#af3129c788d2f07a97cd1d76892dba401">test_naoqi.main</a> ()</td></tr>
+<tr class="separator:af3129c788d2f07a97cd1d76892dba401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1cea865517aaa15d8d37d4542ddd178e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html#a1cea865517aaa15d8d37d4542ddd178e">test_naoqi.nao_ip</a> = &quot;192.168.1.120&quot;</td></tr>
-<tr class="separator:a1cea865517aaa15d8d37d4542ddd178e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f937d487a880377be4ae6bca7ca16ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html#a3f937d487a880377be4ae6bca7ca16ff">test_naoqi.tts</a> = ALProxy(&quot;ALTextToSpeech&quot;, nao_ip, 9559)</td></tr>
-<tr class="separator:a3f937d487a880377be4ae6bca7ca16ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae598bfb0c9b865870b9af2bce85c5662"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html#ae598bfb0c9b865870b9af2bce85c5662">test_naoqi.str</a></td></tr>
+<tr class="separator:ae598bfb0c9b865870b9af2bce85c5662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48e73ae009ac50def669982fc596839"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__naoqi.html#ab48e73ae009ac50def669982fc596839">test_naoqi.int</a></td></tr>
+<tr class="separator:ab48e73ae009ac50def669982fc596839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>! ! </p>
-<p>One-shot ping: verifies NAO-qi connection via ALTextToSpeech. ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<p>Quick connectivity check to NAOqi by attempting to connect to ALTextToSpeech. !</p>
+<p>! This script attempts to establish a connection with a NAO robot's ALTextToSpeech ! module using a specified IP address and port. It then reports whether the ! connection was successful or provides the specific error message if it failed. ! This is useful as a first-step diagnostic tool for NAOqi connectivity. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor (Enhanced by AI) ! </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-10 ! </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 ! </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -219,7 +219,7 @@ Other Resources</h1>
 How Our AI Storytelling System Works – Conceptual Overview</h1>
 <p>This project explores creating an interactive storytelling experience. We have two main parts:</p><ol type="1">
 <li><b>An Advanced Storytelling Backend:</b> Built using Google Dialogflow CX, this system can understand user preferences (like themes or characters) and use a knowledge base of stories (Retrieval-Augmented Generation - RAG) to craft new, unique tales. This is the sophisticated "brain" for story creation.</li>
-<li><b>NAO Robot as an Interface (Proof of Concept):</b> We have scripts that allow the NAO robot to listen to simple keywords, send them to a basic story-generating service (a simpler OpenAI webhook detailed in <code>chatgpt_webhook.py</code>), and then speak the resulting story. This demonstrates NAO's potential as an engaging front-end.</li>
+<li><b>NAO Robot as an Interface (Proof of Concept):</b> We have scripts that allow the NAO robot to listen to simple keywords, send them to a basic story-generating service (a simpler OpenAI webhook detailed in <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>), and then speak the resulting story. This demonstrates NAO's potential as an engaging front-end.</li>
 </ol>
 <p><b>The Vision (Future Integration):</b> The ultimate goal is to connect the NAO robot to the advanced Dialogflow CX storytelling backend. This would allow users to have rich, interactive conversations with NAO, guiding the creation of complex, context-aware stories. The sections below describe how these components work individually and how they <em>could</em> work together.</p>
 <h2><a class="anchor" id="autotoc_md12"></a>
@@ -239,10 +239,10 @@ How the Dialogflow CX Storytelling Backend Works (Explained for Everyone) :)</h2
 <p>The newly crafted story is then presented to you. If NAO were connected to this system, it would be the one speaking the story.</p>
 <h2><a class="anchor" id="autotoc_md16"></a>
 How the Current NAO Proof-of-Concept Works (Simplified Loop)</h2>
-<p>Our current NAO scripts (<code>test_asr.py</code>) demonstrate a simpler interaction:</p><ol type="1">
+<p>Our current NAO scripts (<code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code>) demonstrate a simpler interaction:</p><ol type="1">
 <li>🗣️ <b>User speaks a keyword</b> (e.g., "dragon") to NAO.</li>
 <li>🤖 NAO recognizes the keyword.</li>
-<li>➡️ NAO sends this single keyword to a basic local webhook (<code>chatgpt_webhook.py</code>).</li>
+<li>➡️ NAO sends this single keyword to a basic local webhook (<code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>).</li>
 <li>💡 This webhook uses OpenAI (e.g., GPT-4o-mini) to generate a very short story based <em>only</em> on that keyword.</li>
 <li>📢 NAO speaks the story.</li>
 </ol>
@@ -256,7 +256,7 @@ How Our AI Storytelling System Works – Technical Breakdown (CS Student)</h1>
 <ul>
 <li><b>NAO Robot:</b> Captures voice input (ASR) and outputs speech (TTS) using the NAOqi SDK. (Proof-of-Concept Stage)</li>
 <li><b>Dialogflow CX Agent:</b> The primary storytelling engine. Manages multi-turn conversations, extracts complex user preferences, and uses RAG with a GCS Data Store to generate context-aware stories. (Advanced Backend)</li>
-<li><b>OpenAI API (via <code>chatgpt_webhook.py</code>):</b> Used by the current NAO ASR scripts for direct, keyword-based story generation as a proof-of-concept. (Simple Webhook for NAO PoC)</li>
+<li><b>OpenAI API (via <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>):</b> Used by the current NAO ASR scripts for direct, keyword-based story generation as a proof-of-concept. (Simple Webhook for NAO PoC)</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md20"></a>
 🔹 System Flow A: Advanced Storytelling with Dialogflow CX (Conceptual)</h2>
@@ -276,10 +276,10 @@ How Our AI Storytelling System Works – Technical Breakdown (CS Student)</h1>
 <ol type="1">
 <li><b>User Speaks Keyword to NAO:</b> e.g., "robot".</li>
 <li><b>NAO ASR:</b> <code>ALSpeechRecognition</code> detects the keyword. <code>ALMemory</code> stores it.</li>
-<li><b>Webhook Call:</b> <code>test_asr.py</code> sends the recognized keyword via an HTTP POST request to <code>chatgpt_webhook.py</code>.</li>
-<li><b>Simple Story Generation:</b> <code>chatgpt_webhook.py</code> directly calls the OpenAI API (e.g., <code>gpt-4o-mini</code>) with a prompt based on the single keyword.</li>
+<li><b>Webhook Call:</b> <code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code> sends the recognized keyword via an HTTP POST request to <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>.</li>
+<li><b>Simple Story Generation:</b> <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> directly calls the OpenAI API (e.g., <code>gpt-4o-mini</code>) with a prompt based on the single keyword.</li>
 <li><b>Webhook Response:</b> Returns the generated story snippet as JSON.</li>
-<li><b>NAO TTS:</b> <code>test_asr.py</code> receives the story, and <code>ALTextToSpeech</code> makes NAO speak it.</li>
+<li><b>NAO TTS:</b> <code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code> receives the story, and <code>ALTextToSpeech</code> makes NAO speak it.</li>
 </ol>
 <p>The vision is to evolve System Flow B to integrate with a system like Flow A, where NAO becomes the voice/ears for the Dialogflow CX agent.</p>
 <hr  />
@@ -315,7 +315,7 @@ Repository Structure Overview</h2>
 <div class="line">├── .env_example               # Example for environment variables</div>
 <div class="line">├── Doxyfile                   # Doxygen configuration file</div>
 <div class="line">└── README.md                  # This file</div>
-</div><!-- fragment --><p> *(Note: Python 3 scripts like <code>upload_stories.py</code> or more complex webhooks for Dialogflow CX fulfillment should ideally be in their own Python 3 virtual environment, separate from <code>naoqi_env</code>.)*</p>
+</div><!-- fragment --><p> *(Note: Python 3 scripts like <code><a class="el" href="upload__stories_8py.html" title="! !">upload_stories.py</a></code> or more complex webhooks for Dialogflow CX fulfillment should ideally be in their own Python 3 virtual environment, separate from <code>naoqi_env</code>.)*</p>
 <hr  />
 <h2><a class="anchor" id="autotoc_md30"></a>
 Section 1: NAO Robot Interaction Setup (Python 2 &amp; NAOqi SDK)</h2>
@@ -429,9 +429,9 @@ cp "${SDK_LIB_PATH}/naoqi.py" "${VENV_LIB_PATH}/"; cp "${SDK_LIB_PATH}/_naoqi.so
 <p>With <code>naoqi_env</code> activated: </p><div class="fragment"><div class="line">python -c &quot;import naoqi; print &#39;NAOqi SDK imported successfully!&#39;&quot;</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md56"></a>
 1.5. Install Python 2 Dependencies for NAO Scripts</h3>
-<p>The <code>test_asr.py</code> script calls a webhook and needs <code>requests</code>: </p><div class="fragment"><div class="line"># (Ensure &#39;naoqi_env&#39; is activated)</div>
+<p>The <code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code> script calls a webhook and needs <code>requests</code>: </p><div class="fragment"><div class="line"># (Ensure &#39;naoqi_env&#39; is activated)</div>
 <div class="line">pip install requests</div>
-</div><!-- fragment --><p> If running <code>chatgpt_webhook.py</code> under Python 2 for the PoC (not generally recommended for modern Flask/OpenAI usage), install Flask: </p><div class="fragment"><div class="line"># pip install Flask</div>
+</div><!-- fragment --><p> If running <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> under Python 2 for the PoC (not generally recommended for modern Flask/OpenAI usage), install Flask: </p><div class="fragment"><div class="line"># pip install Flask</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md57"></a>
 1.6. Troubleshooting NAO Setup</h3>
 <ul>
@@ -604,12 +604,12 @@ Section 3: Running Project Components &amp; Demonstrations</h2>
 <p>This section explains how to run the NAO interaction scripts (Python 2 PoC) and how to test the Dialogflow CX agent.</p>
 <h3><a class="anchor" id="autotoc_md69"></a>
 3.1. Configure OpenAI API Key (for &lt;tt&gt;chatgpt_webhook.py&lt;/tt&gt;)</h3>
-<p>The <code>test_asr.py</code> script for NAO calls the <code>chatgpt_webhook.py</code> for its story generation proof-of-concept. Ensure the <code>AI_STORYTELLER_TEST_KEY_CV</code> environment variable is set in the shell environment where <code>chatgpt_webhook.py</code> will run: </p><div class="fragment"><div class="line">export AI_STORYTELLER_TEST_KEY_CV=&quot;sk-...your API key...&quot;</div>
+<p>The <code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code> script for NAO calls the <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> for its story generation proof-of-concept. Ensure the <code>AI_STORYTELLER_TEST_KEY_CV</code> environment variable is set in the shell environment where <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> will run: </p><div class="fragment"><div class="line">export AI_STORYTELLER_TEST_KEY_CV=&quot;sk-...your API key...&quot;</div>
 <div class="line"># Add to ~/.bashrc or ~/.zshrc for persistence and source the file</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md70"></a>
 3.2. Running the NAO Direct Interaction Scripts &amp; PoC Loop (Python 2)</h3>
 <p>These scripts test direct NAO functionalities and the proof-of-concept ASR -&gt; Webhook -&gt; TTS loop.</p>
-<p>**A. Start the Local Story Generation Webhook (<code>chatgpt_webhook.py</code>)** This webhook is called by <code>test_asr.py</code>. It's recommended to run this in a Python 3 environment if it uses modern libraries, but it can be run in the Python 2 <code>naoqi_env</code> if Flask is installed there and the script is Python 2 compatible.</p><ol type="1">
+<p>**A. Start the Local Story Generation Webhook (<code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>)** This webhook is called by <code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code>. It's recommended to run this in a Python 3 environment if it uses modern libraries, but it can be run in the Python 2 <code>naoqi_env</code> if Flask is installed there and the script is Python 2 compatible.</p><ol type="1">
 <li>Open a <em>new terminal</em>.</li>
 <li>Activate the appropriate Python environment (Python 3 venv recommended, or <code>naoqi_env</code> if adapted for Py2).</li>
 <li>Run: <code>python /path/to/naoqi_tests/chatgpt_webhook.py</code></li>
@@ -619,9 +619,9 @@ Section 3: Running Project Components &amp; Demonstrations</h2>
 <li>Open a <em>new terminal</em>.</li>
 <li>Navigate to your project directory: <code>cd /path/to/your/nao_project</code></li>
 <li>Activate the Python 2 virtual environment: <code>source naoqi_env/bin/activate</code></li>
-<li><b>Verify NAO Connectivity:</b> ```bash python naoqi_tests/test_naoqi.py ```</li>
-<li><b>Confirm NAO Can Speak:</b> ```bash python naoqi_tests/test_tts.py ```</li>
-<li><b>Run the Full Virtual Storyteller PoC Loop:</b> (Ensure <code>chatgpt_webhook.py</code> is running) ```bash python naoqi_tests/test_asr.py ``<code> Speak one of the keywords (</code>hello<code>,</code>story<code>,</code>robot`) near NAO.</li>
+<li><b>Verify NAO Connectivity:</b> ```bash python <a class="el" href="test__naoqi_8py.html" title="! !">naoqi_tests/test_naoqi.py</a> ```</li>
+<li><b>Confirm NAO Can Speak:</b> ```bash python <a class="el" href="test__tts_8py.html" title="! !">naoqi_tests/test_tts.py</a> ```</li>
+<li><b>Run the Full Virtual Storyteller PoC Loop:</b> (Ensure <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> is running) ```bash python <a class="el" href="test__asr_8py.html" title="! !">naoqi_tests/test_asr.py</a> ``<code> Speak one of the keywords (</code>hello<code>,</code>story<code>,</code>robot`) near NAO.</li>
 </ol>
 <h3><a class="anchor" id="autotoc_md71"></a>
 3.3. Interacting with the Dialogflow CX AI Storyteller Agent (via Simulator)</h3>
@@ -633,7 +633,7 @@ Internals (NAO Interaction Scripts)</h2>
 <li><code>ALSpeechRecognition</code> for listening.</li>
 <li><code>ALMemory</code> for retrieving recognized words.</li>
 <li><code>ALTextToSpeech</code> for playback.</li>
-<li>The <code>chatgpt_webhook.py</code> (Flask) serves <code>/generate_story</code> using OpenAI’s <code>chat/completions</code> API (model <code>gpt-4o-mini</code>) for the NAO PoC.</li>
+<li>The <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> (Flask) serves <code>/generate_story</code> using OpenAI’s <code>chat/completions</code> API (model <code>gpt-4o-mini</code>) for the NAO PoC.</li>
 </ul>
 <p>For a deeper dive into the script APIs, consult the Doxygen-generated documentation.</p>
 <hr  />
@@ -643,15 +643,15 @@ Scripts Overview Table</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">File   </th><th class="markdownTableHeadNone">Purpose   </th><th class="markdownTableHeadNone">Python Version Recommendation   </th><th class="markdownTableHeadNone">Environment    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>test_naoqi.py</code>   </td><td class="markdownTableBodyNone">Verifies NAO connectivity (TTS subsystem)   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="test__naoqi_8py.html" title="! !">test_naoqi.py</a></code>   </td><td class="markdownTableBodyNone">Verifies NAO connectivity (TTS subsystem)   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>test_tts.py</code>   </td><td class="markdownTableBodyNone">Simple NAO speech test   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="test__tts_8py.html" title="! !">test_tts.py</a></code>   </td><td class="markdownTableBodyNone">Simple NAO speech test   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>test_asr.py</code>   </td><td class="markdownTableBodyNone">NAO ASR → Webhook → NAO TTS loop (PoC)   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code>   </td><td class="markdownTableBodyNone">NAO ASR → Webhook → NAO TTS loop (PoC)   </td><td class="markdownTableBodyNone">Python 2.7   </td><td class="markdownTableBodyNone"><code>naoqi_env</code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>chatgpt_webhook.py</code>   </td><td class="markdownTableBodyNone">Flask server for OpenAI story generation (called by ASR PoC)   </td><td class="markdownTableBodyNone">Python 3 (recommended)   </td><td class="markdownTableBodyNone">Separate Py3 venv    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>   </td><td class="markdownTableBodyNone">Flask server for OpenAI story generation (called by ASR PoC)   </td><td class="markdownTableBodyNone">Python 3 (recommended)   </td><td class="markdownTableBodyNone">Separate Py3 venv    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>upload_stories.py</code>   </td><td class="markdownTableBodyNone">Bulk story uploader (e.g., for GCS or historical ChromaDB)   </td><td class="markdownTableBodyNone">Python 3   </td><td class="markdownTableBodyNone">Separate Py3 venv    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="upload__stories_8py.html" title="! !">upload_stories.py</a></code>   </td><td class="markdownTableBodyNone">Bulk story uploader (e.g., for GCS or historical ChromaDB)   </td><td class="markdownTableBodyNone">Python 3   </td><td class="markdownTableBodyNone">Separate Py3 venv    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Dialogflow CX Agent   </td><td class="markdownTableBodyNone">Core storyteller logic, RAG with GCS Data Store   </td><td class="markdownTableBodyNone">N/A (Google Cloud Platform)   </td><td class="markdownTableBodyNone">GCP   </td></tr>
 </table>
@@ -659,7 +659,7 @@ Scripts Overview Table</h2>
 <h2><a class="anchor" id="autotoc_md77"></a>
 Future Possibilities</h2>
 <ul>
-<li><b>Direct NAO to Dialogflow CX Integration:</b> This is the primary envisioned next step. Adapt NAO scripts (or create new ones) to interact directly with the Dialogflow CX API (e.g., using the Dialogflow CX Python client library). This would allow NAO to leverage the advanced RAG capabilities and conversational management of the Dialogflow CX agent, replacing the simpler <code>chatgpt_webhook.py</code> flow.</li>
+<li><b>Direct NAO to Dialogflow CX Integration:</b> This is the primary envisioned next step. Adapt NAO scripts (or create new ones) to interact directly with the Dialogflow CX API (e.g., using the Dialogflow CX Python client library). This would allow NAO to leverage the advanced RAG capabilities and conversational management of the Dialogflow CX agent, replacing the simpler <code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code> flow.</li>
 <li><b>Enhanced NAO Expressiveness:</b> Incorporate NAO's gestures and movements synchronized with storytelling.</li>
 <li><b>Multi-turn Story Generation:</b> Fully utilize Dialogflow CX's capabilities for more interactive, choice-driven narratives guided by NAO's interaction.</li>
 <li><b>Dynamic Vocabulary for NAO:</b> Allow NAO's recognized vocabulary to be updated dynamically, perhaps based on context from Dialogflow CX.</li>
@@ -680,7 +680,7 @@ Questions or Contributions?</h2>
 <ul>
 <li><code>@file</code>, <code>@brief</code>, <code>@param</code>, <code>@return</code>, <code>@author</code></li>
 <li>Function-level docstrings structured for auto-generation</li>
-<li>Mermaid diagrams (e.g., ASR → Webhook → TTS flowchart in <code>test_asr.py</code>)</li>
+<li>Mermaid diagrams (e.g., ASR → Webhook → TTS flowchart in <code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code>)</li>
 <li>Module constants and environmental variable documentation</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md84"></a>
@@ -689,13 +689,13 @@ Entry Points (Python Scripts)</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Script   </th><th class="markdownTableHeadNone">Purpose    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>test_asr.py</code>   </td><td class="markdownTableBodyNone">Speech input → OpenAI webhook → TTS output (PoC)    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="test__asr_8py.html" title="! !">test_asr.py</a></code>   </td><td class="markdownTableBodyNone">Speech input → OpenAI webhook → TTS output (PoC)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>chatgpt_webhook.py</code>   </td><td class="markdownTableBodyNone">Flask server to generate stories via OpenAI API (for PoC)    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="chatgpt__webhook_8py.html" title="! !">chatgpt_webhook.py</a></code>   </td><td class="markdownTableBodyNone">Flask server to generate stories via OpenAI API (for PoC)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>test_naoqi.py</code>   </td><td class="markdownTableBodyNone">Connectivity check to NAO’s <code>ALTextToSpeech</code> proxy    </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="test__naoqi_8py.html" title="! !">test_naoqi.py</a></code>   </td><td class="markdownTableBodyNone">Connectivity check to NAO’s <code>ALTextToSpeech</code> proxy    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>test_tts.py</code>   </td><td class="markdownTableBodyNone">Basic smoke test of NAO’s speech output   </td></tr>
+<td class="markdownTableBodyNone"><code><a class="el" href="test__tts_8py.html" title="! !">test_tts.py</a></code>   </td><td class="markdownTableBodyNone">Basic smoke test of NAO’s speech output   </td></tr>
 </table>
 <h3><a class="anchor" id="autotoc_md85"></a>
 To Generate Doxygen Documentation</h3>

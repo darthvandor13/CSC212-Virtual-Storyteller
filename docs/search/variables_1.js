@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['base_5fname_229',['base_name',['../namespaceupload__stories.html#a468737e6f84c00024870148319ba7457',1,'upload_stories']]],
-  ['batch_5fdocs_230',['batch_docs',['../namespaceupload__stories.html#abe18cd76043e80e8ee67b6910f334025',1,'upload_stories']]],
-  ['batch_5fids_231',['batch_ids',['../namespaceupload__stories.html#a32ef7f160bbe687526ffe9f2723f748a',1,'upload_stories']]],
-  ['batch_5fmetas_232',['batch_metas',['../namespaceupload__stories.html#ac081e76f16bf2652b600a699606af570',1,'upload_stories']]],
-  ['batch_5fsize_233',['BATCH_SIZE',['../namespaceupload__stories.html#ab3c227019ef9150ee133efbcb469d29b',1,'upload_stories']]]
+  ['chroma_5fclient_145',['chroma_client',['../namespacesearch__stories.html#aa5541246a4f0feb5afcd15f2a3ef61d8',1,'search_stories.chroma_client()'],['../namespaceupload__stories.html#a0208798b2b2f8a5e14a26e37609e31a2',1,'upload_stories.chroma_client()']]],
+  ['chroma_5fdb_5fhost_146',['CHROMA_DB_HOST',['../namespacemain.html#a30c9339bc9ecae310c9f7d769dfbf159',1,'main']]],
+  ['chroma_5fhost_147',['CHROMA_HOST',['../namespacesearch__stories.html#ad07cefbdc5186aef24021528fb9eba38',1,'search_stories']]],
+  ['collection_5fname_148',['COLLECTION_NAME',['../namespacemain.html#a201fed8be15d6f38658f1b925638190a',1,'main']]]
 ];

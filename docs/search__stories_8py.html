@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NAO Virtual Storyteller: database/search_stories.py File Reference</title>
+<title>NAO Virtual Storyteller: scripts_doxygenated/database/search_stories.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_f32c53f2c0f0ccaeb11076e30674d5f4.html">database</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a2bba897c8f56fd2d777353cbd8435ff.html">scripts_doxygenated</a></li><li class="navelem"><a class="el" href="dir_3f5ebea5dc42d60351fc5c6db7faf1c9.html">database</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,47 +90,33 @@ Functions</h2></td></tr>
 <tr class="separator:ab89a2900a834595010fcdd929740de30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c3c5f7f82433783cfcf819a454ed1ed"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a4c3c5f7f82433783cfcf819a454ed1ed">search_stories.ask_chatgpt</a> (prompt, user_memory)</td></tr>
 <tr class="separator:a4c3c5f7f82433783cfcf819a454ed1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a935a27fe5a53c6fd7f8cc88bdff10a3a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a935a27fe5a53c6fd7f8cc88bdff10a3a">search_stories.search_stories</a> (query)</td></tr>
-<tr class="separator:a935a27fe5a53c6fd7f8cc88bdff10a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad037ef3082cc9c549733f38b58c0ca0a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#ad037ef3082cc9c549733f38b58c0ca0a">search_stories.search_stories</a> (query, n_results=N_RESULTS)</td></tr>
+<tr class="separator:ad037ef3082cc9c549733f38b58c0ca0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d70433a79106873a7a2c1e59b145733"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a6d70433a79106873a7a2c1e59b145733">search_stories.refine_story_request</a> (existing_query)</td></tr>
 <tr class="separator:a6d70433a79106873a7a2c1e59b145733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcd04344eb213d7a2541e6032cc0861"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a6dcd04344eb213d7a2541e6032cc0861">search_stories.main</a> ()</td></tr>
+<tr class="separator:a6dcd04344eb213d7a2541e6032cc0861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8deea2c7e5c370815da99554feb354e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a8deea2c7e5c370815da99554feb354e4">search_stories.api_key</a> = os.getenv(&quot;OPENAI_API_KEY&quot;)</td></tr>
-<tr class="separator:a8deea2c7e5c370815da99554feb354e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad07cefbdc5186aef24021528fb9eba38"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#ad07cefbdc5186aef24021528fb9eba38">search_stories.CHROMA_HOST</a> = &quot;34.118.162.201&quot;</td></tr>
 <tr class="separator:ad07cefbdc5186aef24021528fb9eba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5819aa4bfeafd484977dce94c10887"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a6d5819aa4bfeafd484977dce94c10887">search_stories.MEMORY_FILE</a> = &quot;user_memory.json&quot;</td></tr>
+<tr class="separator:a6d5819aa4bfeafd484977dce94c10887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3caa72fa6bd20aab0caf32e3cbe5d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a6f3caa72fa6bd20aab0caf32e3cbe5d5">search_stories.N_RESULTS</a> = 3</td></tr>
+<tr class="separator:a6f3caa72fa6bd20aab0caf32e3cbe5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deea2c7e5c370815da99554feb354e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a8deea2c7e5c370815da99554feb354e4">search_stories.api_key</a> = os.getenv(&quot;OPENAI_API_KEY&quot;)</td></tr>
+<tr class="separator:a8deea2c7e5c370815da99554feb354e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5541246a4f0feb5afcd15f2a3ef61d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#aa5541246a4f0feb5afcd15f2a3ef61d8">search_stories.chroma_client</a> = chromadb.HttpClient(host=CHROMA_HOST, port=8000)</td></tr>
 <tr class="separator:aa5541246a4f0feb5afcd15f2a3ef61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32a5024b99443d55c4e97690241ddb91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a32a5024b99443d55c4e97690241ddb91">search_stories.vector_store</a> = chroma_client.get_or_create_collection(&quot;stories&quot;)</td></tr>
 <tr class="separator:a32a5024b99443d55c4e97690241ddb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d5819aa4bfeafd484977dce94c10887"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a6d5819aa4bfeafd484977dce94c10887">search_stories.MEMORY_FILE</a> = &quot;user_memory.json&quot;</td></tr>
-<tr class="separator:a6d5819aa4bfeafd484977dce94c10887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a039717c1df210ec5387a3b993fbef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#ad3a039717c1df210ec5387a3b993fbef">search_stories.username</a> = input(&quot;\nWhat is your name? &quot;).strip().lower()</td></tr>
-<tr class="separator:ad3a039717c1df210ec5387a3b993fbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1689181dde8438816c945af422641e1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#af1689181dde8438816c945af422641e1">search_stories.user_memory</a> = load_user_memory(username)</td></tr>
-<tr class="separator:af1689181dde8438816c945af422641e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48fe403545a43942b67110657c0ffe75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a48fe403545a43942b67110657c0ffe75">search_stories.story_request</a> = input(&quot;\nWhat kind of story would you like to hear? &quot;).strip()</td></tr>
-<tr class="separator:a48fe403545a43942b67110657c0ffe75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36288e66a5395ff90e327d48acaf8fca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a36288e66a5395ff90e327d48acaf8fca">search_stories.matching_stories</a> = search_stories(story_request)</td></tr>
-<tr class="separator:a36288e66a5395ff90e327d48acaf8fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b175254df125560d13993e0f40706f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a1b175254df125560d13993e0f40706f2">search_stories.user_choice</a> = input(&quot;Hear an existing story or create a new one? (existing/new): &quot;).strip().lower()</td></tr>
-<tr class="separator:a1b175254df125560d13993e0f40706f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c5e563fefa3a9a1192b83a3fbb9877"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a41c5e563fefa3a9a1192b83a3fbb9877">search_stories.selected_story</a> = matching_stories[0]</td></tr>
-<tr class="separator:a41c5e563fefa3a9a1192b83a3fbb9877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa74e189526d737f628a17003922fe77"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#afa74e189526d737f628a17003922fe77">search_stories.title</a> = selected_story[&quot;title&quot;]</td></tr>
-<tr class="separator:afa74e189526d737f628a17003922fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addec14555a2406347ad9bf6e6eb5f10c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#addec14555a2406347ad9bf6e6eb5f10c">search_stories.snippet</a> = selected_story[&quot;snippet&quot;]</td></tr>
-<tr class="separator:addec14555a2406347ad9bf6e6eb5f10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71db22810937a79ab65a43f990f1407a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#a71db22810937a79ab65a43f990f1407a">search_stories.ai_story</a> = ask_chatgpt(f&quot;Tell me a story about {story_request}&quot;, user_memory)</td></tr>
-<tr class="separator:a71db22810937a79ab65a43f990f1407a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8ee67c153b20cee4fef0a361c2e9a4a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesearch__stories.html#ae8ee67c153b20cee4fef0a361c2e9a4a">search_stories.ai_summary</a> = ask_chatgpt(f&quot;Summarise a story about {story_request} in 1–2 sentences.&quot;, user_memory)</td></tr>
-<tr class="separator:ae8ee67c153b20cee4fef0a361c2e9a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>! ! </p>
-<p>CLI tool: search ChromaDB for stories or create one with ChatGPT. ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<p>CLI helper that searches ChromaDB for existing stories or generates ! a new one with OpenAI&#160;ChatCompletion, while persisting user memory. ! ! This refactor preserves behaviour but: ! • Removes all emojis to keep the console output ASCII‑clean. ! • Splits the monolithic script into discrete, testable functions so ! Doxygen can attach clear <code>@param</code> / <code>@return</code> tables. ! • Fixes the <code>openai_api_key</code> variable mismatch in the original code. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025‑05‑08 ! </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! ! ------------------------------------------------------------------------&mdash; ! Example usage (interactive) ! ------------------------------------------------------------------------&mdash; ! $ python <a class="el" href="search__stories_8py.html" title="! !">search_stories.py</a> ! Name: alice ! Would you like a story? yes ! What kind? brave knight ! ------------------------------------------------------------------------&mdash; </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

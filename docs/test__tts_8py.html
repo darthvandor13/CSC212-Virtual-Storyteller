@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NAO Virtual Storyteller: naoqi_tests/test_tts.py File Reference</title>
+<title>NAO Virtual Storyteller: scripts_doxygenated/naoqi_tests/test_tts.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,12 +61,13 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6c0445dd0e1d6debcb9034f31c08f3dd.html">naoqi_tests</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a2bba897c8f56fd2d777353cbd8435ff.html">scripts_doxygenated</a></li><li class="navelem"><a class="el" href="dir_d878424d1b4c875cb5b1f63d311c5f84.html">naoqi_tests</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">test_tts.py File Reference</div>  </div>
@@ -81,16 +82,25 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacetest__tts"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html">test_tts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0e4ebc1b572dac0e7f75e0391071cbfb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html#a0e4ebc1b572dac0e7f75e0391071cbfb">test_tts.get_tts_proxy</a> (str ip=DEFAULT_NAO_IP)</td></tr>
+<tr class="separator:a0e4ebc1b572dac0e7f75e0391071cbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b35b7ed7d0764ef69d7d97dcb2b7669"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html#a2b35b7ed7d0764ef69d7d97dcb2b7669">test_tts.speak_greeting</a> (tts, str text=&quot;Hello! I am ready to tell a story.&quot;)</td></tr>
+<tr class="separator:a2b35b7ed7d0764ef69d7d97dcb2b7669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe061573a784f8680df07b5ff84ef82d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html#abe061573a784f8680df07b5ff84ef82d">test_tts.main</a> ()</td></tr>
+<tr class="separator:abe061573a784f8680df07b5ff84ef82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a63bdcfa7566e9dffd6eb9af996ebbfc0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html#a63bdcfa7566e9dffd6eb9af996ebbfc0">test_tts.nao_ip</a> = &quot;192.168.1.120&quot;</td></tr>
-<tr class="separator:a63bdcfa7566e9dffd6eb9af996ebbfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db6a4f251d52e4555beb77dad467146"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html#a0db6a4f251d52e4555beb77dad467146">test_tts.tts</a> = ALProxy(&quot;ALTextToSpeech&quot;, nao_ip, 9559)</td></tr>
-<tr class="separator:a0db6a4f251d52e4555beb77dad467146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba305ddd72f82b6e4648d99a5108d4e8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest__tts.html#aba305ddd72f82b6e4648d99a5108d4e8">test_tts.DEFAULT_NAO_IP</a> = &quot;192.168.1.120&quot;</td></tr>
+<tr class="separator:aba305ddd72f82b6e4648d99a5108d4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>! ! </p>
-<p>Quick NAO TTS sanity-check (speaks one line). ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<p>Minimal NAO‑qi Text‑to‑Speech smoke‑test. ! ! Given a robot IP address, this utility connects to the <b>ALTextToSpeech</b> ! proxy and makes NAO say a short greeting. It is deliberately tiny — meant ! as the first test after configuring NAO‑qi on a new workstation. ! ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor ! </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025‑05‑08 ! </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License ! </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NAO Virtual Storyteller: chromadb_webhook/main.py File Reference</title>
+<title>NAO Virtual Storyteller: scripts_doxygenated/chromadb_webhook/main.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_12fc5e5af7572a81ccaa849657e2a4c1.html">chromadb_webhook</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a2bba897c8f56fd2d777353cbd8435ff.html">scripts_doxygenated</a></li><li class="navelem"><a class="el" href="dir_668a727a42dcd7b570dd436d256a4b62.html">chromadb_webhook</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>! !  
+<p>Google Cloud Function webhook for Dialogflow CX using Flask.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -84,18 +84,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afc24be87c84b124a6b0019b737f5c1c2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#afc24be87c84b124a6b0019b737f5c1c2">main.main</a> (Request request)</td></tr>
-<tr class="separator:afc24be87c84b124a6b0019b737f5c1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79a122a5bdf3e941b4605f7020e3dc3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ab79a122a5bdf3e941b4605f7020e3dc3">main.main</a> (FlaskRequest request)</td></tr>
+<tr class="memdesc:ab79a122a5bdf3e941b4605f7020e3dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main entry point for the Google Cloud Function.  <a href="namespacemain.html#ab79a122a5bdf3e941b4605f7020e3dc3">More...</a><br /></td></tr>
+<tr class="separator:ab79a122a5bdf3e941b4605f7020e3dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac8ac1e3dedeab95152b70f8d633fd6d7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#ac8ac1e3dedeab95152b70f8d633fd6d7">main.CHROMA_DB_HOST</a> = &quot;http://34.118.162.201:8000&quot;</td></tr>
-<tr class="memdesc:ac8ac1e3dedeab95152b70f8d633fd6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base URL (including http/https) of the ChromaDB HTTP API server.  <a href="namespacemain.html#ac8ac1e3dedeab95152b70f8d633fd6d7">More...</a><br /></td></tr>
-<tr class="separator:ac8ac1e3dedeab95152b70f8d633fd6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c9339bc9ecae310c9f7d769dfbf159"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a30c9339bc9ecae310c9f7d769dfbf159">main.CHROMA_DB_HOST</a> = &quot;http://34.118.162.201:8000&quot;</td></tr>
+<tr class="memdesc:a30c9339bc9ecae310c9f7d769dfbf159"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base URL (including http/https) of the ChromaDB HTTP API server.  <a href="namespacemain.html#a30c9339bc9ecae310c9f7d769dfbf159">More...</a><br /></td></tr>
+<tr class="separator:a30c9339bc9ecae310c9f7d769dfbf159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201fed8be15d6f38658f1b925638190a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a201fed8be15d6f38658f1b925638190a">main.COLLECTION_NAME</a> = &quot;stories&quot;</td></tr>
+<tr class="memdesc:a201fed8be15d6f38658f1b925638190a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the ChromaDB collection to be queried.  <a href="namespacemain.html#a201fed8be15d6f38658f1b925638190a">More...</a><br /></td></tr>
+<tr class="separator:a201fed8be15d6f38658f1b925638190a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5140030336c5e6df9d59dbd2f11621"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemain.html#a8d5140030336c5e6df9d59dbd2f11621">main.REQUEST_TIMEOUT</a> = 10</td></tr>
+<tr class="memdesc:a8d5140030336c5e6df9d59dbd2f11621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout in seconds for the HTTP request to the ChromaDB API.  <a href="namespacemain.html#a8d5140030336c5e6df9d59dbd2f11621">More...</a><br /></td></tr>
+<tr class="separator:a8d5140030336c5e6df9d59dbd2f11621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>! ! </p>
-<p>Cloud-Function webhook that proxies a query to ChromaDB and returns the top stories. ! </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<div class="textblock"><p>Google Cloud Function webhook for Dialogflow CX using Flask. </p>
+<p>This script defines a Flask application to serve as an HTTP webhook for Dialogflow CX. It receives a query from Dialogflow, proxies it to a specified ChromaDB HTTP API, processes the ChromaDB response, and returns a formatted fulfillment text to Dialogflow. It includes error handling for API requests, timeouts, and response parsing. </p><dl class="section author"><dt>Author</dt><dd>Calvin Vandor </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-05-10 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
