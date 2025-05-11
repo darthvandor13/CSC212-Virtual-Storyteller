@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "NAO Virtual Storyteller", "index.html", [
+  [ "AI Storyteller", "index.html", [
     [ "NAO Virtual Storyteller — Research Project", "index.html", [
       [ "Abstract", "index.html#autotoc_md1", null ],
       [ "Table of Contents", "index.html#autotoc_md3", null ],
@@ -135,7 +135,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"upload__stories_8py.html#a3d8c77157eba1815edce5b9c3d3cbb34"
+"index.html#autotoc_md69"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
