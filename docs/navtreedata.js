@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "AI Storyteller", "index.html", [
-    [ "NAO Virtual Storyteller — Research Project", "index.html", [
+    [ "AI VIRTUAL Storyteller — Research Project", "index.html", [
       [ "Abstract", "index.html#autotoc_md1", null ],
       [ "Table of Contents", "index.html#autotoc_md3", null ],
       [ "Research", "index.html#autotoc_md5", [
