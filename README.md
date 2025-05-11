@@ -9,6 +9,59 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
 
 ---
 
+## Table of Contents
+
+- [Abstract](#abstract)
+- [Research](#research)
+  - [Core Research](#core-research)
+  - [Supplemental Research](#supplemental-research)
+- [Other Resources](#other-resources)
+- [How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :)](#how-our-ai-storytelling-robot-works--chatgpt-version-explained-for-everyone-)
+  - [🔹 Step 1: The User Talks to the Robot](#-step-1-the-user-talks-to-the-robot)
+  - [🔹 Step 2: Processing the Story Request](#-step-2-processing-the-story-request)
+  - [🔹 Step 3: The Robot Tells the Story](#-step-3-the-robot-tells-the-story)
+  - [🔹 Step 4: User Interaction (Optional Future Feature)](#-step-4-user-interaction-optional-future-feature)
+  - [🔹 What’s Needed to Make This Work?](#-whats-needed-to-make-this-work)
+  - [🔹 How Long Will This Take?](#-how-long-will-this-take)
+  - [🔹 Why This Matters](#-why-this-matters)
+  - [🔹 Summary: The Big Picture](#-summary-the-big-picture)
+- [How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Student)](#how-our-ai-storytelling-system-works--chatgpt-version-explained-for-a-cs-student)
+  - [🔹 Core Components:](#-core-components)
+  - [🔹 Step 1: User Input & Speech Processing](#-step-1-user-input--speech-processing)
+  - [🔹 Step 2: Webhook & AI Story Generation](#-step-2-webhook--ai-story-generation)
+  - [🔹 Step 3: NAO Reads the Story Aloud](#-step-3-nao-reads-the-story-aloud)
+  - [🔹 Summary of the System Flow:](#-summary-of-the-system-flow)
+- [NAO Virtual Storyteller: Project Setup & Guide](#nao-virtual-storyteller-project-setup--guide)
+  - [Project Objective](#project-objective) - [Documentation & Downloads (NAO Specific)](#documentation--downloads-nao-specific)
+- [Repository Structure Overview](#repository-structure-overview)
+- [Section 1: NAO Robot Interaction Setup (Python 2 & NAOqi SDK)](#section-1-nao-robot-interaction-setup-python-2--naoqi-sdk)
+  - [1.1. Network Setup for NAO Robot](#11-network-setup-for-nao-robot)
+  - [1.2. Install Python 2.7 on Ubuntu 22.04 (using `pyenv`)](#12-install-python-27-on-ubuntu-2204-using-pyenv)
+  - [1.3. Create a Python 2 Virtual Environment](#13-create-a-python-2-virtual-environment)
+  - [1.4. Install the NAOqi Python 2 SDK](#14-install-the-naoqi-python-2-sdk)
+  - [1.5. Install Python 2 Dependencies for NAO Scripts](#15-install-python-2-dependencies-for-nao-scripts)
+  - [1.6. Troubleshooting NAO Setup](#16-troubleshooting-nao-setup)
+- [Section 2: Dialogflow CX AI Storyteller Agent Setup](#section-2-dialogflow-cx-ai-storyteller-agent-setup)
+  - [2.1. Project Overview (Dialogflow CX Agent)](#21-project-overview-dialogflow-cx-agent)
+  - [2.2. Technology Stack (Dialogflow CX Agent)](#22-technology-stack-dialogflow-cx-agent)
+  - [2.3. Core Concepts: RAG via GCS Data Store](#23-core-concepts-rag-via-gcs-data-store)
+  - [2.4. Setup & Prerequisites (Dialogflow CX Start-to-Finish)](#24-setup--prerequisites-dialogflow-cx-start-to-finish)
+  - [2.5. Agent Configuration Steps (Dialogflow CX Console)](#25-agent-configuration-steps-dialogflow-cx-console)
+  - [2.6. How to Use/Test Dialogflow CX Agent](#26-how-to-usetest-dialogflow-cx-agent)
+  - [2.7. Known Issues / Troubleshooting Context (Dialogflow CX)](#27-known-issues--troubleshooting-context-dialogflow-cx)
+- [Section 3: Running the NAO Storyteller System](#section-3-running-the-nao-storyteller-system)
+  - [3.1. Configure OpenAI API Key (for `chatgpt_webhook.py`)](#31-configure-openai-api-key-for-chatgpt_webhookpy)
+  - [3.2. Running the Components](#32-running-the-components)
+- [Internals (NAO Interaction Scripts)](#internals-nao-interaction-scripts)
+- [Scripts Overview Table](#scripts-overview-table)
+- [Future Possibilities](#future-possibilities)
+- [License](#license)
+- [Questions or Contributions?](#questions-or-contributions)
+- [🧾 Developer Reference (Doxygen)](#-developer-reference-doxygen)
+  - [Entry Points (Python Scripts)](#entry-points-python-scripts)
+  - [To Generate Doxygen Documentation](#to-generate-doxygen-documentation)
+
+
 ## Research
 
 ### Core Research
@@ -195,91 +248,94 @@ tts.say(story_text)
 
 ---
 
-# NAO Virtual Storyteller
+# NAO Virtual Storyteller: Project Setup & Guide
 
 ## Project Objective
 
-This project demonstrates a **proof of concept** where a **NAO robot** serves as the expressive medium for a **virtual storyteller** powered by **generative AI**. The robot listens for spoken keywords, sends them to an OpenAI-powered story generation service, and narrates the resulting story using its onboard Text-to-Speech (TTS) engine.
+This project demonstrates a **proof of concept** where a **NAO robot** serves as the expressive medium for a **virtual storyteller**. The current core of the storytelling logic resides within a **Google Cloud Dialogflow CX agent**, which uses Retrieval-Augmented Generation (RAG) with a GCS Data Store.
 
-The system is designed to be easily extensible. While this version uses keyword recognition and a simple webhook, the architecture could integrate with more robust conversation engines such as **Google Conversational Agents (Dialogflow CX)** for richer, multi-turn dialogue.
+Earlier iterations and proof-of-concept scripts explored direct NAO interaction with local webhooks and vector databases (like ChromaDB). These scripts, primarily for Python 2 and NAOqi interaction, are included in this repository for completeness, testing, and to showcase the project's evolution.
+
+This README provides setup instructions for both:
+1.  The **NAO robot interaction components** (requiring Python 2.7 and the NAOqi SDK).
+2.  The **Dialogflow CX AI Storyteller Agent** (requiring Google Cloud Platform setup).
 
 ---
 
-## Documentation & Downloads
+## Documentation & Downloads (NAO Specific)
 
 - **NAO Developer Documentation** [http://doc.aldebaran.com/2-8/home_nao.html](http://doc.aldebaran.com/2-8/home_nao.html)
-
 - **NAO Software Downloads** [https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/](https://aldebaran.com/en/support/kb/nao6/downloads/nao6-software-downloads/)
 
 ---
 
-## Directory Structure
+## Repository Structure Overview
 
 ```
-naoqi_tests/
-├── chatgpt_webhook.py     # Flask-based story generation API
-├── test_naoqi.py          # Basic NAO connectivity test
-├── test_tts.py            # Simple speech playback test
-├── test_asr.py            # Full storyteller integration loop
-├── naoqi_env/             # Python 2.7 virtual environment (as per new guide)
-└── README.md              # (this file)
+.
+├── naoqi_tests/               # Scripts for NAO interaction (Python 2)
+│   ├── chatgpt_webhook.py     # Flask webhook (can be run with Py2 for test_asr.py)
+│   ├── test_naoqi.py          # Basic NAO connectivity test
+│   ├── test_tts.py            # Simple speech playback test
+│   └── test_asr.py            # Full NAO ASR -> Webhook -> TTS loop
+├── docs/                      # Doxygen generated documentation (if built)
+├── (other_python3_scripts/)   # Placeholder for Python 3 components (e.g., upload_stories.py)
+├── naoqi_env/                 # Recommended name for Python 2.7 virtual environment
+├── .env_example               # Example for environment variables
+├── Doxyfile                   # Doxygen configuration file
+└── README.md                  # This file
 ```
-
-*(Note: The Python 2.7 virtual environment directory is named `naoqi_env` as per the detailed setup guide below).*
+*(Note: Python 3 scripts like `upload_stories.py` or more complex webhooks should ideally be in their own Python 3 virtual environment, separate from `naoqi_env`.)*
 
 ---
 
-## Network Setup for NAO Robot
+## Section 1: NAO Robot Interaction Setup (Python 2 & NAOqi SDK)
+
+This section details setting up your Ubuntu 22.04 system to run the Python 2 scripts that interact directly with the NAO robot.
+
+### 1.1. Network Setup for NAO Robot
 
 For your computer to communicate with the NAO robot, both must be on the same network.
 
-### 1.1. Connect NAO to the Network
+#### 1.1.1. Connect NAO to the Network
 * **Wi-Fi:** You can configure Wi-Fi on your NAO by connecting to its embedded web page. When NAO starts, it may announce its IP address or create its own Wi-Fi hotspot for initial configuration. Refer to your NAO's documentation for specific instructions.
 * **Ethernet:** Connect an Ethernet cable from the NAO to your router or network switch.
 
-### 1.2. Find NAO's IP Address
+#### 1.1.2. Find NAO's IP Address
 * **Chest Button:** Press NAO's chest button once. It should say its IP address.
 * **Router's DHCP Client List:** Check your router's administration page for a list of connected devices and find the NAO's IP address.
 * **Network Scanning Tools:** Tools like `nmap` (e.g., `nmap -sP YOUR_NETWORK_CIDR` like `192.168.1.0/24`) can help discover devices on your network.
 
-### 1.3. Ensure Network Connectivity
+#### 1.1.3. Ensure Network Connectivity
 * Once you have NAO's IP address (e.g., `192.168.1.120`), try to ping it from your Ubuntu machine:
     ```bash
     ping YOUR_NAO_IP_ADDRESS
     ```
 * Ensure your PC and NAO are on the same subnet.
 
-### 1.4. Firewall Considerations
+#### 1.1.4. Firewall Considerations
 * The NAOqi SDK typically communicates on port `9559`. Ensure that no firewall on your Ubuntu machine or network is blocking TCP traffic on this port to or from the NAO's IP address.
     * You can temporarily disable `ufw` (if active) for testing: `sudo ufw disable` (remember to re-enable it later with `sudo ufw enable` and configure rules if necessary).
 
----
+### 1.2. Install Python 2.7 on Ubuntu 22.04 (using `pyenv`)
 
-## ⚙️ Setup Instructions
+Ubuntu 22.04 does not include Python 2 by default. Using `pyenv` is a clean way to install and manage Python 2.7 without interfering with the system's Python 3.
 
-The following steps will guide you through setting up the Python 2 environment required for interacting with the NAO robot using the `naoqi` SDK on an **Ubuntu 22.04 system**. For other parts of this project that might use Python 3 (e.g., webhooks if they use modern libraries, advanced data processing), please manage a separate Python 3 environment.
-
-**Important Note on Python Versions:** The NAOqi SDK historically relies on **Python 2.7**. Ubuntu 22.04 does not include Python 2 by default. The instructions below use `pyenv` for a clean installation of Python 2.7.
-
-### 1. Install Python 2.7 on Ubuntu 22.04 (using `pyenv`)
-
-Using `pyenv` is a clean way to install and manage different Python versions without interfering with the system's Python 3.
-
-#### 1.1. Install `pyenv` Dependencies
+#### 1.2.1. Install `pyenv` Dependencies
 These packages are needed to compile Python versions with `pyenv`:
 ```bash
 sudo apt update
 sudo apt install -y make build-essential libssl-dev zlib1g-dev     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm     libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
 
-#### 1.2. Install `pyenv`
+#### 1.2.2. Install `pyenv`
 The recommended way to install `pyenv` is using the `pyenv-installer`:
 ```bash
 curl https://pyenv.run | bash
 ```
 This script will also show you how to set up your shell environment for `pyenv`.
 
-#### 1.3. Configure Shell for `pyenv`
+#### 1.2.3. Configure Shell for `pyenv`
 After installation, add the following lines to your shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`):
 ```bash
 export PYENV_ROOT="$HOME/.pyenv"
@@ -291,240 +347,331 @@ fi
 ```
 Then, apply the changes by sourcing the file (e.g., `source ~/.bashrc`) or opening a new terminal session.
 
-#### 1.4. Install Python 2.7.18 with `pyenv`
+#### 1.2.4. Install Python 2.7.18 with `pyenv`
 Python 2.7.18 was the final release of Python 2.
 ```bash
 pyenv install 2.7.18
 ```
 This might take some time as it compiles Python from source.
 
-#### 1.5. (Optional) Set Python 2.7.18 as Local Default for Your Project
-Navigate to your project directory where you'll keep the NAO scripts:
+#### 1.2.5. (Optional) Set Python 2.7.18 as Local Default for Your Project
+Navigate to your project directory (or the `naoqi_tests` subdirectory):
 ```bash
-cd /path/to/your/nao_project # Adjust to your project path
+cd /path/to/your/nao_project # Or ./naoqi_tests
 pyenv local 2.7.18
 ```
-This creates a `.python-version` file in your project directory, and `pyenv` will automatically use Python 2.7.18 when you are in this directory. Now, running `python --version` in this directory should show Python 2.7.18.
+This creates a `.python-version` file, and `pyenv` will automatically use Python 2.7.18 here.
 
----
+### 1.3. Create a Python 2 Virtual Environment
 
-### 2. Create a Python 2 Virtual Environment
+It's highly recommended to use a virtual environment. Let's name it `naoqi_env`.
 
-It's highly recommended to use a virtual environment for your project to manage dependencies cleanly. Let's name it `naoqi_env`.
-
-#### 2.1. Ensure `pip` for Python 2.7 is Available
-If you used `pyenv local 2.7.18`, the `python` command in your project directory should point to Python 2.7.
+#### 1.3.1. Ensure `pip` for Python 2.7 is Available
+If `pyenv local 2.7.18` is active, `python` should point to Python 2.7.
 Ensure `pip` is installed and up-to-date for this Python 2.7 version:
 ```bash
-# (Ensure you are in your project directory where pyenv local 2.7.18 is set)
 python -m ensurepip --upgrade
 python -m pip install --upgrade pip setuptools wheel
 ```
 
-#### 2.2. Install `virtualenv`
+#### 1.3.2. Install `virtualenv`
 ```bash
 python -m pip install virtualenv
 ```
 
-#### 2.3. Create and Activate the Virtual Environment
-In your project directory:
+#### 1.3.3. Create and Activate the Virtual Environment
+In your project directory (e.g., where `naoqi_tests` is located):
 ```bash
-python -m virtualenv naoqi_env # Creates a folder named 'naoqi_env'
+python -m virtualenv naoqi_env # Creates 'naoqi_env' folder
 source naoqi_env/bin/activate   # Activates the environment
 ```
-Your command prompt should now be prefixed with `(naoqi_env)`. Running `python --version` inside this activated environment should show Python 2.7.18.
+Your command prompt should now be prefixed with `(naoqi_env)`.
 
----
-
-### 3. Install the NAOqi Python 2 SDK
+### 1.4. Install the NAOqi Python 2 SDK
 
 This guide assumes you have downloaded the NAOqi Python 2 SDK for Linux (e.g., `pynaoqi-python2.7-X.X.X.X-linux64.tar.gz`).
 
-#### 3.1. Extract the SDK
-Extract the SDK archive to a known location. For example:
-```bash
-mkdir -p ~/naoqi_sdks # Or any other location you prefer
-tar -xzf /path/to/your/pynaoqi-python2.7-sdk.tar.gz -C ~/naoqi_sdks/
-```
-This will create a directory structure, often containing a `pynaoqi` folder or similar. The key library files (`naoqi.py`, `_naoqi.so`, etc.) are usually found within a path like `pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages/`.
+#### 1.4.1. Extract the SDK
+Extract the SDK archive to a known location, e.g., `~/naoqi_sdks/`.
+The key library files (`naoqi.py`, `_naoqi.so`) are usually within a path like `pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages/`.
 
-#### 3.2. Make NAOqi SDK available to your Python 2 Environment
-You have two main options:
-
-**Option A: Setting `PYTHONPATH` (Recommended for flexibility)**
-1.  Identify the full path to the directory *inside* your extracted SDK that contains `naoqi.py` and `_naoqi.so`. (e.g., `~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages`). Let's call this `NAOQI_PYTHON_LIB_DIR`.
-2.  For a more permanent solution *within your virtual environment*, add this `export` line to your virtual environment's activation script:
+#### 1.4.2. Make NAOqi SDK available to your Python 2 Environment
+**Option A: Setting `PYTHONPATH` (Recommended)**
+1.  Identify the full path to the SDK's `site-packages` directory (e.g., `~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages`). Let this be `NAOQI_PYTHON_LIB_DIR`.
+2.  Add to your virtual environment's activation script:
     ```bash
-    # (Make sure your naoqi_env is activated: source naoqi_env/bin/activate)
+    # (Ensure naoqi_env is activated)
     # (Replace /path/to/your/NAOQI_PYTHON_LIB_DIR with the actual, absolute path)
     echo 'export PYTHONPATH="${PYTHONPATH}:/path/to/your/NAOQI_PYTHON_LIB_DIR"' >> naoqi_env/bin/activate
     ```
-    You'll need to deactivate and reactivate your environment (`deactivate`, then `source naoqi_env/bin/activate`) for this change to take effect.
+    Deactivate and reactivate (`deactivate`, then `source naoqi_env/bin/activate`).
 
-**Option B: Copying SDK files into Virtual Environment (Simpler for self-contained venvs)**
-1.  Activate your virtual environment: `source naoqi_env/bin/activate`
-2.  Identify your virtual environment's `site-packages` directory (usually `naoqi_env/lib/python2.7/site-packages/`).
-3.  Copy `naoqi.py`, `_naoqi.so`, and any other relevant `.py` or `.so` files (like `vision_definitions.py`, `motion_definitions.py`) from the SDK's Python library directory directly into your virtual environment's `site-packages` directory.
+**Option B: Copying SDK files into Virtual Environment**
+1.  Activate `naoqi_env`.
+2.  Copy `naoqi.py`, `_naoqi.so`, and other relevant files (e.g., `motion_definitions.py`) from the SDK's `site-packages` to `naoqi_env/lib/python2.7/site-packages/`.
     ```bash
-    # Example (replace with your actual SDK path and ensure paths are correct):
+    # Example (replace with your actual SDK path):
     # SDK_LIB_PATH="~/naoqi_sdks/pynaoqi-python2.7-X.X.X.X-linux64/lib/python2.7/site-packages"
     # VENV_LIB_PATH="naoqi_env/lib/python2.7/site-packages"
-    # cp "${SDK_LIB_PATH}/naoqi.py" "${VENV_LIB_PATH}/"
-    # cp "${SDK_LIB_PATH}/_naoqi.so" "${VENV_LIB_PATH}/"
-    # cp "${SDK_LIB_PATH}/motion_definitions.py" "${VENV_LIB_PATH}/" # If it exists and is needed
-    # cp "${SDK_LIB_PATH}/vision_definitions.py" "${VENV_LIB_PATH}/" # If it exists and is needed
+    # cp "${SDK_LIB_PATH}/naoqi.py" "${VENV_LIB_PATH}/"; cp "${SDK_LIB_PATH}/_naoqi.so" "${VENV_LIB_PATH}/"
     ```
-    Please ensure the source path (`SDK_LIB_PATH`) is correct and exists before running copy commands.
 
-#### 3.3. Test NAOqi Import
-With your `naoqi_env` virtual environment activated:
+#### 1.4.3. Test NAOqi Import
+With `naoqi_env` activated:
 ```bash
 python -c "import naoqi; print 'NAOqi SDK imported successfully!'"
 ```
-If this runs without errors, your SDK is likely set up correctly.
 
----
-
-### 4. Install Python 2 Dependencies for NAO Scripts
-
-The NAO interaction scripts might require a few external Python 2 compatible libraries. Install them into your **activated `naoqi_env` virtual environment**.
-
-The `test_asr.py` script, for example, calls a webhook and needs the `requests` library:
+### 1.5. Install Python 2 Dependencies for NAO Scripts
+The `test_asr.py` script calls a webhook and needs `requests`:
 ```bash
-# (Ensure 'naoqi_env' is activated: source naoqi_env/bin/activate)
+# (Ensure 'naoqi_env' is activated)
 pip install requests
 ```
-If your `chatgpt_webhook.py` is intended to run under Python 2 (which is less common for modern Flask/OpenAI usage but possible for simpler versions), you would also install Flask here:
+If running `chatgpt_webhook.py` under Python 2 (not generally recommended for modern Flask/OpenAI usage), install Flask:
 ```bash
-# pip install Flask  # Uncomment if running chatgpt_webhook.py in this Python 2 env
+# pip install Flask
 ```
+
+### 1.6. Troubleshooting NAO Setup
+* **"ImportError: No module named naoqi"**: Check venv activation, `PYTHONPATH` (Option A) or file copy (Option B).
+* **Connection Errors to NAO**: Verify IP, network, ping, firewall (port 9559 TCP).
+* **SDK/OS Version:** Ensure NAOqi Python SDK and NAO's OS are compatible.
 
 ---
 
-### 5. Configure Your OpenAI API Key
+## Section 2: Dialogflow CX AI Storyteller Agent Setup
 
-(This step is relevant for the `chatgpt_webhook.py` script, which `test_asr.py` interacts with.)
+This section details the setup for the current core of the virtual storyteller, which uses Google Cloud Dialogflow CX with a GCS Data Store for Retrieval-Augmented Generation (RAG).
+*(This content is adapted from the README of the [ai-storyteller-agent-config](https://github.com/darthvandor13/ai-storyteller-agent-config) repository).*
 
-Add the following to your `~/.bashrc` (or `~/.zshrc`):
+### 2.1. Project Overview (Dialogflow CX Agent)
+
+This component implements a conversational AI agent using **Google Cloud Dialogflow CX** designed to act as a virtual storyteller. The agent engages users in a conversation to gather preferences (protagonist name, story theme, moral) and then generates a unique short story (300-350 words).
+
+The core mechanism is **Retrieval-Augmented Generation (RAG)**. The agent retrieves relevant context snippets from a predefined knowledge base of stories (hosted in Google Cloud Storage) and uses these snippets, along with the user's parameters, as strict inspiration to generate a new, original story. It is explicitly instructed *not* to use external knowledge or copy directly from the source material.
+
+*(**Note on Initial Approach:** An earlier iteration attempted using ChromaDB via a webhook and parameter presets. This approach was paused due to platform issues encountered with parameter preset handling – specifically, the UI automatically adding quotes to `$webhookResponse` paths.)*
+
+### 2.2. Technology Stack (Dialogflow CX Agent)
+
+* **Conversational Platform:** Google Cloud Dialogflow CX
+* **Knowledge Base Backend:** Google Cloud Storage (GCS)
+* **Secrets Management:** Google Cloud Secret Manager
+* **Version Control (for Agent Config):** GitHub (via Dialogflow CX Git Integration)
+
+### 2.3. Core Concepts: RAG via GCS Data Store
+
+1.  **Data Storage:** Source story texts (PDF, TXT, HTML formats supported) are stored in a GCS bucket.
+2.  **Data Store Resource:** A Dialogflow "Data Store" resource is created within the Agent Builder environment, configured to point to the GCS bucket and index the unstructured content.
+3.  **Data Store Tool:** A "Data Store Tool" is created within the agent and linked to the specific Data Store resource.
+4.  **Retrieval:** The agent's playbook logic calls this Data Store Tool, sending a query based on user input.
+5.  **Generation:** The tool returns relevant text snippets. These snippets, along with user parameters, are used within a generative prompt executed by the agent's playbook to create the final story.
+
+### 2.4. Setup & Prerequisites (Dialogflow CX Start-to-Finish)
+
+This guide assumes you have a Google Cloud project with billing enabled.
+
+1.  **Enable APIs:**
+    * In the Google Cloud Console, ensure the following APIs are enabled for your project:
+        * Dialogflow API
+        * Secret Manager API
+        * Cloud Storage API
+        * Vertex AI Agent Builder API (or Vertex AI Search and Conversation API)
+
+2.  **Create GCS Bucket:**
+    * Navigate to Cloud Storage -> Buckets. Click "Create".
+    * Choose a unique **Bucket name** (e.g., `[YOUR_PROJECT_ID]-story-data`).
+    * Select **Location type: Region** and choose the **SAME REGION** as your Dialogflow agent (e.g., `us-central1`). This is critical.
+    * Select **Storage class: Standard**. Configure access control. Click "Create".
+
+3.  **Upload Story Files:**
+    * Upload your source story files (e.g., `.pdf`, `.txt`) to the GCS bucket.
+
+4.  **Create GitHub Repository (for Agent Config Sync):**
+    * Create a new, **dedicated repository** on GitHub (e.g., `ai-storyteller-agent-config`).
+    * Ensure the primary branch (e.g., `main`) exists.
+
+5.  **Create GitHub Personal Access Token (PAT):**
+    * In GitHub: Settings -> Developer settings -> Personal access tokens -> Fine-grained tokens.
+    * Click "Generate new token". Name it (e.g., `dialogflow-cx-sync`), set Expiration.
+    * Under "Repository access", select **"Only select repositories"** and choose the repo from step 4.
+    * Under "Permissions" -> "Repository permissions", find **"Contents"** and set access to **"Read and write"**.
+    * Click "Generate token". **COPY THE TOKEN IMMEDIATELY.**
+
+6.  **Store PAT in Secret Manager:**
+    * In Google Cloud Console -> Security -> Secret Manager. Click "+ Create Secret".
+    * Enter a **Name** (e.g., `github-dialogflow-pat`). Paste the PAT into **Secret value**. Click "Create Secret".
+
+7.  **Grant Dialogflow Access to Secret:**
+    * In Secret Manager, open the secret. Go to "Permissions" tab. Click "+ Grant Access".
+    * **New principals:** `service-[YOUR_PROJECT_NUMBER]@gcp-sa-dialogflow.iam.gserviceaccount.com` (Replace `[YOUR_PROJECT_NUMBER]`).
+    * **Assign roles:** `Secret Manager Secret Accessor`. Click "Save".
+
+8.  **Grant Dialogflow Access to GCS Bucket:**
+    * Navigate to your story data GCS Bucket -> "Permissions" tab. Click "+ Grant Access".
+    * **New principals:** `service-[YOUR_PROJECT_NUMBER]@gcp-sa-dialogflow.iam.gserviceaccount.com`.
+    * **Assign roles:** `Storage Object Viewer`. Click "Save".
+
+### 2.5. Agent Configuration Steps (Dialogflow CX Console)
+
+1.  **Create Agent (if needed):**
+    * Create a new agent ("Build your own"). Specify Agent Name, **Location/Region** (must match GCS bucket), Time zone, Default language.
+
+2.  **Create Data Store Resource:**
+    * Go to "Data Stores". Click "Create new data store".
+    * Source: **"Cloud Storage"**. Select your GCS bucket/folder.
+    * Data type: **"Unstructured documents"**.
+    * Sync frequency: **"One time"** (workaround for potential UI issues). Click "Continue".
+    * **Configure data connector:** Location (e.g., `us (multi-region)` for agent in `us-central1`), unique Connector name. Click "Create".
+    * Wait for indexing ("Data Ingestion Activity" should show "Succeeded").
+
+3.  **Create Data Store Tool:**
+    * Go to "Tools". Click "+ Create".
+    * **Tool Name:** e.g., `WorkspaceStoryContextTool-OneTime`.
+    * **Tool Type:** `Data store`.
+    * **Data stores:** Add the data store created above.
+    * Add a Description. Click "Save".
+
+4.  **Configure GitHub Integration (in Agent Settings):**
+    * Go to Agent Settings (⚙️ icon) -> "Git integration". Click "+ Add Git integration".
+    * **Display name:** e.g., `GitHub Sync - Storyteller Agent`.
+    * **Git repository:** HTTPS URL of your dedicated GitHub repo for agent config.
+    * **Branch:** e.g., `main`.
+    * **Access token secret:** Full resource name of the Secret Manager secret version (e.g., `projects/[PROJECT_ID]/secrets/[SECRET_NAME]/versions/latest`).
+    * Click "Connect", then "Save" agent settings.
+
+5.  **Import/Configure Playbook:**
+    * Import the playbook from the `ai-storyteller-agent-config` repository if you have one, or configure a new one.
+    * Ensure you are working with the correct playbook (e.g., `Storyteller Playbook - GCS Test`).
+
+6.  **Configure Playbook Instructions:**
+    * Paste the playbook instructions (which define how the agent uses parameters and tool outputs to generate the story) into the "Instructions" field.
+
+7.  **Configure Playbook Example:**
+    * Edit/create an example demonstrating the successful path.
+    * Tool Use step should call your Data Store Tool. Example Input JSON for the tool:
+        ```json
+        {
+          "query": "Story about $session.params.theme with a moral of $session.params.moral",
+          "filter": "",
+          "userMetadata": {}
+        }
+        ```
+    * Agent response step should contain the generative prompt, referencing user parameters (`$session.params.*`) and the tool output (e.g., `$tool.WorkspaceStoryContextTool-OneTime.snippets`). Example Prompt Text:
+        ```text
+        Okay, traveler! Using the inspiration found in our archives ($tool.WorkspaceStoryContextTool-OneTime.snippets), here is a new short story (300-350 words) about $session.params.protagonist in a $session.params.theme setting. The story must teach the moral '$session.params.moral'. Remember to base the story ONLY on the retrieved context from the archives, adapting creatively but not adding external information or copying verbatim. Make sure it has a beginning, middle, and end.
+
+        Would you like me to craft another tale, traveler?
+        ```
+    * Configure "End example with output information". Save.
+
+8.  **Configure Agent Generative Settings:**
+    * Agent Settings -> Generative AI -> Playbook.
+    * Select **Model** (e.g., `gemini-1.5-flash-001`), **Temperature**, **Token Limit**. Save.
+
+9.  **Initial Git Push (from Dialogflow CX Agent Settings):**
+    * Go to Agent Settings -> Git integration. Find your connection. Click **"Push"**.
+
+### 2.6. How to Use/Test Dialogflow CX Agent
+
+1.  Open Dialogflow CX console, select your agent.
+2.  Open the **Simulator**.
+3.  Simulator settings: Environment (`Draft`), Start Resource (`Playbook`), select your specific playbook.
+4.  Interact by providing protagonist, theme, and moral when prompted.
+
+### 2.7. Known Issues / Troubleshooting Context (Dialogflow CX)
+
+* **Webhook Parameter Preset Bug (Historical):** Initial ChromaDB/Webhook approach using parameter presets failed due to a UI bug. This led to the GCS Data Store method.
+* **GCS Data Store Visibility:** "One time" sync for Data Stores was found more reliable for immediate tool linking than "Periodic" sync during development.
+* **GCS Permissions:** Ensure Dialogflow Service Agent has `Storage Object Viewer` on the GCS bucket.
+* **Data Store Indexing:** Can take time. Check "DATA INGESTION ACTIVITY".
+
+---
+
+## Section 3: Running the NAO Storyteller System
+
+This section explains how to run the NAO interaction scripts and, if applicable, the local webhook for testing the end-to-end flow.
+
+### 3.1. Configure OpenAI API Key (for `chatgpt_webhook.py`)
+Ensure the `AI_STORYTELLER_TEST_KEY_CV` environment variable is set in your shell environment where `chatgpt_webhook.py` will run:
 ```bash
 export AI_STORYTELLER_TEST_KEY_CV="sk-...your API key..."
+# Add to ~/.bashrc or ~/.zshrc for persistence
 ```
 
-Apply it in your current shell:
-```bash
-source ~/.bashrc
-```
-Ensure the `chatgpt_webhook.py` script (or whichever environment it runs in) can access this environment variable.
+### 3.2. Running the Components
+
+**A. Start the Story Generation Webhook (if not using Dialogflow CX directly with NAO)**
+
+The `test_asr.py` script for NAO is designed to call a webhook.
+* **If using `chatgpt_webhook.py` for local testing:**
+    This webhook generates stories using OpenAI. It's generally recommended to run modern web services and AI library interactions in a **Python 3 environment**.
+    1.  Open a *new terminal*.
+    2.  Activate your Python 3 virtual environment for this script (if different from the NAOqi env).
+    3.  Run: `python /path/to/chatgpt_webhook.py` (ensure Flask is installed in this env).
+    Keep this server running.
+
+* **If integrating NAO with your Dialogflow CX Agent:**
+    The Dialogflow CX agent *is* your "story generation service." The NAO scripts would need to be adapted to send their recognized keywords to a new webhook that, in turn, interacts with your Dialogflow CX agent's API (e.g., using the Dialogflow CX Python client library). This is a more advanced setup beyond the scope of the current `test_asr.py`. For now, `test_asr.py` uses the simpler `chatgpt_webhook.py`.
+
+**B. Run the NAO Interaction Scripts**
+
+Ensure your NAO robot is on, connected to the network, and you have updated the `NAO_IP` variable in the Python 2 scripts (`test_naoqi.py`, `test_tts.py`, `test_asr.py`) to match your robot's actual IP address.
+
+1.  Open a new terminal.
+2.  Navigate to your project directory: `cd /path/to/your/nao_project`
+3.  Activate the Python 2 virtual environment: `source naoqi_env/bin/activate`
+
+4.  **Verify NAO Connectivity:**
+    ```bash
+    python test_naoqi.py
+    ```
+
+5.  **Confirm NAO Can Speak:**
+    ```bash
+    python test_tts.py
+    ```
+
+6.  **Run the Full Virtual Storyteller Loop (NAO ASR -> Webhook -> NAO TTS):**
+    Make sure the `chatgpt_webhook.py` (or your equivalent story generation service) is running.
+    ```bash
+    python test_asr.py
+    ```
+    Then speak one of the keywords (`hello`, `story`, `robot`) near NAO.
 
 ---
 
-### 6. Running Tests and the Virtual Storyteller
+## Internals (NAO Interaction Scripts)
 
-Ensure your NAO robot is on, connected to the network, and you have updated the `NAO_IP` variable in scripts like `test_naoqi.py`, `test_tts.py`, and `test_asr.py` to match your robot's actual IP address.
-
-**Activate your Python 2 virtual environment in each new terminal session:**
-```bash
-cd /path/to/your/nao_project # Adjust to your project path
-source naoqi_env/bin/activate
-```
-
-#### 6.1. Verify NAO Connectivity
-```bash
-python test_naoqi.py
-```
-
-#### 6.2. Confirm NAO Can Speak
-```bash
-python test_tts.py
-```
-
-#### 6.3. Start the Flask Story Generator Webhook
-This webhook (`chatgpt_webhook.py`) generates stories using OpenAI.
-**Recommendation:** Run modern web services and AI library interactions (like OpenAI API calls) in a **Python 3 environment**.
-If you have `chatgpt_webhook.py` configured for Python 3:
-1. Open a *new terminal*.
-2. Activate your Python 3 virtual environment for that script.
-3. Run `python /path/to/chatgpt_webhook.py`.
-
-If you have adapted `chatgpt_webhook.py` to run under Python 2 (and installed Flask in `naoqi_env`):
-```bash
-# In a separate terminal, ensure naoqi_env is activated if running webhook under Python 2
-# source naoqi_env/bin/activate 
-python chatgpt_webhook.py
-```
-Keep this webhook server running.
-
-Then, test the webhook from another terminal:
-```bash
-curl -X POST http://localhost:5000/generate_story          -H "Content-Type: application/json"          -d '{"word": "robot"}'
-```
-
-#### 6.4. Run the Virtual Storyteller
-Ensure the `chatgpt_webhook.py` server is running. In your terminal with the `naoqi_env` (Python 2) activated:
-```bash
-python test_asr.py
-```
-
-Then speak one of the following words near NAO:
-- `hello`
-- `story`
-- `robot`
+The Python 2 scripts for NAO interaction use:
+- `ALSpeechRecognition` for listening.
+- `ALMemory` for retrieving recognized words.
+- `ALTextToSpeech` for playback.
+- The `chatgpt_webhook.py` (Flask) serves `/generate_story` using OpenAI’s `chat/completions` API (model `gpt-4o-mini`).
 
 ---
 
-## 7. Troubleshooting Tips
+## Scripts Overview Table
 
-* **"ImportError: No module named naoqi"**:
-    * Ensure your Python 2 virtual environment (`naoqi_env`) is activated.
-    * Verify `PYTHONPATH` is correct (Option 4.2.A) OR SDK files are in venv's `site-packages` (Option 4.2.B).
-    * Confirm you're using the Python interpreter from `naoqi_env`.
-* **Connection Errors ("Connection refused", "Host not found", Timeout to NAO):**
-    * Double-check NAO's IP in the scripts.
-    * Ensure NAO is on and on the same network.
-    * Ping NAO's IP.
-    * Check firewalls (port 9559 TCP).
-* **SDK Version Compatibility:** Match NAOqi Python SDK version with NAO's OS version.
-* **Python 2 Quirks:** Remember `print` syntax (unless `from __future__ import print_function` is used), string/unicode differences from Python 3.
-* **Webhook Issues:**
-    * Ensure `chatgpt_webhook.py` is running and accessible (check its console output for errors).
-    * Verify `AI_STORYTELLER_TEST_KEY_CV` is set correctly and accessible by the webhook script.
-    * Test the webhook with `curl` first to isolate issues.
-
----
-
-## Internals
-
-This project uses:
-- `ALSpeechRecognition` for listening
-- `ALMemory` for retrieving recognized words
-- `ALTextToSpeech` for playback
-- Flask (`chatgpt_webhook.py`) to serve `/generate_story`
-- OpenAI’s `chat/completions` API with the model `gpt-4o-mini`
-
-For technical reference, all scripts have been refactored for [Doxygen](https://www.doxygen.nl/) compatibility with documented parameters, types, and call graphs.
-
----
-
-## Scripts Overview
-
-| File               | Purpose                                                  | Python Version Recommendation |
-|--------------------|----------------------------------------------------------|-------------------------------|
-| `test_naoqi.py`    | Verifies connection to the NAO robot and TTS subsystem   | Python 2.7 (via `naoqi_env`)  |
-| `test_tts.py`      | Sends a single test sentence to the NAO for speech       | Python 2.7 (via `naoqi_env`)  |
-| `chatgpt_webhook.py` | Flask server that generates stories using OpenAI       | Python 3 (in a separate venv) |
-| `test_asr.py`      | End-to-end: speech → story generation → TTS playback     | Python 2.7 (via `naoqi_env`)  |
-
-*(Other scripts like `upload_stories.py` or FastAPI webhooks for ChromaDB would typically require Python 3 and their own setup.)*
+| File                 | Purpose                                                     | Python Version Recommendation | Environment    |
+|----------------------|-------------------------------------------------------------|-------------------------------|----------------|
+| `test_naoqi.py`      | Verifies NAO connectivity (TTS subsystem)                   | Python 2.7                    | `naoqi_env`    |
+| `test_tts.py`        | Simple NAO speech test                                      | Python 2.7                    | `naoqi_env`    |
+| `test_asr.py`        | NAO ASR → Webhook → NAO TTS loop                            | Python 2.7                    | `naoqi_env`    |
+| `chatgpt_webhook.py` | Flask server for OpenAI story generation (called by ASR)    | Python 3 (recommended)        | Separate Py3 venv |
+| `upload_stories.py`  | Bulk story uploader to ChromaDB (historical/utility)        | Python 3                      | Separate Py3 venv |
+| Dialogflow CX Agent  | Core storyteller logic, RAG with GCS Data Store             | N/A (Google Cloud Platform)   | GCP            |
 
 ---
 
 ## Future Possibilities
 
-This setup validates the feasibility of **using NAO as a front-end for a generative AI-based virtual storyteller**. With this foundation, the following enhancements are possible:
-- Integrating **Conversational Agents (Dialogflow CX)** to manage conversation logic.
-- Adding **multi-turn story generation** with memory of previous interactions.
-- Expanding vocabulary dynamically via the web interface.
-- Hosting the webhook on a public domain via `ngrok` or GCP/AWS.
+* **Direct NAO to Dialogflow CX Integration:** Adapt NAO scripts to interact directly with the Dialogflow CX API for a more robust conversational experience, replacing the simpler `chatgpt_webhook.py`.
+* **Enhanced NAO Expressiveness:** Incorporate NAO's gestures and movements synchronized with storytelling.
+* **Multi-turn Story Generation:** Leverage Dialogflow CX's capabilities for more interactive, choice-driven narratives.
+* **Dynamic Vocabulary:** Allow NAO's recognized vocabulary to be updated dynamically.
+* **Cloud Deployment:** Host webhooks or intermediary services on GCP Cloud Functions or Cloud Run for scalability.
 
 ---
 
@@ -538,19 +685,18 @@ MIT License — See source files for copyright.
 
 Feel free to fork this repo, submit pull requests, or open an issue with suggestions for enhancements!
 
-
 ---
 
 ## 🧾 Developer Reference (Doxygen)
 
-This repository includes full developer-level documentation using [Doxygen](https://www.doxygen.nl/). All Python source files are annotated with:
+This repository includes full developer-level documentation using [Doxygen](https://www.doxygen.nl/) for the Python scripts. All Python source files are annotated with:
 
 - `@file`, `@brief`, `@param`, `@return`, `@author`
 - Function-level docstrings structured for auto-generation
 - Mermaid diagrams (e.g., ASR → Webhook → TTS flowchart in `test_asr.py`)
 - Module constants and environmental variable documentation
 
-### Entry Points
+### Entry Points (Python Scripts)
 
 | Script               | Purpose                                                |
 |----------------------|--------------------------------------------------------|
@@ -559,22 +705,22 @@ This repository includes full developer-level documentation using [Doxygen](http
 | `test_naoqi.py`      | Connectivity check to NAO’s `ALTextToSpeech` proxy    |
 | `test_tts.py`        | Basic smoke test of NAO’s speech output               |
 
-### To Generate Documentation
+### To Generate Doxygen Documentation
 
-To build the Doxygen HTML output:
+To build the Doxygen HTML output for the Python scripts:
 
 ```bash
 doxygen Doxyfile
 ```
 
-Then open the generated file:
+Then open the generated file (usually in a `docs/html/` subdirectory):
 
 ```bash
 xdg-open docs/html/index.html
 ```
 
-This will give you a full class/function reference, parameter table, call graphs, and links between modules.
+This will give you a full class/function reference, parameter table, call graphs, and links between modules for the Python code.
 
-> **Note**: Ensure your `Doxyfile` is configured for Python with `OPTIMIZE_OUTPUT_FOR_C = NO` and `EXTENSION_MAPPING = py=Python`.
+> **Note**: Ensure your `Doxyfile` is configured for Python (e.g., `OPTIMIZE_OUTPUT_FOR_C = NO`, `EXTENSION_MAPPING = py=Python`, correct `INPUT` path).
 
-ℹ️ **Browse the full documentation here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
+ℹ️ **Browse the full project documentation (including Doxygen output if hosted) here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
