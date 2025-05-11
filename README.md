@@ -3,9 +3,9 @@
 ## Abstract
 This research project explores the feasibility of integrating generative AI with the NAO humanoid robot to create a virtual storyteller designed for caregivers, educators, and professionals in assistive and therapeutic fields. Studies indicate that individuals with Autism Spectrum Disorder (ASD) often find robots more approachable and predictable than human partners, making robotic interaction a valuable tool for fostering communication and social skills. By leveraging the NAO robot’s built-in audio functionality as the primary mode of interaction, this project examines how robotics and generative AI can enhance interactive storytelling.
 
-The system implementation will utilize Google Dialogflow CX to manage conversational flow and process user input, working in conjunction with a Conversational Retrieval-Augmented Generation (CoRAG) model. CoRAG enhances storytelling continuity by adapting to user choices and thematic preferences over multiple interactions. Instead of generating isolated responses, CoRAG enables the storyteller to retain user preferences and past interactions, ensuring context-aware, progressively enriching narratives. The storyteller will process verbal input—such as user choices, questions, and themes—to generate personalized stories set in engaging fictional worlds, including space adventures and fantasy realms.
+The project involves two main components: a sophisticated backend storyteller built with **Google Dialogflow CX** (utilizing Retrieval-Augmented Generation with a GCS Data Store) and **proof-of-concept scripts demonstrating NAO robot interaction** (listening via ASR, speaking via TTS, and calling a simpler webhook for story generation). While the Dialogflow CX system represents the advanced conversational and story generation logic, the direct integration of NAO with this specific Dialogflow CX agent is a key area for **future development** and is **not yet implemented**. Current NAO scripts showcase foundational capabilities with a more direct, simpler webhook.
 
-Caregivers, educators, and professionals working with ASD may benefit from NAO-integrated storytelling as a tool for engagement and guided learning. By leveraging CoRAG, we aim to develop an accessible and contextually adaptive storytelling platform that fosters meaningful interaction within caregiver-supported environments. Looking ahead, we envision a future where the NAO robot’s mechanical expressiveness further enhances the storytelling experience through emotionally expressive movements, deepening engagement and immersion.
+Caregivers, educators, and professionals working with ASD may benefit from NAO-integrated storytelling as a tool for engagement and guided learning. By leveraging CoRAG (within the Dialogflow CX component), we aim to develop an accessible and contextually adaptive storytelling platform that fosters meaningful interaction within caregiver-supported environments. Looking ahead, we envision a future where the NAO robot’s mechanical expressiveness further enhances the storytelling experience through emotionally expressive movements, deepening engagement and immersion, potentially by connecting it to the full capabilities of the Dialogflow CX agent.
 
 ---
 
@@ -16,23 +16,16 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
   - [Core Research](#core-research)
   - [Supplemental Research](#supplemental-research)
 - [Other Resources](#other-resources)
-- [How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :)](#how-our-ai-storytelling-robot-works--chatgpt-version-explained-for-everyone-)
-  - [🔹 Step 1: The User Talks to the Robot](#-step-1-the-user-talks-to-the-robot)
-  - [🔹 Step 2: Processing the Story Request](#-step-2-processing-the-story-request)
-  - [🔹 Step 3: The Robot Tells the Story](#-step-3-the-robot-tells-the-story)
-  - [🔹 Step 4: User Interaction (Optional Future Feature)](#-step-4-user-interaction-optional-future-feature)
-  - [🔹 What’s Needed to Make This Work?](#-whats-needed-to-make-this-work)
-  - [🔹 How Long Will This Take?](#-how-long-will-this-take)
-  - [🔹 Why This Matters](#-why-this-matters)
-  - [🔹 Summary: The Big Picture](#-summary-the-big-picture)
-- [How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Student)](#how-our-ai-storytelling-system-works--chatgpt-version-explained-for-a-cs-student)
+- [How Our AI Storytelling System Works – Conceptual Overview](#how-our-ai-storytelling-system-works--conceptual-overview)
+  - [How the Dialogflow CX Storytelling Backend Works (Explained for Everyone) :)](#how-the-dialogflow-cx-storytelling-backend-works-explained-for-everyone-)
+  - [How the Current NAO Proof-of-Concept Works (Simplified Loop)](#how-the-current-nao-proof-of-concept-works-simplified-loop)
+- [How Our AI Storytelling System Works – Technical Breakdown (CS Student)](#how-our-ai-storytelling-system-works--technical-breakdown-cs-student)
   - [🔹 Core Components:](#-core-components)
-  - [🔹 Step 1: User Input & Speech Processing](#-step-1-user-input--speech-processing)
-  - [🔹 Step 2: Webhook & AI Story Generation](#-step-2-webhook--ai-story-generation)
-  - [🔹 Step 3: NAO Reads the Story Aloud](#-step-3-nao-reads-the-story-aloud)
-  - [🔹 Summary of the System Flow:](#-summary-of-the-system-flow)
+  - [🔹 System Flow A: Advanced Storytelling with Dialogflow CX (Conceptual)](#-system-flow-a-advanced-storytelling-with-dialogflow-cx-conceptual)
+  - [🔹 System Flow B: NAO Proof-of-Concept (Current `test_asr.py` Implementation)](#-system-flow-b-nao-proof-of-concept-current-test_asrpy-implementation)
 - [NAO Virtual Storyteller: Project Setup & Guide](#nao-virtual-storyteller-project-setup--guide)
-  - [Project Objective](#project-objective) - [Documentation & Downloads (NAO Specific)](#documentation--downloads-nao-specific)
+  - [Project Objective (Clarified)](#project-objective-clarified)
+- [Documentation & Downloads (NAO Specific)](#documentation--downloads-nao-specific)
 - [Repository Structure Overview](#repository-structure-overview)
 - [Section 1: NAO Robot Interaction Setup (Python 2 & NAOqi SDK)](#section-1-nao-robot-interaction-setup-python-2--naoqi-sdk)
   - [1.1. Network Setup for NAO Robot](#11-network-setup-for-nao-robot)
@@ -49,9 +42,10 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
   - [2.5. Agent Configuration Steps (Dialogflow CX Console)](#25-agent-configuration-steps-dialogflow-cx-console)
   - [2.6. How to Use/Test Dialogflow CX Agent](#26-how-to-usetest-dialogflow-cx-agent)
   - [2.7. Known Issues / Troubleshooting Context (Dialogflow CX)](#27-known-issues--troubleshooting-context-dialogflow-cx)
-- [Section 3: Running the NAO Storyteller System](#section-3-running-the-nao-storyteller-system)
+- [Section 3: Running Project Components & Demonstrations](#section-3-running-project-components--demonstrations)
   - [3.1. Configure OpenAI API Key (for `chatgpt_webhook.py`)](#31-configure-openai-api-key-for-chatgpt_webhookpy)
-  - [3.2. Running the Components](#32-running-the-components)
+  - [3.2. Running the NAO Direct Interaction Scripts & PoC Loop (Python 2)](#32-running-the-nao-direct-interaction-scripts--poc-loop-python-2)
+  - [3.3. Interacting with the Dialogflow CX AI Storyteller Agent (via Simulator)](#33-interacting-with-the-dialogflow-cx-ai-storyteller-agent-via-simulator)
 - [Internals (NAO Interaction Scripts)](#internals-nao-interaction-scripts)
 - [Scripts Overview Table](#scripts-overview-table)
 - [Future Possibilities](#future-possibilities)
@@ -61,6 +55,7 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
   - [Entry Points (Python Scripts)](#entry-points-python-scripts)
   - [To Generate Doxygen Documentation](#to-generate-doxygen-documentation)
 
+---
 
 ## Research
 
@@ -73,7 +68,7 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
    - Highlights challenges in coherence, emotion, and user engagement.  
    - Encourages human-AI collaboration — AI assists rather than replaces.
 
-2. **[Integrating GPT-Based AI into Virtual Patients](https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/)** *Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).* *JMIR Form Res.* https://doi.org/10.2196/58623  
+2. **[Integrating GPT-Based AI into Virtual Patients](https://pmc.ncbi.nlm.nih.gov/articles/PMC11669881/)** *Gutiérrez Maquilón R, Uhl J, Schrom-Feiertag H, Tscheligi M. (2024).* *JMIR Form Res.* [https://doi.org/10.2196/58623](https://doi.org/10.2196/58623)  
 
    - Demonstrates GPT in real-time verbal interactions.  
    - Emphasizes reducing AI response latency for better usability.  
@@ -92,7 +87,7 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
    - Human-mediated AI ensures appropriateness.  
    - Discusses NAO’s speech recognition limitations and therapy potential.
 
-5. **[Robots vs Humans: Social Interaction with ASD](https://www.mdpi.com/2076-328X/14/2/131)** *Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).* *Behavioral Sciences*, 14(2), 131. https://doi.org/10.3390/bs14020131  
+5. **[Robots vs Humans: Social Interaction with ASD](https://www.mdpi.com/2076-328X/14/2/131)** *Dubois-Sage, M.; Jacquet, B.; Jamet, F.; Baratgin, J. (2024).* *Behavioral Sciences*, 14(2), 131. [https://doi.org/10.3390/bs14020131](https://doi.org/10.3390/bs14020131)  
 
    - Validates robotic storytelling for ASD engagement.  
    - Suggests CoRAG enhances structured interaction.  
@@ -115,150 +110,83 @@ Caregivers, educators, and professionals working with ASD may benefit from NAO-i
 
 ---
 
-## How Our AI Storytelling Robot Works – ChatGPT Version (Explained for Everyone) :)
+## How Our AI Storytelling System Works – Conceptual Overview
 
-Imagine a robot storyteller that listens to you, understands what kind of story you want, and then tells you an engaging, AI-generated tale—all in real-time. Our project is about making that happen using a humanoid robot (NAO), AI storytelling technology (ChatGPT), and a system that connects them.
+This project explores creating an interactive storytelling experience. We have two main parts:
+1.  **An Advanced Storytelling Backend:** Built using Google Dialogflow CX, this system can understand user preferences (like themes or characters) and use a knowledge base of stories (Retrieval-Augmented Generation - RAG) to craft new, unique tales. This is the sophisticated "brain" for story creation.
+2.  **NAO Robot as an Interface (Proof of Concept):** We have scripts that allow the NAO robot to listen to simple keywords, send them to a basic story-generating service (a simpler OpenAI webhook detailed in `chatgpt_webhook.py`), and then speak the resulting story. This demonstrates NAO's potential as an engaging front-end.
 
-### 🔹 Step 1: The User Talks to the Robot
-The interaction starts when a person speaks to the NAO robot—just like talking to a smart assistant (e.g., Siri, Alexa). They might say:
+**The Vision (Future Integration):** The ultimate goal is to connect the NAO robot to the advanced Dialogflow CX storytelling backend. This would allow users to have rich, interactive conversations with NAO, guiding the creation of complex, context-aware stories. The sections below describe how these components work individually and how they *could* work together.
 
-🗣️ *“Tell me a story about a brave astronaut!”*
+### How the Dialogflow CX Storytelling Backend Works (Explained for Everyone) :)
 
-#### 🔹 What Happens Next?
-- The robot listens using its built-in microphone.  
-- The speech is converted into text (so the AI can understand it).  
-- The request is sent to our AI-powered storytelling system for processing.  
+Imagine an AI that's a master storyteller and also a great listener. This is what our Dialogflow CX system does:
 
-### 🔹 Step 2: Processing the Story Request
-Once the user’s request is received, the system figures out what kind of story to generate.
+#### 🔹 Step 1: Understanding Your Story Idea
+You tell the system (through a chat interface or, hypothetically, through NAO) what kind of story you want:
+🗣️ *“I’d like a fantasy story about a brave knight named Arthur who learns about courage.”*
 
-#### 🔹 How It Works Behind the Scenes:
-- The request is sent to ChatGPT, an advanced AI model that can generate human-like text.  
-- ChatGPT creates a unique story based on the input.  
-- The AI structures the story so it makes sense, ensuring it’s engaging and fun.  
-- The finished story is sent back to the robot to be spoken aloud.  
+#### 🔹 Step 2: Consulting the Archives & Crafting a New Tale
+- The system looks up related ideas and story snippets from its knowledge base (like a library of story elements).
+- Using these snippets for inspiration, and your specific requests (knight, Arthur, fantasy, courage), an AI (like Google's Gemini models) writes a *brand new* short story. It doesn't just copy; it creates something unique.
 
-#### 🔹 For Example:
-If the user asked for a space adventure, ChatGPT might generate a story about: 🚀 *“Captain Luna, a brave astronaut, who embarks on a journey to find a lost alien civilization.”*
+#### 🔹 Step 3: Presenting the Story
+The newly crafted story is then presented to you. If NAO were connected to this system, it would be the one speaking the story.
 
-### 🔹 Step 3: The Robot Tells the Story
-Now that the story has been created, the robot brings it to life!
+### How the Current NAO Proof-of-Concept Works (Simplified Loop)
 
-#### 🔹 What Happens Now?
-- The AI-generated story is converted back into speech using the robot’s built-in voice.  
-- The robot reads the story aloud, just like a human storyteller would.  
-- If time allows, we might also make the robot move its arms, nod, or react during the story.  
+Our current NAO scripts (`test_asr.py`) demonstrate a simpler interaction:
+1.  🗣️ **User speaks a keyword** (e.g., "dragon") to NAO.
+2.  🤖 NAO recognizes the keyword.
+3.  ➡️ NAO sends this single keyword to a basic local webhook (`chatgpt_webhook.py`).
+4.  💡 This webhook uses OpenAI (e.g., GPT-4o-mini) to generate a very short story based *only* on that keyword.
+5.  📢 NAO speaks the story.
 
-### 🔹 Step 4: User Interaction (Optional Future Feature)
-Instead of just telling one long story, the system could allow for interactive choices, where the listener gets to decide what happens next.
-
-#### 🔹 For Example:
-🗣️ *"Should Captain Luna explore the dark cave or send a drone first?"* 🤖 The robot waits for an answer and then continues the story based on the choice.
-
-*(This would take extra time to implement, so we may stick to straightforward storytelling for now!)*
-
-### 🔹 What’s Needed to Make This Work?
-Building this system requires connecting three main components:  
-1️⃣ **The NAO Robot** – The physical device that listens, speaks, and interacts.  
-2️⃣ **Conversational Agents (Dialogflow CX)** – A system that helps manage the conversation flow and decides what should happen next.  
-3️⃣ **ChatGPT API** – The AI that generates the actual story.  
-
-To make them work together, we need a **bridge**—a small program called a **webhook** that connects Conversational Agents (Dialogflow CX) to ChatGPT.
-
-### 🔹 How Long Will This Take?
-Since we’re working under a deadline, we’re focusing on the core goal: ✅ Make the robot listen, generate, and tell a story smoothly. 🚀 If time allows, we’ll explore adding extra features, like gestures or interactive choices.
-
-### 🔹 Why This Matters
-This AI-powered storytelling system could be useful for **educators, therapists, and caregivers**, helping them introduce engaging, AI-generated stories in an interactive way. It also provides a hands-free, voice-activated experience, making it easy to use.
-
-While this is a technical research project, it’s also about **bringing storytelling to life** using AI and robotics!
-
-### 🔹 Summary: The Big Picture
-🔹 User speaks to the robot → 🗣️ NAO listens  
-🔹 Request is sent to ChatGPT → 💡 AI generates a unique story  
-🔹 Story is sent back to the robot → 🤖 NAO reads the story aloud  
-🔹 Potential future expansion → 🔄 Interactive choices  
+This shows NAO can listen, trigger an AI, and tell a story. The next step would be to connect NAO to the more powerful Dialogflow CX backend described above for richer interactions.
 
 ---
 
-## How Our AI Storytelling System Works – ChatGPT Version (Explained for a CS Student)
+## How Our AI Storytelling System Works – Technical Breakdown (CS Student)
 
-This project is about integrating **robotics and AI** to create an interactive storytelling system where a humanoid robot (NAO) listens to user input, processes the request using AI (ChatGPT), and narrates a dynamically generated story.
+This project integrates robotics (NAO) with two tiers of AI for storytelling: a sophisticated Dialogflow CX agent for advanced RAG-based narrative generation, and a simpler direct OpenAI webhook for NAO proof-of-concept interactions.
 
 ### 🔹 Core Components:
-- **NAO Robot** → Captures voice input and outputs speech.  
-- **Conversational Agents (Dialogflow CX)** → Manages the conversation and processes user input.  
-- **ChatGPT API** → Generates the story dynamically based on user preferences.  
+- **NAO Robot:** Captures voice input (ASR) and outputs speech (TTS) using the NAOqi SDK. (Proof-of-Concept Stage)
+- **Dialogflow CX Agent:** The primary storytelling engine. Manages multi-turn conversations, extracts complex user preferences, and uses RAG with a GCS Data Store to generate context-aware stories. (Advanced Backend)
+- **OpenAI API (via `chatgpt_webhook.py`):** Used by the current NAO ASR scripts for direct, keyword-based story generation as a proof-of-concept. (Simple Webhook for NAO PoC)
 
-A **webhook** is developed to **bridge** Conversational Agents (Dialogflow CX) and ChatGPT.
+### 🔹 System Flow A: Advanced Storytelling with Dialogflow CX (Conceptual)
+1.  **User Input:** User interacts with the Dialogflow CX agent (e.g., via text chat simulator or a future integrated interface).
+2.  **Parameter Extraction:** Dialogflow CX extracts intents and parameters (protagonist, theme, moral).
+3.  **RAG Process:**
+    * The Dialogflow CX playbook queries a **GCS Data Store** (containing source stories) using the extracted parameters.
+    * Relevant text snippets are retrieved.
+4.  **Story Generation:** A generative model within Dialogflow CX (e.g., Gemini) uses the retrieved snippets and user parameters to craft a new story, adhering to instructions (e.g., "do not copy verbatim," "story length").
+5.  **Response Delivery:** The story is presented to the user. *(Hypothetically, this could be sent to NAO for TTS output if fully integrated).*
 
-### 🔹 Step 1: User Input & Speech Processing
-The interaction begins when the user talks to NAO:
+### 🔹 System Flow B: NAO Proof-of-Concept (Current `test_asr.py` Implementation)
+1.  **User Speaks Keyword to NAO:** e.g., "robot".
+2.  **NAO ASR:** `ALSpeechRecognition` detects the keyword. `ALMemory` stores it.
+3.  **Webhook Call:** `test_asr.py` sends the recognized keyword via an HTTP POST request to `chatgpt_webhook.py`.
+4.  **Simple Story Generation:** `chatgpt_webhook.py` directly calls the OpenAI API (e.g., `gpt-4o-mini`) with a prompt based on the single keyword.
+5.  **Webhook Response:** Returns the generated story snippet as JSON.
+6.  **NAO TTS:** `test_asr.py` receives the story, and `ALTextToSpeech` makes NAO speak it.
 
-🗣️ *Example: “Tell me a story about a brave astronaut.”*
-
-#### 🔹 How This Works Technically:
-1. NAO records the user’s voice and converts speech to text.  
-2. The text is sent to Conversational Agents (Dialogflow CX), which classifies the intent (e.g., “Story Request”) and extracts parameters (e.g., “astronaut theme”).  
-3. Conversational Agents (Dialogflow CX) forwards this request to our custom webhook, which will call ChatGPT.
-
-### 🔹 Step 2: Webhook & AI Story Generation
-The webhook is a simple backend service (**Python/Flask** or **Node.js**) that processes Conversational Agents' (Dialogflow CX) structured request and queries **ChatGPT’s API**.
-
-#### 🔹 Technical Breakdown:
-- Webhook receives a **JSON request** from Conversational Agents (Dialogflow CX).  
-- Extracts the user’s theme preference (e.g., “astronaut adventure”).  
-- Formats the request and sends it to **ChatGPT’s API**.  
-- ChatGPT generates a structured response, returning a **short story**.  
-- Webhook parses the response and sends it back to **Dialogflow CX**.
-
-##### Example API Call to ChatGPT
-```python
-import openai
-
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[{"role": "system", "content": "Tell a short astronaut adventure story."}]
-)
-print(response["choices"][0]["message"]["content"])
-```
-
-### 🔹 Step 3: NAO Reads the Story Aloud
-Once the AI-generated story is returned, it’s sent back to **NAO for speech synthesis**.
-
-#### 🔹 How This Works:
-- The **formatted story text** is sent back to **Conversational Agents (Dialogflow CX)**.  
-- Conversational Agents (Dialogflow CX) forwards the response to **NAO**.  
-- NAO’s **Text-to-Speech (TTS)** engine converts the text to spoken words.
-
-##### Example NAO TTS Code
-```python
-from naoqi import ALProxy
-
-tts = ALProxy("ALTextToSpeech", "<NAO_IP>", 9559)
-story_text = "Captain Luna soared through space on a mission to find the lost alien civilization."
-tts.say(story_text)
-```
-
-### 🔹 Summary of the System Flow:
-🔹 **User speaks to NAO** → Speech converted to text  
-🔹 **Conversational Agents (Dialogflow CX) processes request** → Extracts story parameters  
-🔹 **Webhook sends request to ChatGPT** → AI generates a custom story  
-🔹 **Webhook returns the story to Conversational Agents (Dialogflow CX)** 🔹 **NAO reads the story aloud** using TTS
+The vision is to evolve System Flow B to integrate with a system like Flow A, where NAO becomes the voice/ears for the Dialogflow CX agent.
 
 ---
 
 # NAO Virtual Storyteller: Project Setup & Guide
 
-## Project Objective
+## Project Objective (Clarified)
 
-This project demonstrates a **proof of concept** where a **NAO robot** serves as the expressive medium for a **virtual storyteller**. The current core of the storytelling logic resides within a **Google Cloud Dialogflow CX agent**, which uses Retrieval-Augmented Generation (RAG) with a GCS Data Store.
+This project demonstrates a **proof of concept** where a **NAO robot** serves as the expressive medium for a **virtual storyteller**. The current advanced core of the storytelling logic resides within a **Google Cloud Dialogflow CX agent**, which uses Retrieval-Augmented Generation (RAG) with a GCS Data Store.
 
-Earlier iterations and proof-of-concept scripts explored direct NAO interaction with local webhooks and vector databases (like ChromaDB). These scripts, primarily for Python 2 and NAOqi interaction, are included in this repository for completeness, testing, and to showcase the project's evolution.
+The Python scripts included in this repository, primarily for Python 2 and NAOqi interaction, represent **foundational work and proof-of-concept implementations** (like direct NAO ASR to a simple OpenAI webhook and TTS output). While the Dialogflow CX system is functional as a standalone conversational agent, the direct, real-time integration of the **NAO robot with this specific Dialogflow CX agent is a key area for future development and is not yet implemented.**
 
 This README provides setup instructions for both:
-1.  The **NAO robot interaction components** (requiring Python 2.7 and the NAOqi SDK).
-2.  The **Dialogflow CX AI Storyteller Agent** (requiring Google Cloud Platform setup).
+1.  The **NAO robot interaction components** (requiring Python 2.7 and the NAOqi SDK for proof-of-concept tests).
+2.  The **Dialogflow CX AI Storyteller Agent** (requiring Google Cloud Platform setup, which functions independently).
 
 ---
 
@@ -274,24 +202,24 @@ This README provides setup instructions for both:
 ```
 .
 ├── naoqi_tests/               # Scripts for NAO interaction (Python 2)
-│   ├── chatgpt_webhook.py     # Flask webhook (can be run with Py2 for test_asr.py)
+│   ├── chatgpt_webhook.py     # Flask webhook (can be run with Py2 for test_asr.py PoC)
 │   ├── test_naoqi.py          # Basic NAO connectivity test
 │   ├── test_tts.py            # Simple speech playback test
-│   └── test_asr.py            # Full NAO ASR -> Webhook -> TTS loop
+│   └── test_asr.py            # Full NAO ASR -> Webhook -> TTS loop (PoC)
 ├── docs/                      # Doxygen generated documentation (if built)
-├── (other_python3_scripts/)   # Placeholder for Python 3 components (e.g., upload_stories.py)
+├── (other_python3_scripts/)   # Placeholder for Python 3 components (e.g., upload_stories.py for GCS)
 ├── naoqi_env/                 # Recommended name for Python 2.7 virtual environment
 ├── .env_example               # Example for environment variables
 ├── Doxyfile                   # Doxygen configuration file
 └── README.md                  # This file
 ```
-*(Note: Python 3 scripts like `upload_stories.py` or more complex webhooks should ideally be in their own Python 3 virtual environment, separate from `naoqi_env`.)*
+*(Note: Python 3 scripts like `upload_stories.py` or more complex webhooks for Dialogflow CX fulfillment should ideally be in their own Python 3 virtual environment, separate from `naoqi_env`.)*
 
 ---
 
 ## Section 1: NAO Robot Interaction Setup (Python 2 & NAOqi SDK)
 
-This section details setting up your Ubuntu 22.04 system to run the Python 2 scripts that interact directly with the NAO robot.
+This section details setting up your Ubuntu 22.04 system to run the Python 2 scripts that interact directly with the NAO robot. These scripts are primarily for testing NAO's capabilities and running the proof-of-concept ASR-Webhook-TTS loop.
 
 ### 1.1. Network Setup for NAO Robot
 
@@ -428,7 +356,7 @@ The `test_asr.py` script calls a webhook and needs `requests`:
 # (Ensure 'naoqi_env' is activated)
 pip install requests
 ```
-If running `chatgpt_webhook.py` under Python 2 (not generally recommended for modern Flask/OpenAI usage), install Flask:
+If running `chatgpt_webhook.py` under Python 2 for the PoC (not generally recommended for modern Flask/OpenAI usage), install Flask:
 ```bash
 # pip install Flask
 ```
@@ -442,7 +370,7 @@ If running `chatgpt_webhook.py` under Python 2 (not generally recommended for mo
 
 ## Section 2: Dialogflow CX AI Storyteller Agent Setup
 
-This section details the setup for the current core of the virtual storyteller, which uses Google Cloud Dialogflow CX with a GCS Data Store for Retrieval-Augmented Generation (RAG).
+This section details the setup for the current core of the virtual storyteller, which uses Google Cloud Dialogflow CX with a GCS Data Store for Retrieval-Augmented Generation (RAG). This agent functions independently and represents the advanced storytelling backend.
 *(This content is adapted from the README of the [ai-storyteller-agent-config](https://github.com/darthvandor13/ai-storyteller-agent-config) repository).*
 
 ### 2.1. Project Overview (Dialogflow CX Agent)
@@ -589,56 +517,53 @@ This guide assumes you have a Google Cloud project with billing enabled.
 
 ---
 
-## Section 3: Running the NAO Storyteller System
+## Section 3: Running Project Components & Demonstrations
 
-This section explains how to run the NAO interaction scripts and, if applicable, the local webhook for testing the end-to-end flow.
+This section explains how to run the NAO interaction scripts (Python 2 PoC) and how to test the Dialogflow CX agent.
 
 ### 3.1. Configure OpenAI API Key (for `chatgpt_webhook.py`)
-Ensure the `AI_STORYTELLER_TEST_KEY_CV` environment variable is set in your shell environment where `chatgpt_webhook.py` will run:
+The `test_asr.py` script for NAO calls the `chatgpt_webhook.py` for its story generation proof-of-concept. Ensure the `AI_STORYTELLER_TEST_KEY_CV` environment variable is set in the shell environment where `chatgpt_webhook.py` will run:
 ```bash
 export AI_STORYTELLER_TEST_KEY_CV="sk-...your API key..."
-# Add to ~/.bashrc or ~/.zshrc for persistence
+# Add to ~/.bashrc or ~/.zshrc for persistence and source the file
 ```
 
-### 3.2. Running the Components
+### 3.2. Running the NAO Direct Interaction Scripts & PoC Loop (Python 2)
 
-**A. Start the Story Generation Webhook (if not using Dialogflow CX directly with NAO)**
+These scripts test direct NAO functionalities and the proof-of-concept ASR -> Webhook -> TTS loop.
 
-The `test_asr.py` script for NAO is designed to call a webhook.
-* **If using `chatgpt_webhook.py` for local testing:**
-    This webhook generates stories using OpenAI. It's generally recommended to run modern web services and AI library interactions in a **Python 3 environment**.
-    1.  Open a *new terminal*.
-    2.  Activate your Python 3 virtual environment for this script (if different from the NAOqi env).
-    3.  Run: `python /path/to/chatgpt_webhook.py` (ensure Flask is installed in this env).
-    Keep this server running.
-
-* **If integrating NAO with your Dialogflow CX Agent:**
-    The Dialogflow CX agent *is* your "story generation service." The NAO scripts would need to be adapted to send their recognized keywords to a new webhook that, in turn, interacts with your Dialogflow CX agent's API (e.g., using the Dialogflow CX Python client library). This is a more advanced setup beyond the scope of the current `test_asr.py`. For now, `test_asr.py` uses the simpler `chatgpt_webhook.py`.
+**A. Start the Local Story Generation Webhook (`chatgpt_webhook.py`)**
+This webhook is called by `test_asr.py`. It's recommended to run this in a Python 3 environment if it uses modern libraries, but it can be run in the Python 2 `naoqi_env` if Flask is installed there and the script is Python 2 compatible.
+1.  Open a *new terminal*.
+2.  Activate the appropriate Python environment (Python 3 venv recommended, or `naoqi_env` if adapted for Py2).
+3.  Run: `python /path/to/naoqi_tests/chatgpt_webhook.py`
+4.  Keep this server running.
 
 **B. Run the NAO Interaction Scripts**
-
-Ensure your NAO robot is on, connected to the network, and you have updated the `NAO_IP` variable in the Python 2 scripts (`test_naoqi.py`, `test_tts.py`, `test_asr.py`) to match your robot's actual IP address.
-
-1.  Open a new terminal.
+Ensure your NAO robot is on, networked, and its IP is correctly set in the Python 2 scripts.
+1.  Open a *new terminal*.
 2.  Navigate to your project directory: `cd /path/to/your/nao_project`
 3.  Activate the Python 2 virtual environment: `source naoqi_env/bin/activate`
 
 4.  **Verify NAO Connectivity:**
     ```bash
-    python test_naoqi.py
+    python naoqi_tests/test_naoqi.py
     ```
 
 5.  **Confirm NAO Can Speak:**
     ```bash
-    python test_tts.py
+    python naoqi_tests/test_tts.py
     ```
 
-6.  **Run the Full Virtual Storyteller Loop (NAO ASR -> Webhook -> NAO TTS):**
-    Make sure the `chatgpt_webhook.py` (or your equivalent story generation service) is running.
+6.  **Run the Full Virtual Storyteller PoC Loop:**
+    (Ensure `chatgpt_webhook.py` is running)
     ```bash
-    python test_asr.py
+    python naoqi_tests/test_asr.py
     ```
-    Then speak one of the keywords (`hello`, `story`, `robot`) near NAO.
+    Speak one of the keywords (`hello`, `story`, `robot`) near NAO.
+
+### 3.3. Interacting with the Dialogflow CX AI Storyteller Agent (via Simulator)
+Refer to **Section 2.6. How to Use/Test Dialogflow CX Agent** above for instructions on using the Dialogflow CX simulator. This tests the advanced backend independently of NAO.
 
 ---
 
@@ -648,7 +573,9 @@ The Python 2 scripts for NAO interaction use:
 - `ALSpeechRecognition` for listening.
 - `ALMemory` for retrieving recognized words.
 - `ALTextToSpeech` for playback.
-- The `chatgpt_webhook.py` (Flask) serves `/generate_story` using OpenAI’s `chat/completions` API (model `gpt-4o-mini`).
+- The `chatgpt_webhook.py` (Flask) serves `/generate_story` using OpenAI’s `chat/completions` API (model `gpt-4o-mini`) for the NAO PoC.
+
+For a deeper dive into the script APIs, consult the Doxygen-generated documentation.
 
 ---
 
@@ -658,20 +585,20 @@ The Python 2 scripts for NAO interaction use:
 |----------------------|-------------------------------------------------------------|-------------------------------|----------------|
 | `test_naoqi.py`      | Verifies NAO connectivity (TTS subsystem)                   | Python 2.7                    | `naoqi_env`    |
 | `test_tts.py`        | Simple NAO speech test                                      | Python 2.7                    | `naoqi_env`    |
-| `test_asr.py`        | NAO ASR → Webhook → NAO TTS loop                            | Python 2.7                    | `naoqi_env`    |
-| `chatgpt_webhook.py` | Flask server for OpenAI story generation (called by ASR)    | Python 3 (recommended)        | Separate Py3 venv |
-| `upload_stories.py`  | Bulk story uploader to ChromaDB (historical/utility)        | Python 3                      | Separate Py3 venv |
+| `test_asr.py`        | NAO ASR → Webhook → NAO TTS loop (PoC)                      | Python 2.7                    | `naoqi_env`    |
+| `chatgpt_webhook.py` | Flask server for OpenAI story generation (called by ASR PoC)| Python 3 (recommended)        | Separate Py3 venv |
+| `upload_stories.py`  | Bulk story uploader (e.g., for GCS or historical ChromaDB)  | Python 3                      | Separate Py3 venv |
 | Dialogflow CX Agent  | Core storyteller logic, RAG with GCS Data Store             | N/A (Google Cloud Platform)   | GCP            |
 
 ---
 
 ## Future Possibilities
 
-* **Direct NAO to Dialogflow CX Integration:** Adapt NAO scripts to interact directly with the Dialogflow CX API for a more robust conversational experience, replacing the simpler `chatgpt_webhook.py`.
+* **Direct NAO to Dialogflow CX Integration:** This is the primary envisioned next step. Adapt NAO scripts (or create new ones) to interact directly with the Dialogflow CX API (e.g., using the Dialogflow CX Python client library). This would allow NAO to leverage the advanced RAG capabilities and conversational management of the Dialogflow CX agent, replacing the simpler `chatgpt_webhook.py` flow.
 * **Enhanced NAO Expressiveness:** Incorporate NAO's gestures and movements synchronized with storytelling.
-* **Multi-turn Story Generation:** Leverage Dialogflow CX's capabilities for more interactive, choice-driven narratives.
-* **Dynamic Vocabulary:** Allow NAO's recognized vocabulary to be updated dynamically.
-* **Cloud Deployment:** Host webhooks or intermediary services on GCP Cloud Functions or Cloud Run for scalability.
+* **Multi-turn Story Generation:** Fully utilize Dialogflow CX's capabilities for more interactive, choice-driven narratives guided by NAO's interaction.
+* **Dynamic Vocabulary for NAO:** Allow NAO's recognized vocabulary to be updated dynamically, perhaps based on context from Dialogflow CX.
+* **Cloud Deployment:** Host any intermediary webhooks or services (if needed for NAO-Dialogflow CX communication) on GCP Cloud Functions or Cloud Run for scalability.
 
 ---
 
@@ -700,8 +627,8 @@ This repository includes full developer-level documentation using [Doxygen](http
 
 | Script               | Purpose                                                |
 |----------------------|--------------------------------------------------------|
-| `test_asr.py`        | Speech input → OpenAI webhook → TTS output            |
-| `chatgpt_webhook.py` | Flask server to generate stories via OpenAI API       |
+| `test_asr.py`        | Speech input → OpenAI webhook → TTS output (PoC)      |
+| `chatgpt_webhook.py` | Flask server to generate stories via OpenAI API (for PoC) |
 | `test_naoqi.py`      | Connectivity check to NAO’s `ALTextToSpeech` proxy    |
 | `test_tts.py`        | Basic smoke test of NAO’s speech output               |
 
@@ -721,6 +648,6 @@ xdg-open docs/html/index.html
 
 This will give you a full class/function reference, parameter table, call graphs, and links between modules for the Python code.
 
-> **Note**: Ensure your `Doxyfile` is configured for Python (e.g., `OPTIMIZE_OUTPUT_FOR_C = NO`, `EXTENSION_MAPPING = py=Python`, correct `INPUT` path).
+> **Note**: Ensure your `Doxyfile` is configured for Python (e.g., `OPTIMIZE_OUTPUT_FOR_C = NO`, `EXTENSION_MAPPING = py=Python`, correct `INPUT` path to your Python scripts).
 
 ℹ️ **Browse the full project documentation (including Doxygen output if hosted) here →** [github.io/CSC212-Virtual-Storyteller](https://darthvandor13.github.io/CSC212-Virtual-Storyteller/)
