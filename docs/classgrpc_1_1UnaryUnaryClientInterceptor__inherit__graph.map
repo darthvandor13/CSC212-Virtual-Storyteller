@@ -1,6 +1,0 @@
-<map id="grpc.UnaryUnaryClientInterceptor" name="grpc.UnaryUnaryClientInterceptor">
-<area shape="rect" id="node1" title=" " alt="" coords="128,46,345,73"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1proto_1_1utils_1_1RetryOnRpcErrorClientInterceptor.html" title=" " alt="" coords="426,5,613,47"/>
-<area shape="rect" id="node4" href="$classchromadb_1_1telemetry_1_1opentelemetry_1_1grpc_1_1OtelInterceptor.html" title=" " alt="" coords="393,71,645,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,46,80,73"/>
-</map>

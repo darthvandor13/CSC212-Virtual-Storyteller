@@ -1,8 +1,0 @@
-<map id="anyio.abc._subprocesses.Process" name="anyio.abc._subprocesses.Process">
-<area shape="rect" id="node1" title=" " alt="" coords="115,169,289,211"/>
-<area shape="rect" id="node5" href="$classanyio_1_1__backends_1_1__asyncio_1_1Process.html" title=" " alt="" coords="5,259,185,300"/>
-<area shape="rect" id="node6" href="$classanyio_1_1__backends_1_1__trio_1_1Process.html" title=" " alt="" coords="209,266,411,293"/>
-<area shape="rect" id="node2" href="$classanyio_1_1abc_1_1__resources_1_1AsyncResource.html" title=" " alt="" coords="109,80,295,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="109,5,191,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="216,5,295,32"/>
-</map>

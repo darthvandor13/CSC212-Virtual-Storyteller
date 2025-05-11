@@ -1,5 +1,0 @@
-<map id="posthog.ai.openai.openai.WrappedCompletions" name="posthog.ai.openai.openai.WrappedCompletions">
-<area shape="rect" id="node1" title=" " alt="" coords="71,169,242,211"/>
-<area shape="rect" id="node2" href="$classopenai_1_1resources_1_1chat_1_1completions_1_1completions_1_1Completions.html" title=" " alt="" coords="5,80,308,121"/>
-<area shape="rect" id="node3" href="$classopenai_1_1__resource_1_1SyncAPIResource.html" title=" " alt="" coords="40,5,273,32"/>
-</map>

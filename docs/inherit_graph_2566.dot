@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="sympy.physics.biomechanics.tests.test\l_activation.TestFirstOrderActivationDe\lGroote2016",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1physics_1_1biomechanics_1_1tests_1_1test__activation_1_1TestFirstOrderActivationDeGroote2016.html",tooltip=" "];
-}

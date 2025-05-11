@@ -1,7 +1,0 @@
-<map id="numpy.f2py._backends._backend.Backend" name="numpy.f2py._backends._backend.Backend">
-<area shape="rect" id="node1" title=" " alt="" coords="104,39,261,80"/>
-<area shape="rect" id="node3" href="$classnumpy_1_1f2py_1_1__backends_1_1__distutils_1_1DistutilsBackend.html" title=" " alt="" coords="309,5,487,47"/>
-<area shape="rect" id="node4" href="$classnumpy_1_1f2py_1_1__backends_1_1__meson_1_1MesonBackend.html" title=" " alt="" coords="317,71,479,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,46,56,73"/>
-<area shape="rect" id="node5" href="$classnumpy_1_1f2py_1_1tests_1_1util_1_1SimplifiedMesonBackend.html" title=" " alt="" coords="535,71,736,112"/>
-</map>

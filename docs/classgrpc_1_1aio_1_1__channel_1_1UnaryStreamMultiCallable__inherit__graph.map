@@ -1,9 +1,0 @@
-<map id="grpc.aio._channel.UnaryStreamMultiCallable" name="grpc.aio._channel.UnaryStreamMultiCallable">
-<area shape="rect" id="node1" title=" " alt="" coords="409,42,615,83"/>
-<area shape="rect" id="node2" href="$classgrpc_1_1aio_1_1__channel_1_1__BaseMultiCallable.html" title=" " alt="" coords="195,9,329,50"/>
-<area shape="rect" id="node3" href="$classgrpc_1_1aio_1_1__base__channel_1_1UnaryStreamMultiCallable.html" title=" " alt="" coords="163,74,361,115"/>
-<area shape="rect" id="node4" title=" " alt="" coords="27,5,93,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="11,56,109,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,107,115,133"/>
-<area shape="rect" id="node7" title=" " alt="" coords="23,157,97,184"/>
-</map>

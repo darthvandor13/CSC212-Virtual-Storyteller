@@ -1,8 +1,0 @@
-<map id="protobuf.internal.type_checkers.IntValueChecker" name="protobuf.internal.type_checkers.IntValueChecker">
-<area shape="rect" id="node1" title=" " alt="" coords="111,104,293,145"/>
-<area shape="rect" id="node3" href="$classprotobuf_1_1internal_1_1type__checkers_1_1Int32ValueChecker.html" title=" " alt="" coords="346,5,542,47"/>
-<area shape="rect" id="node4" href="$classprotobuf_1_1internal_1_1type__checkers_1_1Int64ValueChecker.html" title=" " alt="" coords="346,71,542,112"/>
-<area shape="rect" id="node5" href="$classprotobuf_1_1internal_1_1type__checkers_1_1Uint32ValueChecker.html" title=" " alt="" coords="341,136,547,177"/>
-<area shape="rect" id="node6" href="$classprotobuf_1_1internal_1_1type__checkers_1_1Uint64ValueChecker.html" title=" " alt="" coords="341,201,547,243"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,111,63,138"/>
-</map>

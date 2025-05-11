@@ -1,6 +1,0 @@
-<map id="langchain.evaluation.schema.AgentTrajectoryEvaluator" name="langchain.evaluation.schema.AgentTrajectoryEvaluator">
-<area shape="rect" id="node1" title=" " alt="" coords="79,95,273,136"/>
-<area shape="rect" id="node4" href="$classlangchain_1_1evaluation_1_1agents_1_1trajectory__eval__chain_1_1TrajectoryEvalChain.html" title=" " alt="" coords="55,184,297,225"/>
-<area shape="rect" id="node2" href="$classlangchain_1_1evaluation_1_1schema_1_1__EvalArgsMixin.html" title=" " alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node3" title=" " alt="" coords="224,13,275,39"/>
-</map>

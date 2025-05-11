@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="sympy.tensor.array.expressions.array\l_expressions._EditArrayContraction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsympy_1_1tensor_1_1array_1_1expressions_1_1array__expressions_1_1__EditArrayContraction.html",tooltip=" "];
-}

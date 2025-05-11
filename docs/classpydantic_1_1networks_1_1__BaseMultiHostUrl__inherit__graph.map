@@ -1,6 +1,0 @@
-<map id="pydantic.networks._BaseMultiHostUrl" name="pydantic.networks._BaseMultiHostUrl">
-<area shape="rect" id="node1" title=" " alt="" coords="250,5,382,47"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1networks_1_1MongoDsn.html" title=" " alt="" coords="5,95,200,121"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1networks_1_1NatsDsn.html" title=" " alt="" coords="224,95,408,121"/>
-<area shape="rect" id="node4" href="$classpydantic_1_1networks_1_1PostgresDsn.html" title=" " alt="" coords="432,95,640,121"/>
-</map>

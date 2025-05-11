@@ -1,9 +1,0 @@
-<map id="cffi.model.BasePrimitiveType" name="cffi.model.BasePrimitiveType">
-<area shape="rect" id="node1" title=" " alt="" coords="193,229,385,256"/>
-<area shape="rect" id="node5" href="$classcffi_1_1model_1_1PrimitiveType.html" title=" " alt="" coords="5,304,168,331"/>
-<area shape="rect" id="node6" href="$classcffi_1_1model_1_1UnknownFloatType.html" title=" " alt="" coords="192,304,387,331"/>
-<area shape="rect" id="node7" href="$classcffi_1_1model_1_1UnknownIntegerType.html" title=" " alt="" coords="411,304,618,331"/>
-<area shape="rect" id="node2" href="$classcffi_1_1model_1_1BaseType.html" title=" " alt="" coords="219,155,360,181"/>
-<area shape="rect" id="node3" href="$classcffi_1_1model_1_1BaseTypeByIdentity.html" title=" " alt="" coords="189,80,389,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="261,5,318,32"/>
-</map>

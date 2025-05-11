@@ -1,7 +1,0 @@
-<map id="huggingface_hub.inference._providers._common.BaseTextGenerationTask" name="huggingface_hub.inference._providers._common.BaseTextGenerationTask">
-<area shape="rect" id="node1" title=" " alt="" coords="276,71,569,112"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1nebius_1_1NebiusTextGenerationTask.html" title=" " alt="" coords="617,5,903,47"/>
-<area shape="rect" id="node4" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1novita_1_1NovitaTextGenerationTask.html" title=" " alt="" coords="621,71,899,112"/>
-<area shape="rect" id="node5" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1together_1_1TogetherTextGenerationTask.html" title=" " alt="" coords="655,137,865,193"/>
-<area shape="rect" id="node2" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1__common_1_1TaskProviderHelper.html" title=" " alt="" coords="5,63,228,119"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="pydantic.v1.types.NegativeInt" name="pydantic.v1.types.NegativeInt">
-<area shape="rect" id="node1" title=" " alt="" coords="45,248,241,275"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1v1_1_1types_1_1ConstrainedInt.html" title=" " alt="" coords="35,172,250,199"/>
-<area shape="rect" id="node3" title=" " alt="" coords="38,89,77,115"/>
-<area shape="rect" id="node4" title=" " alt="" coords="101,89,184,115"/>
-<area shape="rect" id="node5" href="$classpydantic_1_1v1_1_1types_1_1ConstrainedNumberMeta.html" title=" " alt="" coords="207,81,406,123"/>
-<area shape="rect" id="node6" title=" " alt="" coords="283,5,330,32"/>
-</map>

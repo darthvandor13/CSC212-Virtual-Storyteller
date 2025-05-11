@@ -1,8 +1,0 @@
-<map id="chromadb.api.shared_system_client.SharedSystemClient" name="chromadb.api.shared_system_client.SharedSystemClient">
-<area shape="rect" id="node1" title=" " alt="" coords="5,97,205,153"/>
-<area shape="rect" id="node2" href="$classchromadb_1_1api_1_1async__client_1_1AsyncAdminClient.html" title=" " alt="" coords="255,5,427,47"/>
-<area shape="rect" id="node4" href="$classchromadb_1_1api_1_1async__client_1_1AsyncClient.html" title=" " alt="" coords="272,71,411,112"/>
-<area shape="rect" id="node5" href="$classchromadb_1_1api_1_1client_1_1AdminClient.html" title=" " alt="" coords="253,136,429,177"/>
-<area shape="rect" id="node6" href="$classchromadb_1_1api_1_1client_1_1Client.html" title=" " alt="" coords="255,202,428,229"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1test_1_1conftest_1_1AsyncAdminClientSync.html" title=" " alt="" coords="477,5,675,47"/>
-</map>

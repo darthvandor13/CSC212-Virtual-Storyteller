@@ -1,7 +1,0 @@
-<map id="fastapi.params.Body" name="fastapi.params.Body">
-<area shape="rect" id="node1" title=" " alt="" coords="14,155,157,181"/>
-<area shape="rect" id="node4" href="$classfastapi_1_1params_1_1Form.html" title=" " alt="" coords="14,229,157,256"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1fields_1_1FieldInfo.html" title=" " alt="" coords="5,80,165,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="14,5,157,32"/>
-<area shape="rect" id="node5" href="$classfastapi_1_1params_1_1File.html" title=" " alt="" coords="19,304,152,331"/>
-</map>

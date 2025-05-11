@@ -1,9 +1,0 @@
-<map id="langchain.memory.summary.SummarizerMixin" name="langchain.memory.summary.SummarizerMixin">
-<area shape="rect" id="node1" title=" " alt="" coords="455,43,641,84"/>
-<area shape="rect" id="node6" href="$classlangchain_1_1memory_1_1summary_1_1ConversationSummaryMemory.html" title=" " alt="" coords="705,5,907,47"/>
-<area shape="rect" id="node7" href="$classlangchain_1_1memory_1_1summary__buffer_1_1ConversationSummaryBufferMemory.html" title=" " alt="" coords="689,71,923,127"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,50,407,77"/>
-<area shape="rect" id="node3" title=" " alt="" coords="55,21,137,47"/>
-<area shape="rect" id="node4" title=" " alt="" coords="25,72,167,113"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,137,187,179"/>
-</map>

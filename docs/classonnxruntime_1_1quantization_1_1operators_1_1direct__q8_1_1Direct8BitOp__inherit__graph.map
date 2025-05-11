@@ -1,6 +1,0 @@
-<map id="onnxruntime.quantization.operators.direct_q8.Direct8BitOp" name="onnxruntime.quantization.operators.direct_q8.Direct8BitOp">
-<area shape="rect" id="node1" title=" " alt="" coords="311,39,572,80"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1operators_1_1maxpool_1_1QMaxPool.html" title=" " alt="" coords="620,5,903,47"/>
-<area shape="rect" id="node4" href="$classonnxruntime_1_1quantization_1_1operators_1_1resize_1_1QResize.html" title=" " alt="" coords="627,71,895,112"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1operators_1_1base__operator_1_1QuantOperatorBase.html" title=" " alt="" coords="5,39,263,80"/>
-</map>

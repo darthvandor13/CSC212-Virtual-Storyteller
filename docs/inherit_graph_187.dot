@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="cryptography.hazmat.backends.openssl.backend.\lBackend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcryptography_1_1hazmat_1_1backends_1_1openssl_1_1backend_1_1Backend.html",tooltip=" "];
-}

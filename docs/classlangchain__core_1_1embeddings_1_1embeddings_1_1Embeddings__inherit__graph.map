@@ -1,8 +1,0 @@
-<map id="langchain_core.embeddings.embeddings.Embeddings" name="langchain_core.embeddings.embeddings.Embeddings">
-<area shape="rect" id="node1" title=" " alt="" coords="104,71,365,112"/>
-<area shape="rect" id="node3" href="$classlangchain__core_1_1embeddings_1_1fake_1_1DeterministicFakeEmbedding.html" title=" " alt="" coords="421,5,637,47"/>
-<area shape="rect" id="node4" href="$classlangchain__core_1_1embeddings_1_1fake_1_1FakeEmbeddings.html" title=" " alt="" coords="421,71,637,112"/>
-<area shape="rect" id="node5" href="$classlangchain__openai_1_1embeddings_1_1base_1_1OpenAIEmbeddings.html" title=" " alt="" coords="413,136,645,177"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,78,56,105"/>
-<area shape="rect" id="node6" href="$classlangchain__openai_1_1embeddings_1_1azure_1_1AzureOpenAIEmbeddings.html" title=" " alt="" coords="693,136,929,177"/>
-</map>

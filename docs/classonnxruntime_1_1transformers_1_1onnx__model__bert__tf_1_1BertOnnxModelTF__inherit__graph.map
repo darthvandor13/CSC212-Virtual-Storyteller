@@ -1,6 +1,0 @@
-<map id="onnxruntime.transformers.onnx_model_bert_tf.BertOnnxModelTF" name="onnxruntime.transformers.onnx_model_bert_tf.BertOnnxModelTF">
-<area shape="rect" id="node1" title=" " alt="" coords="26,184,245,225"/>
-<area shape="rect" id="node4" href="$classonnxruntime_1_1transformers_1_1onnx__model__bert__keras_1_1BertOnnxModelKeras.html" title=" " alt="" coords="5,273,265,315"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1onnx__model__bert_1_1BertOnnxModel.html" title=" " alt="" coords="34,95,237,136"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1onnx__model_1_1OnnxModel.html" title=" " alt="" coords="34,5,237,47"/>
-</map>

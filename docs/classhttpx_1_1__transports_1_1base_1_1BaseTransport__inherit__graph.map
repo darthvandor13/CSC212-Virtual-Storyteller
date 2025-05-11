@@ -1,7 +1,0 @@
-<map id="httpx._transports.base.BaseTransport" name="httpx._transports.base.BaseTransport">
-<area shape="rect" id="node1" title=" " alt="" coords="5,100,192,141"/>
-<area shape="rect" id="node2" href="$classhttpx_1_1__transports_1_1default_1_1HTTPTransport.html" title=" " alt="" coords="280,5,447,47"/>
-<area shape="rect" id="node3" href="$classhttpx_1_1__transports_1_1mock_1_1MockTransport.html" title=" " alt="" coords="267,71,459,112"/>
-<area shape="rect" id="node4" href="$classhttpx_1_1__transports_1_1wsgi_1_1WSGITransport.html" title=" " alt="" coords="240,137,487,163"/>
-<area shape="rect" id="node5" href="$classstarlette_1_1testclient_1_1__TestClientTransport.html" title=" " alt="" coords="292,188,435,229"/>
-</map>

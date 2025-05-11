@@ -1,7 +1,0 @@
-<map id="anyio.abc._tasks.TaskGroup" name="anyio.abc._tasks.TaskGroup">
-<area shape="rect" id="node1" title=" " alt="" coords="104,80,292,107"/>
-<area shape="rect" id="node4" href="$classanyio_1_1__backends_1_1__asyncio_1_1TaskGroup.html" title=" " alt="" coords="5,155,185,196"/>
-<area shape="rect" id="node5" href="$classanyio_1_1__backends_1_1__trio_1_1TaskGroup.html" title=" " alt="" coords="210,155,391,196"/>
-<area shape="rect" id="node2" title=" " alt="" coords="105,5,187,32"/>
-<area shape="rect" id="node3" title=" " alt="" coords="212,5,291,32"/>
-</map>

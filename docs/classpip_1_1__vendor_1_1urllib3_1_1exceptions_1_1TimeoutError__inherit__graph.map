@@ -1,8 +1,0 @@
-<map id="pip._vendor.urllib3.exceptions.TimeoutError" name="pip._vendor.urllib3.exceptions.TimeoutError">
-<area shape="rect" id="node1" title=" " alt="" coords="379,39,576,80"/>
-<area shape="rect" id="node4" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1ConnectTimeoutError.html" title=" " alt="" coords="624,5,821,47"/>
-<area shape="rect" id="node6" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1ReadTimeoutError.html" title=" " alt="" coords="624,71,821,112"/>
-<area shape="rect" id="node2" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1HTTPError.html" title=" " alt="" coords="133,39,331,80"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,46,85,73"/>
-<area shape="rect" id="node5" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1NewConnectionError.html" title=" " alt="" coords="869,5,1067,47"/>
-</map>

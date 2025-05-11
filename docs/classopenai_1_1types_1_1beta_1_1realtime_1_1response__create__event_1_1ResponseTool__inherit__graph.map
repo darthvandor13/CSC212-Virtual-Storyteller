@@ -1,8 +1,0 @@
-<map id="openai.types.beta.realtime.response_create_event.ResponseTool" name="openai.types.beta.realtime.response_create_event.ResponseTool">
-<area shape="rect" id="node1" title=" " alt="" coords="5,244,237,285"/>
-<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="30,169,213,196"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="35,95,207,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="12,13,95,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="119,5,262,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="287,5,468,47"/>
-</map>

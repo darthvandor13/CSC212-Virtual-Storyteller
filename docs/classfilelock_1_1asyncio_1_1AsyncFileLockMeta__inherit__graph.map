@@ -1,9 +1,0 @@
-<map id="filelock.asyncio.AsyncFileLockMeta" name="filelock.asyncio.AsyncFileLockMeta">
-<area shape="rect" id="node1" title=" " alt="" coords="353,71,528,112"/>
-<area shape="rect" id="node4" href="$classfilelock_1_1asyncio_1_1BaseAsyncFileLock.html" title=" " alt="" coords="576,71,759,112"/>
-<area shape="rect" id="node2" href="$classfilelock_1_1__api_1_1FileLockMeta.html" title=" " alt="" coords="132,78,305,105"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,78,84,105"/>
-<area shape="rect" id="node5" href="$classfilelock_1_1asyncio_1_1AsyncSoftFileLock.html" title=" " alt="" coords="821,5,999,47"/>
-<area shape="rect" id="node6" href="$classfilelock_1_1asyncio_1_1AsyncUnixFileLock.html" title=" " alt="" coords="820,71,1000,112"/>
-<area shape="rect" id="node7" href="$classfilelock_1_1asyncio_1_1AsyncWindowsFileLock.html" title=" " alt="" coords="807,136,1013,177"/>
-</map>

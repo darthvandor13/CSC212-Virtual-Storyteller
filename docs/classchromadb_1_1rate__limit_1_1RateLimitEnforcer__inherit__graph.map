@@ -1,8 +1,0 @@
-<map id="chromadb.rate_limit.RateLimitEnforcer" name="chromadb.rate_limit.RateLimitEnforcer">
-<area shape="rect" id="node1" title=" " alt="" coords="413,50,581,91"/>
-<area shape="rect" id="node5" href="$classchromadb_1_1rate__limit_1_1simple__rate__limit_1_1SimpleAsyncRateLimitEnforcer.html" title=" " alt="" coords="635,5,854,61"/>
-<area shape="rect" id="node6" href="$classchromadb_1_1rate__limit_1_1simple__rate__limit_1_1SimpleRateLimitEnforcer.html" title=" " alt="" coords="629,86,860,127"/>
-<area shape="rect" id="node2" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="176,57,365,84"/>
-<area shape="rect" id="node3" title=" " alt="" coords="41,32,92,59"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,83,128,109"/>
-</map>

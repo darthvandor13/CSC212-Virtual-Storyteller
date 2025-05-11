@@ -1,5 +1,0 @@
-<map id="httpcore._backends.base.NetworkBackend" name="httpcore._backends.base.NetworkBackend">
-<area shape="rect" id="node1" title=" " alt="" coords="106,5,278,47"/>
-<area shape="rect" id="node2" href="$classhttpcore_1_1__backends_1_1mock_1_1MockBackend.html" title=" " alt="" coords="5,95,181,136"/>
-<area shape="rect" id="node3" href="$classhttpcore_1_1__backends_1_1sync_1_1SyncBackend.html" title=" " alt="" coords="206,95,378,136"/>
-</map>

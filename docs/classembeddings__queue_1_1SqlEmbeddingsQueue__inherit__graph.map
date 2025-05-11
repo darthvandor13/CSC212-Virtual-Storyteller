@@ -1,9 +1,0 @@
-<map id="embeddings_queue.SqlEmbeddingsQueue" name="embeddings_queue.SqlEmbeddingsQueue">
-<area shape="rect" id="node1" title=" " alt="" coords="173,229,403,271"/>
-<area shape="rect" id="node2" href="$classchromadb_1_1db_1_1base_1_1SqlDB.html" title=" " alt="" coords="5,155,176,181"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="193,80,383,107"/>
-<area shape="rect" id="node6" href="$classchromadb_1_1ingest_1_1Producer.html" title=" " alt="" coords="201,155,375,181"/>
-<area shape="rect" id="node7" href="$classchromadb_1_1ingest_1_1Consumer.html" title=" " alt="" coords="399,155,582,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="208,5,259,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="283,5,405,32"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="langchain.smith.evaluation.config.RunEvalConfig.JsonEqualityEvaluator" name="langchain.smith.evaluation.config.RunEvalConfig.JsonEqualityEvaluator">
-<area shape="rect" id="node1" title=" " alt="" coords="5,259,249,300"/>
-<area shape="rect" id="node2" href="$classlangchain_1_1smith_1_1evaluation_1_1config_1_1EvalConfig.html" title=" " alt="" coords="18,169,237,211"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="41,95,213,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="18,13,101,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="125,5,268,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="293,5,474,47"/>
-</map>

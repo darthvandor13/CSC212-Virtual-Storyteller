@@ -1,5 +1,0 @@
-<map id="onnxruntime.transformers.onnx_model_phi.FissionTransformerCausalLMHeadPhi" name="onnxruntime.transformers.onnx_model_phi.FissionTransformerCausalLMHeadPhi">
-<area shape="rect" id="node1" title=" " alt="" coords="5,184,251,240"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1onnx__model__phi_1_1Fission.html" title=" " alt="" coords="27,95,229,136"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="23,5,233,47"/>
-</map>

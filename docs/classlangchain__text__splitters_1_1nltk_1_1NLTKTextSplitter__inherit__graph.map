@@ -1,6 +1,0 @@
-<map id="langchain_text_splitters.nltk.NLTKTextSplitter" name="langchain_text_splitters.nltk.NLTKTextSplitter">
-<area shape="rect" id="node1" title=" " alt="" coords="9,259,197,300"/>
-<area shape="rect" id="node2" href="$classlangchain__text__splitters_1_1base_1_1TextSplitter.html" title=" " alt="" coords="5,169,200,211"/>
-<area shape="rect" id="node3" href="$classlangchain__core_1_1documents_1_1transformers_1_1BaseDocumentTransformer.html" title=" " alt="" coords="57,80,316,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="77,5,128,32"/>
-</map>

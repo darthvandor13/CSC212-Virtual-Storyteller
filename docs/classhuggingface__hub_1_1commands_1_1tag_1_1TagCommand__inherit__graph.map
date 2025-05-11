@@ -1,6 +1,0 @@
-<map id="huggingface_hub.commands.tag.TagCommand" name="huggingface_hub.commands.tag.TagCommand">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,220,112"/>
-<area shape="rect" id="node2" href="$classhuggingface__hub_1_1commands_1_1tag_1_1TagCreateCommand.html" title=" " alt="" coords="268,5,483,47"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1commands_1_1tag_1_1TagDeleteCommand.html" title=" " alt="" coords="268,71,483,112"/>
-<area shape="rect" id="node4" href="$classhuggingface__hub_1_1commands_1_1tag_1_1TagListCommand.html" title=" " alt="" coords="268,136,483,177"/>
-</map>

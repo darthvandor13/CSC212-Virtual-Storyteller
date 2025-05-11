@@ -1,8 +1,0 @@
-<map id="greenlet.tests.TestCaseMetaClass" name="greenlet.tests.TestCaseMetaClass">
-<area shape="rect" id="node1" title=" " alt="" coords="100,71,291,112"/>
-<area shape="rect" id="node3" href="$classgreenlet_1_1tests_1_1TestCase.html" title=" " alt="" coords="339,78,500,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,78,52,105"/>
-<area shape="rect" id="node4" href="$classgreenlet_1_1tests_1_1test__gc_1_1GCTests.html" title=" " alt="" coords="567,5,694,47"/>
-<area shape="rect" id="node5" href="$classgreenlet_1_1tests_1_1test__stack__saved_1_1Test.html" title=" " alt="" coords="565,71,697,112"/>
-<area shape="rect" id="node6" href="$classgreenlet_1_1tests_1_1test__weakref_1_1WeakRefTests.html" title=" " alt="" coords="548,136,713,177"/>
-</map>

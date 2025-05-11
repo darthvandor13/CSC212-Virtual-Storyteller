@@ -1,6 +1,0 @@
-<map id="huggingface_hub.inference._providers.fal_ai.FalAITextToSpeechTask" name="huggingface_hub.inference._providers.fal_ai.FalAITextToSpeechTask">
-<area shape="rect" id="node1" title=" " alt="" coords="65,199,328,240"/>
-<area shape="rect" id="node2" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1fal__ai_1_1FalAITask.html" title=" " alt="" coords="106,109,287,151"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1__common_1_1TaskProviderHelper.html" title=" " alt="" coords="5,5,228,61"/>
-<area shape="rect" id="node4" title=" " alt="" coords="251,20,302,47"/>
-</map>

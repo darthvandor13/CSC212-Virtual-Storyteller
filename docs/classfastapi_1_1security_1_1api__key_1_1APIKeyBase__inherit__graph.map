@@ -1,7 +1,0 @@
-<map id="fastapi.security.api_key.APIKeyBase" name="fastapi.security.api_key.APIKeyBase">
-<area shape="rect" id="node1" title=" " alt="" coords="276,71,407,112"/>
-<area shape="rect" id="node3" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyCookie.html" title=" " alt="" coords="455,5,593,47"/>
-<area shape="rect" id="node4" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyHeader.html" title=" " alt="" coords="455,71,593,112"/>
-<area shape="rect" id="node5" href="$classfastapi_1_1security_1_1api__key_1_1APIKeyQuery.html" title=" " alt="" coords="458,136,590,177"/>
-<area shape="rect" id="node2" href="$classfastapi_1_1security_1_1base_1_1SecurityBase.html" title=" " alt="" coords="5,78,228,105"/>
-</map>

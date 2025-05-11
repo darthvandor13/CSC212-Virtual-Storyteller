@@ -1,7 +1,0 @@
-<map id="jsonpatch.JsonPatchException" name="jsonpatch.JsonPatchException">
-<area shape="rect" id="node1" title=" " alt="" coords="133,56,336,83"/>
-<area shape="rect" id="node3" href="$classjsonpatch_1_1InvalidJsonPatch.html" title=" " alt="" coords="395,5,577,32"/>
-<area shape="rect" id="node4" href="$classjsonpatch_1_1JsonPatchConflict.html" title=" " alt="" coords="391,56,581,83"/>
-<area shape="rect" id="node5" href="$classjsonpatch_1_1JsonPatchTestFailed.html" title=" " alt="" coords="384,107,588,133"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,56,85,83"/>
-</map>

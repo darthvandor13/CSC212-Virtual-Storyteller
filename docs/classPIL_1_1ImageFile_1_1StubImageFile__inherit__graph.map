@@ -1,9 +1,0 @@
-<map id="PIL.ImageFile.StubImageFile" name="PIL.ImageFile.StubImageFile">
-<area shape="rect" id="node1" title=" " alt="" coords="388,111,579,138"/>
-<area shape="rect" id="node4" href="$classPIL_1_1BufrStubImagePlugin_1_1BufrStubImageFile.html" title=" " alt="" coords="643,5,816,47"/>
-<area shape="rect" id="node5" href="$classPIL_1_1GribStubImagePlugin_1_1GribStubImageFile.html" title=" " alt="" coords="643,71,816,112"/>
-<area shape="rect" id="node6" href="$classPIL_1_1Hdf5StubImagePlugin_1_1HDF5StubImageFile.html" title=" " alt="" coords="641,136,818,177"/>
-<area shape="rect" id="node7" href="$classPIL_1_1WmfImagePlugin_1_1WmfStubImageFile.html" title="Image plugin for Windows metafiles." alt="" coords="627,201,832,243"/>
-<area shape="rect" id="node2" href="$classPIL_1_1ImageFile_1_1ImageFile.html" title=" " alt="" coords="176,111,340,138"/>
-<area shape="rect" id="node3" href="$classPIL_1_1Image_1_1Image.html" title=" " alt="" coords="5,111,128,138"/>
-</map>

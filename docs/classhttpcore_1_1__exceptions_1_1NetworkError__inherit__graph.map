@@ -1,7 +1,0 @@
-<map id="httpcore._exceptions.NetworkError" name="httpcore._exceptions.NetworkError">
-<area shape="rect" id="node1" title=" " alt="" coords="133,71,329,112"/>
-<area shape="rect" id="node3" href="$classhttpcore_1_1__exceptions_1_1ConnectError.html" title=" " alt="" coords="377,5,573,47"/>
-<area shape="rect" id="node4" href="$classhttpcore_1_1__exceptions_1_1ReadError.html" title=" " alt="" coords="386,71,565,112"/>
-<area shape="rect" id="node5" href="$classhttpcore_1_1__exceptions_1_1WriteError.html" title=" " alt="" coords="387,136,564,177"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,78,85,105"/>
-</map>

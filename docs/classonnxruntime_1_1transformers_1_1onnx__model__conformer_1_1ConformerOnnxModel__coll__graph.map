@@ -1,5 +1,0 @@
-<map id="onnxruntime.transformers.onnx_model_conformer.ConformerOnnxModel" name="onnxruntime.transformers.onnx_model_conformer.ConformerOnnxModel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,184,264,225"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1onnx__model__bert_1_1BertOnnxModel.html" title=" " alt="" coords="33,95,236,136"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1onnx__model_1_1OnnxModel.html" title=" " alt="" coords="33,5,236,47"/>
-</map>

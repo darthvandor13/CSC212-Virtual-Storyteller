@@ -1,8 +1,0 @@
-<map id="local_hnsw.LocalHnswSegment" name="local_hnsw.LocalHnswSegment">
-<area shape="rect" id="node1" title=" " alt="" coords="11,319,217,345"/>
-<area shape="rect" id="node2" href="$classchromadb_1_1segment_1_1VectorReader.html" title=" " alt="" coords="5,244,223,271"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1segment_1_1SegmentImplementation.html" title=" " alt="" coords="19,155,209,196"/>
-<area shape="rect" id="node4" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="19,80,209,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="34,5,85,32"/>
-<area shape="rect" id="node6" title=" " alt="" coords="109,5,231,32"/>
-</map>

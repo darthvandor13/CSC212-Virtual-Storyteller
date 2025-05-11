@@ -1,9 +1,0 @@
-<map id="oauthlib.oauth2.rfc6749.clients.base.Client" name="oauthlib.oauth2.rfc6749.clients.base.Client">
-<area shape="rect" id="node1" title=" " alt="" coords="5,169,240,211"/>
-<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1clients_1_1backend__application_1_1BackendApplicationClient.html" title=" " alt="" coords="288,5,540,47"/>
-<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1clients_1_1legacy__application_1_1LegacyApplicationClient.html" title=" " alt="" coords="293,71,535,112"/>
-<area shape="rect" id="node4" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1clients_1_1mobile__application_1_1MobileApplicationClient.html" title=" " alt="" coords="293,136,535,177"/>
-<area shape="rect" id="node5" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1clients_1_1service__application_1_1ServiceApplicationClient.html" title=" " alt="" coords="291,201,537,243"/>
-<area shape="rect" id="node6" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1clients_1_1web__application_1_1WebApplicationClient.html" title=" " alt="" coords="301,267,527,308"/>
-<area shape="rect" id="node7" href="$classoauthlib_1_1oauth2_1_1rfc8628_1_1clients_1_1device_1_1DeviceClient.html" title=" " alt="" coords="291,332,537,373"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="openai.lib.streaming.chat._events.LogprobsContentDoneEvent" name="openai.lib.streaming.chat._events.LogprobsContentDoneEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,244,241,285"/>
-<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="32,169,215,196"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="37,95,209,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="14,13,97,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="121,5,264,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="289,5,470,47"/>
-</map>

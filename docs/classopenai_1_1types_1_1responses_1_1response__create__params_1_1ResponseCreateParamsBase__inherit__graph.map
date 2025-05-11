@@ -1,8 +1,0 @@
-<map id="openai.types.responses.response_create_params.ResponseCreateParamsBase" name="openai.types.responses.response_create_params.ResponseCreateParamsBase">
-<area shape="rect" id="node1" title=" " alt="" coords="135,53,427,94"/>
-<area shape="rect" id="node5" href="$classopenai_1_1types_1_1responses_1_1response__create__params_1_1ResponseCreateParamsNonStreaming.html" title=" " alt="" coords="475,5,737,61"/>
-<area shape="rect" id="node6" href="$classopenai_1_1types_1_1responses_1_1response__create__params_1_1ResponseCreateParamsStreaming.html" title=" " alt="" coords="475,85,737,141"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,9,87,36"/>
-<area shape="rect" id="node3" title=" " alt="" coords="23,60,69,87"/>
-<area shape="rect" id="node4" title=" " alt="" coords="19,111,73,137"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="httptools.parser.errors.HttpParserError" name="httptools.parser.errors.HttpParserError">
-<area shape="rect" id="node1" title=" " alt="" coords="133,104,285,145"/>
-<area shape="rect" id="node3" href="$classhttptools_1_1parser_1_1errors_1_1HttpParserCallbackError.html" title=" " alt="" coords="349,5,513,47"/>
-<area shape="rect" id="node4" href="$classhttptools_1_1parser_1_1errors_1_1HttpParserInvalidMethodError.html" title=" " alt="" coords="333,71,528,112"/>
-<area shape="rect" id="node5" href="$classhttptools_1_1parser_1_1errors_1_1HttpParserInvalidStatusError.html" title=" " alt="" coords="336,136,525,177"/>
-<area shape="rect" id="node6" href="$classhttptools_1_1parser_1_1errors_1_1HttpParserInvalidURLError.html" title=" " alt="" coords="341,201,520,243"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,111,85,138"/>
-</map>

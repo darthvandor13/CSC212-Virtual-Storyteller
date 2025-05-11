@@ -1,8 +1,0 @@
-<map id="pip._vendor.requests.adapters.BaseAdapter" name="pip._vendor.requests.adapters.BaseAdapter">
-<area shape="rect" id="node1" title=" " alt="" coords="111,71,311,112"/>
-<area shape="rect" id="node3" href="$classpip_1_1__internal_1_1network_1_1session_1_1LocalFSAdapter.html" title=" " alt="" coords="361,5,556,47"/>
-<area shape="rect" id="node4" href="$classpip_1_1__vendor_1_1requests_1_1adapters_1_1HTTPAdapter.html" title=" " alt="" coords="359,71,559,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,78,63,105"/>
-<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1network_1_1session_1_1InsecureHTTPAdapter.html" title=" " alt="" coords="617,5,812,47"/>
-<area shape="rect" id="node6" href="$classpip_1_1__vendor_1_1cachecontrol_1_1adapter_1_1CacheControlAdapter.html" title=" " alt="" coords="607,71,823,112"/>
-</map>

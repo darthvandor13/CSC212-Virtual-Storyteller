@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="websocket.tests.test\l_app.WebSocketAppTest.NotSetYet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwebsocket_1_1tests_1_1test__app_1_1WebSocketAppTest_1_1NotSetYet.html",tooltip=" "];
-}

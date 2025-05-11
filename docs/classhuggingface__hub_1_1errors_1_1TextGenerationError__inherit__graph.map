@@ -1,9 +1,0 @@
-<map id="huggingface_hub.errors.TextGenerationError" name="huggingface_hub.errors.TextGenerationError">
-<area shape="rect" id="node1" title=" " alt="" coords="139,136,325,177"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1errors_1_1GenerationError.html" title=" " alt="" coords="375,5,599,47"/>
-<area shape="rect" id="node4" href="$classhuggingface__hub_1_1errors_1_1IncompleteGenerationError.html" title=" " alt="" coords="374,71,599,112"/>
-<area shape="rect" id="node5" href="$classhuggingface__hub_1_1errors_1_1OverloadedError.html" title=" " alt="" coords="373,136,600,177"/>
-<area shape="rect" id="node6" href="$classhuggingface__hub_1_1errors_1_1UnknownError.html" title=" " alt="" coords="379,201,595,243"/>
-<area shape="rect" id="node7" href="$classhuggingface__hub_1_1errors_1_1ValidationError.html" title=" " alt="" coords="378,267,595,308"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,143,91,170"/>
-</map>

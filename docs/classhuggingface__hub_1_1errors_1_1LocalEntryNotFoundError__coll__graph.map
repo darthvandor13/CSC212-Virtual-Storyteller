@@ -1,8 +1,0 @@
-<map id="huggingface_hub.errors.LocalEntryNotFoundError" name="huggingface_hub.errors.LocalEntryNotFoundError">
-<area shape="rect" id="node1" title=" " alt="" coords="189,259,381,300"/>
-<area shape="rect" id="node2" href="$classhuggingface__hub_1_1errors_1_1EntryNotFoundError.html" title=" " alt="" coords="5,169,197,211"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1errors_1_1HfHubHTTPError.html" title=" " alt="" coords="14,80,189,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="59,5,144,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="221,177,349,203"/>
-<area shape="rect" id="node6" title=" " alt="" coords="373,177,456,203"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="onnxruntime.transformers.fusion_bart_attention.FusionBartAttention" name="onnxruntime.transformers.fusion_bart_attention.FusionBartAttention">
-<area shape="rect" id="node1" title=" " alt="" coords="5,184,232,225"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1fusion__attention_1_1FusionAttention.html" title=" " alt="" coords="14,95,223,136"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1fusion__base_1_1Fusion.html" title=" " alt="" coords="14,5,223,47"/>
-</map>

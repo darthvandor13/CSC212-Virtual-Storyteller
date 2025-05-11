@@ -1,8 +1,0 @@
-<map id="openai.types.responses.response_format_text_json_schema_config.ResponseFormatTextJSONSchemaConfig" name="openai.types.responses.response_format_text_json_schema_config.ResponseFormatTextJSONSchemaConfig">
-<area shape="rect" id="node1" title=" " alt="" coords="5,244,289,300"/>
-<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="56,169,239,196"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="61,95,233,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="38,13,121,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="145,5,288,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="313,5,494,47"/>
-</map>

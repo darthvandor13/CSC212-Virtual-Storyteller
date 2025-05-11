@@ -1,6 +1,0 @@
-<map id="onnxruntime.tools.ort_format_model.operator_type_usage_processors.Output0TypedRegistrationProcessor" name="onnxruntime.tools.ort_format_model.operator_type_usage_processors.Output0TypedRegistrationProcessor">
-<area shape="rect" id="node1" title=" " alt="" coords="651,5,868,76"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1tools_1_1ort__format__model_1_1operator__type__usage__processors_1_1DefaultTypeUsageProcessor.html" title=" " alt="" coords="389,5,603,76"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1tools_1_1ort__format__model_1_1operator__type__usage__processors_1_1TypeUsageProcessor.html" title=" " alt="" coords="104,5,341,76"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,27,56,54"/>
-</map>

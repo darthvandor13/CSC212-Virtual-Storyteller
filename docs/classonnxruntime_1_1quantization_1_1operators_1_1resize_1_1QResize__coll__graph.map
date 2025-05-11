@@ -1,5 +1,0 @@
-<map id="onnxruntime.quantization.operators.resize.QResize" name="onnxruntime.quantization.operators.resize.QResize">
-<area shape="rect" id="node1" title=" " alt="" coords="5,184,273,225"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1operators_1_1direct__q8_1_1Direct8BitOp.html" title=" " alt="" coords="9,95,270,136"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1operators_1_1base__operator_1_1QuantOperatorBase.html" title=" " alt="" coords="11,5,268,47"/>
-</map>

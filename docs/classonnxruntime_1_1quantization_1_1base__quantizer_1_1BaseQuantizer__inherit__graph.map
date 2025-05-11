@@ -1,5 +1,0 @@
-<map id="onnxruntime.quantization.base_quantizer.BaseQuantizer" name="onnxruntime.quantization.base_quantizer.BaseQuantizer">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,204,80"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1onnx__quantizer_1_1ONNXQuantizer.html" title=" " alt="" coords="252,5,451,47"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1qdq__quantizer_1_1QDQQuantizer.html" title=" " alt="" coords="255,71,447,112"/>
-</map>

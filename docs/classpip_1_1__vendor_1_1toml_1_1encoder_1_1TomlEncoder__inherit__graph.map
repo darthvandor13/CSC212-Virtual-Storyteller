@@ -1,9 +1,0 @@
-<map id="pip._vendor.toml.encoder.TomlEncoder" name="pip._vendor.toml.encoder.TomlEncoder">
-<area shape="rect" id="node1" title=" " alt="" coords="111,136,281,177"/>
-<area shape="rect" id="node3" href="$classpip_1_1__vendor_1_1toml_1_1encoder_1_1TomlArraySeparatorEncoder.html" title=" " alt="" coords="340,5,525,47"/>
-<area shape="rect" id="node4" href="$classpip_1_1__vendor_1_1toml_1_1encoder_1_1TomlNumpyEncoder.html" title=" " alt="" coords="347,71,518,112"/>
-<area shape="rect" id="node5" href="$classpip_1_1__vendor_1_1toml_1_1encoder_1_1TomlPathlibEncoder.html" title=" " alt="" coords="347,136,518,177"/>
-<area shape="rect" id="node6" href="$classpip_1_1__vendor_1_1toml_1_1encoder_1_1TomlPreserveCommentEncoder.html" title=" " alt="" coords="329,201,536,243"/>
-<area shape="rect" id="node7" href="$classpip_1_1__vendor_1_1toml_1_1encoder_1_1TomlPreserveInlineDictEncoder.html" title=" " alt="" coords="330,267,535,308"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,143,63,170"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="oauthlib.openid.connect.core.grant_types.dispatchers.Dispatcher" name="oauthlib.openid.connect.core.grant_types.dispatchers.Dispatcher">
-<area shape="rect" id="node1" title=" " alt="" coords="5,93,227,134"/>
-<area shape="rect" id="node2" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1dispatchers_1_1AuthorizationCodeGrantDispatcher.html" title=" " alt="" coords="277,5,519,61"/>
-<area shape="rect" id="node3" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1dispatchers_1_1AuthorizationTokenGrantDispatcher.html" title=" " alt="" coords="275,85,521,141"/>
-<area shape="rect" id="node4" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1dispatchers_1_1ImplicitTokenGrantDispatcher.html" title=" " alt="" coords="275,165,521,221"/>
-</map>

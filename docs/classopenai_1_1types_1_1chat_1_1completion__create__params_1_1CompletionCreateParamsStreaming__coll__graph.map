@@ -1,7 +1,0 @@
-<map id="openai.types.chat.completion_create_params.CompletionCreateParamsStreaming" name="openai.types.chat.completion_create_params.CompletionCreateParamsStreaming">
-<area shape="rect" id="node1" title=" " alt="" coords="20,169,289,225"/>
-<area shape="rect" id="node2" href="$classopenai_1_1types_1_1chat_1_1completion__create__params_1_1CompletionCreateParamsBase.html" title=" " alt="" coords="5,80,304,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="26,5,107,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="131,5,178,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="202,5,257,32"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="httpx._exceptions.PoolTimeout" name="httpx._exceptions.PoolTimeout">
-<area shape="rect" id="node1" title=" " alt="" coords="5,423,208,449"/>
-<area shape="rect" id="node2" href="$classhttpx_1_1__exceptions_1_1TimeoutException.html" title=" " alt="" coords="19,333,195,375"/>
-<area shape="rect" id="node3" href="$classhttpx_1_1__exceptions_1_1TransportError.html" title=" " alt="" coords="15,244,199,285"/>
-<area shape="rect" id="node4" href="$classhttpx_1_1__exceptions_1_1RequestError.html" title=" " alt="" coords="17,155,196,196"/>
-<area shape="rect" id="node5" href="$classhttpx_1_1__exceptions_1_1HTTPError.html" title=" " alt="" coords="11,80,203,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="67,5,147,32"/>
-</map>

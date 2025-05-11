@@ -1,5 +1,0 @@
-<map id="grpc.aio._interceptor._StreamCallResponseIterator" name="grpc.aio._interceptor._StreamCallResponseIterator">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,200,80"/>
-<area shape="rect" id="node2" href="$classgrpc_1_1aio_1_1__interceptor_1_1StreamStreamCallResponseIterator.html" title=" " alt="" coords="248,5,435,47"/>
-<area shape="rect" id="node3" href="$classgrpc_1_1aio_1_1__interceptor_1_1UnaryStreamCallResponseIterator.html" title=" " alt="" coords="248,71,435,112"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="pip._vendor.urllib3.exceptions.SecurityWarning" name="pip._vendor.urllib3.exceptions.SecurityWarning">
-<area shape="rect" id="node1" title=" " alt="" coords="368,104,565,145"/>
-<area shape="rect" id="node4" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1InsecurePlatformWarning.html" title=" " alt="" coords="613,5,811,47"/>
-<area shape="rect" id="node5" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1InsecureRequestWarning.html" title=" " alt="" coords="613,71,811,112"/>
-<area shape="rect" id="node6" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1SubjectAltNameWarning.html" title=" " alt="" coords="613,136,811,177"/>
-<area shape="rect" id="node7" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1SystemTimeWarning.html" title=" " alt="" coords="613,201,811,243"/>
-<area shape="rect" id="node2" href="$classpip_1_1__vendor_1_1urllib3_1_1exceptions_1_1HTTPWarning.html" title=" " alt="" coords="123,104,320,145"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,111,75,138"/>
-</map>

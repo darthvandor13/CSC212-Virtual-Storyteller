@@ -1,6 +1,0 @@
-<map id="kubernetes.dynamic.discovery.Discoverer" name="kubernetes.dynamic.discovery.Discoverer">
-<area shape="rect" id="node1" title=" " alt="" coords="111,39,312,80"/>
-<area shape="rect" id="node3" href="$classkubernetes_1_1dynamic_1_1discovery_1_1EagerDiscoverer.html" title=" " alt="" coords="360,5,561,47"/>
-<area shape="rect" id="node4" href="$classkubernetes_1_1dynamic_1_1discovery_1_1LazyDiscoverer.html" title=" " alt="" coords="360,71,561,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,46,63,73"/>
-</map>

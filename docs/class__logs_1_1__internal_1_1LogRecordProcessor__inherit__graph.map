@@ -1,7 +1,0 @@
-<map id="_logs._internal.LogRecordProcessor" name="_logs._internal.LogRecordProcessor">
-<area shape="rect" id="node1" title=" " alt="" coords="132,39,305,80"/>
-<area shape="rect" id="node4" href="$class__logs_1_1__internal_1_1ConcurrentMultiLogRecordProcessor.html" title=" " alt="" coords="359,5,534,47"/>
-<area shape="rect" id="node5" href="$class__logs_1_1__internal_1_1SynchronousMultiLogRecordProcessor.html" title=" " alt="" coords="353,71,540,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,21,84,47"/>
-<area shape="rect" id="node3" title=" " alt="" coords="7,71,82,98"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="httpx._exceptions.ConnectTimeout" name="httpx._exceptions.ConnectTimeout">
-<area shape="rect" id="node1" title=" " alt="" coords="12,423,191,464"/>
-<area shape="rect" id="node2" href="$classhttpx_1_1__exceptions_1_1TimeoutException.html" title=" " alt="" coords="13,333,189,375"/>
-<area shape="rect" id="node3" href="$classhttpx_1_1__exceptions_1_1TransportError.html" title=" " alt="" coords="9,244,193,285"/>
-<area shape="rect" id="node4" href="$classhttpx_1_1__exceptions_1_1RequestError.html" title=" " alt="" coords="12,155,191,196"/>
-<area shape="rect" id="node5" href="$classhttpx_1_1__exceptions_1_1HTTPError.html" title=" " alt="" coords="5,80,197,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="61,5,141,32"/>
-</map>

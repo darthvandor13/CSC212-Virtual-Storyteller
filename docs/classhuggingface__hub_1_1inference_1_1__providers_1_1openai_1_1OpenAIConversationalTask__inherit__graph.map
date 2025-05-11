@@ -1,5 +1,0 @@
-<map id="huggingface_hub.inference._providers.openai.OpenAIConversationalTask" name="huggingface_hub.inference._providers.openai.OpenAIConversationalTask">
-<area shape="rect" id="node1" title=" " alt="" coords="8,199,295,240"/>
-<area shape="rect" id="node2" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1__common_1_1BaseConversationalTask.html" title=" " alt="" coords="5,109,297,151"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1inference_1_1__providers_1_1__common_1_1TaskProviderHelper.html" title=" " alt="" coords="40,5,263,61"/>
-</map>

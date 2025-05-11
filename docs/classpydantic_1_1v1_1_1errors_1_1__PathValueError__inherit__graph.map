@@ -1,9 +1,0 @@
-<map id="pydantic.v1.errors._PathValueError" name="pydantic.v1.errors._PathValueError">
-<area shape="rect" id="node1" title=" " alt="" coords="464,71,595,112"/>
-<area shape="rect" id="node5" href="$classpydantic_1_1v1_1_1errors_1_1PathNotADirectoryError.html" title=" " alt="" coords="643,5,821,47"/>
-<area shape="rect" id="node6" href="$classpydantic_1_1v1_1_1errors_1_1PathNotAFileError.html" title=" " alt="" coords="643,71,821,112"/>
-<area shape="rect" id="node7" href="$classpydantic_1_1v1_1_1errors_1_1PathNotExistsError.html" title=" " alt="" coords="643,136,821,177"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1v1_1_1errors_1_1PydanticValueError.html" title=" " alt="" coords="235,71,416,112"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1v1_1_1errors_1_1PydanticErrorMixin.html" title=" " alt="" coords="5,41,187,83"/>
-<area shape="rect" id="node4" title=" " alt="" coords="55,107,137,134"/>
-</map>

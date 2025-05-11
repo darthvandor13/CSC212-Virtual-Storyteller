@@ -1,7 +1,0 @@
-<map id="kubernetes.dynamic.exceptions.UnprocessibleEntityError" name="kubernetes.dynamic.exceptions.UnprocessibleEntityError">
-<area shape="rect" id="node1" title=" " alt="" coords="5,348,216,389"/>
-<area shape="rect" id="node2" href="$classkubernetes_1_1dynamic_1_1exceptions_1_1DynamicApiError.html" title=" " alt="" coords="5,259,216,300"/>
-<area shape="rect" id="node3" href="$classkubernetes_1_1client_1_1exceptions_1_1ApiException.html" title=" " alt="" coords="15,169,207,211"/>
-<area shape="rect" id="node4" href="$classkubernetes_1_1client_1_1exceptions_1_1OpenApiException.html" title=" " alt="" coords="15,80,207,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="71,5,151,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="langchain.evaluation.exact_match.base.ExactMatchStringEvaluator" name="langchain.evaluation.exact_match.base.ExactMatchStringEvaluator">
-<area shape="rect" id="node1" title=" " alt="" coords="46,184,306,225"/>
-<area shape="rect" id="node2" href="$classlangchain_1_1evaluation_1_1schema_1_1StringEvaluator.html" title=" " alt="" coords="79,95,273,136"/>
-<area shape="rect" id="node3" href="$classlangchain_1_1evaluation_1_1schema_1_1__EvalArgsMixin.html" title=" " alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node4" title=" " alt="" coords="224,13,275,39"/>
-</map>

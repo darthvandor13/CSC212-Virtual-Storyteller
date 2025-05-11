@@ -1,9 +1,0 @@
-<map id="cffi.model.StructOrUnionOrEnum" name="cffi.model.StructOrUnionOrEnum">
-<area shape="rect" id="node1" title=" " alt="" coords="84,155,251,196"/>
-<area shape="rect" id="node4" href="$classcffi_1_1model_1_1EnumType.html" title=" " alt="" coords="5,244,151,271"/>
-<area shape="rect" id="node5" href="$classcffi_1_1model_1_1StructOrUnion.html" title=" " alt="" coords="175,244,341,271"/>
-<area shape="rect" id="node2" href="$classcffi_1_1model_1_1BaseTypeByIdentity.html" title=" " alt="" coords="67,80,267,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="139,5,196,32"/>
-<area shape="rect" id="node6" href="$classcffi_1_1model_1_1StructType.html" title=" " alt="" coords="99,319,246,345"/>
-<area shape="rect" id="node7" href="$classcffi_1_1model_1_1UnionType.html" title=" " alt="" coords="271,319,416,345"/>
-</map>

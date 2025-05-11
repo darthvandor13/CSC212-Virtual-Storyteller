@@ -1,6 +1,0 @@
-<map id="metrics._internal.exemplar.exemplar_reservoir.AlignedHistogramBucketExemplarReservoir" name="metrics._internal.exemplar.exemplar_reservoir.AlignedHistogramBucketExemplarReservoir">
-<area shape="rect" id="node1" title=" " alt="" coords="5,259,287,315"/>
-<area shape="rect" id="node2" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__reservoir_1_1FixedSizeExemplarReservoirABC.html" title=" " alt="" coords="7,169,285,211"/>
-<area shape="rect" id="node3" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__reservoir_1_1ExemplarReservoir.html" title=" " alt="" coords="31,80,261,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="121,5,171,32"/>
-</map>

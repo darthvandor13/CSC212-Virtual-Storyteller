@@ -1,7 +1,0 @@
-<map id="metrics._internal.exemplar.exemplar_reservoir.FixedSizeExemplarReservoirABC" name="metrics._internal.exemplar.exemplar_reservoir.FixedSizeExemplarReservoirABC">
-<area shape="rect" id="node1" title=" " alt="" coords="383,50,661,91"/>
-<area shape="rect" id="node4" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__reservoir_1_1AlignedHistogramBucketExemplarReservoir.html" title=" " alt="" coords="714,5,995,61"/>
-<area shape="rect" id="node5" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__reservoir_1_1SimpleFixedSizeExemplarReservoir.html" title=" " alt="" coords="709,86,1000,127"/>
-<area shape="rect" id="node2" href="$classmetrics_1_1__internal_1_1exemplar_1_1exemplar__reservoir_1_1ExemplarReservoir.html" title=" " alt="" coords="104,50,335,91"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,57,56,84"/>
-</map>

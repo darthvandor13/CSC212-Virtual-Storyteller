@@ -1,8 +1,0 @@
-<map id="pyasn1_modules.rfc1157._RequestBase" name="pyasn1_modules.rfc1157._RequestBase">
-<area shape="rect" id="node1" title=" " alt="" coords="160,104,331,145"/>
-<area shape="rect" id="node3" href="$classpyasn1__modules_1_1rfc1157_1_1GetNextRequestPDU.html" title=" " alt="" coords="379,5,571,47"/>
-<area shape="rect" id="node4" href="$classpyasn1__modules_1_1rfc1157_1_1GetRequestPDU.html" title=" " alt="" coords="379,71,571,112"/>
-<area shape="rect" id="node5" href="$classpyasn1__modules_1_1rfc1157_1_1GetResponsePDU.html" title=" " alt="" coords="379,136,571,177"/>
-<area shape="rect" id="node6" href="$classpyasn1__modules_1_1rfc1157_1_1SetRequestPDU.html" title=" " alt="" coords="379,201,570,243"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,111,112,138"/>
-</map>

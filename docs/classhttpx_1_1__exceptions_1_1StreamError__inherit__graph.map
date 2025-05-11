@@ -1,8 +1,0 @@
-<map id="httpx._exceptions.StreamError" name="httpx._exceptions.StreamError">
-<area shape="rect" id="node1" title=" " alt="" coords="152,104,323,145"/>
-<area shape="rect" id="node3" href="$classhttpx_1_1__exceptions_1_1RequestNotRead.html" title=" " alt="" coords="375,5,554,47"/>
-<area shape="rect" id="node4" href="$classhttpx_1_1__exceptions_1_1ResponseNotRead.html" title=" " alt="" coords="371,71,559,112"/>
-<area shape="rect" id="node5" href="$classhttpx_1_1__exceptions_1_1StreamClosed.html" title=" " alt="" coords="379,136,550,177"/>
-<area shape="rect" id="node6" href="$classhttpx_1_1__exceptions_1_1StreamConsumed.html" title=" " alt="" coords="379,201,550,243"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,111,104,138"/>
-</map>

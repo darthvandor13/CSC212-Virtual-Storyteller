@@ -1,8 +1,0 @@
-<map id="chromadb.api.AdminAPI" name="chromadb.api.AdminAPI">
-<area shape="rect" id="node1" title=" " alt="" coords="237,80,400,107"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1api_1_1ServerAPI.html" title=" " alt="" coords="139,162,303,189"/>
-<area shape="rect" id="node6" href="$classchromadb_1_1api_1_1client_1_1AdminClient.html" title=" " alt="" coords="328,155,504,196"/>
-<area shape="rect" id="node2" title=" " alt="" coords="293,5,344,32"/>
-<area shape="rect" id="node4" href="$classchromadb_1_1api_1_1fastapi_1_1FastAPI.html" title=" " alt="" coords="5,244,200,271"/>
-<area shape="rect" id="node5" href="$classchromadb_1_1api_1_1segment_1_1SegmentAPI.html" title=" " alt="" coords="224,244,456,271"/>
-</map>

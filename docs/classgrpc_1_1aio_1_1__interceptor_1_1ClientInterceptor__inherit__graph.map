@@ -1,9 +1,0 @@
-<map id="grpc.aio._interceptor.ClientInterceptor" name="grpc.aio._interceptor.ClientInterceptor">
-<area shape="rect" id="node1" title=" " alt="" coords="136,104,313,145"/>
-<area shape="rect" id="node4" href="$classgrpc_1_1aio_1_1__interceptor_1_1StreamStreamClientInterceptor.html" title=" " alt="" coords="361,5,547,47"/>
-<area shape="rect" id="node5" href="$classgrpc_1_1aio_1_1__interceptor_1_1StreamUnaryClientInterceptor.html" title=" " alt="" coords="361,71,547,112"/>
-<area shape="rect" id="node6" href="$classgrpc_1_1aio_1_1__interceptor_1_1UnaryStreamClientInterceptor.html" title=" " alt="" coords="365,136,543,177"/>
-<area shape="rect" id="node7" href="$classgrpc_1_1aio_1_1__interceptor_1_1UnaryUnaryClientInterceptor.html" title=" " alt="" coords="365,201,543,243"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,86,88,113"/>
-<area shape="rect" id="node3" title=" " alt="" coords="7,137,86,163"/>
-</map>

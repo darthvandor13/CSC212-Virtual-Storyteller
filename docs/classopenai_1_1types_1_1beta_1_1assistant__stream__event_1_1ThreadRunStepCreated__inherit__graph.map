@@ -1,8 +1,0 @@
-<map id="openai.types.beta.assistant_stream_event.ThreadRunStepCreated" name="openai.types.beta.assistant_stream_event.ThreadRunStepCreated">
-<area shape="rect" id="node1" title=" " alt="" coords="5,244,255,285"/>
-<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="39,169,221,196"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="44,95,216,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="21,13,103,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="128,5,271,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="295,5,477,47"/>
-</map>

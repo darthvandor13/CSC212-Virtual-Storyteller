@@ -1,8 +1,0 @@
-<map id="pydantic.v1.types.NonPositiveFloat" name="pydantic.v1.types.NonPositiveFloat">
-<area shape="rect" id="node1" title=" " alt="" coords="18,259,218,300"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1v1_1_1types_1_1ConstrainedFloat.html" title=" " alt="" coords="19,169,217,211"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,87,52,114"/>
-<area shape="rect" id="node4" title=" " alt="" coords="77,87,159,114"/>
-<area shape="rect" id="node5" href="$classpydantic_1_1v1_1_1types_1_1ConstrainedNumberMeta.html" title=" " alt="" coords="183,80,381,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="259,5,305,32"/>
-</map>

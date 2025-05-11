@@ -1,7 +1,0 @@
-<map id="oauthlib.openid.connect.core.grant_types.base.GrantTypeBase" name="oauthlib.openid.connect.core.grant_types.base.GrantTypeBase">
-<area shape="rect" id="node1" title=" " alt="" coords="5,119,227,161"/>
-<area shape="rect" id="node2" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1authorization__code_1_1AuthorizationCodeGrant.html" title=" " alt="" coords="278,5,533,61"/>
-<area shape="rect" id="node3" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1hybrid_1_1HybridGrant.html" title=" " alt="" coords="295,86,516,127"/>
-<area shape="rect" id="node4" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1implicit_1_1ImplicitGrant.html" title=" " alt="" coords="295,151,516,193"/>
-<area shape="rect" id="node5" href="$classoauthlib_1_1openid_1_1connect_1_1core_1_1grant__types_1_1refresh__token_1_1RefreshTokenGrant.html" title=" " alt="" coords="275,217,536,258"/>
-</map>

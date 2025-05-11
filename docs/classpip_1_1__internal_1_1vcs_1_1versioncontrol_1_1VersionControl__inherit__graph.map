@@ -1,8 +1,0 @@
-<map id="pip._internal.vcs.versioncontrol.VersionControl" name="pip._internal.vcs.versioncontrol.VersionControl">
-<area shape="rect" id="node1" title=" " alt="" coords="111,123,317,164"/>
-<area shape="rect" id="node3" href="$classpip_1_1__internal_1_1vcs_1_1bazaar_1_1Bazaar.html" title=" " alt="" coords="378,5,541,47"/>
-<area shape="rect" id="node4" href="$classpip_1_1__internal_1_1vcs_1_1git_1_1Git.html" title=" " alt="" coords="381,71,537,98"/>
-<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1vcs_1_1mercurial_1_1Mercurial.html" title=" " alt="" coords="370,123,549,164"/>
-<area shape="rect" id="node6" href="$classpip_1_1__internal_1_1vcs_1_1subversion_1_1Subversion.html" title=" " alt="" coords="365,188,553,229"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,130,63,157"/>
-</map>

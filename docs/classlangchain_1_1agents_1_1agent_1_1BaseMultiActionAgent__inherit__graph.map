@@ -1,9 +1,0 @@
-<map id="langchain.agents.agent.BaseMultiActionAgent" name="langchain.agents.agent.BaseMultiActionAgent">
-<area shape="rect" id="node1" title=" " alt="" coords="455,43,645,84"/>
-<area shape="rect" id="node6" href="$classlangchain_1_1agents_1_1agent_1_1RunnableMultiActionAgent.html" title=" " alt="" coords="693,5,908,47"/>
-<area shape="rect" id="node7" href="$classlangchain_1_1agents_1_1openai__functions__multi__agent_1_1base_1_1OpenAIMultiFunctionsAgent.html" title=" " alt="" coords="705,71,897,127"/>
-<area shape="rect" id="node2" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="235,50,407,77"/>
-<area shape="rect" id="node3" title=" " alt="" coords="55,21,137,47"/>
-<area shape="rect" id="node4" title=" " alt="" coords="25,72,167,113"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,137,187,179"/>
-</map>

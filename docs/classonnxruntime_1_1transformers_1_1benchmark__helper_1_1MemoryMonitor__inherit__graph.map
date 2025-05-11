@@ -1,6 +1,0 @@
-<map id="onnxruntime.transformers.benchmark_helper.MemoryMonitor" name="onnxruntime.transformers.benchmark_helper.MemoryMonitor">
-<area shape="rect" id="node1" title=" " alt="" coords="104,39,343,80"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1benchmark__helper_1_1CudaMemoryMonitor.html" title=" " alt="" coords="391,5,629,47"/>
-<area shape="rect" id="node4" href="$classonnxruntime_1_1transformers_1_1benchmark__helper_1_1RocmMemoryMonitor.html" title=" " alt="" coords="391,71,629,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,46,56,73"/>
-</map>

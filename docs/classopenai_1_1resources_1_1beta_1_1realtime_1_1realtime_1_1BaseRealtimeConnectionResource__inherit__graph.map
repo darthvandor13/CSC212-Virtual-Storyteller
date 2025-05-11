@@ -1,8 +1,0 @@
-<map id="openai.resources.beta.realtime.realtime.BaseRealtimeConnectionResource" name="openai.resources.beta.realtime.realtime.BaseRealtimeConnectionResource">
-<area shape="rect" id="node1" title=" " alt="" coords="5,136,260,177"/>
-<area shape="rect" id="node2" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1realtime_1_1RealtimeConversationItemResource.html" title=" " alt="" coords="308,5,563,47"/>
-<area shape="rect" id="node3" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1realtime_1_1RealtimeConversationResource.html" title=" " alt="" coords="308,71,563,112"/>
-<area shape="rect" id="node4" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1realtime_1_1RealtimeInputAudioBufferResource.html" title=" " alt="" coords="308,136,563,177"/>
-<area shape="rect" id="node5" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1realtime_1_1RealtimeResponseResource.html" title=" " alt="" coords="308,201,563,243"/>
-<area shape="rect" id="node6" href="$classopenai_1_1resources_1_1beta_1_1realtime_1_1realtime_1_1RealtimeSessionResource.html" title=" " alt="" coords="308,267,563,308"/>
-</map>

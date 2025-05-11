@@ -1,5 +1,0 @@
-<map id="langsmith.anonymizer.StringNodeProcessor" name="langsmith.anonymizer.StringNodeProcessor">
-<area shape="rect" id="node1" title=" " alt="" coords="118,5,305,47"/>
-<area shape="rect" id="node2" href="$classlangsmith_1_1anonymizer_1_1CallableNodeProcessor.html" title=" " alt="" coords="5,95,204,136"/>
-<area shape="rect" id="node3" href="$classlangsmith_1_1anonymizer_1_1RuleNodeProcessor.html" title=" " alt="" coords="229,95,407,136"/>
-</map>

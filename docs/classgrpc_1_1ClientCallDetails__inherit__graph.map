@@ -1,7 +1,0 @@
-<map id="grpc.ClientCallDetails" name="grpc.ClientCallDetails">
-<area shape="rect" id="node1" title=" " alt="" coords="128,78,277,105"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1telemetry_1_1opentelemetry_1_1grpc_1_1__ClientCallDetails.html" title=" " alt="" coords="325,5,577,47"/>
-<area shape="rect" id="node4" href="$classgrpc_1_1__interceptor_1_1__ClientCallDetails.html" title=" " alt="" coords="388,71,515,112"/>
-<area shape="rect" id="node5" href="$classgrpc_1_1aio_1_1__interceptor_1_1ClientCallDetails.html" title=" " alt="" coords="363,136,540,177"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,78,80,105"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="langchain_core.chat_history.InMemoryChatMessageHistory" name="langchain_core.chat_history.InMemoryChatMessageHistory">
-<area shape="rect" id="node1" title=" " alt="" coords="505,27,715,83"/>
-<area shape="rect" id="node2" href="$classlangchain__core_1_1chat__history_1_1BaseChatMessageHistory.html" title=" " alt="" coords="235,5,457,47"/>
-<area shape="rect" id="node3" title=" " alt="" coords="71,13,121,39"/>
-<area shape="rect" id="node4" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="260,71,432,98"/>
-<area shape="rect" id="node5" title=" " alt="" coords="55,67,137,94"/>
-<area shape="rect" id="node6" title=" " alt="" coords="25,119,167,160"/>
-<area shape="rect" id="node7" title=" " alt="" coords="5,184,187,225"/>
-</map>

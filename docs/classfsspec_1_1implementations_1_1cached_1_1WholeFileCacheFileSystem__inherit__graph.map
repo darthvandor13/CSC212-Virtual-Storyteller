@@ -1,9 +1,0 @@
-<map id="fsspec.implementations.cached.WholeFileCacheFileSystem" name="fsspec.implementations.cached.WholeFileCacheFileSystem">
-<area shape="rect" id="node1" title=" " alt="" coords="11,333,221,375"/>
-<area shape="rect" id="node7" href="$classfsspec_1_1implementations_1_1cached_1_1SimpleCacheFileSystem.html" title=" " alt="" coords="11,423,221,464"/>
-<area shape="rect" id="node2" href="$classfsspec_1_1implementations_1_1cached_1_1CachingFileSystem.html" title=" " alt="" coords="11,244,221,285"/>
-<area shape="rect" id="node3" href="$classfsspec_1_1spec_1_1AbstractFileSystem.html" title=" " alt="" coords="33,155,199,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node5" href="$classfsspec_1_1spec_1_1__Cached.html" title=" " alt="" coords="112,80,261,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="163,5,210,32"/>
-</map>

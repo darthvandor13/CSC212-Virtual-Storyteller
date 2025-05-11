@@ -1,9 +1,0 @@
-<map id="pip._internal.distributions.base.AbstractDistribution" name="pip._internal.distributions.base.AbstractDistribution">
-<area shape="rect" id="node1" title=" " alt="" coords="157,71,360,112"/>
-<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1distributions_1_1installed_1_1InstalledDistribution.html" title=" " alt="" coords="408,5,631,47"/>
-<area shape="rect" id="node6" href="$classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution.html" title=" " alt="" coords="418,71,621,112"/>
-<area shape="rect" id="node7" href="$classpip_1_1__internal_1_1distributions_1_1wheel_1_1WheelDistribution.html" title=" " alt="" coords="415,136,623,177"/>
-<area shape="rect" id="node2" title=" " alt="" coords="16,27,99,54"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,78,109,105"/>
-<area shape="rect" id="node4" title=" " alt="" coords="29,129,86,155"/>
-</map>

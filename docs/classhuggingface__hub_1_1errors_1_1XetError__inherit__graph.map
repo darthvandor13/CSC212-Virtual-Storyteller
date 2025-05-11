@@ -1,6 +1,0 @@
-<map id="huggingface_hub.errors.XetError" name="huggingface_hub.errors.XetError">
-<area shape="rect" id="node1" title=" " alt="" coords="133,39,315,80"/>
-<area shape="rect" id="node3" href="$classhuggingface__hub_1_1errors_1_1XetAuthorizationError.html" title=" " alt="" coords="363,5,544,47"/>
-<area shape="rect" id="node4" href="$classhuggingface__hub_1_1errors_1_1XetRefreshTokenError.html" title=" " alt="" coords="363,71,544,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,46,85,73"/>
-</map>

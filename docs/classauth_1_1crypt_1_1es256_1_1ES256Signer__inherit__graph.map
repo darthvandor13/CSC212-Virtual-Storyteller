@@ -1,7 +1,0 @@
-<map id="auth.crypt.es256.ES256Signer" name="auth.crypt.es256.ES256Signer">
-<area shape="rect" id="node1" title=" " alt="" coords="80,169,279,196"/>
-<area shape="rect" id="node2" href="$classauth_1_1crypt_1_1base_1_1Signer.html" title=" " alt="" coords="5,87,159,114"/>
-<area shape="rect" id="node3" title=" " alt="" coords="61,5,143,32"/>
-<area shape="rect" id="node5" href="$classauth_1_1crypt_1_1base_1_1FromServiceAccountMixin.html" title=" " alt="" coords="183,80,373,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="206,5,310,32"/>
-</map>

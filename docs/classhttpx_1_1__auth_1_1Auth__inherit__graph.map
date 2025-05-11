@@ -1,7 +1,0 @@
-<map id="httpx._auth.Auth" name="httpx._auth.Auth">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,124,108"/>
-<area shape="rect" id="node2" href="$classhttpx_1_1__auth_1_1BasicAuth.html" title=" " alt="" coords="181,5,331,32"/>
-<area shape="rect" id="node3" href="$classhttpx_1_1__auth_1_1DigestAuth.html" title=" " alt="" coords="178,56,334,83"/>
-<area shape="rect" id="node4" href="$classhttpx_1_1__auth_1_1FunctionAuth.html" title=" " alt="" coords="172,107,340,133"/>
-<area shape="rect" id="node5" href="$classhttpx_1_1__auth_1_1NetRCAuth.html" title=" " alt="" coords="177,157,335,184"/>
-</map>

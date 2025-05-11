@@ -1,8 +1,0 @@
-<map id="onnxruntime.transformers.metrics.BaseObject" name="onnxruntime.transformers.metrics.BaseObject">
-<area shape="rect" id="node1" title=" " alt="" coords="5,136,227,177"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1transformers_1_1metrics_1_1BackendOptions.html" title=" " alt="" coords="275,5,496,47"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1transformers_1_1metrics_1_1Config.html" title=" " alt="" coords="275,71,496,112"/>
-<area shape="rect" id="node4" href="$classonnxruntime_1_1transformers_1_1metrics_1_1Metadata.html" title=" " alt="" coords="275,136,496,177"/>
-<area shape="rect" id="node5" href="$classonnxruntime_1_1transformers_1_1metrics_1_1Metrics.html" title=" " alt="" coords="275,201,496,243"/>
-<area shape="rect" id="node6" href="$classonnxruntime_1_1transformers_1_1metrics_1_1ModelInfo.html" title=" " alt="" coords="275,267,496,308"/>
-</map>

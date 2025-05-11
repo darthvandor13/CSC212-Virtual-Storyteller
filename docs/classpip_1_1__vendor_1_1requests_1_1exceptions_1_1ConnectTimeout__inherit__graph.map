@@ -1,7 +1,0 @@
-<map id="pip._vendor.requests.exceptions.ConnectTimeout" name="pip._vendor.requests.exceptions.ConnectTimeout">
-<area shape="rect" id="node1" title=" " alt="" coords="640,39,853,80"/>
-<area shape="rect" id="node2" href="$classpip_1_1__vendor_1_1requests_1_1exceptions_1_1ConnectionError.html" title=" " alt="" coords="379,5,592,47"/>
-<area shape="rect" id="node3" href="$classpip_1_1__vendor_1_1requests_1_1exceptions_1_1RequestException.html" title=" " alt="" coords="117,39,331,80"/>
-<area shape="rect" id="node5" href="$classpip_1_1__vendor_1_1requests_1_1exceptions_1_1Timeout.html" title=" " alt="" coords="379,71,592,112"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,46,69,73"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="onnxruntime.quantization.operators.matmul.MatMulInteger" name="onnxruntime.quantization.operators.matmul.MatMulInteger">
-<area shape="rect" id="node1" title=" " alt="" coords="5,184,281,225"/>
-<area shape="rect" id="node2" href="$classonnxruntime_1_1quantization_1_1operators_1_1matmul_1_1QOpMatMul.html" title=" " alt="" coords="5,95,281,136"/>
-<area shape="rect" id="node3" href="$classonnxruntime_1_1quantization_1_1operators_1_1base__operator_1_1QuantOperatorBase.html" title=" " alt="" coords="15,5,272,47"/>
-</map>

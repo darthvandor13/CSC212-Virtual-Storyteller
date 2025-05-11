@@ -1,8 +1,0 @@
-<map id="oauthlib.oauth2.rfc6749.grant_types.base.GrantTypeBase" name="oauthlib.oauth2.rfc6749.grant_types.base.GrantTypeBase">
-<area shape="rect" id="node1" title=" " alt="" coords="5,166,196,207"/>
-<area shape="rect" id="node2" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1grant__types_1_1authorization__code_1_1AuthorizationCodeGrant.html" title=" " alt="" coords="290,5,545,61"/>
-<area shape="rect" id="node3" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1grant__types_1_1client__credentials_1_1ClientCredentialsGrant.html" title=" " alt="" coords="315,85,519,141"/>
-<area shape="rect" id="node4" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1grant__types_1_1implicit_1_1ImplicitGrant.html" title=" " alt="" coords="322,166,513,207"/>
-<area shape="rect" id="node5" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1grant__types_1_1refresh__token_1_1RefreshTokenGrant.html" title=" " alt="" coords="287,231,548,273"/>
-<area shape="rect" id="node6" href="$classoauthlib_1_1oauth2_1_1rfc6749_1_1grant__types_1_1resource__owner__password__credentials_1_164a2969e1309d3dad1a32fc88d0e4e5c.html" title=" " alt="" coords="244,297,591,353"/>
-</map>

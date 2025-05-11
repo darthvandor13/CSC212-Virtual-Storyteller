@@ -1,7 +1,0 @@
-<map id="auth.exceptions.ReauthFailError" name="auth.exceptions.ReauthFailError">
-<area shape="rect" id="node1" title=" " alt="" coords="11,244,192,285"/>
-<area shape="rect" id="node5" href="$classauth_1_1exceptions_1_1ReauthSamlChallengeFailError.html" title=" " alt="" coords="6,333,197,375"/>
-<area shape="rect" id="node2" href="$classauth_1_1exceptions_1_1RefreshError.html" title=" " alt="" coords="5,169,197,196"/>
-<area shape="rect" id="node3" href="$classauth_1_1exceptions_1_1GoogleAuthError.html" title=" " alt="" coords="8,80,195,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="61,5,141,32"/>
-</map>

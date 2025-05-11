@@ -1,7 +1,0 @@
-<map id="numpy.linalg.tests.test_linalg.TestPinvHermitian" name="numpy.linalg.tests.test_linalg.TestPinvHermitian">
-<area shape="rect" id="node1" title=" " alt="" coords="673,43,844,84"/>
-<area shape="rect" id="node2" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1PinvHermitianCases.html" title=" " alt="" coords="443,43,625,84"/>
-<area shape="rect" id="node3" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1HermitianTestCase.html" title=" " alt="" coords="213,5,388,47"/>
-<area shape="rect" id="node4" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1LinalgTestCase.html" title=" " alt="" coords="5,43,159,84"/>
-<area shape="rect" id="node5" href="$classnumpy_1_1linalg_1_1tests_1_1test__linalg_1_1HermitianGeneralizedTestCase.html" title=" " alt="" coords="207,71,395,127"/>
-</map>

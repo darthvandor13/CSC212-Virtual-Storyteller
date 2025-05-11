@@ -1,8 +1,0 @@
-<map id="openai.types.responses.response_code_interpreter_call_completed_event.ResponseCodeInterpreterCallCompletedEvent" name="openai.types.responses.response_code_interpreter_call_completed_event.ResponseCodeInterpreterCallCompletedEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,244,340,300"/>
-<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="81,169,264,196"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="87,95,259,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="63,13,146,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="171,5,313,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="338,5,519,47"/>
-</map>

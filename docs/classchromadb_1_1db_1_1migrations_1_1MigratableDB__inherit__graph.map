@@ -1,8 +1,0 @@
-<map id="chromadb.db.migrations.MigratableDB" name="chromadb.db.migrations.MigratableDB">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,249,256"/>
-<area shape="rect" id="node6" href="$classchromadb_1_1db_1_1impl_1_1sqlite_1_1SqliteDB.html" title=" " alt="" coords="45,304,209,345"/>
-<area shape="rect" id="node2" href="$classchromadb_1_1db_1_1base_1_1SqlDB.html" title=" " alt="" coords="42,155,213,181"/>
-<area shape="rect" id="node3" href="$classchromadb_1_1config_1_1Component.html" title=" " alt="" coords="33,80,222,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="47,5,98,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="122,5,245,32"/>
-</map>

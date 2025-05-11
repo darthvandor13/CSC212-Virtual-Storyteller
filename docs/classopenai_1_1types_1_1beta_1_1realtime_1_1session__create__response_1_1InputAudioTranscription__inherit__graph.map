@@ -1,8 +1,0 @@
-<map id="openai.types.beta.realtime.session_create_response.InputAudioTranscription" name="openai.types.beta.realtime.session_create_response.InputAudioTranscription">
-<area shape="rect" id="node1" title=" " alt="" coords="5,244,272,285"/>
-<area shape="rect" id="node2" href="$classopenai_1_1__models_1_1BaseModel.html" title=" " alt="" coords="47,169,230,196"/>
-<area shape="rect" id="node3" href="$classpydantic_1_1main_1_1BaseModel.html" title="!! abstract &quot;Usage Documentation&quot; ../concepts/models.md &quot;Models&quot;" alt="" coords="53,95,225,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="29,13,112,39"/>
-<area shape="rect" id="node5" title=" " alt="" coords="137,5,279,47"/>
-<area shape="rect" id="node6" title=" " alt="" coords="304,5,485,47"/>
-</map>

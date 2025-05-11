@@ -1,7 +1,0 @@
-<map id="pip._internal.index.sources.LinkSource" name="pip._internal.index.sources.LinkSource">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,187,145"/>
-<area shape="rect" id="node2" href="$classpip_1_1__internal_1_1index_1_1sources_1_1__FlatDirectorySource.html" title=" " alt="" coords="235,5,416,47"/>
-<area shape="rect" id="node3" href="$classpip_1_1__internal_1_1index_1_1sources_1_1__IndexDirectorySource.html" title=" " alt="" coords="235,71,416,112"/>
-<area shape="rect" id="node4" href="$classpip_1_1__internal_1_1index_1_1sources_1_1__LocalFileSource.html" title=" " alt="" coords="235,136,416,177"/>
-<area shape="rect" id="node5" href="$classpip_1_1__internal_1_1index_1_1sources_1_1__RemoteFileSource.html" title=" " alt="" coords="235,201,416,243"/>
-</map>
